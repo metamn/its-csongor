@@ -2,9 +2,13 @@
 layout: default
 title: iorad
 images:
-  - url: iorad-pricing-desktop-front.png
+  - url: iorad-pricing-laptop-front.png
+  - url: iorad-pricing-tablet-portrait.png
+  - url: iorad-pricing-tablet-angle.png
 ---
 
-<figure>
-  <img src="{{ site.url }}/{{ site.images }}/{{ page.images[0].url }}">
-</figure>
+{% for image in page.images reversed %}
+  <figure>
+    <img src="{{ site.url }}/{{ site.images }}/{{ image.url }}">
+  </figure>
+{% endfor %}

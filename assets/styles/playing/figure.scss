@@ -1,29 +1,26 @@
 html {
-  body {
-    figure {
-      img {
-        width: 50%;
-        height: auto;
-      }
-    }
-  }
-}
-
-
-html.old {
   height: 100%;
   
   body {
     height: 100%;
-    @include flexbox($justify-content: center, $align-items: center);
     
-    figure {
-      @include flex-item;
-      width: 50%;
+    #one-per-screen {
+      height: 100%;
       
-      img {
-        width: 100%;
-        height: auto;
+      figure {
+        @include flexbox($wrap: wrap, $justify-content: center, $align-items: center);
+        height: 100%;
+        margin-bottom: 15em;
+        
+        img {
+          @include flex-item;  
+          width: 50%;
+          height: auto;
+        }
+        
+        &.desktop-front img {
+          width: 50%;
+        }
       }
     }
   }

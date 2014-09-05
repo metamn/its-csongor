@@ -3,19 +3,28 @@ layout: default
 title: iorad
 images:
   - url: iorad-pricing-desktop-front.png
+    class: desktop front
   - url: iorad-pricing-desktop-left.png
+    class: desktop left
   - url: iorad-pricing-desktop-right.png
+    class: desktop right
   - url: iorad-pricing-laptop-front.png
+    class: laptop front
   - url: iorad-pricing-tablet-portrait.png
+    class: tablet portrait
   - url: iorad-pricing-tablet-angle.png
+    class: tablet angle
   - url: iorad-pricing-tablet-side.png
+    class: tablet side
   - url: iorad-pricing-mobile-portrait.png
+    class: mobile portrait
   - url: iorad-pricing-mobile-side.png
+    class: mobile side
 ---
 
-<section id="all">
+<section id="one-per-screen">
   {% for image in page.images %}
-    <figure>
+    <figure class="{% include atoms/classname.html title=image.class %}">
       <img src="{{ site.url }}/{{ site.images }}/{{ image.url }}">
     </figure>
   {% endfor %}

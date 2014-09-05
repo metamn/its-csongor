@@ -31,7 +31,7 @@
 
 2. Open the screenshot in Gimp, cut the sidebar to 1424x832px.
 
-3. Open the PSD mockup, turn off the glare layer, remove the white background layer, and cut to 1926x1140px
+3. Open the PSD mockup, turn off the glare layer, turn off the camera lens layer, remove the white background layer, and cut to 1926x1140px
 
 4. Copy the screenshot where indicated in the mockup and save as client-pagename-laptop-front.png. The result will take around 500kB. 
 

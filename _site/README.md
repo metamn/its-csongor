@@ -7,8 +7,50 @@
 
 ## Device mockups
 
-- For every screen 9 mockups will be generated: one Macbook Pro, three iPad, three iMac, two iPhone
 
+### Selecting good looking mockups
+
+- For every portfolio perspective 9 mockups will be generated: one Macbook Pro, three iPad, three iMac, two iPhone
+
+- Every portfolio item should have 3-4 perspectives at least. That makes 30-50 mockups which is too much.
+
+- Important is to have 6-7 mockups in total for every portfolio item which look perfect on all screens.
+
+- To select them follow this algorithm
+
+1. Create the first 9 mockups for a perspective
+
+2. Load them into Jekyll and analyze each of all in the #one-per-screen layout. Select those who look well.
+
+3. Find a new perspective which look better than the previous. Repeat.
+
+
+#### Iorad example: the Pricing perspective
+
+1. tablet angle: pretty ok
+
+2. mobile side: pretty ok
+
+3. mobile portrait: too simple
+
+4. tablet side: tto simple
+
+5. tablet portrait: too simple, the pricing boxes look too simple too
+
+6. laptop front: too simple
+
+7. desktop right: too simple, not readable
+
+8. desktop left: too simple, not readable
+
+9. desktop front: too simple
+
+Conclusion: a more colorful perspective has to be found
+
+
+### Screenshot taking
+
+- Google Chrome with Nimbus Screenshot
 
 ### Generator
 
@@ -17,10 +59,6 @@
 ### Manual / Gimp
 
 - Macbook: http://www.pixeden.com/psd-mock-up-templates/macbook-pro-retina-psd-mockup
-
-### Screenshot taking
-
-- Google Chrome with Nimbus Screenshot
 
 
 ### MacBook Pro

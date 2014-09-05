@@ -21,6 +21,34 @@ html {
         &.desktop-front img {
           width: 50%;
         }
+        
+        &.desktop-left img, &.desktop-right img {
+          width: 40%;
+        }
+        
+        &.laptop-front img {
+          width: 60%;
+        }
+        
+        &.tablet-portrait img {
+          width: 30%;
+        }
+        
+        &.tablet-angle img {
+          width: 60%;
+        }
+        
+        &.tablet-side img {
+          width: 20%;
+        }
+        
+        &.mobile-portrait img {
+          width: 20%;
+        }
+        
+        &.mobile-side img {
+          width: 20%;
+        }
       }
     }
   }

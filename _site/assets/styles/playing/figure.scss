@@ -1,4 +1,65 @@
 html {
+  body {
+    .slide {
+      @include flexbox($justify-content: center, $align-items: center);
+      height: 100%;
+      
+      article {
+        @include flex-item;
+        
+        &.title {
+          padding: 1.25em;
+          
+          h1 {
+            font-size: 4em;
+          }
+        } 
+        
+        &.image {
+          text-align: center;
+          
+          figure {
+            img {
+              width: 60%;
+            }
+            
+            &.tablet-angle img, &.laptop-front img, &.desktop-left img {
+              width: 100%;
+            }
+            
+          }
+        }
+        
+        &.description {
+          padding: 1.25em;
+          
+          p {
+            font-size: 1.25em;
+            
+            + p {
+              margin-top: 1.25em;
+            }
+          }
+        }
+      }
+      
+      
+      
+      h3 {
+        display: none;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+// One per screen
+
+html {
   height: 100%;
   
   body {
@@ -21,31 +82,31 @@ html {
         &.desktop-front img {
           width: 50%;
         }
-        
+
         &.desktop-left img, &.desktop-right img {
           width: 40%;
         }
-        
+
         &.laptop-front img {
           width: 60%;
         }
-        
+
         &.tablet-portrait img {
           width: 30%;
         }
-        
+
         &.tablet-angle img {
           width: 60%;
         }
-        
+
         &.tablet-side img {
           width: 20%;
         }
-        
+
         &.mobile-portrait img {
           width: 20%;
         }
-        
+
         &.mobile-side img {
           width: 20%;
         }
@@ -53,3 +114,4 @@ html {
     }
   }
 }
+

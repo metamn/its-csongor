@@ -7,9 +7,12 @@
 
 ## Device mockups
 
+- For every screen 9 mockups will be generated: one Macbook Pro, three iPad, three iMac, two iPhone
+
+
 ### Generator
 
-- ipad mini, imac: http://mockuphone.com/	
+- iphone, ipad mini, imac: http://mockuphone.com/	
 
 ### Manual / Gimp
 
@@ -85,6 +88,24 @@
 
 - Mockuphone requirements: 640x1136px
 
-- At this resulution the browser already displays the tablet version
+- At this resulution the browser already displays the tablet version. The screenshot will be taken on large screen by selecting a good section of the screen and hiding the other elements
 
-- We skip mobiles since tablets, laptop and desktop is good enough
+1. Create a screenshot close to 640x1136px if possible.
+
+2. Open Gimp and create a 640x1136px blank image with the site's background color. Copy the screenshot here and save as client-pagename-mobile-screenshot.png
+
+3. Mockuphone.com > iPhone 5S Silver > upload screenshot and wait for the generated mockups
+
+4. Three mockups will be generated, each 2000x2000px on transparent background, 150-250kB size
+
+	- portrait, side1 is usable
+	
+	- landscape: not usable
+
+5. Import the selected mockups into Gimp to cut the large transparent background
+
+	- side1: cut to 645x1605px and save as client-pagename-mobile-slide.png. The result will take around 200kB.
+
+	- portrait: cut to 813x1677px and save as client-pagename-mobile-portrait.png. The result will take around 150kB.
+ 
+ 

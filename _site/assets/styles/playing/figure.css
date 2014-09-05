@@ -1,13 +1,11 @@
 /*
 Syntax error: Undefined mixin 'flexbox'.
-        on line 6 of /home/cs/work/its-csongor/assets/styles/playing/figure.scss, in `flexbox'
-        from line 6 of /home/cs/work/its-csongor/assets/styles/playing/figure.scss
-
-1: /home/cs/work/its-csongor/assets/styles/playing/figure.scss
+        on line 18 of /home/cs/work/its-csongor/assets/styles/playing/figure.scss, in `flexbox'
+        from line 18 of /home/cs/work/its-csongor/assets/styles/playing/figure.scss
 
 Backtrace:
-/home/cs/work/its-csongor/assets/styles/playing/figure.scss:6:in `flexbox'
-/home/cs/work/its-csongor/assets/styles/playing/figure.scss:6
+/home/cs/work/its-csongor/assets/styles/playing/figure.scss:18:in `flexbox'
+/home/cs/work/its-csongor/assets/styles/playing/figure.scss:18
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
@@ -92,4 +90,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'flexbox'.\A         on line 6 of /home/cs/work/its-csongor/assets/styles/playing/figure.scss, in `flexbox'\A         from line 6 of /home/cs/work/its-csongor/assets/styles/playing/figure.scss\A \A 1: /home/cs/work/its-csongor/assets/styles/playing/figure.scss"; }
+  content: "Syntax error: Undefined mixin 'flexbox'.\A         on line 18 of /home/cs/work/its-csongor/assets/styles/playing/figure.scss, in `flexbox'\A         from line 18 of /home/cs/work/its-csongor/assets/styles/playing/figure.scss"; }

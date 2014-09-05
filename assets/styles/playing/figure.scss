@@ -1,4 +1,16 @@
 html {
+  body {
+    figure {
+      img {
+        width: 50%;
+        height: auto;
+      }
+    }
+  }
+}
+
+
+html.old {
   height: 100%;
   
   body {

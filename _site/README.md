@@ -1,6 +1,23 @@
 # Content
 
 
+## Portfolio items
+
+- It should consist of text and images. 
+
+- They should be mixed into a story. This way both the mobile and desktop experience is better
+
+- An item should be composed by the following slides:
+
+1. Item title, short task description, the best image
+
+2. Project description, a parapgraph short
+
+3. Technologies used
+
+- Depending on the image number and quality new slides can be added, more images can be added to slides 1-3 defined above
+
+
 ## Device sizes
 
 
@@ -33,7 +50,7 @@
 
 3. mobile portrait: too simple
 
-4. tablet side: tto simple
+4. tablet side: too simple
 
 5. tablet portrait: too simple, the pricing boxes look too simple too
 
@@ -45,7 +62,11 @@
 
 9. desktop front: too simple
 
-Conclusion: a more colorful perspective has to be found
+Conclusions: 
+
+- more colorful perspective has to be found
+
+- this portfolio item will be based mostly on tablet and iphone mockups
 
 
 ### Screenshot taking

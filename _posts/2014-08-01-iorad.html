@@ -1,6 +1,13 @@
 ---
 layout: default
 title: iorad
+services:
+  - Responsive web design and development
+technologies:
+  - HTML5
+  - CSS3
+  - jQuery
+  - Jekyll
 images:
   - url: iorad-pricing-tablet-portrait.png
     class: tablet portrait
@@ -8,12 +15,12 @@ images:
     class: mobile side
   - url: iorad-checkout-mobile-portrait.png
     class: mobile portrait
-  - url: iorad-pricing-tablet-angle.png
-    class: tablet angle
   - url: iorad-pricing-laptop-front.png
     class: laptop front
   - url: iorad-pricing-desktop-left.png
     class: desktop left
+  - url: iorad-pricing-tablet-angle.png
+    class: tablet angle
 ---
 
 
@@ -107,6 +114,11 @@ images:
       <img src="{{ site.url }}/{{ site.images }}/{{ image.url }}">
     </figure>
   </article>
+</section>
+
+
+<section class="slide image">
+  <h3>Fetured image 5</h3>
   
   <article class="image">
     <h3>Featured image 5</h3>
@@ -116,7 +128,23 @@ images:
       <img src="{{ site.url }}/{{ site.images }}/{{ image.url }}">
     </figure>
   </article>
+</section>
+
+
+<section class="slide image">
+  <h3>Technologies</h3>
   
+  <article class="description">
+    <h3>Technologies</h3>
+    
+    <p>
+      Services: {{ page.services | join: ', ' }}
+    </p>
+    
+    <p>
+      Technologies: {{ page.technologies | join: ', ' }}
+    </p>
+  </article>
 </section>
 
 

@@ -1,0 +1,35 @@
+---
+layout: default
+title: Organized Crime And Corruption Reporting Project
+services:
+  - Responsive web design and development
+technologies:
+  - HTML5
+  - CSS3
+  - jQuery
+  - Jekyll
+images:
+  - url: iorad-pricing-tablet-portrait.png
+    class: tablet portrait
+  - url: iorad-pricing-mobile-side.png
+    class: mobile side
+  - url: iorad-checkout-mobile-portrait.png
+    class: mobile portrait
+  - url: iorad-pricing-laptop-front.png
+    class: laptop front
+  - url: iorad-pricing-desktop-left.png
+    class: desktop left
+  - url: iorad-pricing-tablet-angle.png
+    class: tablet angle
+---
+
+
+
+
+<section id="one-per-screen">
+  {% for image in page.images %}
+    <figure class="{% include atoms/classname.html title=image.class %}">
+      <img src="{{ site.url }}/{{ site.images }}/{{ image.url }}">
+    </figure>
+  {% endfor %}
+</section>

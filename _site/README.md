@@ -11,11 +11,11 @@
 
 1. Item title, short task description, the best image
 
-2. Project description, a parapgraph short
+2. Project description in a few parapgraphs
 
-3. Technologies used
+3. Services and Technologies
 
-- Depending on the image number and quality new slides can be added, more images can be added to slides 1-3 defined above
+- Depending on the image number and quality new slides can be added / more images can be added to slides 1-3 defined above
 
 
 ## Device sizes
@@ -69,6 +69,17 @@ Conclusions:
 - this portfolio item will be based mostly on tablet and iphone mockups
 
 
+#### The OCCRP example
+
+- lots of mobile and tablet mockups inherited from previous attempts
+
+- two laptop and two dekstop mockups added
+
+- we start with 21 mockups
+
+
+
+
 ### Screenshot taking
 
 - Google Chrome with Nimbus Screenshot
@@ -79,7 +90,7 @@ Conclusions:
 
 ### Manual / Gimp
 
-- Macbook: http://www.pixeden.com/psd-mock-up-templates/macbook-pro-retina-psd-mockup
+- Macbook mockup: http://www.pixeden.com/psd-mock-up-templates/macbook-pro-retina-psd-mockup
 
 
 ### MacBook Pro
@@ -103,7 +114,7 @@ Conclusions:
 
 2. In Gimp cut the sidebar (1900x1110px) 
 
-3. create a new file with the screenshot background color of 1974x110px and copy the prepared screenshot from 2. Save as client-pagename-desktop-screenshot.png
+3. create a new file with the screenshot background color of 1974x1110px and copy the prepared screenshot from 2. Save as client-pagename-desktop-screenshot.png
 
 4. Mockuphone.com > iMac 2013 > upload screenshot and wait for the generated mockups
 
@@ -117,7 +128,7 @@ Conclusions:
 	
 	- left: cut to 1394x1700px and save as client-pagename-desktop-left.png. The result will take around 350kB. 
 
-	- right: cut to 1858x1570px and save as client-pagename-desktop-front.png. The result will take around 200kB. 
+	- front: cut to 1858x1570px and save as client-pagename-desktop-front.png. The result will take around 200kB. 
 
 ### iPad Mini White
 

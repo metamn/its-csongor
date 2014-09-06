@@ -80,6 +80,14 @@ Conclusions:
 - finally we've left in total with 10 mockups: 3 mobile and 3 tablet portraits, 2 laptops, a tablet side as featured image and a desktop left as the last image
 
 
+#### The Anvelocom
+
+- we had originally 4 mobile, 2-2-2 tablet, laptop and desktop screenshots
+
+- we've selected 7 of them, but there is room for improvement here since all mockups are looking very good
+
+
+
 ### Screenshot taking
 
 - Google Chrome with Nimbus Screenshot

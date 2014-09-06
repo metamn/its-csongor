@@ -1,0 +1,154 @@
+---
+layout: default
+title: Anvelom
+services:
+  - Identity
+  - Responsive web design and development
+  - Back-end development
+technologies:
+  - HTML5
+  - CSS3
+  - jQuery
+  - Wordpress
+images:
+  - url: anvelocom-archive-laptop.png
+    class: laptop
+  - url: anvelocom-frontpage-mobile-portrait.png
+    class: mobile portrait
+  - url: anvelocom-menu-mobile-portrait.png
+    class: mobile portrait
+  - url: anvelocom-archive-mobile-portrait.png
+    class: mobile portrait
+  - url: anvelocom-archive-tablet-angle.png
+    class: tablet angle
+  - url: anvelocom-frontpage-desktop-front.png
+    class: desktop front
+  - url: anvelocom-product-tablet-portrait.png
+    class: tablet portrait
+---
+
+<section class="slide intro">
+  <h3>Intro</h3>
+  
+  <article class="image">
+    <h3>Featured image</h3>
+    
+    {% assign image = page.images[0] %}
+    <figure class="{% include atoms/classname.html title=image.class %}">
+      <img src="{{ site.url }}/{{ site.images }}/{{ image.url }}">
+    </figure>
+  </article>
+  
+  <article class="title">
+    <h3>Title</h3>
+    
+    <h1>{{ page.title }}</h1>
+    
+    <p>
+      E-commerce
+    </p>
+  </article>
+</section>
+
+
+<section class="slide image">
+  <h3>Details</h3>
+  
+  <article class="image">
+    <h3>Featured image 1</h3>
+    
+    {% assign image = page.images[1] %}
+    <figure class="{% include atoms/classname.html title=image.class %}">
+      <img src="{{ site.url }}/{{ site.images }}/{{ image.url }}">
+    </figure>
+  </article>
+  
+  <article class="image">
+    <h3>Featured image 4</h3>
+    
+    {% assign image = page.images[2] %}
+    <figure class="{% include atoms/classname.html title=image.class %}">
+      <img src="{{ site.url }}/{{ site.images }}/{{ image.url }}">
+    </figure>
+  </article>
+  
+  <article class="image">
+    <h3>Featured image 4</h3>
+    
+    {% assign image = page.images[3] %}
+    <figure class="{% include atoms/classname.html title=image.class %}">
+      <img src="{{ site.url }}/{{ site.images }}/{{ image.url }}">
+    </figure>
+  </article>
+</section>
+
+
+<section class="slide image">
+  <h3>Details</h3>
+  
+  <article class="image">
+    <h3>Featured image 1</h3>
+    
+    {% assign image = page.images[4] %}
+    <figure class="{% include atoms/classname.html title=image.class %}">
+      <img src="{{ site.url }}/{{ site.images }}/{{ image.url }}">
+    </figure>
+  </article>
+  
+  
+  <article class="description">
+    <h3>Project details</h3>
+    
+    <p>
+      iorad is a startup in the beta launch phase going live at the first time in the next few weeks.
+    </p>
+    <p>
+      Prior launching they've decided to give a face lift for their two most important pages: the Pricing and the Checkout.
+    </p>
+    
+    <p>
+      The project requirements were: speed of execution, keeping current visual assets, cross-device and browser compatibility.
+    </p>
+  </article>
+</section>
+
+
+<section class="slide image">
+  <h3>Details</h3>
+  
+  <article class="image">
+    <h3>Featured image 1</h3>
+    
+    {% assign image = page.images[5] %}
+    <figure class="{% include atoms/classname.html title=image.class %}">
+      <img src="{{ site.url }}/{{ site.images }}/{{ image.url }}">
+    </figure>
+  </article>
+</section>
+
+
+<section class="slide image">
+  <h3>Technologies</h3>
+  
+  <article class="image">
+    <h3>Featured image 1</h3>
+    
+    {% assign image = page.images[6] %}
+    <figure class="{% include atoms/classname.html title=image.class %}">
+      <img src="{{ site.url }}/{{ site.images }}/{{ image.url }}">
+    </figure>
+  </article>
+  
+  <article class="description">
+    <h3>Technologies</h3>
+    
+    <p>
+      Services: {{ page.services | join: ', ' }}
+    </p>
+    
+    <p>
+      Technologies: {{ page.technologies | join: ', ' }}
+    </p>
+  </article>
+  
+</section>

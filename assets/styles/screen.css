@@ -23,7 +23,7 @@ html body .slide article.title h1 { font-size: 4em; max-width: 10em; }
 html body .slide article.title h1 + p { margin-top: 1.25em; }
 html body .slide article.image { text-align: center; }
 html body .slide article.image figure img { width: 60%; }
-html body .slide article.image figure.tablet-angle img, html body .slide article.image figure.laptop-front img, html body .slide article.image figure.desktop-left img { width: 100%; }
+html body .slide article.image figure.tablet-angle img, html body .slide article.image figure.laptop-front img, html body .slide article.image figure.desktop-left img, html body .slide article.image figure.tablet-side img { width: 100%; }
 html body .slide article.description { padding: 1.25em; }
 html body .slide article.description p { font-size: 1.25em; }
 html body .slide article.description p + p { margin-top: 1.25em; }

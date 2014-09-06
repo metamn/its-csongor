@@ -158,11 +158,13 @@ Conclusions:
 
 - Mockuphone requirements: 640x1136px
 
-- At this resulution the browser already displays the tablet version. The screenshot will be taken on large screen by selecting a good section of the screen and hiding the other elements
+- This is the retina resoltion for iPhone 5S. We have only the normal 320px version in Responsinator.
 
-1. Create a screenshot close to 640x1136px if possible.
+1. We can zoom up 200% the iPhone 5S in the Responsinator, or, use the full screen (1920x1200) and capture a detail close to 640x1136px if possible.
 
-2. Open Gimp and create a 640x1136px blank image with the site's background color. Copy the screenshot here and save as client-pagename-mobile-screenshot.png
+2. If Responsinator is used: open the screenshot taken in Gimp and cut the scrollbar to 622x1005px
+
+3. Open Gimp and create a 640x1136px blank image with the site's background color. Copy the screenshot here and save as client-pagename-mobile-screenshot.png
 
 3. Mockuphone.com > iPhone 5S Silver > upload screenshot and wait for the generated mockups
 

@@ -9,23 +9,187 @@ technologies:
   - jQuery
   - Jekyll
 images:
-  - url: iorad-pricing-tablet-portrait.png
-    class: tablet portrait
-  - url: iorad-pricing-mobile-side.png
-    class: mobile side
-  - url: iorad-checkout-mobile-portrait.png
+  - url: occrp-frontpage-tablet-side.png
+    class: tablet side
+  - url: occrp-frontpage-2-mobile-portrait.png
     class: mobile portrait
-  - url: iorad-pricing-laptop-front.png
+  - url: occrp-frontpage-mobile-portrait.png
+    class: mobile portrait
+  - url: occrp-archive-mobile-portrait.png
+    class: mobile portrait
+  - url: occrp-frontpage-laptop-front.png
     class: laptop front
-  - url: iorad-pricing-desktop-left.png
+  - url: occrp-archive-laptop-front.png
+    class: laptop front
+  - url: occrp-frontpage-tablet-portrait.png
+    class: tablet portrait
+  - url: occrp-archive-tablet-portrait.png
+    class: tablet portrait
+  - url: occrp-article-tablet-portrait.png
+    class: tablet portrait
+  - url: occrp-archive-desktop-left.png
     class: desktop left
-  - url: iorad-pricing-tablet-angle.png
-    class: tablet angle
 ---
 
 
+<section class="slide intro">
+  <h3>Intro</h3>
+  
+  <article class="image">
+    <h3>Featured image</h3>
+    
+    {% assign image = page.images[0] %}
+    <figure class="{% include atoms/classname.html title=image.class %}">
+      <img src="{{ site.url }}/{{ site.images }}/{{ image.url }}">
+    </figure>
+  </article>
+  
+  <article class="title">
+    <h3>Title</h3>
+    
+    <h1>{{ page.title }}</h1>
+    
+    <p>
+      Complete site redesign.
+    </p>
+  </article>
+</section>
+
+<section class="slide showcase">
+  <h3>Details</h3>
+  
+  <article class="image">
+    <h3>Featured image 1</h3>
+    
+    {% assign image = page.images[1] %}
+    <figure class="{% include atoms/classname.html title=image.class %}">
+      <img src="{{ site.url }}/{{ site.images }}/{{ image.url }}">
+    </figure>
+  </article>
+  
+  <article class="image">
+    <h3>Featured image 4</h3>
+    
+    {% assign image = page.images[2] %}
+    <figure class="{% include atoms/classname.html title=image.class %}">
+      <img src="{{ site.url }}/{{ site.images }}/{{ image.url }}">
+    </figure>
+  </article>
+  
+  <article class="image">
+    <h3>Featured image 4</h3>
+    
+    {% assign image = page.images[3] %}
+    <figure class="{% include atoms/classname.html title=image.class %}">
+      <img src="{{ site.url }}/{{ site.images }}/{{ image.url }}">
+    </figure>
+  </article>
+</section>
 
 
+<section class="slide details">
+  <h3>Details</h3>
+  
+  <article class="description">
+    <h3>Project details</h3>
+    
+    <p>
+      iorad is a startup in the beta launch phase going live at the first time in the next few weeks.
+    </p>
+    <p>
+      Prior launching they've decided to give a face lift for their two most important pages: the Pricing and the Checkout.
+    </p>
+    
+    <p>
+      The project requirements were: speed of execution, keeping current visual assets, cross-device and browser compatibility.
+    </p>
+  </article>
+</section>
+
+<section class="slide showcase">
+  <h3>Details</h3>
+  
+  <article class="image">
+    <h3>Featured image 1</h3>
+    
+    {% assign image = page.images[6] %}
+    <figure class="{% include atoms/classname.html title=image.class %}">
+      <img src="{{ site.url }}/{{ site.images }}/{{ image.url }}">
+    </figure>
+  </article>
+  
+  <article class="image">
+    <h3>Featured image 4</h3>
+    
+    {% assign image = page.images[7] %}
+    <figure class="{% include atoms/classname.html title=image.class %}">
+      <img src="{{ site.url }}/{{ site.images }}/{{ image.url }}">
+    </figure>
+  </article>
+  
+  <article class="image">
+    <h3>Featured image 1</h3>
+    
+    {% assign image = page.images[8] %}
+    <figure class="{% include atoms/classname.html title=image.class %}">
+      <img src="{{ site.url }}/{{ site.images }}/{{ image.url }}">
+    </figure>
+  </article>
+</section>
+
+
+<section class="slide showcase">
+  <h3>Details</h3>
+  
+  <article class="image">
+    <h3>Featured image 1</h3>
+    
+    {% assign image = page.images[4] %}
+    <figure class="{% include atoms/classname.html title=image.class %}">
+      <img src="{{ site.url }}/{{ site.images }}/{{ image.url }}">
+    </figure>
+  </article>
+  
+  <article class="image">
+    <h3>Featured image 4</h3>
+    
+    {% assign image = page.images[5] %}
+    <figure class="{% include atoms/classname.html title=image.class %}">
+      <img src="{{ site.url }}/{{ site.images }}/{{ image.url }}">
+    </figure>
+  </article>
+</section>
+
+
+
+
+<section class="slide image">
+  <h3>Technologies</h3>
+  
+  <article class="description">
+    <h3>Technologies</h3>
+    
+    <p>
+      Services: {{ page.services | join: ', ' }}
+    </p>
+    
+    <p>
+      Technologies: {{ page.technologies | join: ', ' }}
+    </p>
+  </article>
+  
+  <article class="image">
+    <h3>Featured image 1</h3>
+    
+    {% assign image = page.images[9] %}
+    <figure class="{% include atoms/classname.html title=image.class %}">
+      <img src="{{ site.url }}/{{ site.images }}/{{ image.url }}">
+    </figure>
+  </article>
+</section>
+
+
+<!--
 <section id="one-per-screen">
   {% for image in page.images %}
     <figure class="{% include atoms/classname.html title=image.class %}">
@@ -33,3 +197,4 @@ images:
     </figure>
   {% endfor %}
 </section>
+-->

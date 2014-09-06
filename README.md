@@ -77,7 +77,7 @@ Conclusions:
 
 - we start with 21 mockups
 
-
+- finally we've left in total with 10 mockups: 3 mobile and 3 tablet portraits, 2 laptops, a tablet side as featured image and a desktop left as the last image
 
 
 ### Screenshot taking

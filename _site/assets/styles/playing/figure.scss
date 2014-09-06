@@ -12,6 +12,11 @@ html {
           
           h1 {
             font-size: 4em;
+            max-width: 10em;
+            
+            + p {
+              margin-top: 1.25em;
+            }
           }
         } 
         

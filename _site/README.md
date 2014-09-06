@@ -79,6 +79,8 @@ Conclusions:
 
 - finally we've left in total with 10 mockups: 3 mobile and 3 tablet portraits, 2 laptops, a tablet side as featured image and a desktop left as the last image
 
+- TODO: replace one of the mockups after the project description with one showing the filters.
+
 
 #### The Anvelocom
 

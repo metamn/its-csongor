@@ -25,32 +25,32 @@ Dir.glob("#{input}/*.*").each do |f|
     when "mobile"
       case orientation
         when "portrait"
-          size = "813x1677"
+          size = "813x1677+0+0"
         when "side1"
-          size = "645x1605"
+          size = "645x1605+0-50" #pushed down
       end
     
     when "tablet"
       case orientation
         when "portrait"
-          size = "898x1311"
+          size = "898x1311+0-30"
         when "angle1"
-          size = "1840x910"
+          size = "1840x910+0+30"
         when "side"
-          size = "514x1296"
+          size = "514x1296-30+0"
       end
     
     when "desktop"
       case orientation
         when "right"
-          size = "1394x1700"
+          size = "1394x1700+0+0"
         when "left"
-          size = "1394x1700"
+          size = "1394x1700+0+0"
         when "front"
-          size ="1858x1570"
+          size ="1858x1570+0+0"
       end
   end
   
   puts "Cropping to #{file} at size #{size}"  
-  puts system("convert #{f} -gravity center -crop #{size}+10+10 #{file}")
+  puts system("convert #{f} -gravity Center -crop #{size} #{file}")
 end

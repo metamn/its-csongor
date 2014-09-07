@@ -79,8 +79,6 @@ Conclusions:
 
 - finally we've left in total with 10 mockups: 3 mobile and 3 tablet portraits, 2 laptops, a tablet side as featured image and a desktop left as the last image
 
-- TODO: replace one of the mockups after the project description with one showing the filters.
-
 
 #### The Anvelocom
 
@@ -88,6 +86,12 @@ Conclusions:
 
 - we've selected 7 of them, but there is room for improvement here since all mockups are looking very good
 
+- TODO: replace one of the mockups after the project description with one showing the filters.
+
+
+#### Scatter
+
+- we have 12 screenshots for mockups
 
 
 ### Screenshot taking
@@ -124,7 +128,9 @@ Conclusions:
 
 2. In Gimp cut the sidebar (1900x1110px) 
 
-3. create a new file with the screenshot background color of 1974x1110px and copy the prepared screenshot from 2. Save as client-pagename-desktop-screenshot.png
+3. 1. create a new file with the screenshot background color of 1974x1110px and copy the prepared screenshot from 2. Save as client-pagename-desktop-screenshot.png
+
+3. 2. if the background is not a color but a pattern or image: scale the image from 2. to 1974x1153px then cut back to 1974x1110px and save
 
 4. Mockuphone.com > iMac 2013 > upload screenshot and wait for the generated mockups
 
@@ -174,7 +180,9 @@ Conclusions:
 
 2. If Responsinator is used: open the screenshot taken in Gimp and cut the scrollbar to 622x1005px
 
-3. Open Gimp and create a 640x1136px blank image with the site's background color. Copy the screenshot here and save as client-pagename-mobile-screenshot.png
+3.a Open Gimp and create a 640x1136px blank image with the site's background color. Copy the screenshot here and save as client-pagename-mobile-screenshot.png
+
+3.b If the background is not a color but an image then just simply scale the screenshot to 640x1136px
 
 3. Mockuphone.com > iPhone 5S Silver > upload screenshot and wait for the generated mockups
 

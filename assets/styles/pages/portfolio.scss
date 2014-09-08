@@ -3,6 +3,10 @@ html.portfolio {
   @include full-height;
   
   body {
-    
+    #the-iorad-pricing-pageon-tablet {
+      img {
+        width: 10%;
+      }
+    }
   }
 }

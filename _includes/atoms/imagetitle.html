@@ -1,14 +1,15 @@
-{% comment %}
-- input: url: iorad-pricing-tablet-portrait.png
-- return: The iorad pricing page on tablet
-{% endcomment %}
-
-{% assign url = include.url %}
-{% assign filename = url | split: '.png' %}
-{% assign words = filename.first | split: '-' %}
-{% assign size = words.size | minus: 2 %}
-
 {% capture text %}
+  {% comment %}
+  - input: url: iorad-pricing-tablet-portrait.png
+  - return: The iorad pricing page on tablet
+  {% endcomment %}
+
+  {% assign url = include.url %}
+  {% assign filename = url | split: '.png' %}
+  {% assign words = filename.first | split: '-' %}
+  {% assign size = words.size | minus: 2 %}
+
+
   The~
   {% for i in (0..size) %}
     {% if i == size %}
@@ -16,6 +17,4 @@
     {% endif %}
     {{ words[i] | capitalize }}~
   {% endfor %}
-{% endcapture %}
-
-{% include atoms/sanitize.html text=text separator='~' %}
+{% endcapture %}{% include atoms/sanitize.html text=text separator='~' %}

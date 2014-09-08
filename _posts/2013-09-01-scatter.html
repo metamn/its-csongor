@@ -34,6 +34,16 @@ images:
 ---
 
 
+<section id="one-per-screen">
+  {% for image in page.images %}
+    <figure class="{% include atoms/classname.html title=image.class %}">
+      <img src="{{ site.url }}/{{ site.images }}/{{ image.url }}">
+    </figure>
+  {% endfor %}
+</section>
+
+
+
 {% capture description %}
   <p>
     Scatter had ready a web application to connect local businesses with customers. They needed a website before the launch.
@@ -49,10 +59,4 @@ images:
   </p>
 {% endcapture %}
 
-<section id="one-per-screen">
-  {% for image in page.images %}
-    <figure class="{% include atoms/classname.html title=image.class %}">
-      <img src="{{ site.url }}/{{ site.images }}/{{ image.url }}">
-    </figure>
-  {% endfor %}
-</section>
+

@@ -39,6 +39,17 @@ images:
   - url: smuff-checkout-laptop-front.png
 ---
 
+
+<section id="one-per-screen">
+  {% for image in page.images %}
+    <figure class="{% include atoms/classname.html title=image.class %}">
+      <img src="{{ site.url }}/{{ site.images }}/{{ image.url }}">
+    </figure>
+  {% endfor %}
+</section>
+
+
+
 {% capture description %}
   <p>
     The collaboration with Smuff starte in the founding phase. The business idea for an online gadget store was ready and Smuff needed someone to build a web product around.
@@ -54,10 +65,3 @@ images:
 {% endcapture %}
 
 
-<section id="one-per-screen">
-  {% for image in page.images %}
-    <figure class="{% include atoms/classname.html title=image.class %}">
-      <img src="{{ site.url }}/{{ site.images }}/{{ image.url }}">
-    </figure>
-  {% endfor %}
-</section>

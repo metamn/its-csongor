@@ -32,6 +32,19 @@ images:
   - url: inu-frontpage-laptop-front.png
 ---
 
+
+
+<section id="one-per-screen">
+  {% for image in page.images %}
+    <figure class="{% include atoms/classname.html title=image.class %}">
+      <img src="{{ site.url }}/{{ site.images }}/{{ image.url }}">
+    </figure>
+  {% endfor %}
+</section>
+
+
+
+
 {% capture description %}
   <p>
     Trapped with old technology like Flash and FTP with his old portfolio Inu wanted a new tool for easy uploading and categorizing his work. 
@@ -42,10 +55,3 @@ images:
   </p>
 {% endcapture %}
 
-<section id="one-per-screen">
-  {% for image in page.images %}
-    <figure class="{% include atoms/classname.html title=image.class %}">
-      <img src="{{ site.url }}/{{ site.images }}/{{ image.url }}">
-    </figure>
-  {% endfor %}
-</section>

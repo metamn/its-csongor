@@ -1,1 +1,1 @@
-We have created a special Wordpress backend for easy photography publishing, and a design which stays out of the viewer's way.
+The project requirements were: speed of execution, keeping current visual assets, cross-device and browser compatibility. And a week duration from signing contract and final delivery.

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Anvelom
+subtitle: E-commerce
 services:
   - Identity
   - Responsive web design and development
@@ -27,129 +28,29 @@ images:
     class: tablet portrait
 ---
 
-<section class="slide intro">
-  <h3>Intro</h3>
-  
-  <article class="image">
-    <h3>Featured image</h3>
-    
-    {% assign image = page.images[0] %}
+
+<section id="one-per-screen">
+  {% for image in page.images %}
     <figure class="{% include atoms/classname.html title=image.class %}">
       <img src="{{ site.url }}/{{ site.images }}/{{ image.url }}">
     </figure>
-  </article>
-  
-  <article class="title">
-    <h3>Title</h3>
-    
-    <h1>{{ page.title }}</h1>
-    
-    <p>
-      E-commerce
-    </p>
-  </article>
+  {% endfor %}
 </section>
 
 
-<section class="slide image">
-  <h3>Details</h3>
-  
-  <article class="image">
-    <h3>Featured image 1</h3>
-    
-    {% assign image = page.images[1] %}
-    <figure class="{% include atoms/classname.html title=image.class %}">
-      <img src="{{ site.url }}/{{ site.images }}/{{ image.url }}">
-    </figure>
-  </article>
-  
-  <article class="image">
-    <h3>Featured image 4</h3>
-    
-    {% assign image = page.images[2] %}
-    <figure class="{% include atoms/classname.html title=image.class %}">
-      <img src="{{ site.url }}/{{ site.images }}/{{ image.url }}">
-    </figure>
-  </article>
-  
-  <article class="image">
-    <h3>Featured image 4</h3>
-    
-    {% assign image = page.images[3] %}
-    <figure class="{% include atoms/classname.html title=image.class %}">
-      <img src="{{ site.url }}/{{ site.images }}/{{ image.url }}">
-    </figure>
-  </article>
-</section>
 
 
-<section class="slide image">
-  <h3>Details</h3>
-  
-  <article class="image">
-    <h3>Featured image 1</h3>
-    
-    {% assign image = page.images[4] %}
-    <figure class="{% include atoms/classname.html title=image.class %}">
-      <img src="{{ site.url }}/{{ site.images }}/{{ image.url }}">
-    </figure>
-  </article>
-  
-  
-  <article class="description">
-    <h3>Project details</h3>
-    
-    <p>
-      Anvelocom started as a Wordpress blog to research the market for auto off-road accessories and tuning equipment.
-    </p>
-    
-    <p>
-      After initial success we've created a responsive e-commerce design, together with a strong visual identity replacing the Wordpress theme.
-    </p>
-    
-    <p>
-      A technical challenge was to create dynamic filters for products which work with any number of categories and combinations. 
-    </p>
-  </article>
-</section>
+{% capture description %}
+  <p>
+    Anvelocom started as a Wordpress blog to research the market for auto off-road accessories and tuning equipment.
+  </p>
 
+  <p>
+    After initial success we've created a responsive e-commerce design, together with a strong visual identity replacing the Wordpress theme.
+  </p>
 
-<section class="slide image">
-  <h3>Details</h3>
-  
-  <article class="image">
-    <h3>Featured image 1</h3>
-    
-    {% assign image = page.images[5] %}
-    <figure class="{% include atoms/classname.html title=image.class %}">
-      <img src="{{ site.url }}/{{ site.images }}/{{ image.url }}">
-    </figure>
-  </article>
-</section>
+  <p>
+    A technical challenge was to create dynamic filters for products which work with any number of categories and combinations. 
+  </p>
+{% endcapture %}
 
-
-<section class="slide image">
-  <h3>Technologies</h3>
-  
-  <article class="image">
-    <h3>Featured image 1</h3>
-    
-    {% assign image = page.images[6] %}
-    <figure class="{% include atoms/classname.html title=image.class %}">
-      <img src="{{ site.url }}/{{ site.images }}/{{ image.url }}">
-    </figure>
-  </article>
-  
-  <article class="description">
-    <h3>Technologies</h3>
-    
-    <p>
-      Services: {{ page.services | join: ', ' }}
-    </p>
-    
-    <p>
-      Technologies: {{ page.technologies | join: ', ' }}
-    </p>
-  </article>
-  
-</section>

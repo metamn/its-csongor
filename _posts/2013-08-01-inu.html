@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Inu Chivu
+subtitle: Artist portfolio
 services:
   - Identity
   - Responsive web design and development
@@ -30,6 +31,16 @@ images:
   - url: inu-archive-desktop-right.png
   - url: inu-frontpage-laptop-front.png
 ---
+
+{% capture description %}
+  <p>
+    Trapped with old technology like Flash and FTP with his old portfolio Inu wanted a new tool for easy uploading and categorizing his work. 
+  </p>
+
+  <p>
+    We have created a special Wordpress backend for easy photography publishing, and a design which stays out of the viewer's way.
+  </p>
+{% endcapture %}
 
 <section id="one-per-screen">
   {% for image in page.images %}

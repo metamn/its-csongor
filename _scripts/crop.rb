@@ -27,17 +27,17 @@ Dir.glob("#{input}/*.*").each do |f|
         when "portrait"
           size = "813x1677+0+0"
         when "side1"
-          size = "645x1605+0-50" #pushed down
+          size = "645x1605+0-50" # pushed down
       end
     
     when "tablet"
       case orientation
         when "portrait"
-          size = "898x1311+0-30"
+          size = "898x1311+0-30" # pushed down
         when "angle1"
-          size = "1840x910+0+30"
+          size = "1840x910+0+30" # pushed up
         when "side"
-          size = "514x1296-30+0"
+          size = "514x1296-30+0" # pushed right
       end
     
     when "desktop"

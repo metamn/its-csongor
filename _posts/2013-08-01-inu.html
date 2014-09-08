@@ -1,0 +1,45 @@
+---
+layout: default
+title: Inu Chivu
+services:
+  - Identity
+  - Responsive web design and development
+  - Back-end development
+technologies:
+  - HTML5
+  - CSS3
+  - jQuery
+  - Wordpress
+images:
+- url: inu-archive-desktop-front.png
+- url: inu-archive-tablet-angle1.png
+- url: inu-frontpage-black-desktop-front.png
+- url: inu-frontpage-mobile-side1.png
+- url: inu-menu-white-mobile-side1.png
+- url: inu-menu-white-mobile-portrait.png
+- url: inu-frontpage-tablet-portrait.png
+- url: inu-frontpage-white-desktop-front.png
+- url: inu-archive-tablet-side.png
+- url: inu-archive-desktop-right.png
+- url: inu-frontpage-black-desktop-left.png
+- url: inu-frontpage-black-desktop-right.png
+- url: inu-archive-mobile-side1.png
+- url: inu-archive-desktop-left.png
+- url: inu-archive-mobile-portrait.png
+- url: inu-frontpage-white-desktop-left.png
+- url: inu-menu-black-mobile-portrait.png
+- url: inu-frontpage-tablet-side.png
+- url: inu-frontpage-white-desktop-right.png
+- url: inu-archive-tablet-portrait.png
+- url: inu-frontpage-mobile-portrait.png
+- url: inu-menu-black-mobile-side1.png
+- url: inu-frontpage-tablet-angle1.png
+---
+
+<section id="one-per-screen">
+  {% for image in page.images %}
+    <figure class="{% include atoms/classname.html title=image.class %}">
+      <img src="{{ site.url }}/{{ site.images }}/{{ image.url }}">
+    </figure>
+  {% endfor %}
+</section>

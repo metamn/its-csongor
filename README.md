@@ -93,6 +93,12 @@ Conclusions:
 
 - we have 12 screenshots for mockups
 
+- all mobile and tablet screenshots look cool
+
+- pricing doesn't looks cool on desktop and laptop
+
+- we have a few mobile mockups but lots of tablets
+
 
 ### Screenshot taking
 

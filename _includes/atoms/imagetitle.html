@@ -1,0 +1,21 @@
+{% comment %}
+- input: url: iorad-pricing-tablet-portrait.png
+- return: The iorad pricing page on tablet
+{% endcomment %}
+
+{% assign url = include.url %}
+{% assign filename = url | split: '.png' %}
+{% assign words = filename.first | split: '-' %}
+{% assign size = words.size | minus: 2 %}
+
+{% capture text %}
+  The~
+  {% for i in (0..size) %}
+    {% if i == size %}
+      Page on~
+    {% endif %}
+    {{ words[i] | capitalize }}~
+  {% endfor %}
+{% endcapture %}
+
+{% include atoms/sanitize.html text=text separator='~' %}

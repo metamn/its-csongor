@@ -1,0 +1,10 @@
+{% assign id = include.id | times: 1 %}
+{% assign image = page.images[id] %}
+
+{% capture imagetitle %}{% include atoms/imagetitle.html url=image.url %}{% endcapture %}
+{% capture imageclass %}{% include atoms/imageclass.html url=image.url %}{% endcapture %}
+<article class="mockup">
+  <h3>{{ imagetitle }}</h3>
+  
+  {% include atoms/figure.html desktop=image.url title=imagetitle class=imageclass %}
+</article>

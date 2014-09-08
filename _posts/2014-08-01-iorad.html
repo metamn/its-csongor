@@ -27,15 +27,11 @@ images:
     class: tablet angle
 ---
 
-
-<section id="one-per-screen">
-  {% for image in page.images %}
-    <figure class="{% include atoms/classname.html title=image.class %}">
-      <img src="{{ site.url }}/{{ site.images }}/{{ image.url }}">
-    </figure>
-  {% endfor %}
+<section class="intro">
+  <h3>{{ page.title }}</h3>
+  
+  {% include molecules/mockup.html id="0" %} 
 </section>
-
 
 
 {% capture description %}

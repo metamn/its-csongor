@@ -1,0 +1,16 @@
+{% comment %}
+- input: url: iorad-pricing-tablet-portrait.png
+- return: tablet portrait
+{% endcomment %}
+
+{% assign url = include.url %}
+{% assign filename = url | split: '.png' %}
+{% assign words = filename.first | split: '-' %}
+{% assign size = words.size %}
+{% assign lastwords = size | minus: 2 %}
+
+{% for i in (1..size) %}
+{% if i >= lastwords  %}
+  {{ words[i] }}
+{% endif %}
+{% endfor %}

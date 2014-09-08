@@ -20,4 +20,5 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* No files to import found in molecules/* */
 /* No files to import found in organisms/* */
 /* No files to import found in structures/* */
-/* No files to import found in pages/* */
+html.portfolio { height: 100%; }
+html.portfolio body, html.portfolio section { height: 100%; }

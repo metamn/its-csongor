@@ -11,39 +11,23 @@ technologies:
   - Jekyll
 images:
   - url: occrp-frontpage-tablet-side.png
-    class: tablet side
 
   - url: occrp-frontpage-2-mobile-portrait.png
-    class: mobile portrait
   - url: occrp-frontpage-mobile-portrait.png
-    class: mobile portrait
   - url: occrp-archive-mobile-portrait.png
-    class: mobile portrait
 
   - url: occrp-frontpage-tablet-portrait.png
-    class: tablet portrait
   - url: occrp-archive-tablet-portrait.png
-    class: tablet portrait
   - url: occrp-article-tablet-portrait.png
-    class: tablet portrait
 
   - url: occrp-frontpage-laptop-front.png
-    class: laptop front
   - url: occrp-archive-laptop-front.png
-    class: laptop front
 
   - url: occrp-archive-desktop-left.png
-    class: desktop left
 ---
 
 
-<section id="one-per-screen">
-  {% for image in page.images %}
-    <figure class="{% include atoms/classname.html title=image.class %}">
-      <img src="{{ site.url }}/{{ site.images }}/{{ image.url }}">
-    </figure>
-  {% endfor %}
-</section>
+{% include organisms/portfolio-intro.html %}
 
 
 

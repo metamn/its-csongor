@@ -12,35 +12,22 @@ technologies:
   - Jekyll
 images:
   - url: scatter-business-mobile-side1.png
-    class: mobile side
-  
   
   - url: scatter-business-tablet-angle1.png
-    class: tablet angle
   - url: scatter-business-2-tablet-angle1.png
-    class: tablet angle
 
-  - url: scatter-frontpage-tablet-portrait.png
-    class: tablet portrait
-  
+  - url: scatter-frontpage-tablet-portrait.png  
 
   - url: scatter-frontpage-1-desktop-front.png
   - url: scatter-frontpage-laptop-front.png
   - url: scatter-frontpage-2-laptop-front.png
 
   - url: scatter-frontpage-1-mobile-side1.png
-    class: mobile side
   - url: scatter-frontpage-2-desktop-front.png
 ---
 
+{% include organisms/portfolio-intro.html %}
 
-<section id="one-per-screen">
-  {% for image in page.images %}
-    <figure class="{% include atoms/classname.html title=image.class %}">
-      <img src="{{ site.url }}/{{ site.images }}/{{ image.url }}">
-    </figure>
-  {% endfor %}
-</section>
 
 
 

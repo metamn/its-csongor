@@ -22,31 +22,18 @@ images:
   - url: smuff-archive-desktop-left.png
 
   - url: smuff-archive-tablet-portrait.png
-    class: tablet portrait
   - url: smuff-product-tablet-portrait.png
-    class: tablet portrait
-  
   
   - url: smuff-product-mobile-side1.png
-    class: mobile side
   - url: smuff-filters-mobile-side1.png
-    class: mobile side
   - url: smuff-archive-mobile-side1.png
-    class: mobile side
   
   - url: smuff-product-laptop-front.png
   - url: smuff-archive-laptop-front.png
   - url: smuff-checkout-laptop-front.png
 ---
 
-
-<section id="one-per-screen">
-  {% for image in page.images %}
-    <figure class="{% include atoms/classname.html title=image.class %}">
-      <img src="{{ site.url }}/{{ site.images }}/{{ image.url }}">
-    </figure>
-  {% endfor %}
-</section>
+{% include organisms/portfolio-intro.html %}
 
 
 

@@ -17,7 +17,6 @@ a img { border: none; }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
 
 /* No files to import found in settings/* */
-/* No files to import found in organisms/* */
 /* No files to import found in structures/* */
 html body section > h3, html body article > h3, html body aside > h3, html body nav > h3, html body figure > h3 { display: none; }
 
@@ -29,3 +28,8 @@ html.portfolio body section article.mockup { text-align: center; border-right: 1
 html.portfolio body section article.mockup figure img { max-width: 100%; height: auto; }
 html.portfolio body section article.mockup figure figcaption { display: none; }
 html.portfolio body section article.mockup figure.tablet.portrait img { max-width: 360px; }
+html.portfolio body section article.mockup figure.tablet.side img { max-width: 200px; }
+html.portfolio body section article.mockup figure.tablet.angle1 img { max-width: 780px; }
+html.portfolio body section article.mockup figure.laptop.front img { max-width: 600px; }
+html.portfolio body section article.mockup figure.mobile.side1 img { max-width: 200px; }
+html.portfolio body section article.mockup figure.desktop.left img, html.portfolio body section article.mockup figure.desktop.right img { max-width: 400px; }

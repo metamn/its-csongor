@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="portfolio styleguide ">
+<html lang="en" class="semantic-html5 styleguide ">
   <head>
     <meta charset="utf-8" />
   	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="author" href="humans.txt" />
     
-    <title>Portfolio &mdash; It's Csongor</title> 
+    <title>Semantic HTML5 &mdash; It's Csongor</title> 
     
     <!-- Compass with SASS -->
   	<link href="/assets/styles/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -31,23 +31,16 @@
     
 
 
-// A portfolio item page
+@mixin hide-title {
+  > h3 {
+    display: none;
+  }
+}
 
-html.portfolio {
-  @include full-height;
-  
-  body {
-    section {
-      @include flexbox($justify-content: center, $align-items: center);
-      
-      article {
-        @include flex-item;
-        
-        &.mockup {
-          @include mockup;
-        }
-      }
-    }
+
+@mixin show-title {
+  > h3 {
+    display: block;
   }
 }
 

@@ -1,0 +1,7 @@
+html {
+  body {
+    section, article, aside, nav, figure {
+      @include hide-title;
+    }
+  }
+}

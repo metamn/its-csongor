@@ -1,8 +1,19 @@
 // A portfolio item page
+
 html.portfolio {
   @include full-height;
   
   body {
-    
+    section {
+      @include flexbox($justify-content: center, $align-items: center);
+      
+      article {
+        @include flex-item;
+        
+        &.mockup {
+          @include mockup;
+        }
+      }
+    }
   }
 }

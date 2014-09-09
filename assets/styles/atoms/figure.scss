@@ -1,0 +1,12 @@
+@mixin figure($figcaption: false) {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @if ($figcaption == false) {
+    figcaption {
+      display: none;
+    }
+  } 
+}

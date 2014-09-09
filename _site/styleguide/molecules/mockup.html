@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="portfolio styleguide ">
+<html lang="en" class="mockup styleguide ">
   <head>
     <meta charset="utf-8" />
   	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="author" href="humans.txt" />
     
-    <title>Portfolio &mdash; It's Csongor</title> 
+    <title>Mockup &mdash; It's Csongor</title> 
     
     <!-- Compass with SASS -->
   	<link href="/assets/styles/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -31,22 +31,21 @@
     
 
 
-// A portfolio item page
-
-html.portfolio {
-  @include full-height;
+@mixin mockup {
+  text-align: center;
+  border-right: 1px solid;
   
-  body {
-    section {
-      @include flexbox($justify-content: center, $align-items: center);
-      
-      article {
-        @include flex-item;
-        
-        &.mockup {
-          @include mockup;
-        }
-      }
+  figure {
+    @include figure;
+    @include mockup-sizes;
+  }
+}
+
+// Desktop: fit the height into a ????x768px screen
+@mixin mockup-sizes {
+  &.tablet.portrait {
+    img {
+      max-width: 360px;
     }
   }
 }

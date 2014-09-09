@@ -1,0 +1,18 @@
+@mixin mockup {
+  text-align: center;
+  border-right: 1px solid;
+  
+  figure {
+    @include figure;
+    @include mockup-sizes;
+  }
+}
+
+// Desktop: fit the height into a ????x768px screen
+@mixin mockup-sizes {
+  &.tablet.portrait {
+    img {
+      max-width: 360px;
+    }
+  }
+}

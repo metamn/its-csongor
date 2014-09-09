@@ -1,0 +1,14 @@
+
+@mixin below-small-screen {
+  // Displaying elements top to bottom instead of left to right 
+  @media only screen and (max-width: $breakpoint-small-screen) {
+    @content
+  }
+}
+
+@mixin large-screen-and-up {
+  // For large screens 
+  @media only screen and (min-width: $breakpoint-large-screen) {
+    @content
+  }
+}

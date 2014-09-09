@@ -1,0 +1,10 @@
+@mixin portfolio-layout-mobile {
+  @include full-height(auto);
+  
+  body {
+    section {
+      @include flexbox($direction: column, $justify-content: center, $align-items: center);
+    }
+  }
+}
+

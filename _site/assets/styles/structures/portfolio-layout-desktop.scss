@@ -1,0 +1,9 @@
+@mixin portfolio-layout-desktop {
+  @include full-height;
+  
+  body {
+    section {
+      @include flexbox($justify-content: center, $align-items: center);
+    }
+  }
+}

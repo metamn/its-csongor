@@ -1,12 +1,14 @@
 // A portfolio item page
 
 html.portfolio {
-  @include full-height;
+  @include portfolio-layout-desktop;
+  
+  @include below-small-screen {
+    @include portfolio-layout-mobile;
+  }
   
   body {
     section {
-      @include flexbox($justify-content: center, $align-items: center);
-      
       article {
         @include flex-item;
         

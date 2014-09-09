@@ -32,9 +32,6 @@
 
 
 @mixin mockup {
-  text-align: center;
-  border-right: 1px solid;
-  
   figure {
     @include figure;
     @include mockup-sizes;
@@ -67,9 +64,15 @@
     }
   }
   
-  &.mobile.side1 {
+  &.mobile.side1, &.mobile.side {
     img {
       max-width: 200px;
+    }
+  }
+  
+  &.mobile.portrait {
+    img {
+      max-width: 240px;
     }
   }
   

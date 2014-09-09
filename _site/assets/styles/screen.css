@@ -22,4 +22,3 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* No files to import found in structures/* */
 html.portfolio { height: 100%; }
 html.portfolio body, html.portfolio section { height: 100%; }
-html.portfolio body #the-iorad-pricing-pageon-tablet img { width: 10%; }

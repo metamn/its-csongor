@@ -26,13 +26,8 @@ images:
   - url: scatter-frontpage-2-desktop-front.png
 ---
 
-{% include organisms/portfolio-intro.html %}
-{% include organisms/portfolio-images.html ids="1,2" %}
-{% include organisms/portfolio-images.html ids="3,4,5,6" %}
-{% include organisms/portfolio-images.html ids="7,8" %}
-
-
-
+{% include organisms/portfolio-section.html type="intro" images="0" %}
+{% include organisms/portfolio-section.html images="1,2" %}
 
 {% capture description %}
   <p>
@@ -48,5 +43,10 @@ images:
     On development side we had to make everything fully responsible. 
   </p>
 {% endcapture %}
+{% include organisms/portfolio-section.html type="description" images="" description=description %}
+
+{% include organisms/portfolio-section.html images="3,4,5,6" %}
+{% include organisms/portfolio-section.html type="technologies" images="" %}
+{% include organisms/portfolio-section.html images="7,8" %}
 
 

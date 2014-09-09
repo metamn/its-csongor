@@ -1,9 +1,0 @@
-{% assign ids = include.ids | split: ',' %}
-
-<section>
-  <h3>Portfolio images</h3>
-  
-  {% for i in ids %}
-    {% include molecules/mockup.html id=i %}
-  {% endfor %}
-</section>

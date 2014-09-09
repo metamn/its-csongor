@@ -25,12 +25,9 @@ images:
   - url: inu-frontpage-laptop-front.png
 ---
 
-{% include organisms/portfolio-intro.html %}
-{% include organisms/portfolio-images.html ids="1,2" %}
-{% include organisms/portfolio-images.html ids="3,4,5" %}
-{% include organisms/portfolio-images.html ids="6,7" %}
-
-
+{% include organisms/portfolio-section.html type="intro" images="0" %}
+{% include organisms/portfolio-section.html images="1,2" %}
+{% include organisms/portfolio-section.html images="3,4,5" %}
 
 {% capture description %}
   <p>
@@ -41,4 +38,8 @@ images:
     We have created a special Wordpress backend for easy photography publishing, and a design which stays out of the viewer's way.
   </p>
 {% endcapture %}
+{% include organisms/portfolio-section.html type="description" images="" description=description %}
+
+{% include organisms/portfolio-section.html images="6,7" %}
+{% include organisms/portfolio-section.html type="technologies" images="" %}
 

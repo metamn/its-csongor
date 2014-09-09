@@ -21,11 +21,7 @@ images:
   - url: iorad-pricing-tablet-angle.png
 ---
 
-{% include organisms/portfolio-intro.html %}
-{% include organisms/portfolio-images.html ids="1,2" %}
-{% include organisms/portfolio-images.html ids="3,4" %}
-{% include organisms/portfolio-technologies.html ids="5" %}
-
+{% include organisms/portfolio-section.html type="intro" images="0" %}
 
 {% capture description %}
   <p>
@@ -39,3 +35,8 @@ images:
     The project requirements were: speed of execution, keeping current visual assets, cross-device and browser compatibility. And a week duration from signing contract and final delivery.
   </p>
 {% endcapture %}
+{% include organisms/portfolio-section.html type="description" images="1,2" description=description %}
+
+{% include organisms/portfolio-section.html images="3,4" %}
+{% include organisms/portfolio-section.html type="technologies" images="5" %}
+

@@ -13,31 +13,19 @@ technologies:
   - Wordpress
 images:
   - url: anvelocom-archive-laptop-front.png
-    class: laptop
 
   - url: anvelocom-frontpage-mobile-portrait.png
-    class: mobile portrait
   - url: anvelocom-menu-mobile-portrait.png
-    class: mobile portrait
   - url: anvelocom-archive-mobile-portrait.png
-    class: mobile portrait
 
   - url: anvelocom-archive-tablet-angle.png
-    class: tablet angle
   - url: anvelocom-frontpage-desktop-front.png
-    class: desktop front
 
   - url: anvelocom-product-tablet-portrait.png
-    class: tablet portrait
 ---
 
-
-{% include organisms/portfolio-intro.html %}
-{% include organisms/portfolio-images.html ids="1,2,3" %}
-{% include organisms/portfolio-images.html ids="4,5" %}
-{% include organisms/portfolio-technologies.html ids="6" %}
-
-
+{% include organisms/portfolio-section.html type="intro" images="0" %}
+{% include organisms/portfolio-section.html images="1,2,3" %}
 
 {% capture description %}
   <p>
@@ -52,4 +40,7 @@ images:
     A technical challenge was to create dynamic filters for products which work with any number of categories and combinations. 
   </p>
 {% endcapture %}
+{% include organisms/portfolio-section.html type="description" images="" description=description %}
 
+{% include organisms/portfolio-section.html images="4,5" %}
+{% include organisms/portfolio-section.html type="technologies" images="6" %}

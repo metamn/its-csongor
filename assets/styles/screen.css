@@ -28,9 +28,10 @@ html.portfolio body section article.mockup figure img { max-width: 100%; height:
 html.portfolio body section article.mockup figure figcaption { display: none; }
 html.portfolio body section article.mockup figure.tablet.portrait img { max-width: 360px; }
 html.portfolio body section article.mockup figure.tablet.side img { max-width: 200px; }
-html.portfolio body section article.mockup figure.tablet.angle1 img { max-width: 780px; }
+html.portfolio body section article.mockup figure.tablet.angle1 img, html.portfolio body section article.mockup figure.tablet.angle img { max-width: 780px; }
 html.portfolio body section article.mockup figure.laptop.front img { max-width: 600px; }
 html.portfolio body section article.mockup figure.mobile.side1 img, html.portfolio body section article.mockup figure.mobile.side img { max-width: 200px; }
 html.portfolio body section article.mockup figure.mobile.portrait img { max-width: 240px; }
 html.portfolio body section article.mockup figure.desktop.left img, html.portfolio body section article.mockup figure.desktop.right img { max-width: 400px; }
+html.portfolio body section article.mockup figure.desktop.front img { max-width: 600px; }
 html.portfolio body section.intro article.mockup { text-align: center; border-right: 1px solid; }

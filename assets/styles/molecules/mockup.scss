@@ -19,7 +19,7 @@
     }
   }
   
-  &.tablet.angle1 {
+  &.tablet.angle1, &.tablet.angle {
     img {
       max-width: 780px;
     }
@@ -46,6 +46,12 @@
   &.desktop.left, &.desktop.right {
     img {
       max-width: 400px;
+    }
+  }
+  
+  &.desktop.front {
+    img {
+      max-width: 600px;
     }
   }
 }

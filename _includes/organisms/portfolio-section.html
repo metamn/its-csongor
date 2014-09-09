@@ -1,21 +1,21 @@
 {% assign images = include.images | split: ',' %}
 
-<section class="{{ include.class }}">
+<section {% if include.class %} class="{{ include.class }}" {% endif %}>
   <h3>{{ include.title }}</h3>
   
   {% for i in images %}
     {% include molecules/mockup.html id=i %}
   {% endfor %}
   
-  {% if include.type == 'intro' %}
+  {% if include.title == 'Intro' %}
     {% include molecules/portfolio-title.html %} 
   {% endif %}
   
-  {% if include.type == 'technologies' %}
+  {% if include.title == 'Services' %}
     {% include molecules/portfolio-technologies.html %} 
   {% endif %}
   
-  {% if include.type == 'description' %}
+  {% if include.title == 'Description' %}
     {% include molecules/portfolio-description.html description=description %} 
   {% endif %}
 </section>

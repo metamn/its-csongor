@@ -1,0 +1,37 @@
+html.inu-chivu {
+  body {
+    section {
+      article {
+        figure {
+          &#the-inu-archive-page-on-tablet {
+            @include mockup("tablet angle");
+          }
+          
+          &#the-inu-menu-white-page-on-mobile, &#the-inu-menu-black-page-on-mobile {
+            @include mockup("mobile portrait");
+          }
+          
+          &#the-inu-frontpage-page-on-mobile, &#the-inu-archive-page-on-mobile {
+            @include mockup("mobile side");
+            
+            @include below-small-tablet {
+              @include mockup("mobile portrait");
+            }
+          }
+          
+          &#the-inu-frontpage-page-on-tablet {
+            @include mockup("tablet portrait");
+          }
+          
+          &#the-inu-archive-page-on-desktop {
+            @include mockup("desktop");
+          }
+          
+          &#the-inu-frontpage-page-on-laptop {
+            @include mockup("laptop front");
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+html.scatter {
+  body {
+    section {
+      article {
+        figure {
+          &#the-scatter-business-page-on-mobile, &#the-scatter-frontpage-1-page-on-mobile {
+            @include mockup("mobile side");
+            
+            @include below-small-tablet {
+              @include mockup("mobile portrait");
+            }
+          }
+          
+          &#the-scatter-business-page-on-tablet, &#the-scatter-business-2-page-on-tablet {
+            @include mockup("tablet angle");
+          }
+          
+          &#the-scatter-frontpage-page-on-tablet {
+            @include mockup("tablet portrait");
+          }
+          
+          &#the-scatter-frontpage-page-on-laptop, &#the-scatter-frontpage-2-page-on-laptop {
+            @include mockup("laptop front");
+          }
+          
+          &#the-scatter-frontpage-1-page-on-desktop, &#the-scatter-frontpage-2-page-on-desktop {
+            @include mockup("desktop");
+          }
+        }
+      }
+    }
+  }
+}

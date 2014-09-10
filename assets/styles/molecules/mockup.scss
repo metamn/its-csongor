@@ -3,6 +3,12 @@
     img {
       max-width: 400px;
     }
+    
+    @include below-small-tablet {
+      img {
+        max-width: 280px;
+      }
+    }
   }
 
   @if ($type == "tablet side") {
@@ -20,6 +26,12 @@
   @if ($type == "laptop front") {
     img {
       max-width: 600px;
+    }
+    
+    @include below-small-tablet {
+      img {
+        max-width: 280px;
+      }
     }
   }
 

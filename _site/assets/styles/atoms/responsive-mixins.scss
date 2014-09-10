@@ -1,14 +1,15 @@
 
-@mixin below-small-screen {
+@mixin below-small-tablet {
   // Displaying elements top to bottom instead of left to right 
-  @media only screen and (max-width: $breakpoint-small-screen) {
+  @media only screen and (max-width: $breakpoint-small-tablet) {
     @content
   }
 }
 
-@mixin large-screen-and-up {
+@mixin desktop-and-up {
   // For large screens 
-  @media only screen and (min-width: $breakpoint-large-screen) {
+  @media only screen and (min-width: $breakpoint-desktop) {
     @content
   }
 }
+ 

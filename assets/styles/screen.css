@@ -25,16 +25,22 @@ html.iorad body section article figure#the-iorad-pricing-page-on-mobile img { ma
 @media only screen and (max-width: 37.5em) { html.iorad body section article figure#the-iorad-pricing-page-on-mobile img { max-width: 240px; } }
 html.iorad body section article figure#the-iorad-checkout-page-on-mobile img { max-width: 240px; }
 html.iorad body section article figure#the-iorad-pricing-page-on-laptop img { max-width: 600px; }
+@media only screen and (max-width: 37.5em) { html.iorad body section article figure#the-iorad-pricing-page-on-laptop img { max-width: 280px; } }
 html.iorad body section article figure#the-iorad-pricing-page-on-desktop img { max-width: 400px; }
 html.iorad body section.intro article figure#the-iorad-pricing-page-on-tablet img { max-width: 400px; }
+@media only screen and (max-width: 37.5em) { html.iorad body section.intro article figure#the-iorad-pricing-page-on-tablet img { max-width: 280px; } }
 html.iorad body section.services article figure#the-iorad-pricing-page-on-tablet img { max-width: 780px; }
 
 html.organized-crime-and-corruption-reporting-project body section article figure#the-occrp-frontpage-2-page-on-mobile img, html.organized-crime-and-corruption-reporting-project body section article figure#the-occrp-frontpage-page-on-mobile img, html.organized-crime-and-corruption-reporting-project body section article figure#the-occrp-archive-page-on-mobile img { max-width: 240px; }
 html.organized-crime-and-corruption-reporting-project body section article figure#the-occrp-frontpage-page-on-laptop img, html.organized-crime-and-corruption-reporting-project body section article figure#the-occrp-archive-page-on-laptop img { max-width: 600px; }
+@media only screen and (max-width: 37.5em) { html.organized-crime-and-corruption-reporting-project body section article figure#the-occrp-frontpage-page-on-laptop img, html.organized-crime-and-corruption-reporting-project body section article figure#the-occrp-archive-page-on-laptop img { max-width: 280px; } }
 html.organized-crime-and-corruption-reporting-project body section article figure#the-occrp-archive-page-on-desktop img { max-width: 400px; }
-html.organized-crime-and-corruption-reporting-project body section.screenshots article figure#the-occrp-frontpage-page-on-tablet img, html.organized-crime-and-corruption-reporting-project body section.screenshots article figure#the-occrp-archive-page-on-tablet img, html.organized-crime-and-corruption-reporting-project body section.screenshots article figure#the-occrp-article-page-on-tablet img { max-width: 400px; }
 html.organized-crime-and-corruption-reporting-project body section.intro article figure#the-occrp-frontpage-page-on-tablet img { max-width: 200px; }
 @media only screen and (max-width: 37.5em) { html.organized-crime-and-corruption-reporting-project body section.intro article figure#the-occrp-frontpage-page-on-tablet img { max-width: 400px; } }
+@media only screen and (max-width: 37.5em) and (max-width: 37.5em) { html.organized-crime-and-corruption-reporting-project body section.intro article figure#the-occrp-frontpage-page-on-tablet img { max-width: 280px; } }
+html.organized-crime-and-corruption-reporting-project body section.screenshots article figure#the-occrp-frontpage-page-on-tablet img, html.organized-crime-and-corruption-reporting-project body section.screenshots article figure#the-occrp-archive-page-on-tablet img, html.organized-crime-and-corruption-reporting-project body section.screenshots article figure#the-occrp-article-page-on-tablet img { max-width: 400px; }
+@media only screen and (max-width: 37.5em) { html.organized-crime-and-corruption-reporting-project body section.screenshots article figure#the-occrp-frontpage-page-on-tablet img, html.organized-crime-and-corruption-reporting-project body section.screenshots article figure#the-occrp-archive-page-on-tablet img, html.organized-crime-and-corruption-reporting-project body section.screenshots article figure#the-occrp-article-page-on-tablet img { max-width: 280px; } }
+@media only screen and (max-width: 37.5em) { html.organized-crime-and-corruption-reporting-project body section.screenshots article figure#the-occrp-frontpage-page-on-tablet { display: none; } }
 html.organized-crime-and-corruption-reporting-project body section.services article.mockup { -webkit-box-ordinal-group: 2; -moz-box-ordinal-group: 2; -webkit-order: 1; -ms-flex-order: 1; order: 1; }
 
 html.portfolio { height: 100%; }

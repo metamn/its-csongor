@@ -17,17 +17,6 @@ html.organized-crime-and-corruption-reporting-project {
         }
       }
       
-      &.screenshots {
-        article {
-          figure {
-            &#the-occrp-frontpage-page-on-tablet, &#the-occrp-archive-page-on-tablet, &#the-occrp-article-page-on-tablet {
-              @include mockup("tablet portrait");
-            }
-          }
-        }
-      }
-      
-      
       &.intro {
         article {
           figure {
@@ -36,6 +25,22 @@ html.organized-crime-and-corruption-reporting-project {
 
               @include below-small-tablet {
                 @include mockup("tablet portrait");
+              }
+            }
+          }
+        }
+      }
+      
+      &.screenshots {
+        article {
+          figure {
+            &#the-occrp-frontpage-page-on-tablet, &#the-occrp-archive-page-on-tablet, &#the-occrp-article-page-on-tablet {
+              @include mockup("tablet portrait");
+            }
+            
+            @include below-small-tablet {
+              &#the-occrp-frontpage-page-on-tablet {
+                display: none;
               }
             }
           }

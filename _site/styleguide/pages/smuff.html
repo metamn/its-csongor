@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" class="smuff styleguide ">
+  <head>
+    <meta charset="utf-8" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="author" href="humans.txt" />
+    
+    <title>Smuff &mdash; It's Csongor</title> 
+    
+    <!-- Compass with SASS -->
+  	<link href="/assets/styles/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    
+    <!-- IE 9 -->
+    <!--[if lt IE 9]>
+    <link href="/assets/styles/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="/assets/scripts/html5shiv.min.js"></script>
+<![endif]-->
+<!--[if (lt IE 9) & (!IEMobile)]>
+    <script src="/assets/scripts/css3-mediaqueries.js"></script>
+<![endif]-->
+    
+    <!-- Picturefill Responsive Images -->
+    <script async src="/assets/scripts/picturefill.min.js"></script>
+  </head>
+  
+  <body>
+    
+    
+
+
+html.smuff {
+  body {
+    section {
+      article {
+        figure {
+          &#the-smuff-product-page-on-desktop, &#the-smuff-archive-page-on-desktop {
+            @include mockup("desktop");
+          }
+          
+          &#the-smuff-archive-page-on-tablet, &#the-smuff-product-page-on-tablet {
+            @include mockup("tablet portrait");
+          }
+          
+          &#the-smuff-product-page-on-mobile, &#the-smuff-filters-page-on-mobile, &#the-smuff-archive-page-on-mobile {
+            @include mockup("mobile side");
+            
+            @include below-small-tablet {
+              @include mockup("mobile portrait");
+            }
+          }
+          
+          &#the-smuff-product-page-on-laptop, &#the-smuff-archive-page-on-laptop, &#the-smuff-checkout-page-on-laptop {
+            @include mockup("laptop front");
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+<!-- jQuery from CDN and local fallback -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('/assets/scripts/jquery-1.10.2.min.js">\x3C/script>')</script>
+
+
+<!-- Site specific scripts  -->
+<script src="/assets/scripts/jquery.init.js"></script>
+
+<!-- The visual grid helper -->
+<script type="text/javascript" src="/assets/scripts/jquery.visual.grid.js"></script>
+
+</body>
+</html>

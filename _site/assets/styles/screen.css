@@ -21,6 +21,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* No files to import found in structures/* */
 html body section > h3, html body article > h3, html body aside > h3, html body nav > h3, html body figure > h3 { display: none; }
 
+html.iorad body section.intro article.mockup figure img { max-width: 280px; }
+html.iorad body section.description article.mockup:nth-of-type(1) figure img { max-width: 200px; }
+@media only screen and (max-width: 37.5em) { html.iorad body section.description article.mockup:nth-of-type(1) figure img { max-width: 240px; } }
+html.iorad body section.description article.mockup:nth-of-type(2) figure img { max-width: 240px; }
+html.iorad body section.screenshots article.mockup:nth-of-type(1) figure img { max-width: 600px; }
+html.iorad body section.screenshots article.mockup:nth-of-type(2) figure img { max-width: 400px; }
+html.iorad body section.services article.mockup:nth-of-type(1) figure img { max-width: 780px; }
+
 html.organized-crime-and-corruption-reporting-project body section.services article.mockup { -webkit-box-ordinal-group: 2; -moz-box-ordinal-group: 2; -webkit-order: 1; -ms-flex-order: 1; order: 1; }
 
 html.portfolio { height: 100%; }
@@ -32,12 +40,4 @@ html.portfolio body section article { -webkit-box-ordinal-group: 1; -moz-box-ord
   html.portfolio body section { -webkit-box-direction: normal; -moz-box-direction: normal; -webkit-box-orient: vertical; -moz-box-orient: vertical; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; } }
 html.portfolio body section article.mockup figure img { max-width: 100%; height: auto; }
 html.portfolio body section article.mockup figure figcaption { display: none; }
-html.portfolio body section article.mockup figure.tablet.portrait img { max-width: 280px; }
-html.portfolio body section article.mockup figure.tablet.side img { max-width: 200px; }
-html.portfolio body section article.mockup figure.tablet.angle1 img, html.portfolio body section article.mockup figure.tablet.angle img { max-width: 780px; }
-html.portfolio body section article.mockup figure.laptop.front img { max-width: 600px; }
-html.portfolio body section article.mockup figure.mobile.side1 img, html.portfolio body section article.mockup figure.mobile.side img { max-width: 200px; }
-html.portfolio body section article.mockup figure.mobile.portrait img { max-width: 240px; }
-html.portfolio body section article.mockup figure.desktop.left img, html.portfolio body section article.mockup figure.desktop.right img { max-width: 400px; }
-html.portfolio body section article.mockup figure.desktop.front img { max-width: 600px; }
 html.portfolio body section article.services, html.portfolio body section article.title, html.portfolio body section article.description { max-width: 30em; }

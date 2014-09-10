@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="portfolio styleguide ">
+<html lang="en" class="iorad styleguide ">
   <head>
     <meta charset="utf-8" />
   	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="author" href="humans.txt" />
     
-    <title>Portfolio &mdash; It's Csongor</title> 
+    <title>Iorad &mdash; It's Csongor</title> 
     
     <!-- Compass with SASS -->
   	<link href="/assets/styles/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -31,22 +31,56 @@
     
 
 
-// A portfolio item page
-
-html.portfolio {
-  @include portfolio-layout;
-  
+html.iorad {
   body {
     section {
-      article {
-        &.mockup {
-          figure {
-            @include figure;
+      &.intro {
+        article {
+          &.mockup {
+            @include mockup("tablet portrait");
           }
         }
-        
-        &.services, &.title, &.description {
-          @include text-block;
+      }
+      
+      &.description {
+        article {
+          &.mockup {
+            &:nth-of-type(1) {
+              @include mockup("mobile side");
+              
+              @include below-small-tablet {
+                @include mockup("mobile portrait");
+              }
+            }
+            
+            &:nth-of-type(2) {
+              @include mockup("mobile portrait");
+            }
+          }
+        }
+      }
+      
+      &.screenshots {
+        article {
+          &.mockup {
+            &:nth-of-type(1) {
+              @include mockup("laptop front");
+            }
+            
+            &:nth-of-type(2) {
+              @include mockup("desktop");
+            }
+          }
+        }
+      }
+      
+      &.services {
+        article {
+          &.mockup {
+            &:nth-of-type(1) {
+              @include mockup("tablet angle");
+            }
+          }
         }
       }
     }

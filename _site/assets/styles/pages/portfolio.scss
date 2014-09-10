@@ -6,9 +6,10 @@ html.portfolio {
   body {
     section {
       article {
-        
         &.mockup {
-          @include mockup;
+          figure {
+            @include figure;
+          }
         }
         
         &.services, &.title, &.description {

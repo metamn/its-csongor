@@ -31,60 +31,54 @@
     
 
 
-@mixin mockup {
+@mixin mockup($type) {
   figure {
-    @include figure;
-    @include mockup-sizes;
-  }
-}
+    @if ($type == "tablet portrait") {
+      img {
+        max-width: 280px;
+      }
+    }
 
-// Desktop: fit the height into a ????x768px screen
-@mixin mockup-sizes {
-  &.tablet.portrait {
-    img {
-      max-width: 280px;
+    @if ($type == "tablet side") {
+      img {
+        max-width: 200px;
+      }
     }
-  }
-  
-  &.tablet.side {
-    img {
-      max-width: 200px;
+
+    @if ($type == "tablet angle") {
+      img {
+        max-width: 780px;
+      }
     }
-  }
-  
-  &.tablet.angle1, &.tablet.angle {
-    img {
-      max-width: 780px;
+
+    @if ($type == "laptop front") {
+      img {
+        max-width: 600px;
+      }
     }
-  }
-  
-  &.laptop.front {
-    img {
-      max-width: 600px;
+
+    @if ($type == "mobile side") {
+      img {
+        max-width: 200px;
+      }
     }
-  }
-  
-  &.mobile.side1, &.mobile.side {
-    img {
-      max-width: 200px;
+
+    @if ($type == "mobile portrait") {
+      img {
+        max-width: 240px;
+      }
     }
-  }
-  
-  &.mobile.portrait {
-    img {
-      max-width: 240px;
+
+    @if ($type == "desktop") {
+      img {
+        max-width: 400px;
+      }
     }
-  }
-  
-  &.desktop.left, &.desktop.right {
-    img {
-      max-width: 400px;
-    }
-  }
-  
-  &.desktop.front {
-    img {
-      max-width: 600px;
+
+    @if ($type == "desktop front") {
+      img {
+        max-width: 600px;
+      }
     }
   }
 }

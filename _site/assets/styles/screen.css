@@ -21,7 +21,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* No files to import found in structures/* */
 html body section > h3, html body article > h3, html body aside > h3, html body nav > h3, html body figure > h3 { display: none; }
 
-html.iorad body section.intro article.mockup figure img { max-width: 280px; }
+html.iorad body section.intro article.mockup figure img { max-width: 400px; }
 html.iorad body section.description article.mockup:nth-of-type(1) figure img { max-width: 200px; }
 @media only screen and (max-width: 37.5em) { html.iorad body section.description article.mockup:nth-of-type(1) figure img { max-width: 240px; } }
 html.iorad body section.description article.mockup:nth-of-type(2) figure img { max-width: 240px; }

@@ -20,6 +20,7 @@
 
 ## Device sizes
 
+- they will be defined by the next iteration. See LAYOUT.md
 
 
 ## Device mockups

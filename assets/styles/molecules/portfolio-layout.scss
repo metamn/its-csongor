@@ -1,0 +1,28 @@
+@mixin portfolio-layout {
+  @include full-height;
+  
+  body {
+    section {
+      @include flexbox($justify-content: center, $align-items: center);
+      
+      article {
+        @include flex-item;
+      }
+    }
+  }
+  
+  @include below-small-tablet {
+    @include portfolio-layout-small-tablet;
+  }
+}
+
+
+@mixin portfolio-layout-small-tablet {
+  @include full-height(auto);
+  
+  body {
+    section {
+      @include flexbox-direction(column);
+    }
+  }
+}

@@ -34,17 +34,11 @@
 // A portfolio item page
 
 html.portfolio {
-  @include portfolio-layout-desktop;
-  
-  @include below-small-screen {
-    @include portfolio-layout-mobile;
-  }
+  @include portfolio-layout;
   
   body {
     section {
       article {
-        @include flex-item;
-        
         &.mockup {
           @include mockup;
         }

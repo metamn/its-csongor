@@ -1,99 +1,40 @@
-/*
-Syntax error: Undefined mixin 'below-small-screen'.
-        on line 6 of /home/cs/work/its-csongor/assets/styles/pages/portfolio.scss, in `below-small-screen'
-        from line 6 of /home/cs/work/its-csongor/assets/styles/pages/portfolio.scss
-        from line 2 of /home/cs/work/its-csongor/assets/styles/pages/*
-        from line 16 of /home/cs/work/its-csongor/assets/styles/screen.scss
+/* Welcome to Compass. In this file you should write your main styles. (or centralize your imports) Import this file using the following HTML or equivalent: <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
 
-1: /home/cs/work/its-csongor/assets/styles/screen.scss
+html { line-height: 1; }
 
-Backtrace:
-/home/cs/work/its-csongor/assets/styles/pages/portfolio.scss:6:in `below-small-screen'
-/home/cs/work/its-csongor/assets/styles/pages/portfolio.scss:6
-/home/cs/work/its-csongor/assets/styles/pages/*:2
-/home/cs/work/its-csongor/assets/styles/screen.scss:16
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:227:in `block in visit_import'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:227:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:227:in `visit_import'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:227:in `block in visit_import'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:227:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:227:in `visit_import'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/root_node.rb:20:in `render'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/engine.rb:315:in `_render'
-/var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/engine.rb:262:in `render'
-/var/lib/gems/1.9.1/gems/compass-0.12.6/lib/compass/compiler.rb:139:in `block (2 levels) in compile'
-/var/lib/gems/1.9.1/gems/compass-0.12.6/lib/compass/compiler.rb:126:in `timed'
-/var/lib/gems/1.9.1/gems/compass-0.12.6/lib/compass/compiler.rb:138:in `block in compile'
-/var/lib/gems/1.9.1/gems/compass-0.12.6/lib/compass/logger.rb:45:in `red'
-/var/lib/gems/1.9.1/gems/compass-0.12.6/lib/compass/compiler.rb:137:in `compile'
-/var/lib/gems/1.9.1/gems/compass-0.12.6/lib/compass/compiler.rb:118:in `compile_if_required'
-/var/lib/gems/1.9.1/gems/compass-0.12.6/lib/compass/compiler.rb:103:in `block (2 levels) in run'
-/var/lib/gems/1.9.1/gems/compass-0.12.6/lib/compass/compiler.rb:101:in `each'
-/var/lib/gems/1.9.1/gems/compass-0.12.6/lib/compass/compiler.rb:101:in `block in run'
-/var/lib/gems/1.9.1/gems/compass-0.12.6/lib/compass/compiler.rb:126:in `timed'
-/var/lib/gems/1.9.1/gems/compass-0.12.6/lib/compass/compiler.rb:100:in `run'
-/var/lib/gems/1.9.1/gems/compass-0.12.6/lib/compass/commands/watch_project.rb:147:in `recompile'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `call'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:73:in `run_callback'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:55:in `callback_action'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/path.rb:35:in `update'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:39:in `block in modified'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `each'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:37:in `modified'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/state/directory.rb:18:in `refresh'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/inotify.rb:12:in `block in add_handler'
-/var/lib/gems/1.9.1/gems/rb-inotify-0.9.5/lib/rb-inotify/notifier.rb:205:in `call'
-/var/lib/gems/1.9.1/gems/rb-inotify-0.9.5/lib/rb-inotify/notifier.rb:205:in `block in watch'
-/var/lib/gems/1.9.1/gems/rb-inotify-0.9.5/lib/rb-inotify/watcher.rb:41:in `[]'
-/var/lib/gems/1.9.1/gems/rb-inotify-0.9.5/lib/rb-inotify/watcher.rb:41:in `callback!'
-/var/lib/gems/1.9.1/gems/rb-inotify-0.9.5/lib/rb-inotify/event.rb:128:in `callback!'
-/var/lib/gems/1.9.1/gems/rb-inotify-0.9.5/lib/rb-inotify/notifier.rb:238:in `block in process'
-/var/lib/gems/1.9.1/gems/rb-inotify-0.9.5/lib/rb-inotify/notifier.rb:238:in `each'
-/var/lib/gems/1.9.1/gems/rb-inotify-0.9.5/lib/rb-inotify/notifier.rb:238:in `process'
-/var/lib/gems/1.9.1/gems/rb-inotify-0.9.5/lib/rb-inotify/notifier.rb:221:in `run'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/backends/inotify.rb:20:in `run'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm/monitor.rb:26:in `run'
-/var/lib/gems/1.9.1/gems/fssm-0.2.10/lib/fssm.rb:70:in `monitor'
-/var/lib/gems/1.9.1/gems/compass-0.12.6/lib/compass/commands/watch_project.rb:87:in `perform'
-/var/lib/gems/1.9.1/gems/compass-0.12.6/lib/compass/commands/base.rb:18:in `execute'
-/var/lib/gems/1.9.1/gems/compass-0.12.6/lib/compass/commands/project_base.rb:19:in `execute'
-/var/lib/gems/1.9.1/gems/compass-0.12.6/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/var/lib/gems/1.9.1/gems/compass-0.12.6/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/var/lib/gems/1.9.1/gems/compass-0.12.6/bin/compass:30:in `block in <top (required)>'
-/var/lib/gems/1.9.1/gems/compass-0.12.6/bin/compass:44:in `call'
-/var/lib/gems/1.9.1/gems/compass-0.12.6/bin/compass:44:in `<top (required)>'
-/usr/local/bin/compass:23:in `load'
-/usr/local/bin/compass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Undefined mixin 'below-small-screen'.\A         on line 6 of /home/cs/work/its-csongor/assets/styles/pages/portfolio.scss, in `below-small-screen'\A         from line 6 of /home/cs/work/its-csongor/assets/styles/pages/portfolio.scss\A         from line 2 of /home/cs/work/its-csongor/assets/styles/pages/*\A         from line 16 of /home/cs/work/its-csongor/assets/styles/screen.scss\A \A 1: /home/cs/work/its-csongor/assets/styles/screen.scss"; }
+ol, ul { list-style: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+q, blockquote { quotes: none; }
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
+
+a img { border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
+
+/* No files to import found in settings/* */
+/* No files to import found in organisms/* */
+/* No files to import found in structures/* */
+html body section > h3, html body article > h3, html body aside > h3, html body nav > h3, html body figure > h3 { display: none; }
+
+html.portfolio { height: 100%; }
+html.portfolio body, html.portfolio section { height: 100%; }
+html.portfolio body section { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; -moz-align-items: center; align-items: center; }
+html.portfolio body section article { -webkit-box-ordinal-group: 1; -moz-box-ordinal-group: 1; -webkit-order: 0; -ms-flex-order: 0; order: 0; -webkit-box-flex: 0; -webkit-flex-grow: 0; -moz-flex-grow: 0; -ms-flex-positive: 0; flex-grow: 0; -webkit-flex-shrink: 1; -moz-flex-shrink: 1; -ms-flex-negative: 1; flex-shrink: 1; -webkit-flex-basis: auto; -moz-flex-basis: auto; -ms-flex-preferred-size: auto; flex-basis: auto; -webkit-align-self: auto; -moz-align-self: auto; -ms-flex-item-align: auto; align-self: auto; }
+@media only screen and (max-width: 37.5em) { html.portfolio { height: auto; }
+  html.portfolio body, html.portfolio section { height: auto; }
+  html.portfolio body section { -webkit-box-direction: normal; -moz-box-direction: normal; -webkit-box-orient: vertical; -moz-box-orient: vertical; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; } }
+html.portfolio body section article.mockup figure img { max-width: 100%; height: auto; }
+html.portfolio body section article.mockup figure figcaption { display: none; }
+html.portfolio body section article.mockup figure.tablet.portrait img { max-width: 360px; }
+html.portfolio body section article.mockup figure.tablet.side img { max-width: 200px; }
+html.portfolio body section article.mockup figure.tablet.angle1 img, html.portfolio body section article.mockup figure.tablet.angle img { max-width: 780px; }
+html.portfolio body section article.mockup figure.laptop.front img { max-width: 600px; }
+html.portfolio body section article.mockup figure.mobile.side1 img, html.portfolio body section article.mockup figure.mobile.side img { max-width: 200px; }
+html.portfolio body section article.mockup figure.mobile.portrait img { max-width: 240px; }
+html.portfolio body section article.mockup figure.desktop.left img, html.portfolio body section article.mockup figure.desktop.right img { max-width: 400px; }
+html.portfolio body section article.mockup figure.desktop.front img { max-width: 600px; }

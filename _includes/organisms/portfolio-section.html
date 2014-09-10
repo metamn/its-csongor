@@ -1,6 +1,6 @@
 {% assign images = include.images | split: ',' %}
 
-<section {% if include.class %} class="{{ include.class }}" {% endif %}>
+<section class="{% include atoms/classname.html title=include.title %}">
   <h3>{{ include.title }}</h3>
   
   {% for i in images %}

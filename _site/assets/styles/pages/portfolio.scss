@@ -6,8 +6,13 @@ html.portfolio {
   body {
     section {
       article {
+        
         &.mockup {
           @include mockup;
+        }
+        
+        &.services, &.title, &.description {
+          @include text-block;
         }
       }
     }

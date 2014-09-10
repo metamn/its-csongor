@@ -1,3 +1,6 @@
+# http://blog.nitrous.io/2013/08/30/using-jekyll-plugins-on-github-pages.html
+
+
 require 'rubygems'
 require 'rake'
 require 'rdoc'

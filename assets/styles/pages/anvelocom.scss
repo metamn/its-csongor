@@ -1,0 +1,29 @@
+html.anvelocom {
+  body {
+    section {
+      article {
+        figure {
+          &#the-anvelocom-archive-page-on-laptop {
+            @include mockup("laptop front");
+          }
+          
+          &#the-anvelocom-frontpage-page-on-mobile, &#the-anvelocom-menu-page-on-mobile, &#the-anvelocom-archive-page-on-mobile {
+            @include mockup("mobile portrait");
+          }
+          
+          &#the-anvelocom-archive-page-on-tablet {
+            @include mockup("tablet angle");
+          }
+          
+          &#the-anvelocom-frontpage-page-on-desktop {
+            @include mockup("desktop");
+          }
+          
+          &#the-anvelocom-product-page-on-tablet {
+            @include mockup("tablet portrait");
+          }
+        }
+      }
+    }
+  }
+}

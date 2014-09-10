@@ -19,6 +19,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* No files to import found in settings/* */
 /* No files to import found in organisms/* */
 /* No files to import found in structures/* */
+html.anvelocom body section article figure#the-anvelocom-archive-page-on-laptop img { max-width: 600px; }
+@media only screen and (max-width: 37.5em) { html.anvelocom body section article figure#the-anvelocom-archive-page-on-laptop img { max-width: 280px; } }
+html.anvelocom body section article figure#the-anvelocom-frontpage-page-on-mobile img, html.anvelocom body section article figure#the-anvelocom-menu-page-on-mobile img, html.anvelocom body section article figure#the-anvelocom-archive-page-on-mobile img { max-width: 240px; }
+html.anvelocom body section article figure#the-anvelocom-archive-page-on-tablet img { max-width: 780px; }
+html.anvelocom body section article figure#the-anvelocom-frontpage-page-on-desktop img { max-width: 400px; }
+html.anvelocom body section article figure#the-anvelocom-product-page-on-tablet img { max-width: 400px; }
+@media only screen and (max-width: 37.5em) { html.anvelocom body section article figure#the-anvelocom-product-page-on-tablet img { max-width: 280px; } }
+
 html body section > h3, html body article > h3, html body aside > h3, html body nav > h3, html body figure > h3 { display: none; }
 
 html.iorad body section article figure#the-iorad-pricing-page-on-mobile img { max-width: 200px; }

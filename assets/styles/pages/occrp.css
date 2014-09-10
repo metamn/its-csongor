@@ -1,10 +1,10 @@
 /*
-Syntax error: Undefined mixin 'flex-order'.
-        on line 7 of /home/cs/work/its-csongor/assets/styles/pages/occrp.scss, in `flex-order'
+Syntax error: Undefined mixin 'mockup'.
+        on line 7 of /home/cs/work/its-csongor/assets/styles/pages/occrp.scss, in `mockup'
         from line 7 of /home/cs/work/its-csongor/assets/styles/pages/occrp.scss
 
 Backtrace:
-/home/cs/work/its-csongor/assets/styles/pages/occrp.scss:7:in `flex-order'
+/home/cs/work/its-csongor/assets/styles/pages/occrp.scss:7:in `mockup'
 /home/cs/work/its-csongor/assets/styles/pages/occrp.scss:7
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:253:in `visit_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
@@ -130,4 +130,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'flex-order'.\A         on line 7 of /home/cs/work/its-csongor/assets/styles/pages/occrp.scss, in `flex-order'\A         from line 7 of /home/cs/work/its-csongor/assets/styles/pages/occrp.scss"; }
+  content: "Syntax error: Undefined mixin 'mockup'.\A         on line 7 of /home/cs/work/its-csongor/assets/styles/pages/occrp.scss, in `mockup'\A         from line 7 of /home/cs/work/its-csongor/assets/styles/pages/occrp.scss"; }

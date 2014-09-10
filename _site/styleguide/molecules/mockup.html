@@ -32,55 +32,53 @@
 
 
 @mixin mockup($type) {
-  figure {
-    @if ($type == "tablet portrait") {
-      img {
-        max-width: 400px;
-      }
-    }
-
-    @if ($type == "tablet side") {
-      img {
-        max-width: 200px;
-      }
-    }
-
-    @if ($type == "tablet angle") {
-      img {
-        max-width: 780px;
-      }
-    }
-
-    @if ($type == "laptop front") {
-      img {
-        max-width: 600px;
-      }
-    }
-
-    @if ($type == "mobile side") {
-      img {
-        max-width: 200px;
-      }
-    }
-
-    @if ($type == "mobile portrait") {
-      img {
-        max-width: 240px;
-      }
-    }
-
-    @if ($type == "desktop") {
-      img {
-        max-width: 400px;
-      }
-    }
-
-    @if ($type == "desktop front") {
-      img {
-        max-width: 600px;
-      }
+  @if ($type == "tablet portrait") {
+    img {
+      max-width: 400px;
     }
   }
+
+  @if ($type == "tablet side") {
+    img {
+      max-width: 200px;
+    }
+  }
+
+  @if ($type == "tablet angle") {
+    img {
+      max-width: 780px;
+    }
+  }
+
+  @if ($type == "laptop front") {
+    img {
+      max-width: 600px;
+    }
+  }
+
+  @if ($type == "mobile side") {
+    img {
+      max-width: 200px;
+    }
+  }
+
+  @if ($type == "mobile portrait") {
+    img {
+      max-width: 240px;
+    }
+  }
+
+  @if ($type == "desktop") {
+    img {
+      max-width: 400px;
+    }
+  }
+
+  @if ($type == "desktop front") {
+    img {
+      max-width: 600px;
+    }
+  } 
 }
 
 

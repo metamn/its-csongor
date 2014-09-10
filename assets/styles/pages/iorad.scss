@@ -1,50 +1,44 @@
 html.iorad {
   body {
     section {
-      &.intro {
-        article {
-          &.mockup {
-            @include mockup("tablet portrait");
-          }
-        }
-      }
-      
-      &.description {
-        article {
-          &.mockup {
-            &:nth-of-type(1) {
-              @include mockup("mobile side");
+      article {
+        figure {
+          &#the-iorad-pricing-page-on-mobile {
+            @include mockup("mobile side");
               
-              @include below-small-tablet {
-                @include mockup("mobile portrait");
-              }
-            }
-            
-            &:nth-of-type(2) {
+            @include below-small-tablet {
               @include mockup("mobile portrait");
             }
           }
-        }
-      }
-      
-      &.screenshots {
-        article {
-          &.mockup {
-            &:nth-of-type(1) {
-              @include mockup("laptop front");
-            }
-            
-            &:nth-of-type(2) {
-              @include mockup("desktop");
-            }
+          
+          &#the-iorad-checkout-page-on-mobile {
+            @include mockup("mobile portrait");
+          }
+          
+          &#the-iorad-pricing-page-on-laptop {
+            @include mockup("laptop front");
+          }
+          
+          &#the-iorad-pricing-page-on-desktop {
+            @include mockup("desktop");
           }
         }
       }
       
+      &.intro {
+        article {
+          figure {
+            &#the-iorad-pricing-page-on-tablet {
+              @include mockup("tablet portrait");
+            }
+          }
+        }
+      }
+        
       &.services {
         article {
-          &.mockup {
-            &:nth-of-type(1) {
+          figure {
+            &#the-iorad-pricing-page-on-tablet {
               @include mockup("tablet angle");
             }
           }

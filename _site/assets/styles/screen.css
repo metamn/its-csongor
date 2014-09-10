@@ -32,7 +32,7 @@ html.portfolio body section article { -webkit-box-ordinal-group: 1; -moz-box-ord
   html.portfolio body section { -webkit-box-direction: normal; -moz-box-direction: normal; -webkit-box-orient: vertical; -moz-box-orient: vertical; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; } }
 html.portfolio body section article.mockup figure img { max-width: 100%; height: auto; }
 html.portfolio body section article.mockup figure figcaption { display: none; }
-html.portfolio body section article.mockup figure.tablet.portrait img { max-width: 360px; }
+html.portfolio body section article.mockup figure.tablet.portrait img { max-width: 280px; }
 html.portfolio body section article.mockup figure.tablet.side img { max-width: 200px; }
 html.portfolio body section article.mockup figure.tablet.angle1 img, html.portfolio body section article.mockup figure.tablet.angle img { max-width: 780px; }
 html.portfolio body section article.mockup figure.laptop.front img { max-width: 600px; }

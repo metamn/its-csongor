@@ -22,7 +22,18 @@
       max-width: 780px;
     }
   }
+  
+  @if ($type == "tablet half") {
+    img {
+      max-width: 500px;
+      margin-left: 25%;
+      margin-top: 10%;
+    }
+  }
+  
+  
 
+  
   @if ($type == "laptop front") {
     img {
       max-width: 600px;
@@ -30,11 +41,21 @@
     
     @include below-small-tablet {
       img {
-        max-width: 280px;
+        max-width: 320px;
       }
     }
   }
+  
+  @if ($type == "laptop half") {
+    img {
+      max-width: 700px;
+      margin-left: 25%;
+    }
+  }
+  
+  
 
+  
   @if ($type == "mobile side") {
     img {
       max-width: 200px;
@@ -46,6 +67,14 @@
       max-width: 240px;
     }
   }
+  
+  @if ($type == "mobile large") {
+    img {
+      max-width: 500px;
+    }
+  }
+  
+  
 
   @if ($type == "desktop") {
     img {

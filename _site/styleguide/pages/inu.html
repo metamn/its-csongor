@@ -38,6 +38,10 @@ html.inu-chivu {
         figure {
           &#the-inu-archive-page-on-tablet {
             @include mockup("tablet angle");
+            
+            @include below-small-tablet {
+              margin-left: 10%;
+            }
           }
           
           &#the-inu-menu-white-page-on-mobile, &#the-inu-menu-black-page-on-mobile {

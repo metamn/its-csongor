@@ -20,7 +20,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* No files to import found in organisms/* */
 /* No files to import found in structures/* */
 html.anvelocom body section article figure#the-anvelocom-archive-page-on-laptop img { max-width: 600px; }
-@media only screen and (max-width: 37.5em) { html.anvelocom body section article figure#the-anvelocom-archive-page-on-laptop img { max-width: 280px; } }
+@media only screen and (max-width: 37.5em) { html.anvelocom body section article figure#the-anvelocom-archive-page-on-laptop img { max-width: 320px; } }
 html.anvelocom body section article figure#the-anvelocom-frontpage-page-on-mobile img, html.anvelocom body section article figure#the-anvelocom-menu-page-on-mobile img, html.anvelocom body section article figure#the-anvelocom-archive-page-on-mobile img { max-width: 240px; }
 html.anvelocom body section article figure#the-anvelocom-archive-page-on-tablet img { max-width: 780px; }
 html.anvelocom body section article figure#the-anvelocom-frontpage-page-on-desktop img { max-width: 400px; }
@@ -30,6 +30,7 @@ html.anvelocom body section article figure#the-anvelocom-product-page-on-tablet 
 html body section > h3, html body article > h3, html body aside > h3, html body nav > h3, html body figure > h3 { display: none; }
 
 html.inu-chivu body section article figure#the-inu-archive-page-on-tablet img { max-width: 780px; }
+@media only screen and (max-width: 37.5em) { html.inu-chivu body section article figure#the-inu-archive-page-on-tablet { margin-left: 10%; } }
 html.inu-chivu body section article figure#the-inu-menu-white-page-on-mobile img, html.inu-chivu body section article figure#the-inu-menu-black-page-on-mobile img { max-width: 240px; }
 html.inu-chivu body section article figure#the-inu-frontpage-page-on-mobile img, html.inu-chivu body section article figure#the-inu-archive-page-on-mobile img { max-width: 200px; }
 @media only screen and (max-width: 37.5em) { html.inu-chivu body section article figure#the-inu-frontpage-page-on-mobile img, html.inu-chivu body section article figure#the-inu-archive-page-on-mobile img { max-width: 240px; } }
@@ -37,13 +38,13 @@ html.inu-chivu body section article figure#the-inu-frontpage-page-on-tablet img 
 @media only screen and (max-width: 37.5em) { html.inu-chivu body section article figure#the-inu-frontpage-page-on-tablet img { max-width: 280px; } }
 html.inu-chivu body section article figure#the-inu-archive-page-on-desktop img { max-width: 400px; }
 html.inu-chivu body section article figure#the-inu-frontpage-page-on-laptop img { max-width: 600px; }
-@media only screen and (max-width: 37.5em) { html.inu-chivu body section article figure#the-inu-frontpage-page-on-laptop img { max-width: 280px; } }
+@media only screen and (max-width: 37.5em) { html.inu-chivu body section article figure#the-inu-frontpage-page-on-laptop img { max-width: 320px; } }
 
 html.iorad body section article figure#the-iorad-pricing-page-on-mobile img { max-width: 200px; }
 @media only screen and (max-width: 37.5em) { html.iorad body section article figure#the-iorad-pricing-page-on-mobile img { max-width: 240px; } }
 html.iorad body section article figure#the-iorad-checkout-page-on-mobile img { max-width: 240px; }
 html.iorad body section article figure#the-iorad-pricing-page-on-laptop img { max-width: 600px; }
-@media only screen and (max-width: 37.5em) { html.iorad body section article figure#the-iorad-pricing-page-on-laptop img { max-width: 280px; } }
+@media only screen and (max-width: 37.5em) { html.iorad body section article figure#the-iorad-pricing-page-on-laptop img { max-width: 320px; } }
 html.iorad body section article figure#the-iorad-pricing-page-on-desktop img { max-width: 400px; }
 html.iorad body section.intro article figure#the-iorad-pricing-page-on-tablet img { max-width: 400px; }
 @media only screen and (max-width: 37.5em) { html.iorad body section.intro article figure#the-iorad-pricing-page-on-tablet img { max-width: 280px; } }
@@ -51,7 +52,7 @@ html.iorad body section.services article figure#the-iorad-pricing-page-on-tablet
 
 html.organized-crime-and-corruption-reporting-project body section article figure#the-occrp-frontpage-2-page-on-mobile img, html.organized-crime-and-corruption-reporting-project body section article figure#the-occrp-frontpage-page-on-mobile img, html.organized-crime-and-corruption-reporting-project body section article figure#the-occrp-archive-page-on-mobile img { max-width: 240px; }
 html.organized-crime-and-corruption-reporting-project body section article figure#the-occrp-frontpage-page-on-laptop img, html.organized-crime-and-corruption-reporting-project body section article figure#the-occrp-archive-page-on-laptop img { max-width: 600px; }
-@media only screen and (max-width: 37.5em) { html.organized-crime-and-corruption-reporting-project body section article figure#the-occrp-frontpage-page-on-laptop img, html.organized-crime-and-corruption-reporting-project body section article figure#the-occrp-archive-page-on-laptop img { max-width: 280px; } }
+@media only screen and (max-width: 37.5em) { html.organized-crime-and-corruption-reporting-project body section article figure#the-occrp-frontpage-page-on-laptop img, html.organized-crime-and-corruption-reporting-project body section article figure#the-occrp-archive-page-on-laptop img { max-width: 320px; } }
 html.organized-crime-and-corruption-reporting-project body section article figure#the-occrp-archive-page-on-desktop img { max-width: 400px; }
 html.organized-crime-and-corruption-reporting-project body section.intro article figure#the-occrp-frontpage-page-on-tablet img { max-width: 200px; }
 @media only screen and (max-width: 37.5em) { html.organized-crime-and-corruption-reporting-project body section.intro article figure#the-occrp-frontpage-page-on-tablet img { max-width: 400px; } }
@@ -78,7 +79,7 @@ html.scatter body section article figure#the-scatter-business-page-on-tablet img
 html.scatter body section article figure#the-scatter-frontpage-page-on-tablet img { max-width: 400px; }
 @media only screen and (max-width: 37.5em) { html.scatter body section article figure#the-scatter-frontpage-page-on-tablet img { max-width: 280px; } }
 html.scatter body section article figure#the-scatter-frontpage-page-on-laptop img, html.scatter body section article figure#the-scatter-frontpage-2-page-on-laptop img { max-width: 600px; }
-@media only screen and (max-width: 37.5em) { html.scatter body section article figure#the-scatter-frontpage-page-on-laptop img, html.scatter body section article figure#the-scatter-frontpage-2-page-on-laptop img { max-width: 280px; } }
+@media only screen and (max-width: 37.5em) { html.scatter body section article figure#the-scatter-frontpage-page-on-laptop img, html.scatter body section article figure#the-scatter-frontpage-2-page-on-laptop img { max-width: 320px; } }
 html.scatter body section article figure#the-scatter-frontpage-1-page-on-desktop img, html.scatter body section article figure#the-scatter-frontpage-2-page-on-desktop img { max-width: 400px; }
 
 html.smuff body section article figure#the-smuff-product-page-on-desktop img, html.smuff body section article figure#the-smuff-archive-page-on-desktop img { max-width: 400px; }
@@ -87,4 +88,4 @@ html.smuff body section article figure#the-smuff-archive-page-on-tablet img, htm
 html.smuff body section article figure#the-smuff-product-page-on-mobile img, html.smuff body section article figure#the-smuff-filters-page-on-mobile img, html.smuff body section article figure#the-smuff-archive-page-on-mobile img { max-width: 200px; }
 @media only screen and (max-width: 37.5em) { html.smuff body section article figure#the-smuff-product-page-on-mobile img, html.smuff body section article figure#the-smuff-filters-page-on-mobile img, html.smuff body section article figure#the-smuff-archive-page-on-mobile img { max-width: 240px; } }
 html.smuff body section article figure#the-smuff-product-page-on-laptop img, html.smuff body section article figure#the-smuff-archive-page-on-laptop img, html.smuff body section article figure#the-smuff-checkout-page-on-laptop img { max-width: 600px; }
-@media only screen and (max-width: 37.5em) { html.smuff body section article figure#the-smuff-product-page-on-laptop img, html.smuff body section article figure#the-smuff-archive-page-on-laptop img, html.smuff body section article figure#the-smuff-checkout-page-on-laptop img { max-width: 280px; } }
+@media only screen and (max-width: 37.5em) { html.smuff body section article figure#the-smuff-product-page-on-laptop img, html.smuff body section article figure#the-smuff-archive-page-on-laptop img, html.smuff body section article figure#the-smuff-checkout-page-on-laptop img { max-width: 320px; } }

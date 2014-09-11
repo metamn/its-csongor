@@ -20,10 +20,16 @@
   }
 }
 
+@mixin laptop-and-up {
+  // Everything above 1024px 
+  @media only screen and (min-width: $breakpoint-laptop) {
+    @content
+  }
+}
+
 @mixin desktop-and-up {
   // For large screens 
   @media only screen and (min-width: $breakpoint-desktop) {
     @content
   }
 }
- 

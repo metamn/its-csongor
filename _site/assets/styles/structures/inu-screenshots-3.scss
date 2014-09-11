@@ -3,4 +3,10 @@
     @include full-height(auto);
     @include flexbox-direction(column);
   }
+  
+  @include laptop-and-up {
+    article.mockup {
+      @include flex-align-self(flex-end);
+    }
+  }
 }

@@ -26,6 +26,8 @@ Example:
 </figure>
 ```
 
+- there is plenty of room to play with mockup sizes on every device !!!
+
 
 ## Styleguide
 

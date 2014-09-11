@@ -7,6 +7,10 @@
     {% include molecules/mockup.html id=i %}
   {% endfor %}
   
+  {% if include.caption %}
+    {% include molecules/portfolio-caption.html caption=include.caption %} 
+  {% endif %}
+  
   {% if include.title == 'Intro' %}
     {% include molecules/portfolio-title.html %} 
   {% endif %}

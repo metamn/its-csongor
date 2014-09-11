@@ -24,21 +24,26 @@ html.anvelocom body section article figure#the-anvelocom-archive-page-on-laptop 
 html.anvelocom body section article figure#the-anvelocom-frontpage-page-on-mobile img, html.anvelocom body section article figure#the-anvelocom-menu-page-on-mobile img, html.anvelocom body section article figure#the-anvelocom-archive-page-on-mobile img { max-width: 240px; }
 html.anvelocom body section article figure#the-anvelocom-archive-page-on-tablet img { max-width: 780px; }
 html.anvelocom body section article figure#the-anvelocom-frontpage-page-on-desktop img { max-width: 400px; }
-html.anvelocom body section article figure#the-anvelocom-product-page-on-tablet img { max-width: 400px; }
+html.anvelocom body section article figure#the-anvelocom-product-page-on-tablet img { max-width: 500px; }
 @media only screen and (max-width: 37.5em) { html.anvelocom body section article figure#the-anvelocom-product-page-on-tablet img { max-width: 280px; } }
 
 html body section > h3, html body article > h3, html body aside > h3, html body nav > h3, html body figure > h3 { display: none; }
 
-html.inu-chivu body section article figure#the-inu-archive-page-on-tablet img { max-width: 780px; }
-@media only screen and (max-width: 37.5em) { html.inu-chivu body section article figure#the-inu-archive-page-on-tablet { margin-left: 10%; } }
+html.inu-chivu body section.intro article figure#the-inu-archive-page-on-tablet img { max-width: 780px; }
+@media only screen and (max-width: 37.5em) { html.inu-chivu body section.intro article figure#the-inu-archive-page-on-tablet { margin-left: 30%; } }
+@media only screen and (max-width: 37.5em) { html.inu-chivu body section.screenshots-1 { -webkit-box-direction: normal; -moz-box-direction: normal; -webkit-box-orient: horizontal; -moz-box-orient: horizontal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; }
+  html.inu-chivu body section.screenshots-1 article.caption { -webkit-flex-basis: 100%; -moz-flex-basis: 100%; -ms-flex-preferred-size: 100%; flex-basis: 100%; } }
+@media only screen and (max-width: 37.5em) { html.inu-chivu body section.screenshots-2 article.mockup:nth-of-type(2) { -webkit-box-ordinal-group: 4; -moz-box-ordinal-group: 4; -webkit-order: 3; -ms-flex-order: 3; order: 3; }
+  html.inu-chivu body section.screenshots-2 article.mockup:nth-of-type(3) { -webkit-box-ordinal-group: 3; -moz-box-ordinal-group: 3; -webkit-order: 2; -ms-flex-order: 2; order: 2; } }
 html.inu-chivu body section article figure#the-inu-menu-white-page-on-mobile img, html.inu-chivu body section article figure#the-inu-menu-black-page-on-mobile img { max-width: 240px; }
 html.inu-chivu body section article figure#the-inu-frontpage-page-on-mobile img, html.inu-chivu body section article figure#the-inu-archive-page-on-mobile img { max-width: 200px; }
 @media only screen and (max-width: 37.5em) { html.inu-chivu body section article figure#the-inu-frontpage-page-on-mobile img, html.inu-chivu body section article figure#the-inu-archive-page-on-mobile img { max-width: 240px; } }
-html.inu-chivu body section article figure#the-inu-frontpage-page-on-tablet img { max-width: 400px; }
-@media only screen and (max-width: 37.5em) { html.inu-chivu body section article figure#the-inu-frontpage-page-on-tablet img { max-width: 280px; } }
+html.inu-chivu body section article figure#the-inu-archive-page-on-tablet img { max-width: 500px; }
+@media only screen and (max-width: 37.5em) { html.inu-chivu body section article figure#the-inu-archive-page-on-tablet img { max-width: 280px; } }
 html.inu-chivu body section article figure#the-inu-archive-page-on-desktop img { max-width: 400px; }
 html.inu-chivu body section article figure#the-inu-frontpage-page-on-laptop img { max-width: 600px; }
 @media only screen and (max-width: 37.5em) { html.inu-chivu body section article figure#the-inu-frontpage-page-on-laptop img { max-width: 320px; } }
+@media only screen and (max-width: 37.5em) { html.inu-chivu body section article figure#the-inu-frontpage-page-on-laptop img { max-width: 700px; margin-left: 25%; } }
 
 html.iorad body section article figure#the-iorad-pricing-page-on-mobile img { max-width: 200px; }
 @media only screen and (max-width: 37.5em) { html.iorad body section article figure#the-iorad-pricing-page-on-mobile img { max-width: 240px; } }
@@ -46,7 +51,7 @@ html.iorad body section article figure#the-iorad-checkout-page-on-mobile img { m
 html.iorad body section article figure#the-iorad-pricing-page-on-laptop img { max-width: 600px; }
 @media only screen and (max-width: 37.5em) { html.iorad body section article figure#the-iorad-pricing-page-on-laptop img { max-width: 320px; } }
 html.iorad body section article figure#the-iorad-pricing-page-on-desktop img { max-width: 400px; }
-html.iorad body section.intro article figure#the-iorad-pricing-page-on-tablet img { max-width: 400px; }
+html.iorad body section.intro article figure#the-iorad-pricing-page-on-tablet img { max-width: 500px; }
 @media only screen and (max-width: 37.5em) { html.iorad body section.intro article figure#the-iorad-pricing-page-on-tablet img { max-width: 280px; } }
 html.iorad body section.services article figure#the-iorad-pricing-page-on-tablet img { max-width: 780px; }
 
@@ -55,9 +60,9 @@ html.organized-crime-and-corruption-reporting-project body section article figur
 @media only screen and (max-width: 37.5em) { html.organized-crime-and-corruption-reporting-project body section article figure#the-occrp-frontpage-page-on-laptop img, html.organized-crime-and-corruption-reporting-project body section article figure#the-occrp-archive-page-on-laptop img { max-width: 320px; } }
 html.organized-crime-and-corruption-reporting-project body section article figure#the-occrp-archive-page-on-desktop img { max-width: 400px; }
 html.organized-crime-and-corruption-reporting-project body section.intro article figure#the-occrp-frontpage-page-on-tablet img { max-width: 200px; }
-@media only screen and (max-width: 37.5em) { html.organized-crime-and-corruption-reporting-project body section.intro article figure#the-occrp-frontpage-page-on-tablet img { max-width: 400px; } }
+@media only screen and (max-width: 37.5em) { html.organized-crime-and-corruption-reporting-project body section.intro article figure#the-occrp-frontpage-page-on-tablet img { max-width: 500px; } }
 @media only screen and (max-width: 37.5em) and (max-width: 37.5em) { html.organized-crime-and-corruption-reporting-project body section.intro article figure#the-occrp-frontpage-page-on-tablet img { max-width: 280px; } }
-html.organized-crime-and-corruption-reporting-project body section.screenshots article figure#the-occrp-frontpage-page-on-tablet img, html.organized-crime-and-corruption-reporting-project body section.screenshots article figure#the-occrp-archive-page-on-tablet img, html.organized-crime-and-corruption-reporting-project body section.screenshots article figure#the-occrp-article-page-on-tablet img { max-width: 400px; }
+html.organized-crime-and-corruption-reporting-project body section.screenshots article figure#the-occrp-frontpage-page-on-tablet img, html.organized-crime-and-corruption-reporting-project body section.screenshots article figure#the-occrp-archive-page-on-tablet img, html.organized-crime-and-corruption-reporting-project body section.screenshots article figure#the-occrp-article-page-on-tablet img { max-width: 500px; }
 @media only screen and (max-width: 37.5em) { html.organized-crime-and-corruption-reporting-project body section.screenshots article figure#the-occrp-frontpage-page-on-tablet img, html.organized-crime-and-corruption-reporting-project body section.screenshots article figure#the-occrp-archive-page-on-tablet img, html.organized-crime-and-corruption-reporting-project body section.screenshots article figure#the-occrp-article-page-on-tablet img { max-width: 280px; } }
 @media only screen and (max-width: 37.5em) { html.organized-crime-and-corruption-reporting-project body section.screenshots article figure#the-occrp-frontpage-page-on-tablet { display: none; } }
 html.organized-crime-and-corruption-reporting-project body section.services article.mockup { -webkit-box-ordinal-group: 2; -moz-box-ordinal-group: 2; -webkit-order: 1; -ms-flex-order: 1; order: 1; }
@@ -71,19 +76,19 @@ html.portfolio body section article { -webkit-box-ordinal-group: 1; -moz-box-ord
   html.portfolio body section { -webkit-box-direction: normal; -moz-box-direction: normal; -webkit-box-orient: vertical; -moz-box-orient: vertical; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; } }
 html.portfolio body section article.mockup figure img { max-width: 100%; height: auto; }
 html.portfolio body section article.mockup figure figcaption { display: none; }
-html.portfolio body section article.services, html.portfolio body section article.title, html.portfolio body section article.description { max-width: 30em; }
+html.portfolio body section article.services, html.portfolio body section article.title, html.portfolio body section article.description { max-width: 30em; text-align: center; }
 
 html.scatter body section article figure#the-scatter-business-page-on-mobile img, html.scatter body section article figure#the-scatter-frontpage-1-page-on-mobile img { max-width: 200px; }
 @media only screen and (max-width: 37.5em) { html.scatter body section article figure#the-scatter-business-page-on-mobile img, html.scatter body section article figure#the-scatter-frontpage-1-page-on-mobile img { max-width: 240px; } }
 html.scatter body section article figure#the-scatter-business-page-on-tablet img, html.scatter body section article figure#the-scatter-business-2-page-on-tablet img { max-width: 780px; }
-html.scatter body section article figure#the-scatter-frontpage-page-on-tablet img { max-width: 400px; }
+html.scatter body section article figure#the-scatter-frontpage-page-on-tablet img { max-width: 500px; }
 @media only screen and (max-width: 37.5em) { html.scatter body section article figure#the-scatter-frontpage-page-on-tablet img { max-width: 280px; } }
 html.scatter body section article figure#the-scatter-frontpage-page-on-laptop img, html.scatter body section article figure#the-scatter-frontpage-2-page-on-laptop img { max-width: 600px; }
 @media only screen and (max-width: 37.5em) { html.scatter body section article figure#the-scatter-frontpage-page-on-laptop img, html.scatter body section article figure#the-scatter-frontpage-2-page-on-laptop img { max-width: 320px; } }
 html.scatter body section article figure#the-scatter-frontpage-1-page-on-desktop img, html.scatter body section article figure#the-scatter-frontpage-2-page-on-desktop img { max-width: 400px; }
 
 html.smuff body section article figure#the-smuff-product-page-on-desktop img, html.smuff body section article figure#the-smuff-archive-page-on-desktop img { max-width: 400px; }
-html.smuff body section article figure#the-smuff-archive-page-on-tablet img, html.smuff body section article figure#the-smuff-product-page-on-tablet img { max-width: 400px; }
+html.smuff body section article figure#the-smuff-archive-page-on-tablet img, html.smuff body section article figure#the-smuff-product-page-on-tablet img { max-width: 500px; }
 @media only screen and (max-width: 37.5em) { html.smuff body section article figure#the-smuff-archive-page-on-tablet img, html.smuff body section article figure#the-smuff-product-page-on-tablet img { max-width: 280px; } }
 html.smuff body section article figure#the-smuff-product-page-on-mobile img, html.smuff body section article figure#the-smuff-filters-page-on-mobile img, html.smuff body section article figure#the-smuff-archive-page-on-mobile img { max-width: 200px; }
 @media only screen and (max-width: 37.5em) { html.smuff body section article figure#the-smuff-product-page-on-mobile img, html.smuff body section article figure#the-smuff-filters-page-on-mobile img, html.smuff body section article figure#the-smuff-archive-page-on-mobile img { max-width: 240px; } }

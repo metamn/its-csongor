@@ -1,0 +1,11 @@
+@mixin inu-screenshots-1 {
+  @include below-small-tablet {
+    @include flexbox-direction(row);
+
+    article {
+      &.caption {
+        @include flex-basis(100%);
+      }
+    }
+  }
+}

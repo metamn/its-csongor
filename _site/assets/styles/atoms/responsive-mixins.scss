@@ -1,7 +1,21 @@
 
 @mixin below-small-tablet {
-  // Displaying elements top to bottom instead of left to right 
-  @media only screen and (max-width: $breakpoint-small-tablet) {
+  // Mobile devices in both portrait and landscape mode 
+  @media only screen and (max-width: $breakpoint-small-tablet - 0.001) {
+    @content
+  }
+}
+
+@mixin tablet {
+  // Tablets in both portrait and landscape mode 
+  @media only screen and (min-width: $breakpoint-small-tablet) and (max-width: $breakpoint-laptop - 0.001) {
+    @content
+  }
+}
+
+@mixin below-laptop {
+  // Mobile and tablet devices in both portrait and landscape mode 
+  @media only screen and (max-width: $breakpoint-laptop - 0.001) {
     @content
   }
 }

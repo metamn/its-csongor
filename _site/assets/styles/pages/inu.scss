@@ -1,46 +1,6 @@
 html.inu-chivu {
   body {
     section {
-      &.intro {
-        article {
-          figure {
-            &#the-inu-archive-page-on-tablet {
-              @include mockup("tablet angle");
-
-              @include below-small-tablet {
-                margin-left: 30%;
-              }
-            }
-          }
-        }
-      }
-      
-      &.screenshots-1 {
-        @include below-small-tablet {
-          @include flexbox-direction(row);
-          
-          article {
-            &.caption {
-              @include flex-basis(100%);
-            }
-          }
-        }
-      }
-      
-      &.screenshots-2 {
-        @include below-small-tablet {
-          article.mockup {
-            &:nth-of-type(2) {
-              @include flex-order(3);
-            }
-            
-            &:nth-of-type(3) {
-              @include flex-order(2);
-            }
-          }
-        }
-      }
-      
       article {
         figure {
           &#the-inu-menu-white-page-on-mobile, &#the-inu-menu-black-page-on-mobile {
@@ -71,6 +31,22 @@ html.inu-chivu {
             }
           }
         }
+      }
+      
+      &.intro {
+        @include inu-intro;
+      }
+      
+      &.screenshots-1 {
+        @include inu-screenshots-1;
+      }
+      
+      &.screenshots-2 {
+        @include inu-screenshots-2;
+      }
+      
+      &.screenshots-3 {
+        @include inu-screenshots-3;
       }
     }
   }

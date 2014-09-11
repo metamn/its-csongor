@@ -5,8 +5,14 @@ category: atoms
 scss: "responsive-mixins.scss"
 items:
   - name: "below-small-tablet"
-    description: Displaying elements top to bottom instead of left to right
-    value: "(max-width: $breakpoint-small-tablet)"
+    description: Mobile devices in both portrait and landscape mode
+    value: "(max-width: $breakpoint-small-tablet - 0.001)"
+  - name: "tablet"
+    description: Tablets in both portrait and landscape mode
+    value: "(min-width: $breakpoint-small-tablet) and (max-width: $breakpoint-laptop - 0.001)"
+  - name: "below-laptop"
+    description: Mobile and tablet devices in both portrait and landscape mode
+    value: "(max-width: $breakpoint-laptop - 0.001)"
   - name: "desktop-and-up"
     description: For large screens
     value: "(min-width: $breakpoint-desktop)"

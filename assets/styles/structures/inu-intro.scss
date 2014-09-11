@@ -1,0 +1,17 @@
+@mixin inu-intro {
+  article {
+    figure {
+      &#the-inu-archive-page-on-tablet {
+        @include mockup("tablet angle");
+
+        @include below-small-tablet {
+          margin-left: 30%;
+        }
+      }
+    }
+  }
+  
+  @include tablet {
+    @include flexbox-direction(column);
+  }
+}

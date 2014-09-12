@@ -42,6 +42,12 @@ html.anvelocom {
             @include mobile {
               @include mockup("laptop half");
             }
+            
+            @include laptop-and-up {
+              img {
+                max-width: 800px;
+              }
+            } 
           }
           
           &#the-anvelocom-frontpage-page-on-mobile, &#the-anvelocom-menu-page-on-mobile, &#the-anvelocom-archive-page-on-mobile {

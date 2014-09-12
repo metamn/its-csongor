@@ -112,7 +112,7 @@ html.portfolio body section article.mockup figure figcaption { display: none; }
 html.portfolio body section article.services, html.portfolio body section article.title, html.portfolio body section article.description { max-width: 30em; text-align: center; }
 
 html.scatter body section article figure#the-scatter-business-page-on-mobile img, html.scatter body section article figure#the-scatter-frontpage-1-page-on-mobile img { max-width: 200px; }
-@media only screen and (max-width: 37.499em) { html.scatter body section article figure#the-scatter-business-page-on-mobile img, html.scatter body section article figure#the-scatter-frontpage-1-page-on-mobile img { max-width: 240px; } }
+@media only screen and (max-width: 63.999em) { html.scatter body section article figure#the-scatter-business-page-on-mobile img, html.scatter body section article figure#the-scatter-frontpage-1-page-on-mobile img { max-width: 240px; } }
 html.scatter body section article figure#the-scatter-business-page-on-tablet img, html.scatter body section article figure#the-scatter-business-2-page-on-tablet img { max-width: 780px; }
 @media only screen and (max-width: 37.499em) { html.scatter body section article figure#the-scatter-frontpage-page-on-tablet img { max-width: 280px; } }
 @media only screen and (min-width: 37.5em) and (max-width: 63.999em) { html.scatter body section article figure#the-scatter-frontpage-page-on-tablet img { max-width: 500px; } }
@@ -122,6 +122,8 @@ html.scatter body section article figure#the-scatter-frontpage-page-on-laptop im
 @media only screen and (max-width: 37.499em) { html.scatter body section article figure#the-scatter-frontpage-page-on-laptop img, html.scatter body section article figure#the-scatter-frontpage-2-page-on-laptop img { max-width: 320px; } }
 @media only screen and (max-width: 37.499em) { html.scatter body section article figure#the-scatter-frontpage-page-on-laptop img, html.scatter body section article figure#the-scatter-frontpage-2-page-on-laptop img { max-width: 700px; margin-left: 25%; } }
 html.scatter body section article figure#the-scatter-frontpage-1-page-on-desktop img, html.scatter body section article figure#the-scatter-frontpage-2-page-on-desktop img { max-width: 500px; }
+@media only screen and (min-width: 37.5em) and (max-width: 63.999em) { html.scatter body section.screenshots { height: auto; -webkit-box-direction: normal; -moz-box-direction: normal; -webkit-box-orient: vertical; -moz-box-orient: vertical; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
+  html.scatter body section.screenshots body, html.scatter body section.screenshots section { height: auto; } }
 
 html.smuff body section article figure#the-smuff-product-page-on-desktop img, html.smuff body section article figure#the-smuff-archive-page-on-desktop img { max-width: 500px; }
 @media only screen and (max-width: 37.499em) { html.smuff body section article figure#the-smuff-archive-page-on-tablet img, html.smuff body section article figure#the-smuff-product-page-on-tablet img { max-width: 280px; } }

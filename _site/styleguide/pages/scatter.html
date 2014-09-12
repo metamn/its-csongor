@@ -39,7 +39,7 @@ html.scatter {
           &#the-scatter-business-page-on-mobile, &#the-scatter-frontpage-1-page-on-mobile {
             @include mockup("mobile side");
             
-            @include mobile {
+            @include below-laptop {
               @include mockup("mobile portrait");
             }
           }
@@ -63,6 +63,13 @@ html.scatter {
           &#the-scatter-frontpage-1-page-on-desktop, &#the-scatter-frontpage-2-page-on-desktop {
             @include mockup("desktop");
           }
+        }
+      }
+      
+      &.screenshots {
+        @include tablet {
+          @include full-height(auto);
+          @include flexbox-direction(column);
         }
       }
     }

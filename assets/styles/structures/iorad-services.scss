@@ -10,4 +10,8 @@
   @include tablet {
     @include flexbox-wrap(wrap);
   }
+  
+  @include laptop-and-up {
+    @include flexbox-wrap(wrap);
+  }
 }

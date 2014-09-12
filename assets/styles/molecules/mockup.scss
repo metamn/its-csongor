@@ -1,12 +1,20 @@
 @mixin mockup($type) {
   @if ($type == "tablet portrait") {
-    img {
-      max-width: 500px;
-    }
-    
     @include mobile {
       img {
         max-width: 280px;
+      }
+    }
+    
+    @include laptop-and-up {
+      img {
+        max-width: 350px;
+      }
+    }
+    
+    @include desktop-and-up {
+      img {
+        max-width: 500px;
       }
     }
   }

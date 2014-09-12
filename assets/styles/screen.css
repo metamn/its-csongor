@@ -27,6 +27,7 @@ html.anvelocom body section article figure#the-anvelocom-frontpage-page-on-mobil
 @media only screen and (min-width: 90em) { html.anvelocom body section article figure#the-anvelocom-frontpage-page-on-mobile img, html.anvelocom body section article figure#the-anvelocom-menu-page-on-mobile img, html.anvelocom body section article figure#the-anvelocom-archive-page-on-mobile img { max-width: 320px; } }
 html.anvelocom body section article figure#the-anvelocom-archive-page-on-tablet img { max-width: 780px; }
 html.anvelocom body section article figure#the-anvelocom-frontpage-page-on-desktop img { max-width: 600px; }
+@media only screen and (min-width: 90em) { html.anvelocom body section article figure#the-anvelocom-frontpage-page-on-desktop img { max-width: 800px; } }
 @media only screen and (max-width: 37.499em) { html.anvelocom body section article figure#the-anvelocom-product-page-on-tablet img { max-width: 280px; } }
 @media only screen and (min-width: 37.5em) and (max-width: 63.999em) { html.anvelocom body section article figure#the-anvelocom-product-page-on-tablet img { max-width: 500px; } }
 @media only screen and (min-width: 64em) { html.anvelocom body section article figure#the-anvelocom-product-page-on-tablet img { max-width: 350px; } }

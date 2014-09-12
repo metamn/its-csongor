@@ -68,6 +68,12 @@ html.anvelocom {
           
           &#the-anvelocom-frontpage-page-on-desktop {
             @include mockup("desktop front");
+            
+            @include desktop-and-up {
+              img {
+                max-width: 800px;
+              }
+            }
           }
           
           &#the-anvelocom-product-page-on-tablet {

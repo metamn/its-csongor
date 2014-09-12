@@ -3,6 +3,10 @@
     figure {
       &#the-iorad-pricing-page-on-tablet {
         @include mockup("tablet portrait");
+        
+        @include mobile {
+          @include mockup("tablet half");
+        }
       }
     }
   }

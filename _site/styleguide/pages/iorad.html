@@ -40,16 +40,24 @@ html.iorad {
             @include mockup("mobile side");
               
             @include mobile {
-              @include mockup("mobile portrait");
+              @include mockup("mobile large");
             }
           }
           
           &#the-iorad-checkout-page-on-mobile {
             @include mockup("mobile portrait");
+            
+            @include mobile {
+              @include mockup("mobile large");
+            }
           }
           
           &#the-iorad-pricing-page-on-laptop {
             @include mockup("laptop front");
+            
+            @include mobile {
+              @include mockup("laptop half");
+            }
           }
           
           &#the-iorad-pricing-page-on-desktop {
@@ -60,6 +68,10 @@ html.iorad {
       
       &.intro {
         @include iorad-intro;
+      }
+      
+      &.description {
+        @include iorad-description;
       }
         
       &.services {

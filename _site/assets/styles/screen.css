@@ -24,6 +24,7 @@ html.anvelocom body section article figure#the-anvelocom-frontpage-page-on-mobil
 html.anvelocom body section article figure#the-anvelocom-archive-page-on-tablet img { max-width: 780px; }
 html.anvelocom body section article figure#the-anvelocom-frontpage-page-on-desktop img { max-width: 500px; }
 @media only screen and (max-width: 37.499em) { html.anvelocom body section article figure#the-anvelocom-product-page-on-tablet img { max-width: 280px; } }
+@media only screen and (min-width: 37.5em) and (max-width: 63.999em) { html.anvelocom body section article figure#the-anvelocom-product-page-on-tablet img { max-width: 500px; } }
 @media only screen and (min-width: 64em) { html.anvelocom body section article figure#the-anvelocom-product-page-on-tablet img { max-width: 350px; } }
 @media only screen and (min-width: 90em) { html.anvelocom body section article figure#the-anvelocom-product-page-on-tablet img { max-width: 500px; } }
 
@@ -33,6 +34,7 @@ html.inu-chivu body section article figure#the-inu-menu-white-page-on-mobile img
 html.inu-chivu body section article figure#the-inu-frontpage-page-on-mobile img, html.inu-chivu body section article figure#the-inu-archive-page-on-mobile img { max-width: 200px; }
 @media only screen and (max-width: 37.499em) { html.inu-chivu body section article figure#the-inu-frontpage-page-on-mobile img, html.inu-chivu body section article figure#the-inu-archive-page-on-mobile img { max-width: 240px; } }
 @media only screen and (max-width: 37.499em) { html.inu-chivu body section article figure#the-inu-archive-page-on-tablet img { max-width: 280px; } }
+@media only screen and (min-width: 37.5em) and (max-width: 63.999em) { html.inu-chivu body section article figure#the-inu-archive-page-on-tablet img { max-width: 500px; } }
 @media only screen and (min-width: 64em) { html.inu-chivu body section article figure#the-inu-archive-page-on-tablet img { max-width: 350px; } }
 @media only screen and (min-width: 90em) { html.inu-chivu body section article figure#the-inu-archive-page-on-tablet img { max-width: 500px; } }
 html.inu-chivu body section article figure#the-inu-archive-page-on-desktop img { max-width: 500px; }
@@ -59,6 +61,7 @@ html.iorad body section article figure#the-iorad-pricing-page-on-laptop img { ma
 @media only screen and (max-width: 37.499em) { html.iorad body section article figure#the-iorad-pricing-page-on-laptop img { max-width: 700px; margin-left: 25%; } }
 html.iorad body section article figure#the-iorad-pricing-page-on-desktop img { max-width: 500px; }
 @media only screen and (max-width: 37.499em) { html.iorad body section.intro article figure#the-iorad-pricing-page-on-tablet img { max-width: 280px; } }
+@media only screen and (min-width: 37.5em) and (max-width: 63.999em) { html.iorad body section.intro article figure#the-iorad-pricing-page-on-tablet img { max-width: 500px; } }
 @media only screen and (min-width: 64em) { html.iorad body section.intro article figure#the-iorad-pricing-page-on-tablet img { max-width: 350px; } }
 @media only screen and (min-width: 90em) { html.iorad body section.intro article figure#the-iorad-pricing-page-on-tablet img { max-width: 500px; } }
 @media only screen and (max-width: 37.499em) { html.iorad body section.intro article figure#the-iorad-pricing-page-on-tablet img { max-width: 500px; margin-left: 25%; margin-top: 10%; } }
@@ -77,9 +80,11 @@ html.organized-crime-and-corruption-reporting-project body section article figur
 html.organized-crime-and-corruption-reporting-project body section article figure#the-occrp-archive-page-on-desktop img { max-width: 500px; }
 html.organized-crime-and-corruption-reporting-project body section.intro article figure#the-occrp-frontpage-page-on-tablet img { max-width: 200px; }
 @media only screen and (max-width: 37.499em) and (max-width: 37.499em) { html.organized-crime-and-corruption-reporting-project body section.intro article figure#the-occrp-frontpage-page-on-tablet img { max-width: 280px; } }
+@media only screen and (max-width: 37.499em) and (min-width: 37.5em) and (max-width: 63.999em) { html.organized-crime-and-corruption-reporting-project body section.intro article figure#the-occrp-frontpage-page-on-tablet img { max-width: 500px; } }
 @media only screen and (max-width: 37.499em) and (min-width: 64em) { html.organized-crime-and-corruption-reporting-project body section.intro article figure#the-occrp-frontpage-page-on-tablet img { max-width: 350px; } }
 @media only screen and (max-width: 37.499em) and (min-width: 90em) { html.organized-crime-and-corruption-reporting-project body section.intro article figure#the-occrp-frontpage-page-on-tablet img { max-width: 500px; } }
 @media only screen and (max-width: 37.499em) { html.organized-crime-and-corruption-reporting-project body section.screenshots article figure#the-occrp-frontpage-page-on-tablet img, html.organized-crime-and-corruption-reporting-project body section.screenshots article figure#the-occrp-archive-page-on-tablet img, html.organized-crime-and-corruption-reporting-project body section.screenshots article figure#the-occrp-article-page-on-tablet img { max-width: 280px; } }
+@media only screen and (min-width: 37.5em) and (max-width: 63.999em) { html.organized-crime-and-corruption-reporting-project body section.screenshots article figure#the-occrp-frontpage-page-on-tablet img, html.organized-crime-and-corruption-reporting-project body section.screenshots article figure#the-occrp-archive-page-on-tablet img, html.organized-crime-and-corruption-reporting-project body section.screenshots article figure#the-occrp-article-page-on-tablet img { max-width: 500px; } }
 @media only screen and (min-width: 64em) { html.organized-crime-and-corruption-reporting-project body section.screenshots article figure#the-occrp-frontpage-page-on-tablet img, html.organized-crime-and-corruption-reporting-project body section.screenshots article figure#the-occrp-archive-page-on-tablet img, html.organized-crime-and-corruption-reporting-project body section.screenshots article figure#the-occrp-article-page-on-tablet img { max-width: 350px; } }
 @media only screen and (min-width: 90em) { html.organized-crime-and-corruption-reporting-project body section.screenshots article figure#the-occrp-frontpage-page-on-tablet img, html.organized-crime-and-corruption-reporting-project body section.screenshots article figure#the-occrp-archive-page-on-tablet img, html.organized-crime-and-corruption-reporting-project body section.screenshots article figure#the-occrp-article-page-on-tablet img { max-width: 500px; } }
 @media only screen and (max-width: 37.499em) { html.organized-crime-and-corruption-reporting-project body section.screenshots article figure#the-occrp-frontpage-page-on-tablet { display: none; } }
@@ -100,6 +105,7 @@ html.scatter body section article figure#the-scatter-business-page-on-mobile img
 @media only screen and (max-width: 37.499em) { html.scatter body section article figure#the-scatter-business-page-on-mobile img, html.scatter body section article figure#the-scatter-frontpage-1-page-on-mobile img { max-width: 240px; } }
 html.scatter body section article figure#the-scatter-business-page-on-tablet img, html.scatter body section article figure#the-scatter-business-2-page-on-tablet img { max-width: 780px; }
 @media only screen and (max-width: 37.499em) { html.scatter body section article figure#the-scatter-frontpage-page-on-tablet img { max-width: 280px; } }
+@media only screen and (min-width: 37.5em) and (max-width: 63.999em) { html.scatter body section article figure#the-scatter-frontpage-page-on-tablet img { max-width: 500px; } }
 @media only screen and (min-width: 64em) { html.scatter body section article figure#the-scatter-frontpage-page-on-tablet img { max-width: 350px; } }
 @media only screen and (min-width: 90em) { html.scatter body section article figure#the-scatter-frontpage-page-on-tablet img { max-width: 500px; } }
 html.scatter body section article figure#the-scatter-frontpage-page-on-laptop img, html.scatter body section article figure#the-scatter-frontpage-2-page-on-laptop img { max-width: 600px; }
@@ -108,6 +114,7 @@ html.scatter body section article figure#the-scatter-frontpage-1-page-on-desktop
 
 html.smuff body section article figure#the-smuff-product-page-on-desktop img, html.smuff body section article figure#the-smuff-archive-page-on-desktop img { max-width: 500px; }
 @media only screen and (max-width: 37.499em) { html.smuff body section article figure#the-smuff-archive-page-on-tablet img, html.smuff body section article figure#the-smuff-product-page-on-tablet img { max-width: 280px; } }
+@media only screen and (min-width: 37.5em) and (max-width: 63.999em) { html.smuff body section article figure#the-smuff-archive-page-on-tablet img, html.smuff body section article figure#the-smuff-product-page-on-tablet img { max-width: 500px; } }
 @media only screen and (min-width: 64em) { html.smuff body section article figure#the-smuff-archive-page-on-tablet img, html.smuff body section article figure#the-smuff-product-page-on-tablet img { max-width: 350px; } }
 @media only screen and (min-width: 90em) { html.smuff body section article figure#the-smuff-archive-page-on-tablet img, html.smuff body section article figure#the-smuff-product-page-on-tablet img { max-width: 500px; } }
 html.smuff body section article figure#the-smuff-product-page-on-mobile img, html.smuff body section article figure#the-smuff-filters-page-on-mobile img, html.smuff body section article figure#the-smuff-archive-page-on-mobile img { max-width: 200px; }

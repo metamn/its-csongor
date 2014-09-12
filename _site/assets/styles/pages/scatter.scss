@@ -11,7 +11,7 @@ html.scatter {
             }
             
             @include desktop-and-up {
-              @include mockup("mobile xxl");
+              @include mockup("mobile xl");
             }
           }
           
@@ -45,9 +45,32 @@ html.scatter {
         }
       }
       
-      &.screenshots {
+      &.screenshots-1, &.screenshots-2, &.services {
         @include full-height(auto);
         @include flexbox-direction(column);
+      }
+      
+      &.screenshots-2 {
+        @include laptop-and-up {
+          @include flexbox-direction(row);
+          @include flexbox-wrap(wrap);
+          
+          article {
+            figure {
+              &#the-scatter-frontpage-1-page-on-mobile, &#the-scatter-frontpage-page-on-tablet {
+                @include flex-basis(50%);
+              }
+            }
+          }
+        }
+      }
+      
+      &.services {
+        article {
+          &.mockup {
+            @include flex-order(2);
+          }
+        }
       }
     }
   }

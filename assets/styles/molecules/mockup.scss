@@ -95,6 +95,12 @@
     }
   }
   
+  @if ($type == "mobile xl") {
+    img {
+      max-width: 360px;
+    }
+  }
+  
   @if ($type == "mobile xxl") {
     img {
       max-width: 400px;

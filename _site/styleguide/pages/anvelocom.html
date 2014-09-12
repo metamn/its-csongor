@@ -38,6 +38,10 @@ html.anvelocom {
         figure {
           &#the-anvelocom-archive-page-on-laptop {
             @include mockup("laptop front");
+            
+            @include mobile {
+              @include mockup("laptop half");
+            }
           }
           
           &#the-anvelocom-frontpage-page-on-mobile, &#the-anvelocom-menu-page-on-mobile, &#the-anvelocom-archive-page-on-mobile {
@@ -49,7 +53,7 @@ html.anvelocom {
           }
           
           &#the-anvelocom-frontpage-page-on-desktop {
-            @include mockup("desktop");
+            @include mockup("desktop front");
           }
           
           &#the-anvelocom-product-page-on-tablet {

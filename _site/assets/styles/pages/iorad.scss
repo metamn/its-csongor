@@ -6,7 +6,7 @@ html.iorad {
           &#the-iorad-pricing-page-on-mobile {
             @include mockup("mobile side");
               
-            @include below-small-tablet {
+            @include mobile {
               @include mockup("mobile portrait");
             }
           }
@@ -26,13 +26,7 @@ html.iorad {
       }
       
       &.intro {
-        article {
-          figure {
-            &#the-iorad-pricing-page-on-tablet {
-              @include mockup("tablet portrait");
-            }
-          }
-        }
+        @include iorad-intro;
       }
         
       &.services {

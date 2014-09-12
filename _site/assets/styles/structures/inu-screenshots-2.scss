@@ -1,5 +1,5 @@
 @mixin inu-screenshots-2 {
-  @include below-small-tablet {
+  @include mobile {
     article.mockup {
       &:nth-of-type(2) {
         @include flex-order(3);

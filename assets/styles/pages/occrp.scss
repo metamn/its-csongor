@@ -23,7 +23,7 @@ html.organized-crime-and-corruption-reporting-project {
             &#the-occrp-frontpage-page-on-tablet {
               @include mockup("tablet side");
 
-              @include below-small-tablet {
+              @include mobile {
                 @include mockup("tablet portrait");
               }
             }
@@ -38,7 +38,7 @@ html.organized-crime-and-corruption-reporting-project {
               @include mockup("tablet portrait");
             }
             
-            @include below-small-tablet {
+            @include mobile {
               &#the-occrp-frontpage-page-on-tablet {
                 display: none;
               }

@@ -1,14 +1,14 @@
 
-@mixin below-small-tablet {
+@mixin mobile {
   // Mobile devices in both portrait and landscape mode 
-  @media only screen and (max-width: $breakpoint-small-tablet - 0.001) {
+  @media only screen and (max-width: $breakpoint-mobile - 0.001) {
     @content
   }
 }
 
 @mixin tablet {
   // Tablets in both portrait and landscape mode 
-  @media only screen and (min-width: $breakpoint-small-tablet) and (max-width: $breakpoint-laptop - 0.001) {
+  @media only screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-laptop - 0.001) {
     @content
   }
 }
@@ -33,3 +33,4 @@
     @content
   }
 }
+ 

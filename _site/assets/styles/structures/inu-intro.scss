@@ -4,7 +4,7 @@
       &#the-inu-archive-page-on-tablet {
         @include mockup("tablet angle");
 
-        @include below-small-tablet {
+        @include mobile {
           margin-left: 30%;
         }
       }

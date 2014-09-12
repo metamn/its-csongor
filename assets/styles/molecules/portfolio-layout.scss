@@ -11,13 +11,13 @@
     }
   }
   
-  @include below-small-tablet {
-    @include portfolio-layout-small-tablet;
+  @include mobile {
+    @include portfolio-layout-mobile;
   }
 }
 
 
-@mixin portfolio-layout-small-tablet {
+@mixin portfolio-layout-mobile {
   @include full-height(auto);
   
   body {

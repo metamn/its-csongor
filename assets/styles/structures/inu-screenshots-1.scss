@@ -1,5 +1,5 @@
 @mixin inu-screenshots-1 {
-  @include below-small-tablet {
+  @include mobile {
     @include flexbox-direction(row);
 
     article {

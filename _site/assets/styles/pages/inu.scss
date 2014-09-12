@@ -10,7 +10,7 @@ html.inu-chivu {
           &#the-inu-frontpage-page-on-mobile, &#the-inu-archive-page-on-mobile {
             @include mockup("mobile side");
             
-            @include below-small-tablet {
+            @include mobile {
               @include mockup("mobile portrait");
             }
           }
@@ -26,7 +26,7 @@ html.inu-chivu {
           &#the-inu-frontpage-page-on-laptop {
             @include mockup("laptop front");
             
-            @include below-small-tablet {
+            @include mobile {
               @include mockup("laptop half");
             }
           }

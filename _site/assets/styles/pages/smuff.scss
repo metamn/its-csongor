@@ -14,7 +14,7 @@ html.smuff {
           &#the-smuff-product-page-on-mobile, &#the-smuff-filters-page-on-mobile, &#the-smuff-archive-page-on-mobile {
             @include mockup("mobile side");
             
-            @include below-small-tablet {
+            @include mobile {
               @include mockup("mobile portrait");
             }
           }

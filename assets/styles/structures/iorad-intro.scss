@@ -1,0 +1,9 @@
+@mixin iorad-intro {
+  article {
+    figure {
+      &#the-iorad-pricing-page-on-tablet {
+        @include mockup("tablet portrait");
+      }
+    }
+  }
+}

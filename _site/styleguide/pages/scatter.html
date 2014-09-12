@@ -54,6 +54,10 @@ html.scatter {
           
           &#the-scatter-frontpage-page-on-laptop, &#the-scatter-frontpage-2-page-on-laptop {
             @include mockup("laptop front");
+            
+            @include mobile {
+              @include mockup("laptop half");
+            }
           }
           
           &#the-scatter-frontpage-1-page-on-desktop, &#the-scatter-frontpage-2-page-on-desktop {

@@ -120,6 +120,7 @@ html.scatter body section article figure#the-scatter-business-page-on-tablet img
 @media only screen and (min-width: 90em) { html.scatter body section article figure#the-scatter-frontpage-page-on-tablet img { max-width: 500px; } }
 html.scatter body section article figure#the-scatter-frontpage-page-on-laptop img, html.scatter body section article figure#the-scatter-frontpage-2-page-on-laptop img { max-width: 600px; }
 @media only screen and (max-width: 37.499em) { html.scatter body section article figure#the-scatter-frontpage-page-on-laptop img, html.scatter body section article figure#the-scatter-frontpage-2-page-on-laptop img { max-width: 320px; } }
+@media only screen and (max-width: 37.499em) { html.scatter body section article figure#the-scatter-frontpage-page-on-laptop img, html.scatter body section article figure#the-scatter-frontpage-2-page-on-laptop img { max-width: 700px; margin-left: 25%; } }
 html.scatter body section article figure#the-scatter-frontpage-1-page-on-desktop img, html.scatter body section article figure#the-scatter-frontpage-2-page-on-desktop img { max-width: 500px; }
 
 html.smuff body section article figure#the-smuff-product-page-on-desktop img, html.smuff body section article figure#the-smuff-archive-page-on-desktop img { max-width: 500px; }

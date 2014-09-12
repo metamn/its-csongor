@@ -91,6 +91,12 @@
         max-width: 320px;
       }
     }
+    
+    @include laptop-and-up {
+      img {
+        max-width: 800px;
+      }
+    } 
   }
   
   @if ($type == "laptop half") {
@@ -120,14 +126,13 @@
     img {
       max-width: 320px;
     }
-    
-    @include tablet {
-      img {
-        max-width: 400px;
-      }
-    }
   }
   
+  @if ($type == "mobile xxl") {
+    img {
+      max-width: 400px;
+    }
+  }
   
   
 

@@ -48,6 +48,10 @@ html.anvelocom {
             @include mockup("mobile portrait");
             
             @include tablet {
+              @include mockup("mobile xxl");
+            }
+            
+            @include desktop-and-up {
               @include mockup("mobile large");
             }
           }
@@ -70,8 +74,15 @@ html.anvelocom {
         @include anvelocom-intro;
       }
       
-      &.screenshots, &.services {
+      &.screenshots-1, &.screenshots-2, &.services {
         @include tablet {
+          @include full-height(auto);
+          @include flexbox-direction(column);
+        }
+      }
+      
+      &.screenshots-2, &.services {
+        @include laptop-and-up {
           @include full-height(auto);
           @include flexbox-direction(column);
         }

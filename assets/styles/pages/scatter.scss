@@ -4,10 +4,14 @@ html.scatter {
       article {
         figure {
           &#the-scatter-business-page-on-mobile, &#the-scatter-frontpage-1-page-on-mobile {
-            @include mockup("mobile side");
+            @include mockup("mobile portrait");
             
-            @include below-laptop {
-              @include mockup("mobile portrait");
+            @include tablet {
+              @include mockup("mobile large");
+            }
+            
+            @include desktop-and-up {
+              @include mockup("mobile xxl");
             }
           }
           
@@ -25,19 +29,29 @@ html.scatter {
             @include mobile {
               @include mockup("laptop half");
             }
+            
+            @include laptop-and-up {
+              img {
+                max-width: 800px;
+              }
+            } 
           }
           
           &#the-scatter-frontpage-1-page-on-desktop, &#the-scatter-frontpage-2-page-on-desktop {
             @include mockup("desktop");
+            
+            @include laptop-and-up {
+              img {
+                max-width: 800px;
+              }
+            }
           }
         }
       }
       
       &.screenshots {
-        @include tablet {
-          @include full-height(auto);
-          @include flexbox-direction(column);
-        }
+        @include full-height(auto);
+        @include flexbox-direction(column);
       }
     }
   }

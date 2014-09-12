@@ -1,3 +1,11 @@
 @mixin iorad-description {
-  
+  @include tablet {
+    @include flexbox-wrap(wrap);
+    
+    article {
+      &.mockup {
+        @include flex-basis(50%);
+      }
+    }
+  }
 }

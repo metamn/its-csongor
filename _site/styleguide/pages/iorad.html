@@ -39,7 +39,7 @@ html.iorad {
           &#the-iorad-pricing-page-on-mobile {
             @include mockup("mobile side");
               
-            @include mobile {
+            @include below-laptop {
               @include mockup("mobile large");
             }
           }
@@ -47,7 +47,7 @@ html.iorad {
           &#the-iorad-checkout-page-on-mobile {
             @include mockup("mobile portrait");
             
-            @include mobile {
+            @include below-laptop {
               @include mockup("mobile large");
             }
           }
@@ -73,15 +73,13 @@ html.iorad {
       &.description {
         @include iorad-description;
       }
+      
+      &.screenshots {
+        @include iorad-screenshots;
+      }
         
       &.services {
-        article {
-          figure {
-            &#the-iorad-pricing-page-on-tablet {
-              @include mockup("tablet angle");
-            }
-          }
-        }
+        @include iorad-services;
       }
     }
   }

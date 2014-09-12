@@ -1,0 +1,13 @@
+@mixin iorad-services {
+  article {
+    figure {
+      &#the-iorad-pricing-page-on-tablet {
+        @include mockup("tablet angle");
+      }
+    }
+  }
+  
+  @include tablet {
+    @include flexbox-wrap(wrap);
+  }
+}

@@ -49,9 +49,9 @@ html.inu-chivu body section.intro article figure#the-inu-archive-page-on-tablet 
 @media only screen and (min-width: 64em) { html.inu-chivu body section.screenshots-3 article.mockup { -webkit-align-self: flex-end; -moz-align-self: flex-end; -ms-flex-item-align: end; align-self: flex-end; } }
 
 html.iorad body section article figure#the-iorad-pricing-page-on-mobile img { max-width: 200px; }
-@media only screen and (max-width: 37.499em) { html.iorad body section article figure#the-iorad-pricing-page-on-mobile img { max-width: 500px; } }
+@media only screen and (max-width: 63.999em) { html.iorad body section article figure#the-iorad-pricing-page-on-mobile img { max-width: 320px; } }
 html.iorad body section article figure#the-iorad-checkout-page-on-mobile img { max-width: 240px; }
-@media only screen and (max-width: 37.499em) { html.iorad body section article figure#the-iorad-checkout-page-on-mobile img { max-width: 500px; } }
+@media only screen and (max-width: 63.999em) { html.iorad body section article figure#the-iorad-checkout-page-on-mobile img { max-width: 320px; } }
 html.iorad body section article figure#the-iorad-pricing-page-on-laptop img { max-width: 600px; }
 @media only screen and (max-width: 37.499em) { html.iorad body section article figure#the-iorad-pricing-page-on-laptop img { max-width: 320px; } }
 @media only screen and (max-width: 37.499em) { html.iorad body section article figure#the-iorad-pricing-page-on-laptop img { max-width: 700px; margin-left: 25%; } }
@@ -59,7 +59,12 @@ html.iorad body section article figure#the-iorad-pricing-page-on-desktop img { m
 html.iorad body section.intro article figure#the-iorad-pricing-page-on-tablet img { max-width: 500px; }
 @media only screen and (max-width: 37.499em) { html.iorad body section.intro article figure#the-iorad-pricing-page-on-tablet img { max-width: 280px; } }
 @media only screen and (max-width: 37.499em) { html.iorad body section.intro article figure#the-iorad-pricing-page-on-tablet img { max-width: 500px; margin-left: 25%; margin-top: 10%; } }
+@media only screen and (min-width: 37.5em) and (max-width: 63.999em) { html.iorad body section.intro { -webkit-box-direction: normal; -moz-box-direction: normal; -webkit-box-orient: vertical; -moz-box-orient: vertical; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; } }
+@media only screen and (min-width: 37.5em) and (max-width: 63.999em) { html.iorad body section.description { -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+  html.iorad body section.description article.mockup { -webkit-flex-basis: 50%; -moz-flex-basis: 50%; -ms-flex-preferred-size: 50%; flex-basis: 50%; } }
+@media only screen and (min-width: 37.5em) and (max-width: 63.999em) { html.iorad body section.screenshots { -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; } }
 html.iorad body section.services article figure#the-iorad-pricing-page-on-tablet img { max-width: 780px; }
+@media only screen and (min-width: 37.5em) and (max-width: 63.999em) { html.iorad body section.services { -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; } }
 
 html.organized-crime-and-corruption-reporting-project body section article figure#the-occrp-frontpage-2-page-on-mobile img, html.organized-crime-and-corruption-reporting-project body section article figure#the-occrp-frontpage-page-on-mobile img, html.organized-crime-and-corruption-reporting-project body section article figure#the-occrp-archive-page-on-mobile img { max-width: 240px; }
 html.organized-crime-and-corruption-reporting-project body section article figure#the-occrp-frontpage-page-on-laptop img, html.organized-crime-and-corruption-reporting-project body section article figure#the-occrp-archive-page-on-laptop img { max-width: 600px; }

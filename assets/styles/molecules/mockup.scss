@@ -87,6 +87,12 @@
     img {
       max-width: 320px;
     }
+    
+    @include tablet {
+      img {
+        max-width: 400px;
+      }
+    }
   }
   
   

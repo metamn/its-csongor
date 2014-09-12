@@ -1,0 +1,6 @@
+@mixin anvelocom-screenshots-2 {
+  @include tablet {
+    @include full-height(auto);
+    @include flexbox-direction(column);
+  }
+}

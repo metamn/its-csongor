@@ -46,6 +46,10 @@ html.anvelocom {
           
           &#the-anvelocom-frontpage-page-on-mobile, &#the-anvelocom-menu-page-on-mobile, &#the-anvelocom-archive-page-on-mobile {
             @include mockup("mobile portrait");
+            
+            @include tablet {
+              @include mockup("mobile large");
+            }
           }
           
           &#the-anvelocom-archive-page-on-tablet {
@@ -59,6 +63,17 @@ html.anvelocom {
           &#the-anvelocom-product-page-on-tablet {
             @include mockup("tablet portrait");
           }
+        }
+      }
+      
+      &.intro {
+        @include anvelocom-intro;
+      }
+      
+      &.screenshots, &.services {
+        @include tablet {
+          @include full-height(auto);
+          @include flexbox-direction(column);
         }
       }
     }

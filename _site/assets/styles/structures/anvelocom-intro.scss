@@ -1,0 +1,5 @@
+@mixin anvelocom-intro {
+  @include tablet {
+    @include flexbox-wrap(wrap);
+  }
+}

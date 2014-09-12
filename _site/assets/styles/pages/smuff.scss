@@ -22,7 +22,20 @@ html.smuff {
           &#the-smuff-product-page-on-laptop, &#the-smuff-archive-page-on-laptop, &#the-smuff-checkout-page-on-laptop {
             @include mockup("laptop front");
           }
+          
+          &#the-smuff-checkout-page-on-laptop {
+            @include desktop-and-up {
+              @include mockup("laptop xxl");
+            }
+          }
         }
+      }
+      
+      
+      &.screenshots-3 {
+        @include flexbox-wrap(wrap);
+        height: auto;
+        
       }
     }
   }

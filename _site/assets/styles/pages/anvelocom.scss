@@ -11,9 +11,7 @@ html.anvelocom {
             }
             
             @include laptop-and-up {
-              img {
-                max-width: 800px;
-              }
+              @include mockup("laptop xxl");
             } 
           }
           
@@ -37,9 +35,7 @@ html.anvelocom {
             @include mockup("desktop front");
             
             @include desktop-and-up {
-              img {
-                max-width: 800px;
-              }
+              @include mockup("desktop xxl");
             }
           }
           

@@ -31,9 +31,7 @@ html.scatter {
             }
             
             @include laptop-and-up {
-              img {
-                max-width: 800px;
-              }
+              @include mockup("laptop xxl");
             } 
           }
           
@@ -41,9 +39,7 @@ html.scatter {
             @include mockup("desktop");
             
             @include laptop-and-up {
-              img {
-                max-width: 800px;
-              }
+              @include mockup("desktop xxl");
             }
           }
         }

@@ -38,6 +38,16 @@
     }
   }
   
+  @if ($type == "tablet angle") {
+    img {
+      max-width: 800px;
+      
+      @include mobile {
+        margin-left: -50%;
+      }
+    }
+  }
+  
   @if ($type == "tablet portrait single") {
     img {
       // tablet
@@ -56,6 +66,16 @@
       // desktop
       @include desktop-and-up {
         max-width: 500px;
+      }
+    }
+  }
+  
+  @if ($type == "tablet portrait double") {
+    img {
+      max-width: 320px;
+      
+      @include desktop-and-up {
+        max-width: 400px;
       }
     }
   }
@@ -102,6 +122,16 @@
     }
   }
   
+  @if ($type == "desktop front") {
+    img {
+      max-width: 600px;
+      
+      @include desktop-and-up {
+        max-width: 800px;
+      }
+    }
+  }
+  
   
   
   
@@ -113,6 +143,20 @@
       
       @include desktop-and-up {
         max-width: 600px;
+      }
+    }
+  }
+  
+  @if ($type == "laptop single") {
+    img {
+      max-width: 600px;
+      
+      @include mobile {
+        margin-left: 20%;
+      }
+      
+      @include desktop-and-up {
+        max-width: 800px;
       }
     }
   }

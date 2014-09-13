@@ -1,0 +1,10 @@
+@mixin anvelocom-layout {
+  body {
+    section {
+      &.intro {
+        overflow: hidden;
+        @include flexbox-direction(column);
+      }
+    }
+  }
+}

@@ -14,5 +14,9 @@
   &.inu-chivu {
     @include inu-layout;
   }
+  
+  &.anvelocom {
+    @include anvelocom-layout;
+  }
 }
 

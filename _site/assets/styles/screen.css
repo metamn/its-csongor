@@ -24,6 +24,7 @@ html.portfolio body section article { -webkit-box-ordinal-group: 1; -moz-box-ord
 @media only screen and (max-width: 37.499em) { html.portfolio.inu-chivu body section.screenshots-1 article { -webkit-flex-basis: 50%; -moz-flex-basis: 50%; -ms-flex-preferred-size: 50%; flex-basis: 50%; }
   html.portfolio.inu-chivu body section.screenshots-1 article:nth-of-type(2) { -webkit-flex-basis: 65%; -moz-flex-basis: 65%; -ms-flex-preferred-size: 65%; flex-basis: 65%; margin-left: -15%; } }
 html.portfolio.inu-chivu body section.screenshots-3 article { -webkit-align-self: flex-end; -moz-align-self: flex-end; -ms-flex-item-align: end; align-self: flex-end; }
+html.portfolio.anvelocom body section.intro { overflow: hidden; -webkit-box-direction: normal; -moz-box-direction: normal; -webkit-box-orient: vertical; -moz-box-orient: vertical; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
 html.portfolio body section article.mockup figure { overflow: hidden; }
 html.portfolio body section article.mockup figure img { max-width: 100%; height: auto; }
 html.portfolio body section article.mockup figure figcaption { display: none; }
@@ -41,4 +42,15 @@ html.portfolio body section article.mockup figure#the-inu-archive-page-on-deskto
 @media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-inu-archive-page-on-desktop img { max-width: 600px; } }
 html.portfolio body section article.mockup figure#the-inu-frontpage-page-on-laptop img { max-width: 400px; }
 @media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-inu-frontpage-page-on-laptop img { max-width: 600px; } }
+html.portfolio body section article.mockup figure#the-anvelocom-archive-page-on-laptop img { max-width: 600px; }
+@media only screen and (max-width: 37.499em) { html.portfolio body section article.mockup figure#the-anvelocom-archive-page-on-laptop img { margin-left: 20%; } }
+@media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-anvelocom-archive-page-on-laptop img { max-width: 800px; } }
+html.portfolio body section article.mockup figure#the-anvelocom-frontpage-page-on-mobile img, html.portfolio body section article.mockup figure#the-anvelocom-menu-page-on-mobile img, html.portfolio body section article.mockup figure#the-anvelocom-archive-page-on-mobile img { max-width: 260px; }
+@media only screen and (max-width: 63.999em) { html.portfolio body section article.mockup figure#the-anvelocom-frontpage-page-on-mobile img, html.portfolio body section article.mockup figure#the-anvelocom-menu-page-on-mobile img, html.portfolio body section article.mockup figure#the-anvelocom-archive-page-on-mobile img { max-width: 300px; } }
+html.portfolio body section article.mockup figure#the-anvelocom-archive-page-on-tablet img { max-width: 800px; }
+@media only screen and (max-width: 37.499em) { html.portfolio body section article.mockup figure#the-anvelocom-archive-page-on-tablet img { margin-left: -50%; } }
+html.portfolio body section article.mockup figure#the-anvelocom-frontpage-page-on-desktop img { max-width: 600px; }
+@media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-anvelocom-frontpage-page-on-desktop img { max-width: 800px; } }
+html.portfolio body section article.mockup figure#the-anvelocom-product-page-on-tablet img { max-width: 320px; }
+@media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-anvelocom-product-page-on-tablet img { max-width: 400px; } }
 html.portfolio body section article.services, html.portfolio body section article.title, html.portfolio body section article.description { max-width: 30em; text-align: center; }

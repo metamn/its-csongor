@@ -1,6 +1,6 @@
 @mixin scatter-mockups {
   &#the-scatter-business-page-on-mobile {
-    @include mockup("mobile portrait large");
+    @include mockup("mobile portrait");
   }
   
   &#the-scatter-business-page-on-tablet, &#the-scatter-business-2-page-on-tablet {
@@ -8,7 +8,7 @@
   }
   
   &#the-scatter-frontpage-1-page-on-mobile {
-    @include mockup("mobile portrait small");
+    @include mockup("mobile portrait");
   }
   
   &#the-scatter-frontpage-page-on-tablet {

@@ -32,9 +32,31 @@
 
 
 @mixin mockup($type) {
+  @if ($type == "tablet angle large featured") {
+    img {
+      max-width: 1000px;
+      
+      @include laptop-and-up {
+        max-width: 800px;
+      }
+      
+      @include desktop-and-up {
+        max-width: 1000px;
+      }
+    }
+  }
+  
   @if ($type == "tablet angle large") {
     img {
       max-width: 1000px;
+      
+      @include mobile {
+        margin-left: -60%;
+      }
+      
+      @include tablet {
+        margin-left: -15%;
+      }
       
       @include laptop-and-up {
         max-width: 800px;
@@ -91,7 +113,7 @@
   
   
   
-  @if ($type == "mobile portrait large") {
+  @if ($type == "mobile portrait") {
     img {
       max-width: 320px;
       
@@ -105,17 +127,8 @@
     }
   }
   
-  @if ($type == "mobile portrait small") {
-    img {
-      max-width: 260px;
-      
-      @include below-laptop {
-        max-width: 300px;
-      }
-    }
-  }
   
-  @if ($type == "mobile side small") {
+  @if ($type == "mobile side") {
     img {
       max-width: 200px;
       

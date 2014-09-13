@@ -1,7 +1,7 @@
 @mixin inu-mockups {
   &#the-inu-archive-page-on-tablet {
     &.intro {
-      @include mockup("tablet angle large");
+      @include mockup("tablet angle large featured");
     }
     
     &.screenshots-2 {
@@ -10,11 +10,11 @@
   }
   
   &#the-inu-menu-white-page-on-mobile, &#the-inu-menu-black-page-on-mobile {
-    @include mockup("mobile portrait small");
+    @include mockup("mobile portrait");
   }
   
   &#the-inu-frontpage-page-on-mobile, &#the-inu-archive-page-on-mobile {
-    @include mockup("mobile side small");
+    @include mockup("mobile side");
   }
   
   &#the-inu-archive-page-on-desktop {

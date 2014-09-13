@@ -1,7 +1,7 @@
 @mixin iorad-layout {
   body {
     section {
-      &.screenshots {
+      &.services {
         // Align both desktop and laptop to bottom
         article {
           @include flex-align-self(flex-end);

@@ -10,11 +10,17 @@
   }
   
   &#the-occrp-frontpage-2-page-on-mobile, &#the-occrp-frontpage-page-on-mobile, &#the-occrp-archive-page-on-mobile {
-    @include mockup("mobile portrait small");
+    @include mockup("mobile portrait");
   }
   
   &#the-occrp-frontpage-page-on-tablet.screenshots-2, &#the-occrp-archive-page-on-tablet, &#the-occrp-article-page-on-tablet {
     @include mockup("tablet portrait small");
+  }
+  
+  &#the-occrp-frontpage-page-on-tablet.screenshots-2 {
+    @include below-laptop {
+      display: none;
+    }
   }
   
   &#the-occrp-frontpage-page-on-laptop, &#the-occrp-archive-page-on-laptop {

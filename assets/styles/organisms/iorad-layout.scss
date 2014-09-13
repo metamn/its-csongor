@@ -1,6 +1,12 @@
 @mixin iorad-layout {
   body {
     section {
+      &.screenshots {
+        // Align both desktop and laptop to bottom
+        article {
+          @include flex-align-self(flex-end);
+        }
+      }
     }
   }
 }

@@ -28,6 +28,7 @@ html.portfolio.anvelocom body section.intro { overflow: hidden; -webkit-box-dire
 html.portfolio.smuff body section.intro { -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 html.portfolio.smuff body section.intro article.title { -webkit-flex-basis: 100%; -moz-flex-basis: 100%; -ms-flex-preferred-size: 100%; flex-basis: 100%; }
 html.portfolio.organized-crime-and-corruption-reporting-project body section.services article.mockup { -webkit-box-ordinal-group: 3; -moz-box-ordinal-group: 3; -webkit-order: 2; -ms-flex-order: 2; order: 2; }
+html.portfolio.iorad body section.screenshots article { -webkit-align-self: flex-end; -moz-align-self: flex-end; -ms-flex-item-align: end; align-self: flex-end; }
 html.portfolio body section article.mockup figure { overflow: hidden; }
 html.portfolio body section article.mockup figure img { max-width: 100%; height: auto; }
 html.portfolio body section article.mockup figure figcaption { display: none; }
@@ -82,4 +83,15 @@ html.portfolio body section article.mockup figure#the-occrp-frontpage-page-on-la
 @media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-occrp-frontpage-page-on-laptop img, html.portfolio body section article.mockup figure#the-occrp-archive-page-on-laptop img { max-width: 600px; } }
 html.portfolio body section article.mockup figure#the-occrp-archive-page-on-desktop img { max-width: 400px; }
 @media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-occrp-archive-page-on-desktop img { max-width: 600px; } }
+html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-tablet img { max-width: 500px; }
+@media only screen and (max-width: 37.499em) { html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-tablet img { max-width: 320px; } }
+@media only screen and (min-width: 64em) { html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-tablet img { max-width: 350px; } }
+@media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-tablet img { max-width: 500px; } }
+html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-tablet.services img { max-width: 800px; }
+html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-mobile img, html.portfolio body section article.mockup figure#the-iorad-checkout-page-on-mobile img { max-width: 260px; }
+@media only screen and (max-width: 63.999em) { html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-mobile img, html.portfolio body section article.mockup figure#the-iorad-checkout-page-on-mobile img { max-width: 300px; } }
+html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-laptop img { max-width: 400px; }
+@media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-laptop img { max-width: 600px; } }
+html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-desktop img { max-width: 400px; }
+@media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-desktop img { max-width: 600px; } }
 html.portfolio body section article.services, html.portfolio body section article.title, html.portfolio body section article.description { max-width: 30em; text-align: center; }

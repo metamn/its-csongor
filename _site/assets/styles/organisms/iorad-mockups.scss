@@ -1,3 +1,22 @@
 @mixin iorad-mockups {
+  &#the-iorad-pricing-page-on-tablet {
+    @include mockup("tablet portrait single");
+    
+    &.services {
+      @include mockup("tablet angle single");
+    }
+  }
+  
+  &#the-iorad-pricing-page-on-mobile,  &#the-iorad-checkout-page-on-mobile {
+    @include mockup("mobile portrait double");
+  }
 
+
+  &#the-iorad-pricing-page-on-laptop {
+    @include mockup("laptop double");
+  }
+
+  &#the-iorad-pricing-page-on-desktop {
+    @include mockup("desktop right double");
+  }
 }

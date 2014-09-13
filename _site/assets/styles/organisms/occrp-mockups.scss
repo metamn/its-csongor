@@ -1,27 +1,27 @@
 @mixin occrp-mockups {
   &#the-occrp-frontpage-page-on-tablet {
     &.intro {
-      @include mockup("tablet side single");
+      @include mockup("tablet side large");
 
       @include below-laptop {
-        @include mockup("tablet portrait single");
+        @include mockup("tablet portrait large");
       }
     }
   }
   
   &#the-occrp-frontpage-2-page-on-mobile, &#the-occrp-frontpage-page-on-mobile, &#the-occrp-archive-page-on-mobile {
-    @include mockup("mobile portrait double");
+    @include mockup("mobile portrait small");
   }
   
   &#the-occrp-frontpage-page-on-tablet.screenshots-2, &#the-occrp-archive-page-on-tablet, &#the-occrp-article-page-on-tablet {
-    @include mockup("tablet portrait double");
+    @include mockup("tablet portrait small");
   }
   
   &#the-occrp-frontpage-page-on-laptop, &#the-occrp-archive-page-on-laptop {
-    @include mockup("laptop double");
+    @include mockup("laptop small");
   }
   
   &#the-occrp-archive-page-on-desktop {
-    @include mockup("desktop right double");
+    @include mockup("desktop right small");
   }
 }

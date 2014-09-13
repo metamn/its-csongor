@@ -1,11 +1,19 @@
 @mixin mockup($type) {
-  @if ($type == "tablet angle single") {
+  @if ($type == "tablet angle large") {
     img {
-      max-width: 800px;
+      max-width: 1000px;
+      
+      @include laptop-and-up {
+        max-width: 800px;
+      }
+      
+      @include desktop-and-up {
+        max-width: 1000px;
+      }
     }
   }
   
-  @if ($type == "tablet portrait single") {
+  @if ($type == "tablet portrait large") {
     img {
       // tablet
       max-width: 500px;
@@ -17,7 +25,7 @@
       
       // laptop 
       @include laptop-and-up {
-        max-width: 350px;
+        max-width: 320px;
       }
       
       // desktop
@@ -27,7 +35,7 @@
     }
   }
   
-  @if ($type == "tablet portrait double") {
+  @if ($type == "tablet portrait small") {
     img {
       max-width: 320px;
       
@@ -37,7 +45,7 @@
     }
   }
   
-  @if ($type == "tablet side single") {
+  @if ($type == "tablet side large") {
     img {
       max-width: 180px;
       
@@ -50,14 +58,21 @@
   
   
   
-  @if ($type == "mobile portrait single") {
+  @if ($type == "mobile portrait large") {
     img {
       max-width: 320px;
       
+      @include laptop-and-up {
+        max-width: 240px;
+      }
+      
+      @include desktop-and-up {
+        max-width: 320px;
+      }
     }
   }
   
-  @if ($type == "mobile portrait double") {
+  @if ($type == "mobile portrait small") {
     img {
       max-width: 260px;
       
@@ -67,7 +82,7 @@
     }
   }
   
-  @if ($type == "mobile side double") {
+  @if ($type == "mobile side small") {
     img {
       max-width: 200px;
       
@@ -86,9 +101,13 @@
   
   
   
-  @if ($type == "desktop right double") {
+  @if ($type == "desktop right small") {
     img {
       max-width: 400px;
+      
+      @include mobile {
+        max-width: 100%;
+      }
       
       @include desktop-and-up {
         max-width: 600px;
@@ -96,7 +115,7 @@
     }
   }
   
-  @if ($type == "desktop front") {
+  @if ($type == "desktop front large") {
     img {
       max-width: 600px;
       
@@ -111,7 +130,7 @@
   
   
   
-  @if ($type == "laptop double") {
+  @if ($type == "laptop small") {
     img {
       max-width: 400px;
       
@@ -121,9 +140,23 @@
     }
   }
   
-  @if ($type == "laptop single") {
+  @if ($type == "laptop large") {
     img {
       max-width: 600px;
+      
+      @include desktop-and-up {
+        max-width: 800px;
+      }
+    }
+  }
+  
+  @if ($type == "laptop large featured") {
+    img {
+      max-width: 600px;
+      
+      @include mobile {
+        margin-left: 20%;
+      }
       
       @include desktop-and-up {
         max-width: 800px;

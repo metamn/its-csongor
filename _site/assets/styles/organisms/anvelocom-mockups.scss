@@ -1,25 +1,21 @@
 @mixin anvelocom-mockups {
   &#the-anvelocom-archive-page-on-laptop {
-    @include mockup("laptop single");
-    
-    @include mobile {
-      margin-left: 20%;
-    } 
+    @include mockup("laptop large featured");
   }
   
   &#the-anvelocom-frontpage-page-on-mobile, &#the-anvelocom-menu-page-on-mobile, &#the-anvelocom-archive-page-on-mobile {
-    @include mockup("mobile portrait double");
+    @include mockup("mobile portrait small");
   }
   
   &#the-anvelocom-archive-page-on-tablet {
-    @include mockup("tablet angle");
+    @include mockup("tablet angle large");
   }
   
   &#the-anvelocom-frontpage-page-on-desktop {
-    @include mockup("desktop front");
+    @include mockup("desktop front large");
   }
   
   &#the-anvelocom-product-page-on-tablet, &#the-anvelocom-archive-page-on-tablet  {
-    @include mockup("tablet portrait double");
+    @include mockup("tablet portrait small");
   }
 }

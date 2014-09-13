@@ -32,139 +32,92 @@
 
 
 @mixin mockup($type) {
-  @if ($type == "tablet portrait") {
-    @include mobile {
-      img {
-        max-width: 280px;
-      }
-    }
-    
-    @include tablet {
-      img {
-        max-width: 500px;
-      }
-    }
-    
-    @include laptop-and-up {
-      img {
-        max-width: 350px;
-      }
-    }
-    
-    @include desktop-and-up {
-      img {
-        max-width: 450px;
-      }
-    }
-  }
-
-  @if ($type == "tablet side") {
-    img {
-      max-width: 200px;
-    }
-  }
-
-  @if ($type == "tablet angle") {
-    img {
-      max-width: 780px;
-    }
-  }
-  
-  @if ($type == "tablet half") {
-    img {
-      max-width: 500px;
-      margin-left: 25%;
-      margin-top: 10%;
-    }
-  }
-  
-  
-
-  
-  @if ($type == "laptop front") {
-    img {
-      max-width: 700px;
-    }
-    
-    @include mobile {
-      img {
-        max-width: 320px;
-      }
-    }
-  }
-  
-  @if ($type == "laptop half") {
-    img {
-      max-width: 700px;
-      margin-left: 25%;
-    }
-  }
-  
-  @if ($type == "laptop xxl") {
-    img {
-      max-width: 1000px;
-    }
-  } 
-  
-  
-  
-
-  
-  @if ($type == "mobile side") {
-    img {
-      max-width: 200px;
-    }
-  }
-  
-  @if ($type == "mobile side large") {
-    img {
-      max-width: 230px;
-    }
-  }
-
-  @if ($type == "mobile portrait") {
-    img {
-      max-width: 240px;
-    }
-  }
-  
-  @if ($type == "mobile large") {
-    img {
-      max-width: 280px;
-    }
-  }
-  
-  @if ($type == "mobile xl") {
-    img {
-      max-width: 360px;
-    }
-  }
-  
-  @if ($type == "mobile xxl") {
-    img {
-      max-width: 400px;
-    }
-  }
-  
-  
-
-  @if ($type == "desktop") {
-    img {
-      max-width: 500px;
-    }
-  }
-
-  @if ($type == "desktop front") {
-    img {
-      max-width: 600px;
-    }
-  } 
-  
-  @if ($type == "desktop xxl") {
+  @if ($type == "tablet angle single") {
     img {
       max-width: 800px;
     }
   }
+  
+  @if ($type == "tablet portrait single") {
+    img {
+      // tablet
+      max-width: 500px;
+      
+      // mobile
+      @include mobile {
+        max-width: 320px;
+      }
+      
+      // laptop 
+      @include laptop-and-up {
+        max-width: 350px;
+      }
+      
+      // desktop
+      @include desktop-and-up {
+        max-width: 500px;
+      }
+    }
+  }
+  
+  
+  
+  
+  @if ($type == "mobile portrait double") {
+    img {
+      max-width: 260px;
+      
+      @include below-laptop {
+        max-width: 300px;
+      }
+    }
+  }
+  
+  @if ($type == "mobile side double") {
+    img {
+      max-width: 200px;
+      
+      @include below-laptop {
+        max-width: 300px;
+      }
+      
+      @include desktop-and-up {
+        max-width: 240px;
+      }
+    }
+  }
+  
+  
+  
+  
+  
+  
+  @if ($type == "desktop right double") {
+    img {
+      max-width: 400px;
+      
+      @include desktop-and-up {
+        max-width: 600px;
+      }
+    }
+  }
+  
+  
+  
+  
+  
+  
+  @if ($type == "laptop double") {
+    img {
+      max-width: 400px;
+      
+      @include desktop-and-up {
+        max-width: 600px;
+      }
+    }
+  }
+  
+  
 }
 
 

@@ -1,0 +1,29 @@
+@mixin portfolio-mockups {
+  overflow: hidden;
+  
+  &#the-inu-archive-page-on-tablet {
+    &.intro {
+      @include mockup("tablet angle single");
+    }
+    
+    &.screenshots-2 {
+      @include mockup("tablet portrait single");
+    }
+  }
+  
+  &#the-inu-menu-white-page-on-mobile, &#the-inu-menu-black-page-on-mobile {
+    @include mockup("mobile portrait double");
+  }
+  
+  &#the-inu-frontpage-page-on-mobile, &#the-inu-archive-page-on-mobile {
+    @include mockup("mobile side double");
+  }
+  
+  &#the-inu-archive-page-on-desktop {
+    @include mockup("desktop right double");
+  }
+  
+  &#the-inu-frontpage-page-on-laptop {
+    @include mockup("laptop double");
+  }
+}

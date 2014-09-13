@@ -1,0 +1,14 @@
+@mixin portfolio-layout {
+  body {
+    section {
+      @include flexbox($justify-content: center, $align-items: center, $wrap: wrap);
+      
+      article {
+        @include flex-item;
+        margin-top: 2.5em;
+        margin-bottom: 2.5em;
+      }
+    }
+  }
+}
+

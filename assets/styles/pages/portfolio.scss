@@ -9,11 +9,24 @@ html.portfolio {
         &.mockup {
           figure {
             @include figure;
+            @include portfolio-mockups;
           }
         }
         
         &.services, &.title, &.description {
           @include text-block;
+        }
+      }
+    }
+  }
+  
+  &.inu-chivu {
+    body {
+      section {
+        &.screenshots-3 {
+          article {
+            @include flex-align-self(flex-end);
+          }
         }
       }
     }

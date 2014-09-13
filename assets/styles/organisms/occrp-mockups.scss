@@ -1,0 +1,27 @@
+@mixin occrp-mockups {
+  &#the-occrp-frontpage-page-on-tablet {
+    &.intro {
+      @include mockup("tablet side single");
+
+      @include below-laptop {
+        @include mockup("tablet portrait single");
+      }
+    }
+  }
+  
+  &#the-occrp-frontpage-2-page-on-mobile, &#the-occrp-frontpage-page-on-mobile, &#the-occrp-archive-page-on-mobile {
+    @include mockup("mobile portrait double");
+  }
+  
+  &#the-occrp-frontpage-page-on-tablet.screenshots-2, &#the-occrp-archive-page-on-tablet, &#the-occrp-article-page-on-tablet {
+    @include mockup("tablet portrait double");
+  }
+  
+  &#the-occrp-frontpage-page-on-laptop, &#the-occrp-archive-page-on-laptop {
+    @include mockup("laptop double");
+  }
+  
+  &#the-occrp-archive-page-on-desktop {
+    @include mockup("desktop right double");
+  }
+}

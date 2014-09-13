@@ -22,5 +22,9 @@
   &.smuff {
     @include smuff-layout;
   }
+  
+  &.organized-crime-and-corruption-reporting-project {
+    @include occrp-layout;
+  }
 }
 

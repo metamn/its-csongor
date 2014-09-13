@@ -54,6 +54,10 @@ html.smuff {
           
           &#the-smuff-product-page-on-laptop, &#the-smuff-archive-page-on-laptop, &#the-smuff-checkout-page-on-laptop {
             @include mockup("laptop front");
+            
+            @include mobile {
+              @include mockup("laptop half");
+            }
           }
           
           &#the-smuff-checkout-page-on-laptop {
@@ -66,9 +70,7 @@ html.smuff {
       
       
       &.screenshots-3 {
-        @include flexbox-wrap(wrap);
-        height: auto;
-        
+        @include smuff-screenshots-3;  
       }
     }
   }

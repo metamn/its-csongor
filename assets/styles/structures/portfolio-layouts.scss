@@ -26,5 +26,13 @@
   &.organized-crime-and-corruption-reporting-project {
     @include occrp-layout;
   }
+  
+  &.iorad {
+    @include iorad-layout;
+  }
+  
+  &.scatter {
+    @include scatter-layout;
+  }
 }
 

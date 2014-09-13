@@ -8,8 +8,8 @@
             @include flex-basis(50%);
             
             &:nth-of-type(2) {
-              @include flex-basis(60%);
-              margin-left: -10%;
+              @include flex-basis(65%);
+              margin-left: -15%;
             }
           }
         }

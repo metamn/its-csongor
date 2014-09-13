@@ -5,6 +5,14 @@ html.inu-chivu {
         figure {
           &#the-inu-menu-white-page-on-mobile, &#the-inu-menu-black-page-on-mobile {
             @include mockup("mobile portrait");
+            
+            @include tablet {
+              @include mockup("mobile xxl");
+            }
+            
+            @include desktop-and-up {
+              @include mockup("mobile large");
+            }
           }
           
           &#the-inu-frontpage-page-on-mobile, &#the-inu-archive-page-on-mobile {

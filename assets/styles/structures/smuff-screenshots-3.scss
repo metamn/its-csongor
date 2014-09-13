@@ -2,5 +2,10 @@
   @include full-height(auto);
   @include flexbox-wrap(wrap);
   
-  
+  article {
+          &:nth-of-type(2) {
+            @include flex-align-self(flex-end);
+            margin-left: -30%;
+          }
+        }
 }

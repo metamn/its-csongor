@@ -20,7 +20,7 @@
     
     @include desktop-and-up {
       img {
-        max-width: 500px;
+        max-width: 450px;
       }
     }
   }
@@ -50,7 +50,7 @@
   
   @if ($type == "laptop front") {
     img {
-      max-width: 600px;
+      max-width: 700px;
     }
     
     @include mobile {
@@ -69,7 +69,7 @@
   
   @if ($type == "laptop xxl") {
     img {
-      max-width: 800px;
+      max-width: 1000px;
     }
   } 
   
@@ -82,6 +82,12 @@
       max-width: 200px;
     }
   }
+  
+  @if ($type == "mobile side large") {
+    img {
+      max-width: 230px;
+    }
+  }
 
   @if ($type == "mobile portrait") {
     img {
@@ -91,7 +97,7 @@
   
   @if ($type == "mobile large") {
     img {
-      max-width: 320px;
+      max-width: 280px;
     }
   }
   

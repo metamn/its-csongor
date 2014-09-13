@@ -5,6 +5,18 @@ html.organized-crime-and-corruption-reporting-project {
         figure {
           &#the-occrp-frontpage-2-page-on-mobile, &#the-occrp-frontpage-page-on-mobile, &#the-occrp-archive-page-on-mobile {
             @include mockup("mobile portrait");
+            
+            @include tablet {
+              @include mockup("mobile xxl");
+            }
+            
+            @include desktop-and-up {
+              @include mockup("mobile large");
+            }
+          }
+          
+          &#the-occrp-article-page-on-tablet {
+            @include mockup("tablet portrait");
           }
           
           &#the-occrp-frontpage-page-on-laptop, &#the-occrp-archive-page-on-laptop {
@@ -35,7 +47,7 @@ html.organized-crime-and-corruption-reporting-project {
         }
       }
       
-      &.screenshots {
+      &.screenshots-2 {
         article {
           figure {
             &#the-occrp-frontpage-page-on-tablet, &#the-occrp-archive-page-on-tablet, &#the-occrp-article-page-on-tablet {
@@ -47,6 +59,15 @@ html.organized-crime-and-corruption-reporting-project {
                 display: none;
               }
             }
+          }
+        }
+      }
+      
+      &.screenshots-3 {
+        article {
+          &:nth-of-type(2) {
+            @include flex-align-self(flex-end);
+            margin-left: -30%;
           }
         }
       }

@@ -38,16 +38,24 @@ html.iorad {
         figure {
           &#the-iorad-pricing-page-on-mobile {
             @include mockup("mobile side");
-              
-            @include below-laptop {
-              @include mockup("mobile large");
+            
+            @include tablet {
+              @include mockup("mobile xxl");
+            }
+            
+            @include desktop-and-up {
+              @include mockup("mobile side large");
             }
           }
           
           &#the-iorad-checkout-page-on-mobile {
             @include mockup("mobile portrait");
             
-            @include below-laptop {
+            @include tablet {
+              @include mockup("mobile xxl");
+            }
+            
+            @include desktop-and-up {
               @include mockup("mobile large");
             }
           }

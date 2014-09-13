@@ -29,8 +29,15 @@ images:
 ---
 
 {% include organisms/portfolio-section.html title="Intro" images="0" %}
-{% include organisms/portfolio-section.html title="Screenshots" images="1,2,3" %}
-{% include organisms/portfolio-section.html title="Screenshots" images="4,5,6" %}
+{% include organisms/portfolio-section.html title="Screenshots 1" images="1,2,3" %}
+{% include organisms/portfolio-section.html title="Screenshots 2" images="4,5" %}
+
+{% capture description %}
+  <p>
+    Organized Crime And Corruption Reporting Project had it's website dated from last decade. 
+  </p>
+{% endcapture %}
+{% include organisms/portfolio-section.html title="Description" description=description images="6" %}
 
 
 {% capture description %}
@@ -48,5 +55,5 @@ images:
 {% endcapture %}
 {% include organisms/portfolio-section.html title="Description" description=description images="" %}
 
-{% include organisms/portfolio-section.html title="Screenshots" images="7,8" %}
+{% include organisms/portfolio-section.html title="Screenshots 3" images="7,8" %}
 {% include organisms/portfolio-section.html title="Services" images="9" %}

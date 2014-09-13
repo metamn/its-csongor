@@ -1,0 +1,31 @@
+@mixin smuff-mockups {
+  &#the-smuff-product-page-on-desktop, &#the-smuff-archive-page-on-desktop {
+    @include mockup("desktop right double");
+  }
+
+  &#the-smuff-archive-page-on-tablet, &#the-smuff-product-page-on-tablet {
+    @include mockup("tablet portrait double");
+  }
+
+  &#the-smuff-product-page-on-mobile, &#the-smuff-filters-page-on-mobile, &#the-smuff-archive-page-on-mobile {
+    @include mockup("mobile side double");
+  }
+
+  &#the-smuff-product-page-on-laptop, &#the-smuff-archive-page-on-laptop, &#the-smuff-checkout-page-on-laptop {
+    @include mockup("laptop double");
+    
+    @include below-laptop {
+      @include mockup("laptop single");
+    }
+  }
+
+  &#the-smuff-checkout-page-on-laptop {
+    @include mockup("laptop single");
+      
+    @include mobile {
+      img {
+        max-width: 100%;
+      }
+    } 
+  }
+}

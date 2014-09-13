@@ -1,6 +1,10 @@
 @mixin anvelocom-mockups {
   &#the-anvelocom-archive-page-on-laptop {
     @include mockup("laptop single");
+    
+    @include mobile {
+      margin-left: 20%;
+    } 
   }
   
   &#the-anvelocom-frontpage-page-on-mobile, &#the-anvelocom-menu-page-on-mobile, &#the-anvelocom-archive-page-on-mobile {

@@ -42,6 +42,10 @@ html.organized-crime-and-corruption-reporting-project {
           
           &#the-occrp-frontpage-page-on-laptop, &#the-occrp-archive-page-on-laptop {
             @include mockup("laptop front");
+            
+            @include mobile {
+              @include mockup("laptop half");
+            }
           }
           
           &#the-occrp-archive-page-on-desktop {

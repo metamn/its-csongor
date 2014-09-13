@@ -17,11 +17,13 @@ a img { border: none; }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
 
 /* No files to import found in settings/* */
-/* No files to import found in organisms/* */
 html body section > h3, html body article > h3, html body aside > h3, html body nav > h3, html body figure > h3 { display: none; }
 
 html.portfolio body section { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; -moz-align-items: center; align-items: center; }
 html.portfolio body section article { -webkit-box-ordinal-group: 1; -moz-box-ordinal-group: 1; -webkit-order: 0; -ms-flex-order: 0; order: 0; -webkit-box-flex: 0; -webkit-flex-grow: 0; -moz-flex-grow: 0; -ms-flex-positive: 0; flex-grow: 0; -webkit-flex-shrink: 1; -moz-flex-shrink: 1; -ms-flex-negative: 1; flex-shrink: 1; -webkit-flex-basis: auto; -moz-flex-basis: auto; -ms-flex-preferred-size: auto; flex-basis: auto; -webkit-align-self: auto; -moz-align-self: auto; -ms-flex-item-align: auto; align-self: auto; margin-top: 2.5em; margin-bottom: 2.5em; }
+@media only screen and (max-width: 37.499em) { html.portfolio.inu-chivu body section.screenshots-1 article { -webkit-flex-basis: 50%; -moz-flex-basis: 50%; -ms-flex-preferred-size: 50%; flex-basis: 50%; }
+  html.portfolio.inu-chivu body section.screenshots-1 article:nth-of-type(2) { -webkit-flex-basis: 60%; -moz-flex-basis: 60%; -ms-flex-preferred-size: 60%; flex-basis: 60%; margin-left: -10%; } }
+html.portfolio.inu-chivu body section.screenshots-3 article { -webkit-align-self: flex-end; -moz-align-self: flex-end; -ms-flex-item-align: end; align-self: flex-end; }
 html.portfolio body section article.mockup figure { overflow: hidden; }
 html.portfolio body section article.mockup figure img { max-width: 100%; height: auto; }
 html.portfolio body section article.mockup figure figcaption { display: none; }
@@ -40,4 +42,3 @@ html.portfolio body section article.mockup figure#the-inu-archive-page-on-deskto
 html.portfolio body section article.mockup figure#the-inu-frontpage-page-on-laptop img { max-width: 400px; }
 @media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-inu-frontpage-page-on-laptop img { max-width: 600px; } }
 html.portfolio body section article.services, html.portfolio body section article.title, html.portfolio body section article.description { max-width: 30em; text-align: center; }
-html.portfolio.inu-chivu body section.screenshots-3 article { -webkit-align-self: flex-end; -moz-align-self: flex-end; -ms-flex-item-align: end; align-self: flex-end; }

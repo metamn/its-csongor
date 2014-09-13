@@ -1,4 +1,4 @@
-@mixin portfolio-layout {
+@mixin portfolio-layouts {
   body {
     section {
       @include flexbox($justify-content: center, $align-items: center, $wrap: wrap);
@@ -9,6 +9,10 @@
         margin-bottom: 2.5em;
       }
     }
+  }
+  
+  &.inu-chivu {
+    @include inu-layout;
   }
 }
 

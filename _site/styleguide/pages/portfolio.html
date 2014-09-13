@@ -34,7 +34,7 @@
 // A portfolio item page
 
 html.portfolio {
-  @include portfolio-layout;
+  @include portfolio-layouts;
   
   body {
     section {
@@ -48,18 +48,6 @@ html.portfolio {
         
         &.services, &.title, &.description {
           @include text-block;
-        }
-      }
-    }
-  }
-  
-  &.inu-chivu {
-    body {
-      section {
-        &.screenshots-3 {
-          article {
-            @include flex-align-self(flex-end);
-          }
         }
       }
     }

@@ -1,0 +1,26 @@
+@mixin inu-layout {
+  body {
+    section {
+      &.screenshots-1 {
+        // Overlapping black and white screenshots
+        @include mobile {
+          article {
+            @include flex-basis(50%);
+            
+            &:nth-of-type(2) {
+              @include flex-basis(60%);
+              margin-left: -10%;
+            }
+          }
+        }
+      }
+      
+      &.screenshots-3 {
+        // Align both desktop and laptop to bottom
+        article {
+          @include flex-align-self(flex-end);
+        }
+      }
+    }
+  }
+}

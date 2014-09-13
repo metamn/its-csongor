@@ -1,0 +1,15 @@
+@mixin smuff-layout {
+  body {
+    section {
+      &.intro {
+        @include flexbox-wrap(wrap);
+        
+        article {
+          &.title {
+            @include flex-basis(100%);
+          }
+        }
+      }
+    }
+  }
+}

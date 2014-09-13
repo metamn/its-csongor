@@ -18,5 +18,9 @@
   &.anvelocom {
     @include anvelocom-layout;
   }
+  
+  &.smuff {
+    @include smuff-layout;
+  }
 }
 

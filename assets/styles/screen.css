@@ -25,6 +25,8 @@ html.portfolio body section article { -webkit-box-ordinal-group: 1; -moz-box-ord
   html.portfolio.inu-chivu body section.screenshots-1 article:nth-of-type(2) { -webkit-flex-basis: 65%; -moz-flex-basis: 65%; -ms-flex-preferred-size: 65%; flex-basis: 65%; margin-left: -15%; } }
 html.portfolio.inu-chivu body section.screenshots-3 article { -webkit-align-self: flex-end; -moz-align-self: flex-end; -ms-flex-item-align: end; align-self: flex-end; }
 html.portfolio.anvelocom body section.intro { overflow: hidden; -webkit-box-direction: normal; -moz-box-direction: normal; -webkit-box-orient: vertical; -moz-box-orient: vertical; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
+html.portfolio.smuff body section.intro { -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+html.portfolio.smuff body section.intro article.title { -webkit-flex-basis: 100%; -moz-flex-basis: 100%; -ms-flex-preferred-size: 100%; flex-basis: 100%; }
 html.portfolio body section article.mockup figure { overflow: hidden; }
 html.portfolio body section article.mockup figure img { max-width: 100%; height: auto; }
 html.portfolio body section article.mockup figure figcaption { display: none; }

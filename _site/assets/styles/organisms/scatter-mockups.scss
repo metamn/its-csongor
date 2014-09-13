@@ -1,3 +1,26 @@
 @mixin scatter-mockups {
-
+  &#the-scatter-business-page-on-mobile {
+    @include mockup("mobile portrait single");
+  }
+  
+  &#the-scatter-business-page-on-tablet, &#the-scatter-business-2-page-on-tablet {
+    @include mockup("tablet angle single");
+  }
+  
+  
+  &#the-scatter-frontpage-1-page-on-mobile {
+    @include mockup("mobile portrait double");
+  }
+  
+  &#the-scatter-frontpage-page-on-tablet {
+    @include mockup("tablet portrait double");
+  }
+  
+  &#the-scatter-frontpage-page-on-laptop {
+    @include mockup("laptop single");
+  }
+  
+  &#the-scatter-frontpage-1-page-on-desktop, &#the-scatter-frontpage-2-page-on-desktop {
+    @include mockup("desktop front");
+  }
 }

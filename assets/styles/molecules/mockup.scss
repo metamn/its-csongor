@@ -50,6 +50,13 @@
   
   
   
+  @if ($type == "mobile portrait single") {
+    img {
+      max-width: 320px;
+      
+    }
+  }
+  
   @if ($type == "mobile portrait double") {
     img {
       max-width: 260px;

@@ -15,7 +15,7 @@
     @include mockup("desktop front");
   }
   
-  &#the-anvelocom-product-page-on-tablet {
+  &#the-anvelocom-product-page-on-tablet, &#the-anvelocom-archive-page-on-tablet  {
     @include mockup("tablet portrait double");
   }
 }

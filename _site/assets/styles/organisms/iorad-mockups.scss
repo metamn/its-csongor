@@ -7,22 +7,10 @@
     }
   }
   
-  &#the-iorad-pricing-page-on-mobile  {
-    @include mockup("mobile side");
-    
-    @include below-laptop {
-      @include mockup("mobile portrait");
-    }
+  &#the-iorad-pricing-page-on-mobile, &#the-iorad-checkout-page-on-mobile  {
+    @include mockup("mobile portrait");
   }
   
-  &#the-iorad-checkout-page-on-mobile {
-    @include mockup("mobile portrait");
-    
-    // To align to a side mockup
-    @include laptop-and-up {
-      margin-top: 10%;
-    }
-  }
 
 
   &#the-iorad-pricing-page-on-laptop {

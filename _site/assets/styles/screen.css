@@ -105,16 +105,9 @@ html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-tabl
 @media only screen and (min-width: 37.5em) and (max-width: 63.999em) { html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-tablet.screenshots img { margin-left: -15%; } }
 @media only screen and (min-width: 64em) { html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-tablet.screenshots img { max-width: 800px; } }
 @media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-tablet.screenshots img { max-width: 1000px; } }
-html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-mobile img { max-width: 200px; }
-@media only screen and (max-width: 63.999em) { html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-mobile img { max-width: 300px; } }
-@media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-mobile img { max-width: 240px; } }
-@media only screen and (max-width: 63.999em) { html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-mobile img { max-width: 320px; } }
-@media only screen and (max-width: 63.999em) and (min-width: 64em) { html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-mobile img { max-width: 240px; } }
-@media only screen and (max-width: 63.999em) and (min-width: 90em) { html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-mobile img { max-width: 320px; } }
-html.portfolio body section article.mockup figure#the-iorad-checkout-page-on-mobile img { max-width: 320px; }
-@media only screen and (min-width: 64em) { html.portfolio body section article.mockup figure#the-iorad-checkout-page-on-mobile img { max-width: 240px; } }
-@media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-iorad-checkout-page-on-mobile img { max-width: 320px; } }
-@media only screen and (min-width: 64em) { html.portfolio body section article.mockup figure#the-iorad-checkout-page-on-mobile { margin-top: 10%; } }
+html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-mobile img, html.portfolio body section article.mockup figure#the-iorad-checkout-page-on-mobile img { max-width: 320px; }
+@media only screen and (min-width: 64em) { html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-mobile img, html.portfolio body section article.mockup figure#the-iorad-checkout-page-on-mobile img { max-width: 240px; } }
+@media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-mobile img, html.portfolio body section article.mockup figure#the-iorad-checkout-page-on-mobile img { max-width: 320px; } }
 html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-laptop img { max-width: 400px; }
 @media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-laptop img { max-width: 600px; } }
 @media only screen and (max-width: 63.999em) { html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-laptop img { max-width: 600px; } }

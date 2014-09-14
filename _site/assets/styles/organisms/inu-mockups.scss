@@ -10,7 +10,7 @@
   }
   
   &#the-inu-menu-white-page-on-mobile, &#the-inu-menu-black-page-on-mobile {
-    @include mockup("mobile portrait");
+    @include mockup("mobile portrait double");
   }
   
   &#the-inu-frontpage-page-on-mobile, &#the-inu-archive-page-on-mobile {
@@ -23,5 +23,9 @@
   
   &#the-inu-frontpage-page-on-laptop {
     @include mockup("laptop small");
+    
+    @include below-laptop {
+      @include mockup("laptop large");
+    }
   }
 }

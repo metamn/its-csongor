@@ -42,6 +42,7 @@ html.portfolio body section article.mockup figure#the-inu-archive-page-on-tablet
 @media only screen and (min-width: 64em) { html.portfolio body section article.mockup figure#the-inu-archive-page-on-tablet.screenshots-2 img { max-width: 320px; } }
 @media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-inu-archive-page-on-tablet.screenshots-2 img { max-width: 500px; } }
 html.portfolio body section article.mockup figure#the-inu-menu-white-page-on-mobile img, html.portfolio body section article.mockup figure#the-inu-menu-black-page-on-mobile img { max-width: 320px; }
+@media only screen and (min-width: 37.5em) and (max-width: 63.999em) { html.portfolio body section article.mockup figure#the-inu-menu-white-page-on-mobile img, html.portfolio body section article.mockup figure#the-inu-menu-black-page-on-mobile img { max-width: 300px; } }
 @media only screen and (min-width: 64em) { html.portfolio body section article.mockup figure#the-inu-menu-white-page-on-mobile img, html.portfolio body section article.mockup figure#the-inu-menu-black-page-on-mobile img { max-width: 240px; } }
 @media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-inu-menu-white-page-on-mobile img, html.portfolio body section article.mockup figure#the-inu-menu-black-page-on-mobile img { max-width: 320px; } }
 html.portfolio body section article.mockup figure#the-inu-frontpage-page-on-mobile img, html.portfolio body section article.mockup figure#the-inu-archive-page-on-mobile img { max-width: 200px; }
@@ -52,6 +53,8 @@ html.portfolio body section article.mockup figure#the-inu-archive-page-on-deskto
 @media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-inu-archive-page-on-desktop img { max-width: 600px; } }
 html.portfolio body section article.mockup figure#the-inu-frontpage-page-on-laptop img { max-width: 400px; }
 @media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-inu-frontpage-page-on-laptop img { max-width: 600px; } }
+@media only screen and (max-width: 63.999em) { html.portfolio body section article.mockup figure#the-inu-frontpage-page-on-laptop img { max-width: 600px; } }
+@media only screen and (max-width: 63.999em) and (min-width: 90em) { html.portfolio body section article.mockup figure#the-inu-frontpage-page-on-laptop img { max-width: 800px; } }
 html.portfolio body section article.mockup figure#the-anvelocom-archive-page-on-laptop img { max-width: 600px; }
 @media only screen and (max-width: 37.499em) { html.portfolio body section article.mockup figure#the-anvelocom-archive-page-on-laptop img { margin-left: 20%; } }
 @media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-anvelocom-archive-page-on-laptop img { max-width: 800px; } }

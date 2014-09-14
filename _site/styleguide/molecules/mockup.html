@@ -148,6 +148,24 @@
     }
   }
   
+  @if ($type == "mobile portrait double") {
+    img {
+      max-width: 320px;
+      
+      @include tablet {
+        max-width: 300px;
+      }
+      
+      @include laptop-and-up {
+        max-width: 240px;
+      }
+      
+      @include desktop-and-up {
+        max-width: 320px;
+      }
+    }
+  }
+  
   @if ($type == "mobile portrait triple") {
     img {
       max-width: 320px;

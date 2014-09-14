@@ -4,11 +4,15 @@
   }
 
   &#the-smuff-archive-page-on-tablet, &#the-smuff-product-page-on-tablet {
-    @include mockup("tablet portrait small");
+    @include mockup("tablet portrait triple");
   }
 
   &#the-smuff-product-page-on-mobile, &#the-smuff-filters-page-on-mobile, &#the-smuff-archive-page-on-mobile {
-    @include mockup("mobile side");
+    @include mockup("mobile portrait triple");
+    
+    @include laptop-and-up {
+      @include mockup("mobile side");
+    }
   }
 
   &#the-smuff-product-page-on-laptop, &#the-smuff-archive-page-on-laptop, &#the-smuff-checkout-page-on-laptop {

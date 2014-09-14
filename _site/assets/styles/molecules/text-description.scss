@@ -1,0 +1,11 @@
+@mixin text-description {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  padding: $lem * 2;
+  
+  p {
+    + p {
+      margin-top: $lem;
+    }
+  }
+}

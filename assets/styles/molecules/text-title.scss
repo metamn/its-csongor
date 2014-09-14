@@ -1,0 +1,9 @@
+@mixin text-title {
+  h1 {
+    @include font(title);
+  }
+  
+  p {
+    @include font(subtitle);
+  }
+}

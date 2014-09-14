@@ -1,0 +1,11 @@
+@mixin text-services {
+  p {
+    span {
+      @include font(services); 
+    }
+    
+    + p {
+      margin-top: $lem;
+    }
+  }
+}

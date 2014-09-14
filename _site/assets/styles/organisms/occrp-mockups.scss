@@ -10,11 +10,11 @@
   }
   
   &#the-occrp-frontpage-2-page-on-mobile, &#the-occrp-frontpage-page-on-mobile, &#the-occrp-archive-page-on-mobile {
-    @include mockup("mobile portrait");
+    @include mockup("mobile portrait triple");
   }
   
   &#the-occrp-frontpage-page-on-tablet.screenshots-2, &#the-occrp-archive-page-on-tablet, &#the-occrp-article-page-on-tablet {
-    @include mockup("tablet portrait small");
+    @include mockup("tablet portrait triple");
   }
   
   &#the-occrp-frontpage-page-on-tablet.screenshots-2 {
@@ -24,7 +24,7 @@
   }
   
   &#the-occrp-frontpage-page-on-laptop, &#the-occrp-archive-page-on-laptop {
-    @include mockup("laptop small");
+    @include mockup("laptop large");
   }
   
   &#the-occrp-archive-page-on-desktop {

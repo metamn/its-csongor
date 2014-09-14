@@ -74,6 +74,20 @@
     }
   }
   
+  @if ($type == "tablet portrait triple") {
+    img {
+      max-width: 320px;
+      
+      @include tablet {
+        max-width: 500px;
+      }
+      
+      @include desktop-and-up {
+        max-width: 400px;
+      }
+    }
+  }
+  
   @if ($type == "tablet side large") {
     img {
       max-width: 180px;
@@ -90,6 +104,24 @@
   @if ($type == "mobile portrait") {
     img {
       max-width: 320px;
+      
+      @include laptop-and-up {
+        max-width: 240px;
+      }
+      
+      @include desktop-and-up {
+        max-width: 320px;
+      }
+    }
+  }
+  
+  @if ($type == "mobile portrait triple") {
+    img {
+      max-width: 320px;
+      
+      @include tablet {
+        max-width: 240px;
+      }
       
       @include laptop-and-up {
         max-width: 240px;

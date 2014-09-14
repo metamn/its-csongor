@@ -12,7 +12,7 @@
   }
   
   &#the-scatter-frontpage-page-on-tablet {
-    @include mockup("tablet portrait small");
+    @include mockup("tablet portrait large");
   }
   
   &#the-scatter-frontpage-page-on-laptop {
@@ -20,6 +20,6 @@
   }
   
   &#the-scatter-frontpage-1-page-on-desktop, &#the-scatter-frontpage-2-page-on-desktop {
-    @include mockup("desktop front small");
+    @include mockup("desktop front large");
   }
 }

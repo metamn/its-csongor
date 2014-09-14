@@ -22,6 +22,10 @@
     <script src="/assets/scripts/css3-mediaqueries.js"></script>
 <![endif]-->
     
+    <!-- Typekit -->
+    <script src="//use.typekit.net/qiy3lwz.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    
     <!-- Picturefill Responsive Images -->
     <script async src="/assets/scripts/picturefill.min.js"></script>
   </head>
@@ -32,6 +36,8 @@
 
 
 html {
+  @include font;
+  
   body {
     section, article, aside, nav, figure {
       @include hide-title;

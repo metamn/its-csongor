@@ -4,11 +4,7 @@
   }
   
   &#the-anvelocom-frontpage-page-on-mobile, &#the-anvelocom-menu-page-on-mobile, &#the-anvelocom-archive-page-on-mobile {
-    @include mockup("mobile portrait");
-  }
-  
-  &#the-anvelocom-archive-page-on-tablet {
-    @include mockup("tablet angle large");
+    @include mockup("mobile portrait triple");
   }
   
   &#the-anvelocom-frontpage-page-on-desktop {
@@ -16,6 +12,6 @@
   }
   
   &#the-anvelocom-product-page-on-tablet, &#the-anvelocom-archive-page-on-tablet  {
-    @include mockup("tablet portrait small");
+    @include mockup("tablet portrait triple");
   }
 }

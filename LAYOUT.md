@@ -8,10 +8,16 @@
 
 - the final result must outline well in HTML5 Outliner
 
+## Mockups on mobiles
+
+- Tablet portrait should be rethinked, they are too big especially as a featured image
+
+- Mobile mockups are so large because of iorad; if resized to 280px the iorad mockups would look ugly; so all mobile mockups are now 300-320px;
+
+- We can keep iorad at 320px and reduce all the others to 280px ... remains to be decided
+
 
 ## Mockup sizes
-
-- each portfolio item has to have it's own page.scss where each mockup size is controlled manually
 
 - automatic mockup sizing via classes like .tablet.portrait (like _includes/atoms/imageclass.html) is not possible because the mockup displayed depends on browser size, so runtime, not development time. The figure element doesn't knows which img will be choosen on runtime by the responsive picture tag.
 
@@ -26,7 +32,11 @@ Example:
 </figure>
 ```
 
-- there is plenty of room to play with mockup sizes on every device !!!
+## Mockup weight
+
+- we couldn't make Imagemagick to resize the mockups to a good quality
+
+- maybe this tool can help: https://github.com/thumbor/thumbor/wiki/Usage
 
 
 ## Styleguide

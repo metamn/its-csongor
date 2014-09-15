@@ -1,0 +1,7 @@
+@mixin p {
+  p {
+    + p {
+      margin-top: $lem;
+    }
+  }
+}

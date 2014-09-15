@@ -1,0 +1,5 @@
+$text-width: $lem * 20;
+
+@mixin text-block {
+  max-width: $text-width;
+}

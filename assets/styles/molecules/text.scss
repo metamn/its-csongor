@@ -1,0 +1,42 @@
+@mixin text($type) {
+  @if ($type == portfolio-title) {
+    @include text-portfolio-title;
+  }
+  
+  @if ($type == portfolio-description) {
+    @include text-portfolio-description;
+  }
+  
+  
+  @if ($type == portfolio-services) {
+    @include text-portfolio-services;
+  }
+}
+
+
+@mixin text-portfolio-services {
+  @include p;
+  
+  p {
+    span {
+      @include font(services); 
+    }
+  }
+}
+
+
+@mixin text-portfolio-description {
+  @include text-block-decoration;
+  @include p;
+}
+
+
+@mixin text-portfolio-title {
+  h1 {
+    @include font(title);
+  }
+  
+  p {
+    @include font(subtitle);
+  }
+}

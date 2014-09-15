@@ -1,0 +1,15 @@
+@mixin portfolio-typography {
+  @include text-block;
+  
+  &.title {
+    @include text(portfolio-title);
+  }
+
+  &.description {
+    @include text(portfolio-description);
+  }
+
+  &.services {
+    @include text(portfolio-services);
+  }
+}

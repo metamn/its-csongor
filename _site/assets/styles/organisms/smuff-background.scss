@@ -1,3 +1,12 @@
 @mixin smuff-background {
-  
+  body {
+    section {
+      $color1: lighten($smuff-orange, 35%);
+      $color2: lighten($smuff-green, 25%);
+      @include gradient($color2, $color1);
+      
+      padding-top: $lem * 2;
+      padding-bottom: $lem * 2;
+    }
+  }
 }

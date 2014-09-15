@@ -40,13 +40,6 @@
   
 }
 
-@mixin inu-background {
-  body {
-    $color1: hsla(0, 0, 100%, 1);
-    $color2: hsla(170, 45%, 5%, 1);
-    @include gradient($color1, $color2, single);
-  }
-}
 
 @mixin smuff-background {
   

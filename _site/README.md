@@ -21,3 +21,9 @@
 
 - details in LAYOUT.md
 
+
+## Phase 3: Typography
+
+- add fonts, decorators and maybe colors
+
+

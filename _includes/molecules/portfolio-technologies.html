@@ -2,10 +2,18 @@
   <h3>Services and Technologies</h3>
   
   <p>
+<<<<<<< HEAD
     <span>Services:</span> {{ page.services | array_to_sentence_string }}
   </p>
   
   <p>
     <span>Technologies:</span> {{ page.technologies | array_to_sentence_string }}
+=======
+    Services: {{ page.services | join: ', '  }}
+  </p>
+  
+  <p>
+    Technologies: {{ page.technologies | join: ', ' }}
+>>>>>>> l2
   </p>
 </article>

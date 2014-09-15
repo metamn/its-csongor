@@ -1,0 +1,10 @@
+$font-size: 100%;
+$line-height: 1.25;
+$lem: 1.25em;
+
+
+@mixin responsive-typography {
+  font-size: $font-size;
+  line-height: $line-height;
+  $lem: $lem;
+}

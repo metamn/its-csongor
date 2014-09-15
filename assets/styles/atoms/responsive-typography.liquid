@@ -1,0 +1,10 @@
+---
+---
+{% for page in site.pages %}{% if page.title == "Responsive Typography" %}{% for item in page.items %}${{ item.name }}: {{ item.value }};
+{% endfor %}{% endif %}{% endfor %}
+
+@mixin responsive-typography {
+  font-size: $font-size;
+  line-height: $line-height;
+  $lem: $lem;
+}

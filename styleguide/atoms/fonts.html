@@ -1,0 +1,43 @@
+---
+layout: styleguide
+title: Fonts
+subtitle: All the font settings for the site
+category: atoms
+scss: "fonts.scss"
+comments:
+  - Served from Typekit
+  - A list of all font families
+  - Special font mixins
+  - A list of all font mixins
+fonts:
+  - name: Europe
+    description: A sans serif typeface for both body text and headlines
+    styles: "300,400,700"
+    mixins:
+      - name: Body
+        font-family: sans-serif
+        properties:
+          - name: font-weight
+            value: 400
+      - name: Title
+        font-family: sans-serif
+        properties:
+          - name: font-weight
+            value: 700
+          - name: font-size
+            value: $heading-level-1
+      - name: Subtitle
+        font-family: sans-serif
+        properties:
+          - name: font-weight
+            value: 300
+          - name: font-style
+            value: italic
+      - name: Services
+        font-family: sans-serif
+        properties:
+          - name: font-weight
+            value: 700
+          - name: border-bottom
+            value: 1px solid
+---

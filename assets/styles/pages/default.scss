@@ -1,4 +1,6 @@
 html {
+  @include colors;
+  @include responsive-typography;
   @include font;
   
   body {

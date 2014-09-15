@@ -1,0 +1,29 @@
+@mixin iorad-background {
+  body {
+    section {
+      &.intro {
+        @include gradient;
+      }  
+    }
+  }
+}
+
+@mixin occrp-background {
+  
+}
+
+@mixin anvelocom-background {
+  
+}
+
+@mixin scatter-background {
+  
+}
+
+@mixin inu-background {
+  
+}
+
+@mixin smuff-background {
+  
+}

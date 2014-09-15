@@ -1,0 +1,25 @@
+@mixin portfolio-background {
+  &.inu-chivu {
+    @include inu-background;
+  }
+  
+  &.anvelocom {
+    @include anvelocom-background;
+  }
+  
+  &.smuff {
+    @include smuff-background;
+  }
+  
+  &.organized-crime-and-corruption-reporting-project {
+    @include occrp-background;
+  }
+  
+  &.iorad {
+    @include iorad-background;
+  }
+  
+  &.scatter {
+    @include scatter-background;
+  }
+}

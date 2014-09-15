@@ -1,5 +1,6 @@
 @mixin portfolio-typography {
   @include text-block;
+  @include text-block-decoration;
   
   &.title {
     @include text(portfolio-title);

@@ -2,7 +2,6 @@
 
 html.portfolio {
   @include portfolio-layouts;
-  @include portfolio-spacing;
   @include portfolio-background;
   
   body {

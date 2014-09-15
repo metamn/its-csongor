@@ -7,12 +7,12 @@
 @mixin font($type: body) { 
   @if ($type == body) {
     font-family: "Europa", sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     
   }
   @if ($type == title) {
     font-family: "Europa", sans-serif;
-    font-weight: 700;
+    font-weight: 400;
     font-size: $heading-level-1;
     
   }
@@ -24,8 +24,7 @@
   }
   @if ($type == services) {
     font-family: "Europa", sans-serif;
-    font-weight: 700;
-    border-bottom: 1px solid;
+    font-weight: 400;
     
   }
 }

@@ -7,11 +7,11 @@ Syntax error: Undefined mixin 'portfolio-layouts'.
 2: 
 3: html.portfolio {
 4:   @include portfolio-layouts;
-5:   @include portfolio-spacing;
-6:   @include portfolio-background;
-7:   
-8:   body {
-9:     section {
+5:   @include portfolio-background;
+6:   
+7:   body {
+8:     section {
+9:       article {
 
 Backtrace:
 /home/cs/work/its-csongor/assets/styles/pages/portfolio.scss:4:in `portfolio-layouts'
@@ -68,4 +68,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'portfolio-layouts'.\A         on line 4 of /home/cs/work/its-csongor/assets/styles/pages/portfolio.scss, in `portfolio-layouts'\A         from line 4 of /home/cs/work/its-csongor/assets/styles/pages/portfolio.scss\A \A 1: // A portfolio item page\A 2: \A 3: html.portfolio {\A 4:   @include portfolio-layouts;\A 5:   @include portfolio-spacing;\A 6:   @include portfolio-background;\A 7:   \A 8:   body {\A 9:     section {"; }
+  content: "Syntax error: Undefined mixin 'portfolio-layouts'.\A         on line 4 of /home/cs/work/its-csongor/assets/styles/pages/portfolio.scss, in `portfolio-layouts'\A         from line 4 of /home/cs/work/its-csongor/assets/styles/pages/portfolio.scss\A \A 1: // A portfolio item page\A 2: \A 3: html.portfolio {\A 4:   @include portfolio-layouts;\A 5:   @include portfolio-background;\A 6:   \A 7:   body {\A 8:     section {\A 9:       article {"; }

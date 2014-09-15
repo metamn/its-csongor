@@ -24,13 +24,6 @@
   }
 }
 
-@mixin occrp-background {
-  body {
-    $color1: hsla(0, 0, 100%, 1);
-    $color2: hsla(1, 53%, 38%, 1);
-    @include gradient($color1, $color2, single);
-  }
-}
 
 @mixin anvelocom-background {
   

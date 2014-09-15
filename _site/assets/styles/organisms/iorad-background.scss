@@ -1,15 +1,19 @@
 @mixin iorad-background {
   body {
     section {
-      &.intro {
-        @include gradient;
-      }  
+      $color1: lighten(hsla(209, 53%, 38%, 1), 40%);
+      $color2: lighten(hsla(154, 71%, 43%, 1), 40%);
+      @include gradient($color1, $color2);
     }
   }
 }
 
 @mixin occrp-background {
-  
+  body {
+    $color1: hsla(0, 0, 100%, 1);
+    $color2: hsla(1, 53%, 38%, 1);
+    @include gradient($color1, $color2, single);
+  }
 }
 
 @mixin anvelocom-background {
@@ -21,7 +25,11 @@
 }
 
 @mixin inu-background {
-  
+  body {
+    $color1: hsla(0, 0, 100%, 1);
+    $color2: hsla(170, 45%, 5%, 1);
+    @include gradient($color1, $color2, single);
+  }
 }
 
 @mixin smuff-background {

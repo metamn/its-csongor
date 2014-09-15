@@ -3,18 +3,8 @@
     section {
       @include flexbox($justify-content: center, $align-items: center, $wrap: wrap);
       
-      padding-top: $lem * 2;
-      padding-bottom: $lem *2;
-      
-      border-bottom: 1px solid;
-      
       article {
         @include flex-item;
-        
-        &.title, &.description, &.services {
-          margin-top: $lem * 2;
-          margin-bottom: $lem * 2;
-        }
       }
     }
   }

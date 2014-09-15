@@ -1,7 +1,7 @@
 @mixin occrp-background {
   body {
     section {
-      $color1: $occrp-gray;
+      $color1: lighten($occrp-blue, 30%);
       $color2: lighten($occrp-red, 40%);
       @include gradient($color2, $color1);
       

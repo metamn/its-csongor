@@ -1,0 +1,12 @@
+@mixin anvelocom-background {
+  body {
+    section {
+      $color1: lighten($anvelocom-green, 40%);
+      $color2: lighten($anvelocom-brown, 60%);
+      @include gradient($color1, $color2);
+      
+      padding-top: $lem * 2;
+      padding-bottom: $lem * 2;
+    }
+  }
+}

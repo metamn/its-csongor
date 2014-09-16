@@ -1,10 +1,20 @@
 ---
 ---
-{% for page in site.pages %}{% if page.title == "Responsive Typography" %}{% for item in page.items %}${{ item.name }}: {{ item.value }};
-{% endfor %}{% endif %}{% endfor %}
+{% for page in site.pages %}{% if page.title == "Responsive Typography" %}{% for item in page.items %}{% if item.breakpoint %}
+@include {{ item.breakpoint }} {
+  {{ item.values.last.name }}: {{ item.values.last.value }};
+}
+{% else %} 
+{{ item.values.last.name }}: {{ item.values.last.value }};
+{% endif %}{% endfor %}{% endif %}{% endfor %}
 
-@mixin responsive-typography {
-  font-size: $font-size;
-  line-height: $line-height;
-  $lem: $lem;
+
+@mixin responsive-typography { {% for page in site.pages %}{% if page.title == "Responsive Typography" %}{% for item in page.items %}{% if item.breakpoint %}
+  @include {{ item.breakpoint }} {
+    {% for value in item.values %}{{ value.name }}: {{ value.value }};
+    {% endfor %}
+  }
+  {% else %} 
+  {% for value in item.values %}{{ value.name }}: {{ value.value }};
+  {% endfor %}{% endif %}{% endfor %}{% endif %}{% endfor %}
 }

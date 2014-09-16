@@ -1,7 +1,7 @@
 html {
   body {
-    @include colors;
     @include responsive-typography;
+    @include colors;
     @include font;
   
     section, article, aside, nav, figure {

@@ -1,19 +1,19 @@
 /*
-Syntax error: Undefined mixin 'colors'.
-        on line 3 of /home/cs/work/its-csongor/assets/styles/pages/default.scss, in `colors'
+Syntax error: Undefined mixin 'responsive-typography'.
+        on line 3 of /home/cs/work/its-csongor/assets/styles/pages/default.scss, in `responsive-typography'
         from line 3 of /home/cs/work/its-csongor/assets/styles/pages/default.scss
 
 1: html {
 2:   body {
-3:     @include colors;
-4:     @include responsive-typography;
+3:     @include responsive-typography;
+4:     @include colors;
 5:     @include font;
 6:   
 7:     section, article, aside, nav, figure {
 8:       @include hide-title;
 
 Backtrace:
-/home/cs/work/its-csongor/assets/styles/pages/default.scss:3:in `colors'
+/home/cs/work/its-csongor/assets/styles/pages/default.scss:3:in `responsive-typography'
 /home/cs/work/its-csongor/assets/styles/pages/default.scss:3
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:320:in `block in visit_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:98:in `block in with_mixin'
@@ -78,4 +78,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'colors'.\A         on line 3 of /home/cs/work/its-csongor/assets/styles/pages/default.scss, in `colors'\A         from line 3 of /home/cs/work/its-csongor/assets/styles/pages/default.scss\A \A 1: html {\A 2:   body {\A 3:     @include colors;\A 4:     @include responsive-typography;\A 5:     @include font;\A 6:   \A 7:     section, article, aside, nav, figure {\A 8:       @include hide-title;"; }
+  content: "Syntax error: Undefined mixin 'responsive-typography'.\A         on line 3 of /home/cs/work/its-csongor/assets/styles/pages/default.scss, in `responsive-typography'\A         from line 3 of /home/cs/work/its-csongor/assets/styles/pages/default.scss\A \A 1: html {\A 2:   body {\A 3:     @include responsive-typography;\A 4:     @include colors;\A 5:     @include font;\A 6:   \A 7:     section, article, aside, nav, figure {\A 8:       @include hide-title;"; }

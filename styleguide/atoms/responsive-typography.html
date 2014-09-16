@@ -5,13 +5,23 @@ subtitle: Font sizes and line heights for different devices
 category: atoms
 scss: "responsive-typography.scss"
 items:
-  - name: "font-size"
-    description: Font size for all screens
-    value: "100%"
-  - name: "line-height"
-    description: 125% of the font size
-    value: "1.25"
-  - name: "lem"
-    description: The line height in EM
-    value: "1.25em"
+  - name: Laptop
+    description: Font size for mobile, tablet and laptop
+    values:
+      - name: "font-size"
+        value: "100%"
+      - name: "line-height"
+        value: "1.25"
+      - name: "$lem"
+        value: "1.25em !global"
+  - name: Desktop
+    description: Font size for desktops
+    breakpoint: "desktop-and-up"
+    values:
+      - name: "font-size"
+        value: "125%"
+      - name: "line-height"
+        value: "1.56"
+      - name: "$lem"
+        value: "1.56em !global"
 ---

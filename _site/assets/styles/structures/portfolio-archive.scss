@@ -1,5 +1,6 @@
 @mixin portfolio-archive {
   @include flexbox($wrap: wrap, $justify-content: center, $align-items: flex-start);
+  padding-top: $lem *2;
   
   article {
     @include flex-item;

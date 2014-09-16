@@ -9,7 +9,7 @@ Syntax error: Undefined mixin 'responsive-typography'.
 4:     @include colors;
 5:     @include font;
 6:   
-7:     section, article, aside, nav, figure {
+7:     header, footer, section, article, aside, nav, figure {
 8:       @include hide-title;
 
 Backtrace:
@@ -78,4 +78,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'responsive-typography'.\A         on line 3 of /home/cs/work/its-csongor/assets/styles/pages/default.scss, in `responsive-typography'\A         from line 3 of /home/cs/work/its-csongor/assets/styles/pages/default.scss\A \A 1: html {\A 2:   body {\A 3:     @include responsive-typography;\A 4:     @include colors;\A 5:     @include font;\A 6:   \A 7:     section, article, aside, nav, figure {\A 8:       @include hide-title;"; }
+  content: "Syntax error: Undefined mixin 'responsive-typography'.\A         on line 3 of /home/cs/work/its-csongor/assets/styles/pages/default.scss, in `responsive-typography'\A         from line 3 of /home/cs/work/its-csongor/assets/styles/pages/default.scss\A \A 1: html {\A 2:   body {\A 3:     @include responsive-typography;\A 4:     @include colors;\A 5:     @include font;\A 6:   \A 7:     header, footer, section, article, aside, nav, figure {\A 8:       @include hide-title;"; }

@@ -41,11 +41,20 @@ html {
     @include colors;
     @include font;
   
-    section, article, aside, nav, figure {
+    header, footer, section, article, aside, nav, figure {
       @include hide-title;
     }
     
+    header {
+      @include font(title);
+      padding: $lem;
+    }
+    
     section {
+      &#skills {
+        @include skills;
+      }
+      
       &#portfolio-archive {
         @include portfolio-archive;
       }

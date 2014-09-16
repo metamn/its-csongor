@@ -21,12 +21,33 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 */
 html body { font-size: 100%; line-height: 1.25; color: #071211; background-color: white; font-family: "Europa", sans-serif; font-weight: 300; }
 @media only screen and (min-width: 90em) { html body { font-size: 125%; line-height: 1.56; } }
-html body section > h3, html body article > h3, html body aside > h3, html body nav > h3, html body figure > h3 { display: none; }
-html body section#portfolio-archive { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; -webkit-box-align: start; -ms-flex-align: start; -webkit-align-items: flex-start; -moz-align-items: flex-start; align-items: flex-start; }
+html body header > h3, html body footer > h3, html body section > h3, html body article > h3, html body aside > h3, html body nav > h3, html body figure > h3 { display: none; }
+html body header { font-family: "Europa", sans-serif; font-weight: 400; font-size: 1.3077em; padding: 1.56em; }
+html body section#skills { -webkit-align-content: space-around; -moz-align-content: space-around; -ms-flex-line-pack: space-around; align-content: space-around; }
+html body section#skills article { max-width: 320px; padding: 1.56em; }
+html body section#skills article > h3 { display: block; }
+html body section#skills article h3 { font-family: "Europa", sans-serif; font-weight: 400; }
+html body section#skills article p + p { margin-top: 1.56em; }
+html body section#portfolio-archive { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; -webkit-box-align: start; -ms-flex-align: start; -webkit-align-items: flex-start; -moz-align-items: flex-start; align-items: flex-start; padding-top: 3.12em; }
 html body section#portfolio-archive article { -webkit-box-ordinal-group: 1; -moz-box-ordinal-group: 1; -webkit-order: 0; -ms-flex-order: 0; order: 0; -webkit-box-flex: 0; -webkit-flex-grow: 0; -moz-flex-grow: 0; -ms-flex-positive: 0; flex-grow: 0; -webkit-flex-shrink: 1; -moz-flex-shrink: 1; -ms-flex-negative: 1; flex-shrink: 1; -webkit-flex-basis: auto; -moz-flex-basis: auto; -ms-flex-preferred-size: auto; flex-basis: auto; -webkit-align-self: auto; -moz-align-self: auto; -ms-flex-item-align: auto; align-self: auto; margin: 1.56em; position: relative; }
 html body section#portfolio-archive article figure { width: 240px; }
 html body section#portfolio-archive article figure img { max-width: 100%; height: auto; }
 html body section#portfolio-archive article:first-of-type:before { content: 'Featured projects'; font-family: "Europa", sans-serif; font-weight: 400; font-size: 1.3077em; position: absolute; top: -3.12em; }
+
+html.frontpage body section { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; -moz-align-items: center; align-items: center; }
+html.frontpage body section article { -webkit-box-ordinal-group: 1; -moz-box-ordinal-group: 1; -webkit-order: 0; -ms-flex-order: 0; order: 0; -webkit-box-flex: 0; -webkit-flex-grow: 0; -moz-flex-grow: 0; -ms-flex-positive: 0; flex-grow: 0; -webkit-flex-shrink: 1; -moz-flex-shrink: 1; -ms-flex-negative: 1; flex-shrink: 1; -webkit-flex-basis: auto; -moz-flex-basis: auto; -ms-flex-preferred-size: auto; flex-basis: auto; -webkit-align-self: auto; -moz-align-self: auto; -ms-flex-item-align: auto; align-self: auto; }
+@media only screen and (max-width: 37.499em) { html.frontpage.inu-chivu body section.screenshots-1 article { -webkit-flex-basis: 50%; -moz-flex-basis: 50%; -ms-flex-preferred-size: 50%; flex-basis: 50%; }
+  html.frontpage.inu-chivu body section.screenshots-1 article:nth-of-type(2) { -webkit-flex-basis: 65%; -moz-flex-basis: 65%; -ms-flex-preferred-size: 65%; flex-basis: 65%; margin-left: -15%; } }
+html.frontpage.inu-chivu body section.screenshots-3 article { -webkit-align-self: flex-end; -moz-align-self: flex-end; -ms-flex-item-align: end; align-self: flex-end; }
+html.frontpage.anvelocom body section.intro { overflow: hidden; -webkit-box-direction: normal; -moz-box-direction: normal; -webkit-box-orient: vertical; -moz-box-orient: vertical; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
+html.frontpage.smuff body section.intro { -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+html.frontpage.smuff body section.intro article.title { -webkit-flex-basis: 100%; -moz-flex-basis: 100%; -ms-flex-preferred-size: 100%; flex-basis: 100%; }
+html.frontpage.organized-crime-and-corruption-reporting-project body section.services article.mockup { -webkit-box-ordinal-group: 3; -moz-box-ordinal-group: 3; -webkit-order: 2; -ms-flex-order: 2; order: 2; }
+html.frontpage.iorad body section.services article { -webkit-align-self: flex-end; -moz-align-self: flex-end; -ms-flex-item-align: end; align-self: flex-end; }
+html.frontpage.iorad body section.services article.services { width: 100%; }
+html.frontpage body section#intro article { text-align: center; }
+html.frontpage body section#intro article h1 { font-family: "Europa", sans-serif; font-weight: 400; font-size: 1.3077em; }
+html.frontpage body section#intro article p { font-family: "Europa", sans-serif; font-weight: 300; font-style: italic; }
 
 html.portfolio.inu-chivu body { /*
 $color1: $white;

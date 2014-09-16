@@ -40,19 +40,20 @@
 
 
 <figure id="{% include atoms/classname.html title=title %}" class="{{ class }}">
-  <picture>
-    <!--[if IE 9]><video style="display: none;"><![endif]-->
-    
-    <!-- The first criteria met is applied -->
-    <source media="(min-width: 90em)" srcset="{{ site.url }}/{{ site.images }}/{{ desktop }} 1x">
-    <source media="(min-width: 64em)" srcset="{{ site.url }}/{{ site.images }}/{{ laptop }} 1x">
-    <source media="(min-width: 48em)" srcset="{{ site.url }}/{{ site.images }}/{{ tablet }} 1x">
-    <source media="(min-width: 37.5em)" srcset="{{ site.url }}/{{ site.images }}/{{ small-tablet }} 1x">
-    <source srcset="{{ site.url }}/{{ site.images }}/{{ mobile }} 1x">
-    <!--[if IE 9]></video><![endif]-->
-    
-    <img src="{{ site.url }}/{{ site.images }}/{{ mobile }}" alt="{{ title }}">
-  </picture>
-  
-  <figcaption>{{ figcaption }}</figcaption>
+  {% if image.link %}<a href="{{ site.url }}{{ image.link }}" title={{ title }}>{% endif %}
+    <picture>
+      <!--[if IE 9]><video style="display: none;"><![endif]-->
+
+      <!-- The first criteria met is applied -->
+      <source media="(min-width: 90em)" srcset="{{ site.url }}/{{ site.images }}/{{ desktop }} 1x">
+      <source media="(min-width: 64em)" srcset="{{ site.url }}/{{ site.images }}/{{ laptop }} 1x">
+      <source media="(min-width: 48em)" srcset="{{ site.url }}/{{ site.images }}/{{ tablet }} 1x">
+      <source media="(min-width: 37.5em)" srcset="{{ site.url }}/{{ site.images }}/{{ small-tablet }} 1x">
+      <source srcset="{{ site.url }}/{{ site.images }}/{{ mobile }} 1x">
+      <!--[if IE 9]></video><![endif]-->
+
+      <img src="{{ site.url }}/{{ site.images }}/{{ mobile }}" alt="{{ title }}">
+    </picture>
+    <figcaption>{{ figcaption }}</figcaption>
+  {% if image.link %}</a>{% endif %}
 </figure>

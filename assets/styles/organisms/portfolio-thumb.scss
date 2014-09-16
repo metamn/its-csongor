@@ -1,9 +1,8 @@
 @mixin portfolio-thumb {
   margin: $lem;
+  max-width: 240px;
   
   figure {
-    width: calc(64em / 6);
-    height: calc(64em / 6 + 2em);
-    border: 1px solid;
+    @include figure($figcaption: true);
   }
 }

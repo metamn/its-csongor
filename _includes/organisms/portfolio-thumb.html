@@ -1,10 +1,5 @@
 <article id="{% include atoms/classname.html title=post.title %}">
   <h3>{{ post.title }}</h3>
   
-  <figure>
-    <a href="{{ site.url }}/{{ post.url }}" title="{{ post.title }}">
-      <span></span>
-      <figcaption>{{ post.title }}</figcaption>
-    </a>
-  </figure>
+  {% include atoms/figure.html mobile=post.thumb title=post.title link=post.url %}
 </article>

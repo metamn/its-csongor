@@ -12,8 +12,6 @@ items:
         value: "100%"
       - name: "line-height"
         value: "1.25"
-      - name: "$lem"
-        value: "1.25em !global"
   - name: Desktop
     description: Font size for desktops
     breakpoint: "desktop-and-up"
@@ -22,6 +20,18 @@ items:
         value: "125%"
       - name: "line-height"
         value: "1.56"
+grid:
+  - name: Line height
+    description: The line height in EM
+    values:
       - name: "$lem"
+        value: "1.25em !global"
+      - name: "$lem"
+        breakpoint: "desktop-and-up"
         value: "1.56em !global"
+  - name: Text width
+    description: The width of a text block in characters
+    values: 
+      - name: "$text-width"
+        value: "$lem * 20"
 ---

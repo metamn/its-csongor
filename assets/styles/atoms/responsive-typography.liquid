@@ -1,13 +1,12 @@
 ---
 ---
-{% for page in site.pages %}{% if page.title == "Responsive Typography" %}{% for item in page.items %}{% if item.breakpoint %}
-@include {{ item.breakpoint }} {
-  {{ item.values.last.name }}: {{ item.values.last.value }};
+{% for page in site.pages %}{% if page.title == "Responsive Typography" %}{% for grid in page.grid %}
+// {{ grid.description }}{% for value in grid.values %}{% if value.breakpoint %}
+@include {{ value.breakpoint }} {
+  {{ value.name }}: {{ value.value }};
 }
 {% else %} 
-{{ item.values.last.name }}: {{ item.values.last.value }};
-{% endif %}{% endfor %}{% endif %}{% endfor %}
-
+{{ value.name }}: {{ value.value }};{% endif %}{% endfor %}{% endfor %}{% endif %}{% endfor %}
 
 @mixin responsive-typography { {% for page in site.pages %}{% if page.title == "Responsive Typography" %}{% for item in page.items %}{% if item.breakpoint %}
   @include {{ item.breakpoint }} {

@@ -1,0 +1,7 @@
+<section id="portfolio-archive">
+  <h3>Portfolio archive</h3>
+  
+  {% for post in site.posts %}
+    {% include organisms/portfolio-thumb.html %}
+  {% endfor %}
+</section>

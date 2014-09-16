@@ -1,0 +1,10 @@
+<article id="{% include atoms/classname.html title=post.title %}">
+  <h3>{{ post.title }}</h3>
+  
+  <figure>
+    <a href="{{ site.url }}/{{ post.url }}" title="{{ post.title }}">
+      <span></span>
+      <figcaption>{{ post.title }}</figcaption>
+    </a>
+  </figure>
+</article>

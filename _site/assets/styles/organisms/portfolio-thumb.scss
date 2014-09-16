@@ -1,0 +1,9 @@
+@mixin portfolio-thumb {
+  margin: $lem;
+  
+  figure {
+    width: calc(64em / 6);
+    height: calc(64em / 6 + 2em);
+    border: 1px solid;
+  }
+}

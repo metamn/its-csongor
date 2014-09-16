@@ -1,8 +1,21 @@
 @mixin portfolio-thumb {
   margin: $lem;
-  max-width: 240px;
   
   figure {
     @include figure($figcaption: true);
+    width: 240px;
+  }
+  
+  // The Archive title
+  position: relative;
+  
+  &:first-of-type {
+    &:before {
+      content: 'Featured projects';
+      @include font(title);
+      
+      position: absolute;
+      top: -$lem * 2;
+    }
   }
 }

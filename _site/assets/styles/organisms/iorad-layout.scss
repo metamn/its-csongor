@@ -5,6 +5,10 @@
         // Align both desktop and laptop to bottom
         article {
           @include flex-align-self(flex-end);
+          
+          &.services {
+            width: 100%;
+          }
         }
       }
     }

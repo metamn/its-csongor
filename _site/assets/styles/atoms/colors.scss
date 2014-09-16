@@ -4,16 +4,16 @@ $white: hsla(0, 0, 100%, 1);
 $black: hsla(170, 45%, 5%, 1);
 $iorad-blue: hsla(209, 53%, 38%, 1);
 $iorad-green: hsla(154, 71%, 43%, 1);
-$inu-black: hsla(0, 0, 0, 1);
-$occrp-red: hsla(1, 53%, 38%, 1);
+$inu-black: hsl(223, 19%, 38%);
+$occrp-red: hsla(1, 3%, 48%, 1);
 $occrp-blue: hsla(204, 73%, 55%, 1);
-$anvelocom-brown: hsla(14, 47%, 27%, 1);
-$anvelocom-green: hsla(104, 16%, 46%, 1);
+$anvelocom-brown: hsla(14, 27%, 27%, 1);
+$anvelocom-green: hsla(104, 36%, 53%, 1);
 $scatter-brown: hsla(26, 56%, 78%, 1);
 $scatter-brown: hsla(26, 56%, 78%, 1);
 $scatter-blue: hsla(203, 84%, 71%, 1);
-$smuff-orange: hsla(19, 88%, 53%, 1);
-$smuff-green: hsla(98, 73%, 65%, 1);
+$smuff-orange: hsl(59, 88%, 58%);
+$smuff-green: hsl(178, 67%, 62%);
 
 
 // All color pairs
@@ -29,7 +29,7 @@ $smuff-green: hsla(98, 73%, 65%, 1);
 
 
 // All color codes collected in a list
-$colors: hsla(0, 0, 100%, 1), hsla(170, 45%, 5%, 1), hsla(209, 53%, 38%, 1), hsla(154, 71%, 43%, 1), hsla(0, 0, 0, 1), hsla(1, 53%, 38%, 1), hsla(204, 73%, 55%, 1), hsla(14, 47%, 27%, 1), hsla(104, 16%, 46%, 1), hsla(26, 56%, 78%, 1), hsla(26, 56%, 78%, 1), hsla(203, 84%, 71%, 1), hsla(19, 88%, 53%, 1), hsla(98, 73%, 65%, 1);
+$colors: hsla(0, 0, 100%, 1), hsla(170, 45%, 5%, 1), hsla(209, 53%, 38%, 1), hsla(154, 71%, 43%, 1), hsl(223, 19%, 38%), hsla(1, 3%, 48%, 1), hsla(204, 73%, 55%, 1), hsla(14, 27%, 27%, 1), hsla(104, 36%, 53%, 1), hsla(26, 56%, 78%, 1), hsla(26, 56%, 78%, 1), hsla(203, 84%, 71%, 1), hsl(59, 88%, 58%), hsl(178, 67%, 62%);
 
 
 // All color pairs collected in a list

@@ -12,8 +12,8 @@
     */
     
     section {
-      $color1: darken($white, 10%);
-      $color2: lighten($inu-black, 85%);
+      $color1: darken($white, 5%);
+      $color2: lighten($inu-black, 45%);
       @include gradient($color1, $color2);
       
       padding-top: $lem * 2;

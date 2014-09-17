@@ -3,6 +3,7 @@ html {
     @include responsive-typography;
     @include colors;
     @include font;
+    @include link;
   
     header, footer, section, article, aside, nav, figure {
       @include hide-title;

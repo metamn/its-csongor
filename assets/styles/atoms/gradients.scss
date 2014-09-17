@@ -1,14 +1,9 @@
-@mixin gradient($from, $to, $odd: true) {
-  @if ($odd == true) {
-    &:nth-child(odd) {
-      @include background-image(linear-gradient($from, $to));
-    }
-
-    &:nth-child(even) {
-      @include background-image(linear-gradient($to, $from));
-    }
-  
-  } @else {
+@mixin gradient($from, $to) {
+  &:nth-child(odd) {
     @include background-image(linear-gradient($from, $to));
+  }
+
+  &:nth-child(even) {
+    @include background-image(linear-gradient($to, $from));
   }
 }

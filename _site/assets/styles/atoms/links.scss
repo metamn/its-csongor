@@ -1,0 +1,10 @@
+@mixin link($type: default) {
+  a {
+    @include color($black);
+    text-decoration: none;
+    
+    &:hover, &:active {
+      border-bottom: 2px solid red;
+    }
+  }
+}

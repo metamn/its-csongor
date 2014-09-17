@@ -1,6 +1,17 @@
 @mixin occrp-layout {
   body {
     section {
+      // on small screens the subtitle is too close to the title
+      &.intro {
+        article {
+          &.title {
+            p {
+              padding-top: $lem;
+            }
+          }
+        }
+      }
+      
       &.services {
         article {
           &.mockup {

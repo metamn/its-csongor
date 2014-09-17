@@ -1,13 +1,7 @@
 html.frontpage {
-  @include portfolio-layouts;
-  
   body {
-    section {
-      &#intro {
-        article {
-          @include text(portfolio-title);
-        }
-      }
+    main {
+      @include skills-and-thumbs;
     }
   }
 }

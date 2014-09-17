@@ -18,6 +18,10 @@ html.portfolio {
           @include portfolio-typography;
         }
       }
+      
+      &#portfolio-archive {
+        @include portfolio-archive;
+      }
     }
   }
 }

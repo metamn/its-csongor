@@ -2,6 +2,8 @@
   <h3>Archive</h3>
   
   {% for post in site.posts %}
-    {% include organisms/portfolio-thumb.html %}
+    {% if post.category != "skills" %}
+      {% include organisms/portfolio-thumb.html %}
+    {% endif %}
   {% endfor %}
 </section>

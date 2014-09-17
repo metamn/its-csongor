@@ -1,0 +1,11 @@
+@mixin skill {
+  @include show-title;
+  max-width: 320px;
+  padding: $lem;
+
+  h3 {
+    @include font(services);
+  }
+
+  @include p;
+}

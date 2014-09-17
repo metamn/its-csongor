@@ -3,3 +3,10 @@ layout: frontpage
 title: Home
 ---
 
+{% for post in site.posts %}
+  {% if post.category == "skills" %}
+    {% include molecules/skill.html %}
+  {% else %}
+    {% include organisms/portfolio-thumb.html %}
+  {% endif %}
+{% endfor %}

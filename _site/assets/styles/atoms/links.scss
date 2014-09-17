@@ -2,9 +2,10 @@
   a {
     @include color($black);
     text-decoration: none;
+    border-bottom: 2px solid red;
     
     &:hover, &:active {
-      border-bottom: 2px solid red;
+      border-color: $black;
     }
   }
 }

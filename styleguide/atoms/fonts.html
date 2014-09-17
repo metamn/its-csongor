@@ -10,8 +10,19 @@ comments:
   - Special font mixins
   - A list of all font mixins
 fonts:
+  - name: Montserrat
+    description: A strong sans serif typeface for the logo
+    from: Google
+    value: Montserrat
+    styles: "400"
+    mixins:
+      - name: Logo
+        font-family: sans-serif
+        properties:
+          - name: font-size
+            value: $heading-level-1
   - name: Europa
-    description: A sans serif typeface for both body text and headlines
+    description: A smooth sans serif typeface for both body text and headlines
     styles: "300,400"
     mixins:
       - name: Body

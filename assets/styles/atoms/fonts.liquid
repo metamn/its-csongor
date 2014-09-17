@@ -1,8 +1,7 @@
 ---
 ---
-{% for page in site.pages %}{% if page.title == "Fonts" %}{% assign current = page %}{% endif %}{% endfor %}{% capture fonts %}{% for font in current.fonts %}{{ font.value }}:{{ font.styles }}|{% endfor %}{% endcapture %}
-// {{ current.comments[0] }}
-{% comment %}@import url(http://fonts.googleapis.com/css?family={{ fonts }});{% endcomment %}
+{% for page in site.pages %}{% if page.title == "Fonts" %}{% assign current = page %}{% endif %}{% endfor %}{% capture fonts %}{% for font in current.fonts %}{% if font.from == "Google" %}{{ font.value }}:{{ font.styles }}|{% endif %}{% endfor %}{% endcapture %}
+@import url(http://fonts.googleapis.com/css?family={{ fonts }});
 
 
 // {{ current.comments[2] }}

@@ -1,10 +1,14 @@
 
-// Served from Typekit
-
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400|);
 
 
 // Special font mixins
 @mixin font($type: body) { 
+  @if ($type == logo) {
+    font-family: "Montserrat", sans-serif;
+    font-size: $heading-level-1;
+    
+  }
   @if ($type == body) {
     font-family: "Europa", sans-serif;
     font-weight: 300;
@@ -31,8 +35,8 @@
 
 
 // A list of all font families
-$font-families: Europa;
+$font-families: Montserrat, Europa;
 
 
 // A list of all font mixins
-$font-mixins: body, title, subtitle, services; 
+$font-mixins: logo, body, title, subtitle, services; 

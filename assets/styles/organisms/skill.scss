@@ -1,15 +1,12 @@
 @mixin skill {
   @include show-title;
-  max-width: 320px;
-  padding: $lem;
-  @include transform(rotate(15deg));
-  font-size: 150%;
+  @include text-block;
+  padding: $lem * 2;
 
   h3 {
     @include font(services);
-    font-weight: 700;
     margin-bottom: $lem / 2;
   }
 
-  @include p(classic);
+  @include p;
 }

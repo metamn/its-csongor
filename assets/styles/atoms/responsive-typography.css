@@ -11,7 +11,7 @@ Syntax error: Undefined mixin 'desktop-and-up'.
 6: }
 7: 
 8: // The width of a text block in characters 
-9: $text-width: $lem * 20;
+9: $text-width: $lem * 15;
 
 Backtrace:
 /home/cs/work/its-csongor/assets/styles/atoms/responsive-typography.scss:4:in `desktop-and-up'
@@ -57,4 +57,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'desktop-and-up'.\A         on line 4 of /home/cs/work/its-csongor/assets/styles/atoms/responsive-typography.scss, in `desktop-and-up'\A         from line 4 of /home/cs/work/its-csongor/assets/styles/atoms/responsive-typography.scss\A \A 1: \A 2: // The line height in EM \A 3: $lem: 1.25em !global;\A 4: @include desktop-and-up {\A 5:   $lem: 1.56em !global;\A 6: }\A 7: \A 8: // The width of a text block in characters \A 9: $text-width: $lem * 20;"; }
+  content: "Syntax error: Undefined mixin 'desktop-and-up'.\A         on line 4 of /home/cs/work/its-csongor/assets/styles/atoms/responsive-typography.scss, in `desktop-and-up'\A         from line 4 of /home/cs/work/its-csongor/assets/styles/atoms/responsive-typography.scss\A \A 1: \A 2: // The line height in EM \A 3: $lem: 1.25em !global;\A 4: @include desktop-and-up {\A 5:   $lem: 1.56em !global;\A 6: }\A 7: \A 8: // The width of a text block in characters \A 9: $text-width: $lem * 15;"; }

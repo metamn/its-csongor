@@ -4,9 +4,10 @@
   @include link(none);
   
   figure {
-    @include figure;
+    @include figure(caption);
     width: 240px;
-    @include transform(rotate(15deg));
+    max-height: 300px;
+    overflow: hidden;
   }
   
   // The Archive title

@@ -3,7 +3,6 @@
   
   article {
     @include flex-item;
-    padding: $lem * 2;
     
     &.skill {
       @include skill;

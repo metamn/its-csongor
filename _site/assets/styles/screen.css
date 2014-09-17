@@ -29,13 +29,15 @@ html body header > h3, html body footer > h3, html body section > h3, html body 
 html body header { font-family: "Montserrat", sans-serif; font-size: 1.3077em; padding: 1.56em; }
 
 html.frontpage body main { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; -webkit-align-content: space-around; -moz-align-content: space-around; -ms-flex-line-pack: space-around; align-content: space-around; }
-html.frontpage body main article { -webkit-box-ordinal-group: 1; -moz-box-ordinal-group: 1; -webkit-order: 0; -ms-flex-order: 0; order: 0; -webkit-box-flex: 0; -webkit-flex-grow: 0; -moz-flex-grow: 0; -ms-flex-positive: 0; flex-grow: 0; -webkit-flex-shrink: 1; -moz-flex-shrink: 1; -ms-flex-negative: 1; flex-shrink: 1; -webkit-flex-basis: auto; -moz-flex-basis: auto; -ms-flex-preferred-size: auto; flex-basis: auto; -webkit-align-self: auto; -moz-align-self: auto; -ms-flex-item-align: auto; align-self: auto; }
-html.frontpage body main article.skill { max-width: 320px; padding: 1.56em; }
+html.frontpage body main article { -webkit-box-ordinal-group: 1; -moz-box-ordinal-group: 1; -webkit-order: 0; -ms-flex-order: 0; order: 0; -webkit-box-flex: 0; -webkit-flex-grow: 0; -moz-flex-grow: 0; -ms-flex-positive: 0; flex-grow: 0; -webkit-flex-shrink: 1; -moz-flex-shrink: 1; -ms-flex-negative: 1; flex-shrink: 1; -webkit-flex-basis: auto; -moz-flex-basis: auto; -ms-flex-preferred-size: auto; flex-basis: auto; -webkit-align-self: auto; -moz-align-self: auto; -ms-flex-item-align: auto; align-self: auto; padding: 3.12em; }
+html.frontpage body main article.skill { max-width: 320px; padding: 1.56em; -moz-transform: rotate(15deg); -ms-transform: rotate(15deg); -webkit-transform: rotate(15deg); transform: rotate(15deg); font-size: 150%; }
 html.frontpage body main article.skill > h3 { display: block; }
-html.frontpage body main article.skill h3 { font-family: "Europa", sans-serif; font-weight: 400; }
-html.frontpage body main article.skill p + p { margin-top: 1.56em; }
+html.frontpage body main article.skill h3 { font-family: "Europa", sans-serif; font-weight: 400; font-weight: 700; margin-bottom: 0.78em; }
+html.frontpage body main article.skill p + p { margin-left: 1.56em; }
 html.frontpage body main article.thumb { margin: 1.56em; position: relative; }
-html.frontpage body main article.thumb figure { width: 240px; }
+html.frontpage body main article.thumb a { color: #071211; background: transparent; text-decoration: none; border-bottom: 3px solid transparent; }
+html.frontpage body main article.thumb a:hover, html.frontpage body main article.thumb a:active { border-color: #071211; }
+html.frontpage body main article.thumb figure { width: 240px; -moz-transform: rotate(15deg); -ms-transform: rotate(15deg); -webkit-transform: rotate(15deg); transform: rotate(15deg); }
 html.frontpage body main article.thumb figure img { max-width: 100%; height: auto; }
 html.frontpage body main article.thumb figure figcaption { display: none; }
 html.frontpage body main article.thumb:first-of-type:before { content: 'Featured projects'; font-family: "Europa", sans-serif; font-weight: 400; position: absolute; top: -3.12em; }
@@ -202,7 +204,9 @@ html.portfolio body section article.services.services p + p, html.portfolio body
 html.portfolio body section article.services.services p span, html.portfolio body section article.title.services p span, html.portfolio body section article.description.services p span { font-family: "Europa", sans-serif; font-weight: 400; }
 html.portfolio body section#portfolio-archive { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; -webkit-box-align: start; -ms-flex-align: start; -webkit-align-items: flex-start; -moz-align-items: flex-start; align-items: flex-start; padding-top: 3.12em; }
 html.portfolio body section#portfolio-archive article { -webkit-box-ordinal-group: 1; -moz-box-ordinal-group: 1; -webkit-order: 0; -ms-flex-order: 0; order: 0; -webkit-box-flex: 0; -webkit-flex-grow: 0; -moz-flex-grow: 0; -ms-flex-positive: 0; flex-grow: 0; -webkit-flex-shrink: 1; -moz-flex-shrink: 1; -ms-flex-negative: 1; flex-shrink: 1; -webkit-flex-basis: auto; -moz-flex-basis: auto; -ms-flex-preferred-size: auto; flex-basis: auto; -webkit-align-self: auto; -moz-align-self: auto; -ms-flex-item-align: auto; align-self: auto; margin: 1.56em; position: relative; }
-html.portfolio body section#portfolio-archive article figure { width: 240px; }
+html.portfolio body section#portfolio-archive article a { color: #071211; background: transparent; text-decoration: none; border-bottom: 3px solid transparent; }
+html.portfolio body section#portfolio-archive article a:hover, html.portfolio body section#portfolio-archive article a:active { border-color: #071211; }
+html.portfolio body section#portfolio-archive article figure { width: 240px; -moz-transform: rotate(15deg); -ms-transform: rotate(15deg); -webkit-transform: rotate(15deg); transform: rotate(15deg); }
 html.portfolio body section#portfolio-archive article figure img { max-width: 100%; height: auto; }
 html.portfolio body section#portfolio-archive article figure figcaption { display: none; }
 html.portfolio body section#portfolio-archive article:first-of-type:before { content: 'Featured projects'; font-family: "Europa", sans-serif; font-weight: 400; position: absolute; top: -3.12em; }

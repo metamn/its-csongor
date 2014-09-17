@@ -1,12 +1,26 @@
 @mixin link($type: default) {
-  a {
-    @include color($black);
-    text-decoration: none;
-    // Adjusted to the size of the letters in the logo
-    border-bottom: 3px solid red;
-    
-    &:hover, &:active {
-      border-color: $black;
+  @if ($type == default) {
+    a {
+      @include color($black);
+      text-decoration: none;
+      // Adjusted to the size of the letters in the logo
+      border-bottom: 3px solid red;
+
+      &:hover, &:active {
+        border-color: $black;
+      }
+    }
+  }
+  
+  @if ($type == none) {
+    a {
+      @include color($black);
+      text-decoration: none;
+      border-bottom: 3px solid transparent;
+
+      &:hover, &:active {
+        border-color: $black;
+      }
     }
   }
 }

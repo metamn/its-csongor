@@ -1,9 +1,12 @@
 @mixin portfolio-thumb {
   margin: $lem;
   
+  @include link(none);
+  
   figure {
     @include figure;
     width: 240px;
+    @include transform(rotate(15deg));
   }
   
   // The Archive title

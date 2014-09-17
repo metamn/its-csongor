@@ -1,7 +1,13 @@
-@mixin p {
+@mixin p($type: default) {
   p {
     + p {
-      margin-top: $lem;
+      @if ($type == default) {
+        margin-top: $lem;
+      }
+      
+      @if ($type == classic) {
+        margin-left: $lem;
+      }
     }
   }
 }

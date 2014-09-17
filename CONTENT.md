@@ -193,19 +193,19 @@ Conclusions:
 
 2. If Responsinator is used: open the screenshot taken in Gimp and cut the scrollbar to 622x1005px
 
-3.a Open Gimp and create a 640x1136px blank image with the site's background color. Copy the screenshot here and save as client-pagename-mobile-screenshot.png
+3. Open Gimp and create a 640x1136px blank image with the site's background color. Copy the screenshot here and save as client-pagename-mobile-screenshot.png
 
-3.b If the background is not a color but an image then just simply scale the screenshot to 640x1136px
+4. If the background is not a color but an image then just simply scale the screenshot to 640x1136px
 
-3. Mockuphone.com > iPhone 5S Silver > upload screenshot and wait for the generated mockups
+5. Mockuphone.com > iPhone 5S Silver > upload screenshot and wait for the generated mockups
 
-4. Three mockups will be generated, each 2000x2000px on transparent background, 150-250kB size
+6. Three mockups will be generated, each 2000x2000px on transparent background, 150-250kB size
 
 	- portrait, side1 is usable
 	
 	- landscape: not usable
 
-5. Import the selected mockups into Gimp to cut the large transparent background
+7. Import the selected mockups into Gimp to cut the large transparent background
 
 	- side1: cut to 645x1605px and save as client-pagename-mobile-slide.png. The result will take around 200kB.
 

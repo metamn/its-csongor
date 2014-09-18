@@ -11,5 +11,23 @@
     
     font-size: 200%;
     @include p;
+    
+    p {
+      &:last-of-type {
+        margin-top: $lem * 2;
+        font-size: 70%;
+        text-transform: uppercase;
+      }
+    }
+    
+    span {
+      &:first-of-type {
+        color: hsl(2, 88%, 74%);
+      }
+      
+      &:last-of-type {
+        border-bottom: 2px solid hsl(2, 88%, 74%);
+      }
+    }
   }
 }

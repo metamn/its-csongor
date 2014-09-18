@@ -226,3 +226,4 @@ html.portfolio body section#portfolio-archive article figure img { max-width: 10
 html.portfolio body section#portfolio-archive article figure img { display: none; }
 html.portfolio body section#portfolio-archive article:first-of-type:before { content: 'Featured projects'; font-family: "Europa", sans-serif; font-weight: 400; position: absolute; top: -3.12em; }
 html.portfolio body section#portfolio-archive article:hover figure img, html.portfolio body section#portfolio-archive article.active figure img { display: block; }
+html.portfolio body section#contact { padding: 3.12em; }

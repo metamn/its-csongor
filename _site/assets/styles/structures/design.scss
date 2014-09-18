@@ -17,10 +17,6 @@
         font-weight: 700;
         font-style: normal;
         
-        //@include colors(white-on-black);
-        //color: #f1f1f1;
-        //padding: 0 $lem/8;
-        //margin: $lem/16 0;
         width: 1em;
         display: inline-block;
         text-align: center;
@@ -36,8 +32,8 @@
     
     border-bottom: 1px solid;
     
-    &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4) {
-      //border-color: $black;
+    &.clickable {
+      cursor: pointer;
       
       h3 span {
         color: hsl(2, 88%, 74%);

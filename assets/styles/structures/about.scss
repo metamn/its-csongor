@@ -20,15 +20,6 @@
         text-transform: uppercase;
         letter-spacing: 1.1px;
         
-        span {
-          &:first-of-type {
-            color: hsl(2, 88%, 74%);
-          }
-
-          &:last-of-type {
-            border-bottom: 2px solid hsl(2, 88%, 74%);
-          }
-        }
       }
     }
     

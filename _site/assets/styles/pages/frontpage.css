@@ -1,19 +1,23 @@
 /*
-Syntax error: Undefined mixin 'skills-and-thumbs'.
-        on line 4 of /home/cs/work/its-csongor/assets/styles/pages/frontpage.scss, in `skills-and-thumbs'
-        from line 4 of /home/cs/work/its-csongor/assets/styles/pages/frontpage.scss
+Syntax error: Undefined mixin 'intro'.
+        on line 8 of /home/cs/work/its-csongor/assets/styles/pages/frontpage.scss, in `intro'
+        from line 8 of /home/cs/work/its-csongor/assets/styles/pages/frontpage.scss
 
-1: html.frontpage {
-2:   body {
-3:     main {
-4:       @include skills-and-thumbs;
+3:     header {
+4:       display: none;
 5:     }
-6:   }
-7: }
+6:     
+7:     #intro {
+8:       @include intro;
+9:     }
+10:     
+11:     main {
+12:       //@include skills-and-thumbs;
+13:     }
 
 Backtrace:
-/home/cs/work/its-csongor/assets/styles/pages/frontpage.scss:4:in `skills-and-thumbs'
-/home/cs/work/its-csongor/assets/styles/pages/frontpage.scss:4
+/home/cs/work/its-csongor/assets/styles/pages/frontpage.scss:8:in `intro'
+/home/cs/work/its-csongor/assets/styles/pages/frontpage.scss:8
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:320:in `block in visit_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:98:in `block in with_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:121:in `with_frame'
@@ -88,4 +92,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'skills-and-thumbs'.\A         on line 4 of /home/cs/work/its-csongor/assets/styles/pages/frontpage.scss, in `skills-and-thumbs'\A         from line 4 of /home/cs/work/its-csongor/assets/styles/pages/frontpage.scss\A \A 1: html.frontpage {\A 2:   body {\A 3:     main {\A 4:       @include skills-and-thumbs;\A 5:     }\A 6:   }\A 7: }"; }
+  content: "Syntax error: Undefined mixin 'intro'.\A         on line 8 of /home/cs/work/its-csongor/assets/styles/pages/frontpage.scss, in `intro'\A         from line 8 of /home/cs/work/its-csongor/assets/styles/pages/frontpage.scss\A \A 3:     header {\A 4:       display: none;\A 5:     }\A 6:     \A 7:     #intro {\A 8:       @include intro;\A 9:     }\A 10:     \A 11:     main {\A 12:       //@include skills-and-thumbs;\A 13:     }"; }

@@ -28,18 +28,14 @@ html body a:hover, html body a:active { border-color: #071211; }
 html body header > h3, html body footer > h3, html body section > h3, html body article > h3, html body aside > h3, html body nav > h3, html body figure > h3 { display: none; }
 html body header { font-family: "Montserrat", sans-serif; font-size: 1.3077em; padding: 1.56em; }
 
-html.frontpage body main { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; -webkit-align-content: space-around; -moz-align-content: space-around; -ms-flex-line-pack: space-around; align-content: space-around; }
-html.frontpage body main article { -webkit-box-ordinal-group: 1; -moz-box-ordinal-group: 1; -webkit-order: 0; -ms-flex-order: 0; order: 0; -webkit-box-flex: 0; -webkit-flex-grow: 0; -moz-flex-grow: 0; -ms-flex-positive: 0; flex-grow: 0; -webkit-flex-shrink: 1; -moz-flex-shrink: 1; -ms-flex-negative: 1; flex-shrink: 1; -webkit-flex-basis: auto; -moz-flex-basis: auto; -ms-flex-preferred-size: auto; flex-basis: auto; -webkit-align-self: auto; -moz-align-self: auto; -ms-flex-item-align: auto; align-self: auto; }
-html.frontpage body main article.skill { max-width: 23.4em; padding: 3.12em; }
-html.frontpage body main article.skill > h3 { display: block; }
-html.frontpage body main article.skill h3 { font-family: "Europa", sans-serif; font-weight: 400; margin-bottom: 0.78em; }
-html.frontpage body main article.skill p + p { margin-top: 1.56em; }
-html.frontpage body main article.thumb { margin: 1.56em; position: relative; }
-html.frontpage body main article.thumb a { color: #071211; background: transparent; text-decoration: none; border-bottom: 3px solid transparent; }
-html.frontpage body main article.thumb a:hover, html.frontpage body main article.thumb a:active { border-color: #071211; }
-html.frontpage body main article.thumb figure { width: 240px; max-height: 300px; overflow: hidden; }
-html.frontpage body main article.thumb figure img { max-width: 100%; height: auto; }
-html.frontpage body main article.thumb:first-of-type:before { content: 'Featured projects'; font-family: "Europa", sans-serif; font-weight: 400; position: absolute; top: -3.12em; }
+html.frontpage body header { display: none; }
+html.frontpage body #intro { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-box-direction: normal; -moz-box-direction: normal; -webkit-box-orient: vertical; -moz-box-orient: vertical; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; -moz-align-items: center; align-items: center; }
+html.frontpage body #intro article { -webkit-box-ordinal-group: 1; -moz-box-ordinal-group: 1; -webkit-order: 0; -ms-flex-order: 0; order: 0; -webkit-box-flex: 0; -webkit-flex-grow: 0; -moz-flex-grow: 0; -ms-flex-positive: 0; flex-grow: 0; -webkit-flex-shrink: 1; -moz-flex-shrink: 1; -ms-flex-negative: 1; flex-shrink: 1; -webkit-flex-basis: auto; -moz-flex-basis: auto; -ms-flex-preferred-size: auto; flex-basis: auto; -webkit-align-self: auto; -moz-align-self: auto; -ms-flex-item-align: auto; align-self: auto; font-size: 300%; }
+html.frontpage body #intro article > h3 { display: block; }
+html.frontpage body #intro article h3 span { padding: 0 0.195em; font-family: "Montserrat", sans-serif; font-size: 1.3077em; font-weight: 700; }
+html.frontpage body #intro article:nth-of-type(2) { margin-left: 1.9em; }
+html.frontpage body #intro article:nth-of-type(3) { margin-left: 2.3em; }
+html.frontpage body #intro article:nth-of-type(4) { margin-left: -.5em; }
 
 html.portfolio.inu-chivu body header { background: #d8dbe4; }
 html.portfolio.inu-chivu body section:nth-child(odd) { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2YyZjJmMiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2Q4ZGJlNCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='); background-size: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f2f2f2), color-stop(100%, #d8dbe4)); background-image: -moz-linear-gradient(#f2f2f2, #d8dbe4); background-image: -webkit-linear-gradient(#f2f2f2, #d8dbe4); background-image: linear-gradient(#f2f2f2, #d8dbe4); }

@@ -1,7 +1,15 @@
 html.frontpage {
   body {
+    header {
+      display: none;
+    }
+    
+    #intro {
+      @include intro;
+    }
+    
     main {
-      @include skills-and-thumbs;
+      //@include skills-and-thumbs;
     }
   }
 }

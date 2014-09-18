@@ -3,6 +3,10 @@ layout: frontpage
 title: Home
 ---
 
+
+{% include structures/intro.html %}
+
+{% comment %}
 {% for post in site.posts %}
   {% if post.category == "skills" %}
     {% include molecules/skill.html %}
@@ -10,4 +14,4 @@ title: Home
     {% include organisms/portfolio-thumb.html %}
   {% endif %}
 {% endfor %}
-
+{% endcomment %}

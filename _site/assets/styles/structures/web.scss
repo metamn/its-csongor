@@ -14,9 +14,9 @@
         font-size: 300%;
         font-style: normal;
         
-        @include colors(white-on-black);
-        padding: 0 $lem/8;
-        margin: $lem/8;
+        border-bottom: 1px solid;
+        padding: 0 $lem/6;
+        margin: 2px;
         width: 1em;
         display: inline-block;
         text-align: center;

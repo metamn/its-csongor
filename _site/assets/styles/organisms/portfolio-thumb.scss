@@ -9,6 +9,10 @@
     max-height: 240px;
     overflow: hidden;
     border-bottom: 1px solid;
+    
+    img {
+      display: none;
+    }
   }
   
   // The Archive title
@@ -21,6 +25,15 @@
       
       position: absolute;
       top: -$lem * 2;
+    }
+  }
+  
+  // Hover 
+  &:hover, &.active {
+    figure {
+      img {
+        display: block;
+      }
     }
   }
 }

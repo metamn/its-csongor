@@ -1,7 +1,7 @@
 @mixin intro {
   @include flexbox($display: flex, $direction: row, $align-items: center, $justify-content: flex-start);
   background: #f1f1f1;
-  background: url(/assets/images/empty-tablet-angle1.png) no-repeat scroll 150% 45% #f1f1f1;
+  background: url(/assets/images/empty-tablet-angle1.png) no-repeat scroll 150% 45% #e1e1e1;
   
   #design, #web, #cms {
     @include flex-item;

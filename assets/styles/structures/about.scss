@@ -1,6 +1,7 @@
 @mixin about {
   @include flexbox($justify-content: center);
   @include colors(white-on-black);
+  color: #999;
   
   article {
     @include flex-item;

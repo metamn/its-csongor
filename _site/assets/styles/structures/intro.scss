@@ -1,6 +1,8 @@
 @mixin intro {
   @include flexbox($display: flex, $direction: row, $align-items: center, $justify-content: flex-start);
-  background: url(/assets/images/smuff-archive-desktop-left.png) no-repeat scroll 250% 45% #f1f1f1;
+  background: #f1f1f1;
+  background: url(/assets/images/inu-archive-tablet-angle1.png) no-repeat scroll 150% 45% #f1f1f1;
+  text-shadow: 1px 2px #f1f1f1;
   
   #design, #web, #cms {
     @include flex-item;

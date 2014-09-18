@@ -31,12 +31,16 @@
       display: none;
     }
     
+    border-bottom: 1px solid;
+    
     &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4) {
-      border-bottom: 1px solid;
+      //border-color: $black;
       
       h3 span {
         color: hsl(2, 88%, 74%);
         font-style: italic;
+        position: relative;
+        top: $lem/12;
       }
     }
     

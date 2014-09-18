@@ -2,18 +2,38 @@
   <article>
     <h3><span>D</span></h3>
   </article>
+  
   <article>
-    <h3>user <span>E</span>xperience</h3>
+    <h3>user <span>E</span>xperience &rsaquo;</h3>
+    
+    <aside>
+      {% assign post = site.posts | where: "title", "User Experience Design" %}
+      {{ post }}
+    </aside>
   </article>
+  
   <article>
-    <h3>re<span>S</span>ponsive</h3>
+    <h3>re<span>S</span>ponsive &rsaquo;</h3>
+    
+    <aside>
+      {% assign post = site.posts | where: "title", "Responsive Web Design" %}
+      {{ post }}
+    </aside>
   </article>
+  
   <article>
-    <h3>nat<span>I</span>ve</h3>
+    <h3>nat<span>I</span>ve &rsaquo;</h3>
+    
+    <aside>
+      {% assign post = site.posts | where: "title", "Native Web Design" %}
+      {{ post }}
+    </aside>
   </article>
+  
   <article>
     <h3><span>G</span></h3>
   </article>
+  
   <article>
     <h3><span>N</span></h3>
   </article>

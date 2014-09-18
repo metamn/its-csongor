@@ -1,0 +1,7 @@
+@mixin cms {
+  @include show-title;
+  
+  @include font(logo);
+  font-weight: 700;
+  font-size: 300%;
+}

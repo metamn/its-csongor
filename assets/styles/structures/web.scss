@@ -1,0 +1,26 @@
+@mixin web {
+  @include flexbox($display: flex, $direction: column, $align-items: center);
+  
+  article {
+    @include flex-item;
+    @include show-title;
+    
+    font-style: italic;
+
+    h3 {
+      span {
+        @include font(logo);
+        font-weight: 700;
+        font-size: 300%;
+        font-style: normal;
+        
+        @include colors(white-on-black);
+        padding: 0 $lem/8;
+        margin: $lem/8;
+        width: 1em;
+        display: inline-block;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -5,7 +5,10 @@
     @include flex-item;
     @include show-title;
     
-    font-size: 400%;
+    font-size: 360%;
+    @include desktop-and-up {
+      font-size: 380%;
+    }
     font-style: italic;
     
     h3 {

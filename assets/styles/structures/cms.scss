@@ -16,10 +16,13 @@
       margin: $lem/4 0;
     }
     
-    @include p;
+    h3 {
+      text-align: center;
+    }
     
     aside {
       display: none;
+      @include p;
     }
   }
 }

@@ -8,8 +8,8 @@ html.frontpage {
       @include intro;
     }
     
-    main {
-      //@include skills-and-thumbs;
+    #about {
+      @include about;
     }
   }
 }

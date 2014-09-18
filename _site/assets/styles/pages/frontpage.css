@@ -11,8 +11,8 @@ Syntax error: Undefined mixin 'intro'.
 8:       @include intro;
 9:     }
 10:     
-11:     main {
-12:       //@include skills-and-thumbs;
+11:     #about {
+12:       @include about;
 13:     }
 
 Backtrace:
@@ -92,4 +92,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'intro'.\A         on line 8 of /home/cs/work/its-csongor/assets/styles/pages/frontpage.scss, in `intro'\A         from line 8 of /home/cs/work/its-csongor/assets/styles/pages/frontpage.scss\A \A 3:     header {\A 4:       display: none;\A 5:     }\A 6:     \A 7:     #intro {\A 8:       @include intro;\A 9:     }\A 10:     \A 11:     main {\A 12:       //@include skills-and-thumbs;\A 13:     }"; }
+  content: "Syntax error: Undefined mixin 'intro'.\A         on line 8 of /home/cs/work/its-csongor/assets/styles/pages/frontpage.scss, in `intro'\A         from line 8 of /home/cs/work/its-csongor/assets/styles/pages/frontpage.scss\A \A 3:     header {\A 4:       display: none;\A 5:     }\A 6:     \A 7:     #intro {\A 8:       @include intro;\A 9:     }\A 10:     \A 11:     #about {\A 12:       @include about;\A 13:     }"; }

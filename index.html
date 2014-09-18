@@ -5,13 +5,5 @@ title: Home
 
 
 {% include structures/intro.html %}
+{% include structures/about.html %}
 
-{% comment %}
-{% for post in site.posts %}
-  {% if post.category == "skills" %}
-    {% include molecules/skill.html %}
-  {% else %}
-    {% include organisms/portfolio-thumb.html %}
-  {% endif %}
-{% endfor %}
-{% endcomment %}

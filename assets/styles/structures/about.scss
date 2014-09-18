@@ -1,0 +1,14 @@
+@mixin about {
+  @include flexbox($justify-content: center);
+  @include colors(white-on-black);
+  
+  article {
+    @include flex-item;
+    
+    max-width: $text-width;
+    padding: $lem*2;
+    
+    font-size: 200%;
+    @include p;
+  }
+}

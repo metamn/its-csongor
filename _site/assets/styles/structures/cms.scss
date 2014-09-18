@@ -1,7 +1,25 @@
 @mixin cms {
   @include show-title;
   
-  @include font(logo);
-  font-weight: 700;
-  font-size: 300%;
+  h3 {
+    @include font(logo);
+    font-weight: 700;
+    font-size: 300%;
+  }
+  
+  article {
+    @include show-title;
+    
+    h3, aside {
+      font-size: 100%;
+      max-width: $text-width;
+      margin: $lem/2 0;
+    }
+    
+    @include p;
+    
+    aside {
+      display: none;
+    }
+  }
 }

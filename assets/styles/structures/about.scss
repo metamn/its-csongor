@@ -1,6 +1,6 @@
 @mixin about {
   @include flexbox($justify-content: center);
-  
+  @include colors(white-on-black);
   
   article {
     @include flex-item;
@@ -20,6 +20,9 @@
         text-transform: uppercase;
         letter-spacing: 1.1px;
         
+        a {
+          @include colors(white-on-black);
+        }
       }
     }
     

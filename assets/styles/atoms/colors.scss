@@ -1,7 +1,7 @@
 
 // All color codes
-$white: hsla(0, 0, 100%, 1);
-$black: hsla(0, 0%, 15%, 1);
+$white: hsla(0, 0, 97.5%, 1);
+$black: hsla(0, 0%, 17.5%, 1);
 $red: hsl(0, 100%, 50%);;
 
 
@@ -18,8 +18,8 @@ $red: hsl(0, 100%, 50%);;
 
 
 // All color codes collected in a list
-$colors: hsla(0, 0, 100%, 1), hsla(0, 0%, 15%, 1), hsl(0, 100%, 50%);;
+$colors: hsla(0, 0, 97.5%, 1), hsla(0, 0%, 17.5%, 1), hsl(0, 100%, 50%);;
 
 
 // All color pairs collected in a list
-$color-pairs: black-on-white, white-on-black;  
+$color-pairs: black-on-white, white-on-black; 

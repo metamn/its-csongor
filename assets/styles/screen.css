@@ -26,5 +26,5 @@ html body { font-size: 100%; line-height: 1.25; color: #262626; background-color
 html body a { color: #262626; background-color: white; text-decoration: none; }
 html body header > h3, html body footer > h3, html body section > h3, html body article > h3, html body aside > h3, html body nav > h3, html body figure > h3 { display: none; }
 html body header { padding: 1.875em; }
-html body header .logo { width: 1em; height: 1em; background: red; -moz-border-radius: 100%; -webkit-border-radius: 100%; border-radius: 100%; }
+html body header .logo { width: 1.875em; height: 1.875em; background: red; -moz-border-radius: 100%; -webkit-border-radius: 100%; border-radius: 100%; }
 html body header h1 { font-family: "Montserrat", sans-serif; font-size: 1.3077em; }

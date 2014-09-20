@@ -1,9 +1,0 @@
-<section id="portfolio-archive">
-  <h3>Archive</h3>
-  
-  {% for post in site.posts %}
-    {% if post.category != "skills" %}
-      {% include organisms/portfolio-thumb.html %}
-    {% endif %}
-  {% endfor %}
-</section>

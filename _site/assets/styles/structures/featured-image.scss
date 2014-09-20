@@ -1,4 +1,6 @@
 @mixin featured-image {
+  @include flexbox($justify-content: center);
+  
   figure {
     @include figure;
   }

@@ -1,0 +1,7 @@
+@mixin text {
+  max-width: $text-width;
+  
+  p + p {
+    margin-top: $lem;
+  }
+}

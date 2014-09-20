@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="featured-image styleguide ">
+<html lang="en" class="about styleguide ">
   <head>
     <meta charset="utf-8" />
   	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="author" href="humans.txt" />
     
-    <title>Featured image &mdash; It's Csongor</title> 
+    <title>About &mdash; It's Csongor</title> 
     
     <!-- Compass with SASS -->
   	<link href="/assets/styles/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -35,11 +35,18 @@
     
 
 
-@mixin featured-image {
+@mixin about {
   @include flexbox($justify-content: center);
+  @include colors(white-on-black);
+  padding: $lem * 4 $lem;
+  margin-top: $lem * 2;
   
-  figure {
-    @include figure;
+  article {
+    @include text;
+    
+    p {
+      @include font(about);
+    }
   }
 }
 

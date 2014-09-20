@@ -19,4 +19,4 @@ $colors: {{ colors | join: ', ' }};
 
 {% capture pairs %}{% for pair in current.pairs %}{% include atoms/classname.html title=pair.name %},{% endfor %}{% endcapture %}{% assign pairs = pairs | split: ',' %}
 // {{ current.comments[3] }}
-$color-pairs: {{ pairs | join: ', ' }}; 
+$color-pairs: {{ pairs | join: ', ' }};

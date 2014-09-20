@@ -8,8 +8,10 @@ Syntax error: Undefined mixin 'featured-image'.
 3:     #featured-image {
 4:       @include featured-image;
 5:     }
-6:   }
-7: }
+6:     
+7:     #about {
+8:       @include about;
+9:     }
 
 Backtrace:
 /home/cs/work/its-csongor/assets/styles/pages/frontpage.scss:4:in `featured-image'
@@ -88,4 +90,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'featured-image'.\A         on line 4 of /home/cs/work/its-csongor/assets/styles/pages/frontpage.scss, in `featured-image'\A         from line 4 of /home/cs/work/its-csongor/assets/styles/pages/frontpage.scss\A \A 1: html.frontpage {\A 2:   body {\A 3:     #featured-image {\A 4:       @include featured-image;\A 5:     }\A 6:   }\A 7: }"; }
+  content: "Syntax error: Undefined mixin 'featured-image'.\A         on line 4 of /home/cs/work/its-csongor/assets/styles/pages/frontpage.scss, in `featured-image'\A         from line 4 of /home/cs/work/its-csongor/assets/styles/pages/frontpage.scss\A \A 1: html.frontpage {\A 2:   body {\A 3:     #featured-image {\A 4:       @include featured-image;\A 5:     }\A 6:     \A 7:     #about {\A 8:       @include about;\A 9:     }"; }

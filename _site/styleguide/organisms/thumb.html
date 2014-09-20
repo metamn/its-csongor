@@ -38,14 +38,15 @@
 @mixin thumb {
   width: 480px;
   height: 320px;
-  border: 1px solid;
+  overflow: hidden;
   
   margin: $lem * 2;
-  padding: $lem;
+  @include desktop-and-up {
+    margin: $lem *4;
+  }
   
   figure {
-    display: none;
-    @include figure;
+    @include figure($overflow: true, $figcaption: true);
   }
 }
 

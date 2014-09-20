@@ -41,7 +41,8 @@ html.frontpage body #about article p + p { margin-top: 1.56em; }
 html.frontpage body #about article p { font-family: "Europa", sans-serif; font-weight: 300; font-size: 1.6154em; }
 @media only screen and (max-width: 37.499em) { html.frontpage body #about article p { font-size: 1.3077em; } }
 html.frontpage body #works { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; }
-html.frontpage body #works article { width: 480px; height: 320px; border: 1px solid; margin: 3.12em; padding: 1.56em; }
-html.frontpage body #works article figure { display: none; }
+html.frontpage body #works article { width: 480px; height: 320px; overflow: hidden; margin: 3.12em; }
+@media only screen and (min-width: 90em) { html.frontpage body #works article { margin: 6.24em; } }
+html.frontpage body #works article figure { overflow: hidden; }
 html.frontpage body #works article figure img { max-width: 100%; height: auto; }
-html.frontpage body #works article figure figcaption { display: none; }
+html.frontpage body #works article figure img { max-width: none; }

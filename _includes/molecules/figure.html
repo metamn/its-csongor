@@ -13,11 +13,10 @@
 <!-- mobile should be always present -->
 {% assign mobile = image.mobile %}
 <!-- if a size is missing the previous size is used. if all sizes missing the mobile is the default -->
-{% if image.small-tablet %}{% assign small-tablet = image.small-tablet %}{% else %}{% assign small-tablet = mobile %}{% endif %}
-{% if image.tablet %}{% assign tablet = image.tablet %}{% else %}{% assign tablet = small-tablet %}{% endif %}
+{% if image.tablet %}{% assign tablet = image.tablet %}{% else %}{% assign tablet = mobile %}{% endif %}
 {% if image.laptop %}{% assign laptop = image.laptop %}{% else %}{% assign laptop = tablet %}{% endif %}
 {% if image.desktop %}{% assign desktop = image.desktop %}{% else %}{% assign desktop = laptop %}{% endif %}
-
+{% if image.desktop2x %}{% assign desktop2x = image.desktop2x %}{% else %}{% assign desktop2x = desktop %}{% endif %}
 
 <!-- Setting up the other variables -->
 {% assign title = image.title %}
@@ -45,11 +44,10 @@
       <!--[if IE 9]><video style="display: none;"><![endif]-->
 
       <!-- The first criteria met is applied -->
-      <source media="(min-width: 90em)" srcset="{{ site.url }}/{{ site.images }}/{{ desktop }} 1x">
-      <source media="(min-width: 64em)" srcset="{{ site.url }}/{{ site.images }}/{{ laptop }} 1x">
-      <source media="(min-width: 48em)" srcset="{{ site.url }}/{{ site.images }}/{{ tablet }} 1x">
-      <source media="(min-width: 37.5em)" srcset="{{ site.url }}/{{ site.images }}/{{ small-tablet }} 1x">
-      <source srcset="{{ site.url }}/{{ site.images }}/{{ mobile }} 1x">
+      <source media="(min-width: 90em)" srcset="{{ site.url }}/{{ site.images }}/{{ desktop }}, {{ site.url }}/{{ site.images }}/{{ desktop2x }} 2x">
+      <source media="(min-width: 64em)" srcset="{{ site.url }}/{{ site.images }}/{{ laptop }}, {{ site.url }}/{{ site.images }}/{{ desktop }} 2x">
+      <source media="(min-width: 48em)" srcset="{{ site.url }}/{{ site.images }}/{{ tablet }}, {{ site.url }}/{{ site.images }}/{{ laptop }} 2x">
+      <source srcset="{{ site.url }}/{{ site.images }}/{{ mobile }}, {{ site.url }}/{{ site.images }}/{{ tablet }} 2x">
       <!--[if IE 9]></video><![endif]-->
 
       <img src="{{ site.url }}/{{ site.images }}/{{ mobile }}" alt="{{ title }}">

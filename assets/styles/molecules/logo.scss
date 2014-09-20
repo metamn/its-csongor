@@ -1,0 +1,6 @@
+@mixin logo {
+  width: $lem - $lem / 4;
+  height: $lem - $lem / 4;
+  background: $red;
+  margin-bottom: $lem / 4;
+}

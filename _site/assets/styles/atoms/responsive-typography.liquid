@@ -1,12 +1,4 @@
 
-// The line height in EM 
-$lem: 1.25em !global;
-@include desktop-and-up {
-  $lem: 1.56em !global;
-}
-
-// The width of a text block in characters 
-$text-width: $lem * 15;
 
 @mixin responsive-typography {  
   font-size: 100%;
@@ -15,6 +7,12 @@ $text-width: $lem * 15;
   @include desktop-and-up {
     font-size: 125%;
     line-height: 1.56;
+    
+  }
+  
+  @include desktop-and-up {
+    font-size: 150%;
+    line-height: 1.875;
     
   }
   

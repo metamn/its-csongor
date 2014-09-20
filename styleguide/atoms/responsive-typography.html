@@ -6,32 +6,26 @@ category: atoms
 scss: "responsive-typography.scss"
 items:
   - name: Laptop
-    description: Font size for mobile, tablet and laptop
+    description: Font size for mobile
     values:
       - name: "font-size"
         value: "100%"
       - name: "line-height"
         value: "1.25"
   - name: Desktop
-    description: Font size for desktops
+    description: Font size for laptops
     breakpoint: "desktop-and-up"
     values:
       - name: "font-size"
         value: "125%"
       - name: "line-height"
         value: "1.56"
-grid:
-  - name: Line height
-    description: The line height in EM
+  - name: Desktop
+    description: Font size for desktops
+    breakpoint: "desktop-and-up"
     values:
-      - name: "$lem"
-        value: "1.25em !global"
-      - name: "$lem"
-        breakpoint: "desktop-and-up"
-        value: "1.56em !global"
-  - name: Text width
-    description: The width of a text block in characters
-    values: 
-      - name: "$text-width"
-        value: "$lem * 15"
+      - name: "font-size"
+        value: "150%"
+      - name: "line-height"
+        value: "1.875"
 ---

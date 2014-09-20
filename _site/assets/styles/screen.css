@@ -1,230 +1,111 @@
-/* Welcome to Compass. In this file you should write your main styles. (or centralize your imports) Import this file using the following HTML or equivalent: <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400|);
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400|);
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+/*
+Syntax error: Undefined mixin 'responsive-typography'.
+        on line 3 of /home/cs/work/its-csongor/assets/styles/pages/default.scss, in `responsive-typography'
+        from line 3 of /home/cs/work/its-csongor/assets/styles/pages/default.scss
+        from line 1 of /home/cs/work/its-csongor/assets/styles/pages/*
+        from line 16 of /home/cs/work/its-csongor/assets/styles/screen.scss
 
-html { line-height: 1; }
+1: /* Welcome to Compass.
+2:  * In this file you should write your main styles. (or centralize your imports)
+3:  * Import this file using the following HTML or equivalent:
+4:  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> *\/
+5: 
+6: 
+7: @import "compass/reset";
+8: @import "compass/css3";
 
-ol, ul { list-style: none; }
-
-table { border-collapse: collapse; border-spacing: 0; }
-
-caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
-
-q, blockquote { quotes: none; }
-q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
-
-a img { border: none; }
-
-article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
-
-/* No files to import found in settings/* */
-/* Proportional mockup sizes - iphone 5s: 123.8mm - ipad mini: 200mm - macbook pro: 240mm - imac: 516mm
+Backtrace:
+/home/cs/work/its-csongor/assets/styles/pages/default.scss:3:in `responsive-typography'
+/home/cs/work/its-csongor/assets/styles/pages/default.scss:3
+/home/cs/work/its-csongor/assets/styles/pages/*:1
+/home/cs/work/its-csongor/assets/styles/screen.scss:16
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:320:in `block in visit_mixin'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:98:in `block in with_mixin'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:121:in `with_frame'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:98:in `with_mixin'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:318:in `visit_mixin'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:121:in `with_frame'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:389:in `block (2 levels) in visit_rule'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:389:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:389:in `block in visit_rule'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:387:in `visit_rule'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:121:in `with_frame'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:389:in `block (2 levels) in visit_rule'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:389:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:389:in `block in visit_rule'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:387:in `visit_rule'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:121:in `with_frame'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:297:in `block (2 levels) in visit_import'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:297:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:297:in `block in visit_import'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:88:in `block in with_import'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:121:in `with_frame'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:88:in `with_import'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:294:in `visit_import'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:121:in `with_frame'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:297:in `block (2 levels) in visit_import'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:297:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:297:in `block in visit_import'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:88:in `block in with_import'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:121:in `with_frame'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:88:in `with_import'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:294:in `visit_import'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:121:in `with_frame'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:52:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:161:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:160:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:180:in `visit_root'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:151:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/root_node.rb:36:in `css_tree'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/root_node.rb:20:in `render'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/engine.rb:274:in `render'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/plugin/compiler.rb:484:in `update_stylesheet'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/plugin/compiler.rb:214:in `block in update_stylesheets'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/plugin/compiler.rb:208:in `each'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/plugin/compiler.rb:208:in `update_stylesheets'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/plugin/compiler.rb:462:in `on_file_changed'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/plugin/compiler.rb:324:in `block in watch'
+/var/lib/gems/1.9.1/gems/listen-2.7.9/lib/listen/listener.rb:276:in `call'
+/var/lib/gems/1.9.1/gems/listen-2.7.9/lib/listen/listener.rb:276:in `_process_changes'
+/var/lib/gems/1.9.1/gems/listen-2.7.9/lib/listen/listener.rb:233:in `block in _wait_for_changes'
+/var/lib/gems/1.9.1/gems/listen-2.7.9/lib/listen/listener.rb:216:in `loop'
+/var/lib/gems/1.9.1/gems/listen-2.7.9/lib/listen/listener.rb:216:in `_wait_for_changes'
+/var/lib/gems/1.9.1/gems/listen-2.7.9/lib/listen/listener.rb:312:in `block in _start_wait_thread'
 */
-html body { font-size: 100%; line-height: 1.25; color: #071211; background-color: white; font-family: "Europa", sans-serif; font-weight: 300; }
-@media only screen and (min-width: 90em) { html body { font-size: 125%; line-height: 1.56; } }
-html body a { color: #071211; background: transparent; text-decoration: none; border-bottom: 3px solid red; }
-html body a:hover, html body a:active { border-color: #071211; }
-html body header > h3, html body footer > h3, html body section > h3, html body article > h3, html body aside > h3, html body nav > h3, html body figure > h3 { display: none; }
-html body header { font-family: "Montserrat", sans-serif; font-size: 1.3077em; padding: 1.56em; }
-
-html.frontpage body { background: url('/assets/images/empty-tablet-angle1.png?1411055802'), url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2Q5ZTdmMiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='); background: url('/assets/images/empty-tablet-angle1.png?1411055802'), -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #d9e7f2)); background: url('/assets/images/empty-tablet-angle1.png?1411055802'), -moz-linear-gradient(#ffffff, #d9e7f2); background: url('/assets/images/empty-tablet-angle1.png?1411055802'), -webkit-linear-gradient(#ffffff, #d9e7f2); background: url('/assets/images/empty-tablet-angle1.png?1411055802'), linear-gradient(#ffffff, #d9e7f2); -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; background-repeat: no-repeat; }
-html.frontpage body header { display: none; }
-html.frontpage body #intro { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-box-direction: normal; -moz-box-direction: normal; -webkit-box-orient: horizontal; -moz-box-orient: horizontal; -webkit-flex-direction: row; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: start; -ms-flex-pack: start; -webkit-justify-content: flex-start; -moz-justify-content: flex-start; justify-content: flex-start; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; -moz-align-items: center; align-items: center; }
-html.frontpage body #intro #design, html.frontpage body #intro #web, html.frontpage body #intro #cms { -webkit-box-ordinal-group: 1; -moz-box-ordinal-group: 1; -webkit-order: 0; -ms-flex-order: 0; order: 0; -webkit-box-flex: 0; -webkit-flex-grow: 0; -moz-flex-grow: 0; -ms-flex-positive: 0; flex-grow: 0; -webkit-flex-shrink: 1; -moz-flex-shrink: 1; -ms-flex-negative: 1; flex-shrink: 1; -webkit-flex-basis: auto; -moz-flex-basis: auto; -ms-flex-preferred-size: auto; flex-basis: auto; -webkit-align-self: auto; -moz-align-self: auto; -ms-flex-item-align: auto; align-self: auto; padding: 1.56em; }
-html.frontpage body #intro #design { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-box-direction: normal; -moz-box-direction: normal; -webkit-box-orient: vertical; -moz-box-orient: vertical; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; -moz-align-items: center; align-items: center; margin-left: 9.36em; }
-html.frontpage body #intro #design article { -webkit-box-ordinal-group: 1; -moz-box-ordinal-group: 1; -webkit-order: 0; -ms-flex-order: 0; order: 0; -webkit-box-flex: 0; -webkit-flex-grow: 0; -moz-flex-grow: 0; -ms-flex-positive: 0; flex-grow: 0; -webkit-flex-shrink: 1; -moz-flex-shrink: 1; -ms-flex-negative: 1; flex-shrink: 1; -webkit-flex-basis: auto; -moz-flex-basis: auto; -ms-flex-preferred-size: auto; flex-basis: auto; -webkit-align-self: auto; -moz-align-self: auto; -ms-flex-item-align: auto; align-self: auto; font-size: 360%; font-style: italic; border-bottom: 1px solid; }
-html.frontpage body #intro #design article > h3 { display: block; }
-@media only screen and (min-width: 90em) { html.frontpage body #intro #design article { font-size: 380%; } }
-html.frontpage body #intro #design article h3 span { font-family: "Montserrat", sans-serif; font-size: 1.3077em; font-weight: 700; font-style: normal; width: 1em; display: inline-block; text-align: center; }
-html.frontpage body #intro #design article aside { font-size: 50%; max-width: 23.4em; margin: 0.78em 0; display: none; }
-html.frontpage body #intro #design article.clickable { cursor: pointer; }
-html.frontpage body #intro #design article.clickable h3 span { color: #f78682; font-style: italic; position: relative; top: 0.13em; }
-html.frontpage body #intro #web { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-box-direction: normal; -moz-box-direction: normal; -webkit-box-orient: vertical; -moz-box-orient: vertical; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; -moz-align-items: center; align-items: center; }
-html.frontpage body #intro #web article { -webkit-box-ordinal-group: 1; -moz-box-ordinal-group: 1; -webkit-order: 0; -ms-flex-order: 0; order: 0; -webkit-box-flex: 0; -webkit-flex-grow: 0; -moz-flex-grow: 0; -ms-flex-positive: 0; flex-grow: 0; -webkit-flex-shrink: 1; -moz-flex-shrink: 1; -ms-flex-negative: 1; flex-shrink: 1; -webkit-flex-basis: auto; -moz-flex-basis: auto; -ms-flex-preferred-size: auto; flex-basis: auto; -webkit-align-self: auto; -moz-align-self: auto; -ms-flex-item-align: auto; align-self: auto; font-style: italic; }
-html.frontpage body #intro #web article > h3 { display: block; }
-html.frontpage body #intro #web article h3 span { font-family: "Montserrat", sans-serif; font-size: 1.3077em; font-weight: 700; font-size: 300%; font-style: normal; border-bottom: 1px solid #bbb; padding: 0 0.26em; margin: 2px; width: 1em; display: inline-block; text-align: center; }
-html.frontpage body #intro #cms > h3 { display: block; }
-html.frontpage body #intro #cms h3 { font-family: "Montserrat", sans-serif; font-size: 1.3077em; font-weight: 700; font-size: 300%; }
-html.frontpage body #intro #cms article > h3 { display: block; }
-html.frontpage body #intro #cms article h3, html.frontpage body #intro #cms article aside { font-size: 100%; max-width: 23.4em; }
-html.frontpage body #intro #cms article h3 { text-align: center; font-weight: 400; cursor: pointer; }
-html.frontpage body #intro #cms article h3 span { content: '\002B'; color: #f78682; }
-html.frontpage body #intro #cms article aside { display: none; }
-html.frontpage body #intro #cms article aside p + p { margin-top: 1.56em; }
-html.frontpage body #about { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; color: white; background-color: #071211; }
-html.frontpage body #about article { -webkit-box-ordinal-group: 1; -moz-box-ordinal-group: 1; -webkit-order: 0; -ms-flex-order: 0; order: 0; -webkit-box-flex: 0; -webkit-flex-grow: 0; -moz-flex-grow: 0; -ms-flex-positive: 0; flex-grow: 0; -webkit-flex-shrink: 1; -moz-flex-shrink: 1; -ms-flex-negative: 1; flex-shrink: 1; -webkit-flex-basis: auto; -moz-flex-basis: auto; -ms-flex-preferred-size: auto; flex-basis: auto; -webkit-align-self: auto; -moz-align-self: auto; -ms-flex-item-align: auto; align-self: auto; max-width: 23.4em; padding: 3.12em; font-size: 200%; }
-html.frontpage body #about article p + p { margin-top: 1.56em; }
-html.frontpage body #about article p:last-of-type { margin-top: 3.12em; font-size: 70%; text-transform: uppercase; letter-spacing: 1.1px; }
-html.frontpage body #about article p:last-of-type a { color: white; background-color: #071211; }
-
-html.portfolio.inu-chivu body header { background: #d8dbe4; }
-html.portfolio.inu-chivu body section:nth-child(odd) { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2YyZjJmMiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2Q4ZGJlNCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='); background-size: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f2f2f2), color-stop(100%, #d8dbe4)); background-image: -moz-linear-gradient(#f2f2f2, #d8dbe4); background-image: -webkit-linear-gradient(#f2f2f2, #d8dbe4); background-image: linear-gradient(#f2f2f2, #d8dbe4); }
-html.portfolio.inu-chivu body section:nth-child(even) { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Q4ZGJlNCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2YyZjJmMiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='); background-size: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d8dbe4), color-stop(100%, #f2f2f2)); background-image: -moz-linear-gradient(#d8dbe4, #f2f2f2); background-image: -webkit-linear-gradient(#d8dbe4, #f2f2f2); background-image: linear-gradient(#d8dbe4, #f2f2f2); }
-html.portfolio.inu-chivu body footer { background: #f2f2f2; background: #d8dbe4; }
-html.portfolio.anvelocom body header { background: #ede3e3; }
-html.portfolio.anvelocom body section:nth-child(odd) { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VjZTlmMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2VkZTNlMyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='); background-size: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ece9f1), color-stop(100%, #ede3e3)); background-image: -moz-linear-gradient(#ece9f1, #ede3e3); background-image: -webkit-linear-gradient(#ece9f1, #ede3e3); background-image: linear-gradient(#ece9f1, #ede3e3); }
-html.portfolio.anvelocom body section:nth-child(even) { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VkZTNlMyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2VjZTlmMSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='); background-size: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ede3e3), color-stop(100%, #ece9f1)); background-image: -moz-linear-gradient(#ede3e3, #ece9f1); background-image: -webkit-linear-gradient(#ede3e3, #ece9f1); background-image: linear-gradient(#ede3e3, #ece9f1); }
-html.portfolio.anvelocom body footer { background: #ece9f1; }
-html.portfolio.smuff body header { background: #d8e3e3; }
-html.portfolio.smuff body section:nth-child(odd) { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2YyZThlOCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2Q4ZTNlMyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='); background-size: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f2e8e8), color-stop(100%, #d8e3e3)); background-image: -moz-linear-gradient(#f2e8e8, #d8e3e3); background-image: -webkit-linear-gradient(#f2e8e8, #d8e3e3); background-image: linear-gradient(#f2e8e8, #d8e3e3); }
-html.portfolio.smuff body section:nth-child(even) { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Q4ZTNlMyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2YyZThlOCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='); background-size: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d8e3e3), color-stop(100%, #f2e8e8)); background-image: -moz-linear-gradient(#d8e3e3, #f2e8e8); background-image: -webkit-linear-gradient(#d8e3e3, #f2e8e8); background-image: linear-gradient(#d8e3e3, #f2e8e8); }
-html.portfolio.smuff body footer { background: #f2e8e8; }
-html.portfolio.organized-crime-and-corruption-reporting-project body header { background: #ccdbe5; }
-html.portfolio.organized-crime-and-corruption-reporting-project body section:nth-child(odd) { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2UxZTBkZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2NjZGJlNSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='); background-size: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e1e0df), color-stop(100%, #ccdbe5)); background-image: -moz-linear-gradient(#e1e0df, #ccdbe5); background-image: -webkit-linear-gradient(#e1e0df, #ccdbe5); background-image: linear-gradient(#e1e0df, #ccdbe5); }
-html.portfolio.organized-crime-and-corruption-reporting-project body section:nth-child(even) { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2NjZGJlNSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2UxZTBkZiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='); background-size: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ccdbe5), color-stop(100%, #e1e0df)); background-image: -moz-linear-gradient(#ccdbe5, #e1e0df); background-image: -webkit-linear-gradient(#ccdbe5, #e1e0df); background-image: linear-gradient(#ccdbe5, #e1e0df); }
-html.portfolio.organized-crime-and-corruption-reporting-project body footer { background: #e1e0df; }
-html.portfolio.iorad body header { background: #c6e1d5; }
-html.portfolio.iorad body section:nth-child(odd) { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2I0YzhkOSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2M2ZTFkNSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='); background-size: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #b4c8d9), color-stop(100%, #c6e1d5)); background-image: -moz-linear-gradient(#b4c8d9, #c6e1d5); background-image: -webkit-linear-gradient(#b4c8d9, #c6e1d5); background-image: linear-gradient(#b4c8d9, #c6e1d5); }
-html.portfolio.iorad body section:nth-child(even) { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2M2ZTFkNSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2I0YzhkOSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='); background-size: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c6e1d5), color-stop(100%, #b4c8d9)); background-image: -moz-linear-gradient(#c6e1d5, #b4c8d9); background-image: -webkit-linear-gradient(#c6e1d5, #b4c8d9); background-image: linear-gradient(#c6e1d5, #b4c8d9); }
-html.portfolio.iorad body footer { background: #b4c8d9; }
-html.portfolio.scatter body header { background: #e8dfd8; }
-html.portfolio.scatter body section:nth-child(odd) { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2MzZDFkYSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2U4ZGZkOCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='); background-size: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c3d1da), color-stop(100%, #e8dfd8)); background-image: -moz-linear-gradient(#c3d1da, #e8dfd8); background-image: -webkit-linear-gradient(#c3d1da, #e8dfd8); background-image: linear-gradient(#c3d1da, #e8dfd8); }
-html.portfolio.scatter body section:nth-child(even) { background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U4ZGZkOCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2MzZDFkYSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA=='); background-size: 100%; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e8dfd8), color-stop(100%, #c3d1da)); background-image: -moz-linear-gradient(#e8dfd8, #c3d1da); background-image: -webkit-linear-gradient(#e8dfd8, #c3d1da); background-image: linear-gradient(#e8dfd8, #c3d1da); }
-html.portfolio.scatter body footer { background: #c3d1da; background: #e8dfd8; }
-html.portfolio body section { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; -moz-align-items: center; align-items: center; }
-html.portfolio body section article { -webkit-box-ordinal-group: 1; -moz-box-ordinal-group: 1; -webkit-order: 0; -ms-flex-order: 0; order: 0; -webkit-box-flex: 0; -webkit-flex-grow: 0; -moz-flex-grow: 0; -ms-flex-positive: 0; flex-grow: 0; -webkit-flex-shrink: 1; -moz-flex-shrink: 1; -ms-flex-negative: 1; flex-shrink: 1; -webkit-flex-basis: auto; -moz-flex-basis: auto; -ms-flex-preferred-size: auto; flex-basis: auto; -webkit-align-self: auto; -moz-align-self: auto; -ms-flex-item-align: auto; align-self: auto; }
-@media only screen and (max-width: 37.499em) { html.portfolio.inu-chivu body section.screenshots-1 article { -webkit-flex-basis: 50%; -moz-flex-basis: 50%; -ms-flex-preferred-size: 50%; flex-basis: 50%; }
-  html.portfolio.inu-chivu body section.screenshots-1 article:nth-of-type(2) { -webkit-flex-basis: 65%; -moz-flex-basis: 65%; -ms-flex-preferred-size: 65%; flex-basis: 65%; margin-left: -15%; } }
-html.portfolio.inu-chivu body section.screenshots-3 article { -webkit-align-self: flex-end; -moz-align-self: flex-end; -ms-flex-item-align: end; align-self: flex-end; }
-html.portfolio.anvelocom body section.intro { overflow: hidden; -webkit-box-direction: normal; -moz-box-direction: normal; -webkit-box-orient: vertical; -moz-box-orient: vertical; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
-html.portfolio.smuff body section.intro { -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; }
-html.portfolio.smuff body section.intro article.title { -webkit-flex-basis: 100%; -moz-flex-basis: 100%; -ms-flex-preferred-size: 100%; flex-basis: 100%; }
-html.portfolio.organized-crime-and-corruption-reporting-project body section.intro article.title p { padding-top: 1.56em; }
-html.portfolio.organized-crime-and-corruption-reporting-project body section.services article.mockup { -webkit-box-ordinal-group: 3; -moz-box-ordinal-group: 3; -webkit-order: 2; -ms-flex-order: 2; order: 2; }
-html.portfolio.iorad body section.services article { -webkit-align-self: flex-end; -moz-align-self: flex-end; -ms-flex-item-align: end; align-self: flex-end; }
-html.portfolio.iorad body section.services article.services { width: 100%; }
-html.portfolio body section article.mockup figure { overflow: hidden; }
-html.portfolio body section article.mockup figure img { max-width: 100%; height: auto; }
-html.portfolio body section article.mockup figure figcaption { display: none; }
-html.portfolio body section article.mockup figure#the-inu-archive-page-on-tablet.intro img { max-width: 1000px; }
-@media only screen and (min-width: 64em) { html.portfolio body section article.mockup figure#the-inu-archive-page-on-tablet.intro img { max-width: 800px; } }
-@media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-inu-archive-page-on-tablet.intro img { max-width: 1000px; } }
-html.portfolio body section article.mockup figure#the-inu-archive-page-on-tablet.screenshots-2 img { max-width: 500px; }
-@media only screen and (max-width: 37.499em) { html.portfolio body section article.mockup figure#the-inu-archive-page-on-tablet.screenshots-2 img { max-width: 320px; } }
-@media only screen and (min-width: 64em) { html.portfolio body section article.mockup figure#the-inu-archive-page-on-tablet.screenshots-2 img { max-width: 360px; } }
-@media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-inu-archive-page-on-tablet.screenshots-2 img { max-width: 500px; } }
-html.portfolio body section article.mockup figure#the-inu-menu-white-page-on-mobile img, html.portfolio body section article.mockup figure#the-inu-menu-black-page-on-mobile img { max-width: 320px; }
-@media only screen and (min-width: 37.5em) and (max-width: 63.999em) { html.portfolio body section article.mockup figure#the-inu-menu-white-page-on-mobile img, html.portfolio body section article.mockup figure#the-inu-menu-black-page-on-mobile img { max-width: 300px; } }
-@media only screen and (min-width: 64em) { html.portfolio body section article.mockup figure#the-inu-menu-white-page-on-mobile img, html.portfolio body section article.mockup figure#the-inu-menu-black-page-on-mobile img { max-width: 240px; } }
-@media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-inu-menu-white-page-on-mobile img, html.portfolio body section article.mockup figure#the-inu-menu-black-page-on-mobile img { max-width: 320px; } }
-html.portfolio body section article.mockup figure#the-inu-frontpage-page-on-mobile img, html.portfolio body section article.mockup figure#the-inu-archive-page-on-mobile img { max-width: 200px; }
-@media only screen and (max-width: 63.999em) { html.portfolio body section article.mockup figure#the-inu-frontpage-page-on-mobile img, html.portfolio body section article.mockup figure#the-inu-archive-page-on-mobile img { max-width: 300px; } }
-@media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-inu-frontpage-page-on-mobile img, html.portfolio body section article.mockup figure#the-inu-archive-page-on-mobile img { max-width: 240px; } }
-html.portfolio body section article.mockup figure#the-inu-archive-page-on-desktop img { max-width: 400px; }
-@media only screen and (max-width: 37.499em) { html.portfolio body section article.mockup figure#the-inu-archive-page-on-desktop img { max-width: 100%; } }
-@media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-inu-archive-page-on-desktop img { max-width: 600px; } }
-html.portfolio body section article.mockup figure#the-inu-frontpage-page-on-laptop img { max-width: 400px; }
-@media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-inu-frontpage-page-on-laptop img { max-width: 600px; } }
-@media only screen and (max-width: 63.999em) { html.portfolio body section article.mockup figure#the-inu-frontpage-page-on-laptop img { max-width: 600px; } }
-@media only screen and (max-width: 63.999em) and (min-width: 90em) { html.portfolio body section article.mockup figure#the-inu-frontpage-page-on-laptop img { max-width: 800px; } }
-
-html.portfolio body section article.mockup figure#the-anvelocom-archive-page-on-laptop img { max-width: 600px; }
-@media only screen and (max-width: 37.499em) { html.portfolio body section article.mockup figure#the-anvelocom-archive-page-on-laptop img { margin-left: 20%; } }
-@media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-anvelocom-archive-page-on-laptop img { max-width: 800px; } }
-html.portfolio body section article.mockup figure#the-anvelocom-frontpage-page-on-mobile img, html.portfolio body section article.mockup figure#the-anvelocom-menu-page-on-mobile img, html.portfolio body section article.mockup figure#the-anvelocom-archive-page-on-mobile img { max-width: 320px; }
-@media only screen and (min-width: 37.5em) and (max-width: 63.999em) { html.portfolio body section article.mockup figure#the-anvelocom-frontpage-page-on-mobile img, html.portfolio body section article.mockup figure#the-anvelocom-menu-page-on-mobile img, html.portfolio body section article.mockup figure#the-anvelocom-archive-page-on-mobile img { max-width: 240px; } }
-@media only screen and (min-width: 64em) { html.portfolio body section article.mockup figure#the-anvelocom-frontpage-page-on-mobile img, html.portfolio body section article.mockup figure#the-anvelocom-menu-page-on-mobile img, html.portfolio body section article.mockup figure#the-anvelocom-archive-page-on-mobile img { max-width: 240px; } }
-@media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-anvelocom-frontpage-page-on-mobile img, html.portfolio body section article.mockup figure#the-anvelocom-menu-page-on-mobile img, html.portfolio body section article.mockup figure#the-anvelocom-archive-page-on-mobile img { max-width: 320px; } }
-html.portfolio body section article.mockup figure#the-anvelocom-frontpage-page-on-desktop img { max-width: 600px; }
-@media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-anvelocom-frontpage-page-on-desktop img { max-width: 800px; } }
-html.portfolio body section article.mockup figure#the-anvelocom-product-page-on-tablet img, html.portfolio body section article.mockup figure#the-anvelocom-archive-page-on-tablet img { max-width: 320px; }
-@media only screen and (min-width: 37.5em) and (max-width: 63.999em) { html.portfolio body section article.mockup figure#the-anvelocom-product-page-on-tablet img, html.portfolio body section article.mockup figure#the-anvelocom-archive-page-on-tablet img { max-width: 500px; } }
-@media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-anvelocom-product-page-on-tablet img, html.portfolio body section article.mockup figure#the-anvelocom-archive-page-on-tablet img { max-width: 400px; } }
-html.portfolio body section article.mockup figure#the-smuff-product-page-on-desktop img, html.portfolio body section article.mockup figure#the-smuff-archive-page-on-desktop img { max-width: 400px; }
-@media only screen and (max-width: 37.499em) { html.portfolio body section article.mockup figure#the-smuff-product-page-on-desktop img, html.portfolio body section article.mockup figure#the-smuff-archive-page-on-desktop img { max-width: 100%; } }
-@media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-smuff-product-page-on-desktop img, html.portfolio body section article.mockup figure#the-smuff-archive-page-on-desktop img { max-width: 600px; } }
-html.portfolio body section article.mockup figure#the-smuff-archive-page-on-tablet img, html.portfolio body section article.mockup figure#the-smuff-product-page-on-tablet img { max-width: 320px; }
-@media only screen and (min-width: 37.5em) and (max-width: 63.999em) { html.portfolio body section article.mockup figure#the-smuff-archive-page-on-tablet img, html.portfolio body section article.mockup figure#the-smuff-product-page-on-tablet img { max-width: 500px; } }
-@media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-smuff-archive-page-on-tablet img, html.portfolio body section article.mockup figure#the-smuff-product-page-on-tablet img { max-width: 400px; } }
-html.portfolio body section article.mockup figure#the-smuff-product-page-on-mobile img, html.portfolio body section article.mockup figure#the-smuff-filters-page-on-mobile img, html.portfolio body section article.mockup figure#the-smuff-archive-page-on-mobile img { max-width: 320px; }
-@media only screen and (min-width: 37.5em) and (max-width: 63.999em) { html.portfolio body section article.mockup figure#the-smuff-product-page-on-mobile img, html.portfolio body section article.mockup figure#the-smuff-filters-page-on-mobile img, html.portfolio body section article.mockup figure#the-smuff-archive-page-on-mobile img { max-width: 240px; } }
-@media only screen and (min-width: 64em) { html.portfolio body section article.mockup figure#the-smuff-product-page-on-mobile img, html.portfolio body section article.mockup figure#the-smuff-filters-page-on-mobile img, html.portfolio body section article.mockup figure#the-smuff-archive-page-on-mobile img { max-width: 240px; } }
-@media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-smuff-product-page-on-mobile img, html.portfolio body section article.mockup figure#the-smuff-filters-page-on-mobile img, html.portfolio body section article.mockup figure#the-smuff-archive-page-on-mobile img { max-width: 320px; } }
-@media only screen and (min-width: 64em) { html.portfolio body section article.mockup figure#the-smuff-product-page-on-mobile img, html.portfolio body section article.mockup figure#the-smuff-filters-page-on-mobile img, html.portfolio body section article.mockup figure#the-smuff-archive-page-on-mobile img { max-width: 200px; } }
-@media only screen and (min-width: 64em) and (max-width: 63.999em) { html.portfolio body section article.mockup figure#the-smuff-product-page-on-mobile img, html.portfolio body section article.mockup figure#the-smuff-filters-page-on-mobile img, html.portfolio body section article.mockup figure#the-smuff-archive-page-on-mobile img { max-width: 300px; } }
-@media only screen and (min-width: 64em) and (min-width: 90em) { html.portfolio body section article.mockup figure#the-smuff-product-page-on-mobile img, html.portfolio body section article.mockup figure#the-smuff-filters-page-on-mobile img, html.portfolio body section article.mockup figure#the-smuff-archive-page-on-mobile img { max-width: 240px; } }
-
-html.portfolio body section article.mockup figure#the-smuff-product-page-on-laptop img, html.portfolio body section article.mockup figure#the-smuff-archive-page-on-laptop img, html.portfolio body section article.mockup figure#the-smuff-checkout-page-on-laptop img { max-width: 400px; }
-@media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-smuff-product-page-on-laptop img, html.portfolio body section article.mockup figure#the-smuff-archive-page-on-laptop img, html.portfolio body section article.mockup figure#the-smuff-checkout-page-on-laptop img { max-width: 600px; } }
-@media only screen and (max-width: 63.999em) { html.portfolio body section article.mockup figure#the-smuff-product-page-on-laptop img, html.portfolio body section article.mockup figure#the-smuff-archive-page-on-laptop img, html.portfolio body section article.mockup figure#the-smuff-checkout-page-on-laptop img { max-width: 600px; } }
-@media only screen and (max-width: 63.999em) and (min-width: 90em) { html.portfolio body section article.mockup figure#the-smuff-product-page-on-laptop img, html.portfolio body section article.mockup figure#the-smuff-archive-page-on-laptop img, html.portfolio body section article.mockup figure#the-smuff-checkout-page-on-laptop img { max-width: 800px; } }
-
-html.portfolio body section article.mockup figure#the-smuff-checkout-page-on-laptop img { max-width: 600px; }
-@media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-smuff-checkout-page-on-laptop img { max-width: 800px; } }
-html.portfolio body section article.mockup figure#the-occrp-frontpage-page-on-tablet.intro img { max-width: 180px; }
-@media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-occrp-frontpage-page-on-tablet.intro img { max-width: 300px; } }
-@media only screen and (max-width: 63.999em) { html.portfolio body section article.mockup figure#the-occrp-frontpage-page-on-tablet.intro img { max-width: 500px; } }
-@media only screen and (max-width: 63.999em) and (max-width: 37.499em) { html.portfolio body section article.mockup figure#the-occrp-frontpage-page-on-tablet.intro img { max-width: 320px; } }
-@media only screen and (max-width: 63.999em) and (min-width: 64em) { html.portfolio body section article.mockup figure#the-occrp-frontpage-page-on-tablet.intro img { max-width: 360px; } }
-@media only screen and (max-width: 63.999em) and (min-width: 90em) { html.portfolio body section article.mockup figure#the-occrp-frontpage-page-on-tablet.intro img { max-width: 500px; } }
-
-html.portfolio body section article.mockup figure#the-occrp-frontpage-2-page-on-mobile img, html.portfolio body section article.mockup figure#the-occrp-frontpage-page-on-mobile img, html.portfolio body section article.mockup figure#the-occrp-archive-page-on-mobile img { max-width: 320px; }
-@media only screen and (min-width: 37.5em) and (max-width: 63.999em) { html.portfolio body section article.mockup figure#the-occrp-frontpage-2-page-on-mobile img, html.portfolio body section article.mockup figure#the-occrp-frontpage-page-on-mobile img, html.portfolio body section article.mockup figure#the-occrp-archive-page-on-mobile img { max-width: 240px; } }
-@media only screen and (min-width: 64em) { html.portfolio body section article.mockup figure#the-occrp-frontpage-2-page-on-mobile img, html.portfolio body section article.mockup figure#the-occrp-frontpage-page-on-mobile img, html.portfolio body section article.mockup figure#the-occrp-archive-page-on-mobile img { max-width: 240px; } }
-@media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-occrp-frontpage-2-page-on-mobile img, html.portfolio body section article.mockup figure#the-occrp-frontpage-page-on-mobile img, html.portfolio body section article.mockup figure#the-occrp-archive-page-on-mobile img { max-width: 320px; } }
-html.portfolio body section article.mockup figure#the-occrp-frontpage-page-on-tablet.screenshots-2 img, html.portfolio body section article.mockup figure#the-occrp-archive-page-on-tablet img, html.portfolio body section article.mockup figure#the-occrp-article-page-on-tablet img { max-width: 320px; }
-@media only screen and (min-width: 37.5em) and (max-width: 63.999em) { html.portfolio body section article.mockup figure#the-occrp-frontpage-page-on-tablet.screenshots-2 img, html.portfolio body section article.mockup figure#the-occrp-archive-page-on-tablet img, html.portfolio body section article.mockup figure#the-occrp-article-page-on-tablet img { max-width: 500px; } }
-@media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-occrp-frontpage-page-on-tablet.screenshots-2 img, html.portfolio body section article.mockup figure#the-occrp-archive-page-on-tablet img, html.portfolio body section article.mockup figure#the-occrp-article-page-on-tablet img { max-width: 400px; } }
-@media only screen and (max-width: 63.999em) { html.portfolio body section article.mockup figure#the-occrp-frontpage-page-on-tablet.screenshots-2 { display: none; } }
-html.portfolio body section article.mockup figure#the-occrp-frontpage-page-on-laptop img, html.portfolio body section article.mockup figure#the-occrp-archive-page-on-laptop img { max-width: 600px; }
-@media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-occrp-frontpage-page-on-laptop img, html.portfolio body section article.mockup figure#the-occrp-archive-page-on-laptop img { max-width: 800px; } }
-html.portfolio body section article.mockup figure#the-occrp-archive-page-on-desktop img { max-width: 400px; }
-@media only screen and (max-width: 37.499em) { html.portfolio body section article.mockup figure#the-occrp-archive-page-on-desktop img { max-width: 100%; } }
-@media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-occrp-archive-page-on-desktop img { max-width: 600px; } }
-html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-tablet img { max-width: 500px; }
-@media only screen and (max-width: 37.499em) { html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-tablet img { max-width: 320px; } }
-@media only screen and (min-width: 64em) { html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-tablet img { max-width: 360px; } }
-@media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-tablet img { max-width: 500px; } }
-html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-tablet.screenshots img { max-width: 1000px; }
-@media only screen and (max-width: 37.499em) { html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-tablet.screenshots img { margin-left: -60%; } }
-@media only screen and (min-width: 37.5em) and (max-width: 63.999em) { html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-tablet.screenshots img { margin-left: -15%; } }
-@media only screen and (min-width: 64em) { html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-tablet.screenshots img { max-width: 800px; } }
-@media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-tablet.screenshots img { max-width: 1000px; } }
-html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-mobile img, html.portfolio body section article.mockup figure#the-iorad-checkout-page-on-mobile img { max-width: 320px; }
-@media only screen and (min-width: 64em) { html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-mobile img, html.portfolio body section article.mockup figure#the-iorad-checkout-page-on-mobile img { max-width: 240px; } }
-@media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-mobile img, html.portfolio body section article.mockup figure#the-iorad-checkout-page-on-mobile img { max-width: 320px; } }
-html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-laptop img { max-width: 400px; }
-@media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-laptop img { max-width: 600px; } }
-@media only screen and (max-width: 63.999em) { html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-laptop img { max-width: 600px; } }
-@media only screen and (max-width: 63.999em) and (min-width: 90em) { html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-laptop img { max-width: 800px; } }
-
-html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-desktop img { max-width: 400px; }
-@media only screen and (max-width: 37.499em) { html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-desktop img { max-width: 100%; } }
-@media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-iorad-pricing-page-on-desktop img { max-width: 600px; } }
-html.portfolio body section article.mockup figure#the-scatter-business-page-on-mobile img { max-width: 320px; }
-@media only screen and (min-width: 64em) { html.portfolio body section article.mockup figure#the-scatter-business-page-on-mobile img { max-width: 240px; } }
-@media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-scatter-business-page-on-mobile img { max-width: 320px; } }
-html.portfolio body section article.mockup figure#the-scatter-business-page-on-tablet img, html.portfolio body section article.mockup figure#the-scatter-business-2-page-on-tablet img { max-width: 1000px; }
-@media only screen and (max-width: 37.499em) { html.portfolio body section article.mockup figure#the-scatter-business-page-on-tablet img, html.portfolio body section article.mockup figure#the-scatter-business-2-page-on-tablet img { margin-left: -60%; } }
-@media only screen and (min-width: 37.5em) and (max-width: 63.999em) { html.portfolio body section article.mockup figure#the-scatter-business-page-on-tablet img, html.portfolio body section article.mockup figure#the-scatter-business-2-page-on-tablet img { margin-left: -15%; } }
-@media only screen and (min-width: 64em) { html.portfolio body section article.mockup figure#the-scatter-business-page-on-tablet img, html.portfolio body section article.mockup figure#the-scatter-business-2-page-on-tablet img { max-width: 800px; } }
-@media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-scatter-business-page-on-tablet img, html.portfolio body section article.mockup figure#the-scatter-business-2-page-on-tablet img { max-width: 1000px; } }
-html.portfolio body section article.mockup figure#the-scatter-frontpage-1-page-on-mobile img { max-width: 320px; }
-@media only screen and (min-width: 64em) { html.portfolio body section article.mockup figure#the-scatter-frontpage-1-page-on-mobile img { max-width: 240px; } }
-@media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-scatter-frontpage-1-page-on-mobile img { max-width: 320px; } }
-html.portfolio body section article.mockup figure#the-scatter-frontpage-page-on-tablet img { max-width: 500px; }
-@media only screen and (max-width: 37.499em) { html.portfolio body section article.mockup figure#the-scatter-frontpage-page-on-tablet img { max-width: 320px; } }
-@media only screen and (min-width: 64em) { html.portfolio body section article.mockup figure#the-scatter-frontpage-page-on-tablet img { max-width: 360px; } }
-@media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-scatter-frontpage-page-on-tablet img { max-width: 500px; } }
-html.portfolio body section article.mockup figure#the-scatter-frontpage-page-on-laptop img { max-width: 600px; }
-@media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-scatter-frontpage-page-on-laptop img { max-width: 800px; } }
-html.portfolio body section article.mockup figure#the-scatter-frontpage-1-page-on-desktop img, html.portfolio body section article.mockup figure#the-scatter-frontpage-2-page-on-desktop img { max-width: 600px; }
-@media only screen and (min-width: 90em) { html.portfolio body section article.mockup figure#the-scatter-frontpage-1-page-on-desktop img, html.portfolio body section article.mockup figure#the-scatter-frontpage-2-page-on-desktop img { max-width: 800px; } }
-html.portfolio body section article.services, html.portfolio body section article.title, html.portfolio body section article.description { max-width: 23.4em; padding: 3.12em; }
-html.portfolio body section article.services.title, html.portfolio body section article.title.title, html.portfolio body section article.description.title { text-align: center; }
-html.portfolio body section article.services.title h1, html.portfolio body section article.title.title h1, html.portfolio body section article.description.title h1 { font-family: "Europa", sans-serif; font-weight: 400; font-size: 1.3077em; }
-html.portfolio body section article.services.title p, html.portfolio body section article.title.title p, html.portfolio body section article.description.title p { font-family: "Europa", sans-serif; font-weight: 300; font-style: italic; }
-html.portfolio body section article.services.description p + p, html.portfolio body section article.title.description p + p, html.portfolio body section article.description.description p + p { margin-top: 1.56em; }
-html.portfolio body section article.services.services p + p, html.portfolio body section article.title.services p + p, html.portfolio body section article.description.services p + p { margin-top: 1.56em; }
-html.portfolio body section article.services.services p span, html.portfolio body section article.title.services p span, html.portfolio body section article.description.services p span { font-family: "Europa", sans-serif; font-weight: 400; }
-html.portfolio body section#portfolio-archive { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-flex-wrap: wrap; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; -webkit-box-align: start; -ms-flex-align: start; -webkit-align-items: flex-start; -moz-align-items: flex-start; align-items: flex-start; padding-top: 3.12em; }
-html.portfolio body section#portfolio-archive article { -webkit-box-ordinal-group: 1; -moz-box-ordinal-group: 1; -webkit-order: 0; -ms-flex-order: 0; order: 0; -webkit-box-flex: 0; -webkit-flex-grow: 0; -moz-flex-grow: 0; -ms-flex-positive: 0; flex-grow: 0; -webkit-flex-shrink: 1; -moz-flex-shrink: 1; -ms-flex-negative: 1; flex-shrink: 1; -webkit-flex-basis: auto; -moz-flex-basis: auto; -ms-flex-preferred-size: auto; flex-basis: auto; -webkit-align-self: auto; -moz-align-self: auto; -ms-flex-item-align: auto; align-self: auto; margin: 1.56em; position: relative; }
-html.portfolio body section#portfolio-archive article a { color: #071211; background: transparent; text-decoration: none; border-bottom: 3px solid transparent; }
-html.portfolio body section#portfolio-archive article a:hover, html.portfolio body section#portfolio-archive article a:active { border-color: #071211; }
-html.portfolio body section#portfolio-archive article figure { width: 240px; max-height: 240px; overflow: hidden; border-bottom: 1px solid; }
-html.portfolio body section#portfolio-archive article figure img { max-width: 100%; height: auto; }
-html.portfolio body section#portfolio-archive article figure img { display: none; }
-html.portfolio body section#portfolio-archive article:first-of-type:before { content: 'Featured projects'; font-family: "Europa", sans-serif; font-weight: 400; position: absolute; top: -3.12em; }
-html.portfolio body section#portfolio-archive article:hover figure img, html.portfolio body section#portfolio-archive article.active figure img { display: block; }
-html.portfolio body section#contact { padding: 3.12em; }
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined mixin 'responsive-typography'.\A         on line 3 of /home/cs/work/its-csongor/assets/styles/pages/default.scss, in `responsive-typography'\A         from line 3 of /home/cs/work/its-csongor/assets/styles/pages/default.scss\A         from line 1 of /home/cs/work/its-csongor/assets/styles/pages/*\A         from line 16 of /home/cs/work/its-csongor/assets/styles/screen.scss\A \A 1: /* Welcome to Compass.\A 2:  * In this file you should write your main styles. (or centralize your imports)\A 3:  * Import this file using the following HTML or equivalent:\A 4:  * <link href=\"/stylesheets/screen.css\" media=\"screen, projection\" rel=\"stylesheet\" type=\"text/css\" /> */\A 5: \A 6: \A 7: @import \"compass/reset\";\A 8: @import \"compass/css3\";"; }

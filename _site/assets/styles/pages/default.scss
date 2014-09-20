@@ -9,5 +9,8 @@ html {
       @include hide-title;
     }
     
+    header {
+      @include header;
+    }
   }
 }

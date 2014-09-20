@@ -19,11 +19,12 @@ a img { border: none; }
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
 
 /* No files to import found in settings/* */
-/* No files to import found in molecules/* */
 /* No files to import found in organisms/* */
-/* No files to import found in structures/* */
 html body { font-size: 100%; line-height: 1.25; color: #262626; background-color: white; font-family: "Europa", sans-serif; font-weight: 300; }
 @media only screen and (min-width: 64em) { html body { font-size: 125%; line-height: 1.56; } }
 @media only screen and (min-width: 90em) { html body { font-size: 150%; line-height: 1.875; } }
 html body a { color: #262626; background-color: white; text-decoration: none; }
 html body header > h3, html body footer > h3, html body section > h3, html body article > h3, html body aside > h3, html body nav > h3, html body figure > h3 { display: none; }
+html body header { padding: 1.875em; }
+html body header .logo { width: 1em; height: 1em; background: red; -moz-border-radius: 100%; -webkit-border-radius: 100%; border-radius: 100%; }
+html body header h1 { font-family: "Montserrat", sans-serif; font-size: 1.3077em; }

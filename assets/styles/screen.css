@@ -1,7 +1,7 @@
 /*
-Syntax error: Undefined mixin 'font'.
-        on line 5 of /home/cs/work/its-csongor/assets/styles/pages/default.scss, in `font'
-        from line 5 of /home/cs/work/its-csongor/assets/styles/pages/default.scss
+Syntax error: Undefined mixin 'link'.
+        on line 6 of /home/cs/work/its-csongor/assets/styles/pages/default.scss, in `link'
+        from line 6 of /home/cs/work/its-csongor/assets/styles/pages/default.scss
         from line 1 of /home/cs/work/its-csongor/assets/styles/pages/*
         from line 16 of /home/cs/work/its-csongor/assets/styles/screen.scss
 
@@ -15,10 +15,11 @@ Syntax error: Undefined mixin 'font'.
 8: @import "compass/css3";
 9: 
 10: @import "settings/*";
+11: @import "atoms/**\/*";
 
 Backtrace:
-/home/cs/work/its-csongor/assets/styles/pages/default.scss:5:in `font'
-/home/cs/work/its-csongor/assets/styles/pages/default.scss:5
+/home/cs/work/its-csongor/assets/styles/pages/default.scss:6:in `link'
+/home/cs/work/its-csongor/assets/styles/pages/default.scss:6
 /home/cs/work/its-csongor/assets/styles/pages/*:1
 /home/cs/work/its-csongor/assets/styles/screen.scss:16
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:320:in `block in visit_mixin'
@@ -110,4 +111,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'font'.\A         on line 5 of /home/cs/work/its-csongor/assets/styles/pages/default.scss, in `font'\A         from line 5 of /home/cs/work/its-csongor/assets/styles/pages/default.scss\A         from line 1 of /home/cs/work/its-csongor/assets/styles/pages/*\A         from line 16 of /home/cs/work/its-csongor/assets/styles/screen.scss\A \A 1: /* Welcome to Compass.\A 2:  * In this file you should write your main styles. (or centralize your imports)\A 3:  * Import this file using the following HTML or equivalent:\A 4:  * <link href=\"/stylesheets/screen.css\" media=\"screen, projection\" rel=\"stylesheet\" type=\"text/css\" /> */\A 5: \A 6: \A 7: @import \"compass/reset\";\A 8: @import \"compass/css3\";\A 9: \A 10: @import \"settings/*\";"; }
+  content: "Syntax error: Undefined mixin 'link'.\A         on line 6 of /home/cs/work/its-csongor/assets/styles/pages/default.scss, in `link'\A         from line 6 of /home/cs/work/its-csongor/assets/styles/pages/default.scss\A         from line 1 of /home/cs/work/its-csongor/assets/styles/pages/*\A         from line 16 of /home/cs/work/its-csongor/assets/styles/screen.scss\A \A 1: /* Welcome to Compass.\A 2:  * In this file you should write your main styles. (or centralize your imports)\A 3:  * Import this file using the following HTML or equivalent:\A 4:  * <link href=\"/stylesheets/screen.css\" media=\"screen, projection\" rel=\"stylesheet\" type=\"text/css\" /> */\A 5: \A 6: \A 7: @import \"compass/reset\";\A 8: @import \"compass/css3\";\A 9: \A 10: @import \"settings/*\";\A 11: @import \"atoms/**/*\";"; }

@@ -28,3 +28,6 @@ html body header > h3, html body footer > h3, html body section > h3, html body 
 html body header { padding: 1.875em; }
 html body header .logo { width: 1.875em; height: 1.875em; background: red; -moz-border-radius: 100%; -webkit-border-radius: 100%; border-radius: 100%; }
 html body header h1 { font-family: "Montserrat", sans-serif; font-size: 1.3077em; font-weight: 700; text-transform: uppercase; letter-spacing: 1.1px; }
+
+html.frontpage body #featured-image figure img { max-width: 100%; height: auto; }
+html.frontpage body #featured-image figure figcaption { display: none; }

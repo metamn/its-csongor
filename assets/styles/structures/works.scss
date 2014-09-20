@@ -1,0 +1,7 @@
+@mixin works {
+  @include flexbox($wrap: wrap, $justify-content: center);
+  
+  article {
+    @include thumb;
+  }
+}

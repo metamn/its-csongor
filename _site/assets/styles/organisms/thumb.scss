@@ -1,0 +1,13 @@
+@mixin thumb {
+  width: 480px;
+  height: 320px;
+  border: 1px solid;
+  
+  margin: $lem * 2;
+  padding: $lem;
+  
+  figure {
+    display: none;
+    @include figure;
+  }
+}

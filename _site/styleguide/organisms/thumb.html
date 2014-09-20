@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="frontpage styleguide ">
+<html lang="en" class="thumb styleguide ">
   <head>
     <meta charset="utf-8" />
   	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="author" href="humans.txt" />
     
-    <title>Frontpage &mdash; It's Csongor</title> 
+    <title>Thumb &mdash; It's Csongor</title> 
     
     <!-- Compass with SASS -->
   	<link href="/assets/styles/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -35,19 +35,17 @@
     
 
 
-html.frontpage {
-  body {
-    #featured-image {
-      @include featured-image;
-    }
-    
-    #about {
-      @include about;
-    }
-    
-    #works {
-      @include works;
-    }
+@mixin thumb {
+  width: 480px;
+  height: 320px;
+  border: 1px solid;
+  
+  margin: $lem * 2;
+  padding: $lem;
+  
+  figure {
+    display: none;
+    @include figure;
   }
 }
 

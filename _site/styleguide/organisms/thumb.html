@@ -36,17 +36,23 @@
 
 
 @mixin thumb {
-  width: 480px;
-  height: 320px;
   overflow: hidden;
   
   margin: $lem * 2;
   @include desktop-and-up {
-    margin: $lem *4;
+    margin: $lem * 3;
   }
   
   figure {
     @include figure($overflow: true, $figcaption: true);
+    border-bottom: 1px solid;
+    width: 480px;
+    height: 320px;
+  }
+  
+  aside {
+    @include text;
+    margin-top: $lem / 2;
   }
 }
 

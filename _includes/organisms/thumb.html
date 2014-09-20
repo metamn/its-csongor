@@ -1,6 +1,13 @@
 <article>
   <h3>{{ post.title }}</h3>
   
-  {% assign page = post %}
-  {% include molecules/figure.html id = "0" title = post.title %}
+  {% include molecules/figure.html mobile=post.images.first.mobile title=post.title link=post.url %}
+  
+  <aside>
+    <h3>Description</h3>
+    
+    <p>
+      {{ post.subtitle }}
+    </p>
+  </aside>
 </article> 

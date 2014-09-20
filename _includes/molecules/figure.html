@@ -39,7 +39,7 @@
 
 
 <figure id="{% include atoms/classname.html title=title %}" class="{{ class }}">
-  {% if image.link %}<a href="{{ site.url }}{{ image.link }}" title={{ title }}>{% endif %}
+  {% if image.link %}<a href="{{ site.url }}{{ image.link }}" title="{{ title }}">{% endif %}
     <picture>
       <!--[if IE 9]><video style="display: none;"><![endif]-->
 

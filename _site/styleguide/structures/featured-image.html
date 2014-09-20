@@ -38,14 +38,12 @@
 @mixin featured-image {
   @include flexbox($justify-content: center);
   
-  
-  @include below-laptop {
-    margin-top: $lem * 2;
-    margin-bottom: $lem * 2;
-  }
-  
   figure {
     @include figure;
+    
+    @include mobile {
+      @include figure($overflow: true);
+    }
   }
 }
 

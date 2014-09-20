@@ -4,12 +4,12 @@ Syntax error: Undefined mixin 'laptop-and-up'.
         from line 5 of /home/cs/work/its-csongor/assets/styles/atoms/responsive-typography.scss
 
 1:  
-2: $lem: 1.25;
-3: $text-width: $lem * 15;
+2: $lem: 1.25 !global;
+3: $text-width: $lem * 15 !global;
 4: 
 5: @include laptop-and-up {
-6:   $lem: 1.56;
-7:   $text-width: $lem * 15;
+6:   $lem: 1.56 !global;
+7:   $text-width: $lem * 15 !global;
 8:   
 9: }
 10: 
@@ -58,4 +58,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'laptop-and-up'.\A         on line 5 of /home/cs/work/its-csongor/assets/styles/atoms/responsive-typography.scss, in `laptop-and-up'\A         from line 5 of /home/cs/work/its-csongor/assets/styles/atoms/responsive-typography.scss\A \A 1:  \A 2: $lem: 1.25;\A 3: $text-width: $lem * 15;\A 4: \A 5: @include laptop-and-up {\A 6:   $lem: 1.56;\A 7:   $text-width: $lem * 15;\A 8:   \A 9: }\A 10: "; }
+  content: "Syntax error: Undefined mixin 'laptop-and-up'.\A         on line 5 of /home/cs/work/its-csongor/assets/styles/atoms/responsive-typography.scss, in `laptop-and-up'\A         from line 5 of /home/cs/work/its-csongor/assets/styles/atoms/responsive-typography.scss\A \A 1:  \A 2: $lem: 1.25 !global;\A 3: $text-width: $lem * 15 !global;\A 4: \A 5: @include laptop-and-up {\A 6:   $lem: 1.56 !global;\A 7:   $text-width: $lem * 15 !global;\A 8:   \A 9: }\A 10: "; }

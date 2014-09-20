@@ -33,23 +33,23 @@ grid:
     description: Line height and text width for mobile
     values:
       - name: "$lem"
-        value: "1.25"
+        value: "1.25 !global"
       - name: "$text-width"
-        value: "$lem * 15"
+        value: "$lem * 15 !global"
   - name: Laptop
     description: Line height and text width for laptop
     breakpoint: "laptop-and-up"
     values:
       - name: "$lem"
-        value: "1.56"
+        value: "1.56 !global"
       - name: "$text-width"
-        value: "$lem * 15"
+        value: "$lem * 15 !global"
   - name: Desktop
     description: Line height and text width for desktop
     breakpoint: "desktop-and-up"
     values:
       - name: "$lem"
-        value: "1.875"
+        value: "1.875 !global"
       - name: "$text-width"
-        value: "$lem * 15"
+        value: "$lem * 15 !global"
 ---

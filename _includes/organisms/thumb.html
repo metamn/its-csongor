@@ -1,13 +1,1 @@
-<article>
-  <h3>{{ post.title }}</h3>
-  
-  {% include molecules/figure.html mobile=post.images.first.mobile title=post.title link=post.url %}
-  
-  <aside>
-    <h3>Description</h3>
-    
-    <p>
-      {{ post.subtitle }}
-    </p>
-  </aside>
-</article> 
+{% include molecules/mockup.html id="0" source=post description=post.subtitle link=post.url %}

@@ -1,0 +1,24 @@
+{% assign source = page %}
+{% if include.source %}
+  {% assign source = include.source %}
+{% endif %}
+
+{% assign id = include.id | times: 1 %}
+{% assign image = source.images[id] %}
+
+{% capture imagetitle %}{% include atoms/imagetitle.html url=image.mobile %}{% endcapture %}
+<article class="mockup">
+  <h3>{{ imagetitle }}</h3>
+  
+  {% include atoms/figure.html id=include.id title=imagetitle source=source link=include.link %}
+  
+  {% if include.description %}
+  <aside>
+    <h3>Description</h3>
+    
+    <p>
+      {{ include.description }}
+    </p>
+  </aside>
+  {% endif %}
+</article>

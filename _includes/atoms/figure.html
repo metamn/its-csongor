@@ -2,8 +2,14 @@
 
 <!-- From post, or from direct input -->
 {% if include.id %}
+  <!-- When a figure is displayed from another page (ie. portfolio thumbs) post is the source of the image not the page -->
+  {% assign source = page %}
+  {% if include.source %}
+    {% assign source = include.source %}
+  {% endif %} 
+  
   {% assign id = include.id | times: 1 %}
-  {% assign image = page.images[id] %}
+  {% assign image = source.images[id] %}
 {% else %}
   {% assign image = include %}
 {% endif %}
@@ -18,12 +24,15 @@
 {% if image.desktop %}{% assign desktop = image.desktop %}{% else %}{% assign desktop = laptop %}{% endif %}
 {% if image.desktop2x %}{% assign desktop2x = image.desktop2x %}{% else %}{% assign desktop2x = desktop %}{% endif %}
 
+
+
 <!-- Setting up the other variables -->
 {% assign title = image.title %}
 {% assign class = image.classes | join: ' ' %}
 {% assign figcaption = image.figcaption %}
+{% assign link = image.link %}
 
-<!-- if no title, class from post then add via an include -->
+<!-- if no title, class, link from post then add via an include -->
 {% if title == null %}
   {% assign title = include.title %}
 {% endif %}
@@ -32,6 +41,11 @@
   {% assign class = include.class %}
 {% endif %}
 
+{% if link == null %}
+  {% assign link = include.link %}
+{% endif %}
+
+
 <!-- if no figcaption then title is a figcaption -->
 {% if figcaption == null %}
   {% assign figcaption = title %}
@@ -39,7 +53,7 @@
 
 
 <figure id="{% include atoms/classname.html title=title %}" class="{{ class }}">
-  {% if image.link %}<a href="{{ site.url }}{{ image.link }}" title="{{ title }}">{% endif %}
+  {% if link %}<a href="{{ site.url }}{{ link }}" title="{{ title }}">{% endif %}
     <picture>
       <!--[if IE 9]><video style="display: none;"><![endif]-->
 
@@ -53,5 +67,5 @@
       <img src="{{ site.url }}/{{ site.images }}/{{ mobile }}" alt="{{ title }}">
     </picture>
     <figcaption>{{ figcaption }}</figcaption>
-  {% if image.link %}</a>{% endif %}
+  {% if link %}</a>{% endif %}
 </figure>

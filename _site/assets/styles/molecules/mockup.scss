@@ -1,3 +1,33 @@
-@mixin mockup {
-
+@mixin mockup($type) {
+  figure {
+    @include figure;
+  }
+  
+  aside {
+    @include text;
+    margin-top: $lem / 2;
+  }
+  
+  
+  @if ($type == "tablet angle overflow") {
+    overflow: hidden;
+    
+    @include mobile {
+      figure {
+        @include figure($overflow: true);
+      }
+    }  
+  }
+  
+  
+  @if ($type == "tablet side overflow archive") {
+    overflow: hidden;
+    
+    figure {
+      @include figure($overflow: true);
+      border-bottom: 1px solid;
+      max-width: 480px;
+      max-height: 320px;
+    }
+  }
 }

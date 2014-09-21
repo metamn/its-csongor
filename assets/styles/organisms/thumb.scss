@@ -1,20 +1,8 @@
 @mixin thumb {
-  overflow: hidden;
-  
-  margin: $lem * 2;
+  margin: $lem;
   @include desktop-and-up {
-    margin: $lem * 3;
+    margin: $lem * 2;
   }
   
-  figure {
-    @include figure($overflow: true, $figcaption: true);
-    border-bottom: 1px solid;
-    width: 480px;
-    height: 320px;
-  }
-  
-  aside {
-    @include text;
-    margin-top: $lem / 2;
-  }
+  @include mockup("tablet side overflow archive");
 }

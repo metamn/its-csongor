@@ -38,12 +38,8 @@
 @mixin featured-image {
   @include flexbox($justify-content: center);
   
-  figure {
-    @include figure;
-    
-    @include mobile {
-      @include figure($overflow: true);
-    }
+  article {
+    @include mockup("tablet angle overflow");
   }
 }
 

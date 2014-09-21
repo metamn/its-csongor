@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="frontpage styleguide ">
+<html lang="en" class="navigation styleguide ">
   <head>
     <meta charset="utf-8" />
   	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="author" href="humans.txt" />
     
-    <title>Frontpage &mdash; It's Csongor</title> 
+    <title>Navigation &mdash; It's Csongor</title> 
     
     <!-- Compass with SASS -->
   	<link href="/assets/styles/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -35,16 +35,22 @@
     
 
 
-html.frontpage {
-  body {
-    #featured-image {
-      @include featured-image;
+@mixin navigation {
+  @include flexbox($justify-content: center);
+  
+  article {
+    @include show-title;
+    margin: $lem;
+    
+    h3 {
+      @include button;
     }
     
-    #about {
-      @include about;
+    &#contact {
+      aside {
+        display: none;
+      }
     }
-    
   }
 }
 

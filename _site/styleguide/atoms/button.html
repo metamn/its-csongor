@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="frontpage styleguide ">
+<html lang="en" class="button styleguide ">
   <head>
     <meta charset="utf-8" />
   	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="author" href="humans.txt" />
     
-    <title>Frontpage &mdash; It's Csongor</title> 
+    <title>Button &mdash; It's Csongor</title> 
     
     <!-- Compass with SASS -->
   	<link href="/assets/styles/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -35,16 +35,22 @@
     
 
 
-html.frontpage {
-  body {
-    #featured-image {
-      @include featured-image;
-    }
-    
-    #about {
-      @include about;
-    }
-    
+@mixin button {
+  cursor: pointer;
+  
+  text-transform: uppercase;
+  font-size: smaller;
+  font-weight: 400;
+  
+  @include colors(white-on-black);
+  a {
+    @include colors(white-on-black);
+  }
+  padding: $lem/2 $lem;
+  
+  &:after {
+    content: '\21e2';
+    color: $red;
   }
 }
 

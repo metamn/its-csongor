@@ -1,0 +1,18 @@
+@mixin button {
+  cursor: pointer;
+  
+  text-transform: uppercase;
+  font-size: smaller;
+  font-weight: 400;
+  
+  @include colors(white-on-black);
+  a {
+    @include colors(white-on-black);
+  }
+  padding: $lem/2 $lem;
+  
+  &:after {
+    content: '\21e2';
+    color: $red;
+  }
+}

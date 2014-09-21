@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="default styleguide ">
+<html lang="en" class="texture styleguide ">
   <head>
     <meta charset="utf-8" />
   	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="author" href="humans.txt" />
     
-    <title>Default &mdash; It's Csongor</title> 
+    <title>Texture &mdash; It's Csongor</title> 
     
     <!-- Compass with SASS -->
   	<link href="/assets/styles/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -35,21 +35,13 @@
     
 
 
-html {
-  body {
-    @include responsive-typography;
-    @include colors;
-    @include font;
-    @include link;
-    @include texture;
+@mixin texture($type: white) {
+  @if ($type == white) {
+    background-image: url("http://www.transparenttextures.com/patterns/subtle-dots.png");
+  }
   
-    header, footer, section, article, aside, nav, figure {
-      @include hide-title;
-    }
-    
-    header {
-      @include header;
-    }
+  @if ($type == black) {
+    background-image: url("http://www.transparenttextures.com/patterns/binding-dark.png");
   }
 }
 

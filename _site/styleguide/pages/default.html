@@ -41,7 +41,10 @@ html {
     @include colors;
     @include font;
     @include link;
-    @include texture;
+    
+    @include laptop-and-up {
+      @include texture;
+    }
   
     header, footer, section, article, aside, nav, figure {
       @include hide-title;

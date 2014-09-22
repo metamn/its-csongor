@@ -1,6 +1,9 @@
 @mixin contact {
+  
+  // Align items to the Portfolio and Styleguide buttons by simulation a button
   aside p, ul li {
     @include button;
     border: none;
   }
+  
 }

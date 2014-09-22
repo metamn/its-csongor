@@ -1,6 +1,5 @@
 ---
 ---
-
 @mixin link($type: default) { {% for page in site.pages %}{% if page.title == "Links" %}{% for item in page.items %}
   @if ($type == {% include atoms/classname.html title=item.name %}) {
     a {

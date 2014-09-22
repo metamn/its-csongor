@@ -3,6 +3,7 @@
     a {
       @include colors(black-on-white);
       text-decoration: none;
+      background-color: transparent;
       
     }
   } 

@@ -2,4 +2,8 @@
   width: $lem - $lem / 4;
   height: $lem - $lem / 4;
   background: $red;
+  
+  // Aliging perfectly to the site title
+  position: relative;
+  left: 1px;
 }

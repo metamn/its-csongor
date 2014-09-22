@@ -1,6 +1,7 @@
 @mixin texture($type: white) {
   @if ($type == white) {
     background-image: image-url("subtle-dots.png");
+    //background: url(http://www.transparenttextures.com/patterns/church.png) $white;
   }
   
   @if ($type == black) {

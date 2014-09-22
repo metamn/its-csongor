@@ -1,0 +1,25 @@
+html.portfolio {
+  body {
+    section {
+      @include flexbox($justify-content: center, $align-items: center, $wrap: wrap);
+      
+      article {
+        &.mockup {
+          @include mockup(null);
+        }
+        
+        &.title {
+          @include portfolio-title;
+        }
+        
+        &.description {
+          @include about;
+        }
+        
+        &.services {
+          @include about;
+        }
+      }
+    }
+  }
+}

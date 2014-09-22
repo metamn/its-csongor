@@ -13,6 +13,8 @@ technologies:
   - Jekyll
 images:
   - mobile: scatter-business-tablet-side-1x.png
+
+  - mobile: scatter-business-mobile-portrait.png
   
   - mobile: scatter-business-tablet-angle1.png
   - mobile: scatter-business-2-tablet-angle1.png
@@ -25,3 +27,26 @@ images:
   
   - mobile: scatter-frontpage-2-desktop-front.png
 ---
+{% include structures/portfolio-section.html title="Intro" images="0" %}
+{% include structures/portfolio-section.html title="Screenshots 1" images="1,2" %}
+
+{% capture description %}
+  <p>
+    Scatter had ready a web application to connect local businesses with customers. They needed a website before the launch.
+  </p>
+  <p>
+    We've created a couple of landing pages describing product features both for businesses and customers. And a Pricing page to let visitors subscribe to their services.
+  </p>
+  <p>
+    On design the requirements were big typography with big background images, and intuitive HTML / CSS graphics to explain product features. 
+  </p>
+  <p>
+    On development side we had to make everything fully responsible. 
+  </p>
+{% endcapture %}
+{% include structures/portfolio-section.html title="Description" images="" description=description %}
+
+{% include structures/portfolio-section.html title="Screenshots 2" images="3,4" %}
+{% include structures/portfolio-section.html title="Screenshots 3" images="5,6" %}
+{% include structures/portfolio-section.html title="Screenshots 4" images="7" %}
+{% include structures/portfolio-section.html title="Services" images="" %}

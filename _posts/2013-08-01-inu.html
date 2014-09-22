@@ -15,6 +15,8 @@ technologies:
 images:
   - mobile: inu-archive-tablet-side-1x.png
 
+  - mobile: inu-archive-tablet-angle1.png
+
   - mobile: inu-menu-white-mobile-portrait.png
   - mobile: inu-menu-black-mobile-portrait.png
   
@@ -27,3 +29,22 @@ images:
   - mobile: inu-archive-desktop-right.png
   - mobile: inu-frontpage-laptop-front.png
 ---
+
+{% include structures/portfolio-section.html title="Intro" images="0" %}
+
+{% include structures/portfolio-section.html title="Screenshots 1" images="1,2" %}
+{% include structures/portfolio-section.html title="Screenshots 2" images="3,4,5" %}
+
+{% capture description %}
+  <p>
+    Trapped with old technology powering his old portfolio Inu wanted a new website with a modern dashboard and a minimalist look. 
+  </p>
+
+  <p>
+    We have created a special Wordpress backend for easy photography publishing. And a clean design which stays out of the viewer's way and is enjoyable even on small screens.
+  </p>
+{% endcapture %}
+{% include structures/portfolio-section.html title="Description" images="" description=description %}
+
+{% include structures/portfolio-section.html title="Screenshots 3" images="6,7" %}
+{% include structures/portfolio-section.html title="Services" images="" %}

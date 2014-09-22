@@ -13,6 +13,9 @@ technologies:
 images:
   - mobile: occrp-frontpage-tablet-side-1x.png
 
+  - mobile: occrp-frontpage-tablet-portrait.png
+    laptop: occrp-frontpage-tablet-side.png
+
   - mobile: occrp-frontpage-2-mobile-portrait.png
   - mobile: occrp-frontpage-mobile-portrait.png
   - mobile: occrp-archive-mobile-portrait.png
@@ -26,3 +29,24 @@ images:
 
   - mobile: occrp-archive-desktop-left.png
 ---
+{% include structures/portfolio-section.html title="Intro" images="0" %}
+{% include structures/portfolio-section.html title="Screenshots 1" images="1,2,3" %}
+{% include structures/portfolio-section.html title="Screenshots 2" images="4,5,6" %}
+
+{% capture description %}
+  <p>
+    Organized Crime And Corruption Reporting Project had it's website dated from the last decade. 
+  </p>
+
+  <p>
+    We've managed to come up with a modern, newspaper-like redesign with clean headlines, good structure, clean understanding of priorities.
+  </p>
+
+  <p>
+    The new site supports all screens from mobile devices up to large projectors.
+  </p>
+{% endcapture %}
+{% include structures/portfolio-section.html title="Description" description=description images="" %}
+
+{% include structures/portfolio-section.html title="Screenshots 3" images="7,8" %}
+{% include structures/portfolio-section.html title="Services" images="9" %}

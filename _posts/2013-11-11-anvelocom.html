@@ -15,6 +15,8 @@ technologies:
 images:
   - mobile: anvelocom-product-tablet-side-1x.png
 
+  - mobile: anvelocom-archive-laptop-front.png
+
   - mobile: anvelocom-frontpage-mobile-portrait.png
   - mobile: anvelocom-menu-mobile-portrait.png
   - mobile: anvelocom-archive-mobile-portrait.png
@@ -24,3 +26,26 @@ images:
   - mobile: anvelocom-archive-tablet-portrait.png
   - mobile: anvelocom-product-tablet-portrait.png
 ---
+
+{% include structures/portfolio-section.html title="Intro" images="0" %}
+{% include structures/portfolio-section.html title="Screenshots 1" images="1,2,3" %}
+
+{% capture description %}
+  <p>
+    Anvelocom started as a Wordpress blog to research the market for auto off-road accessories and tuning equipment.
+  </p>
+
+  <p>
+    After initial success we've created a responsive e-commerce Wordpress theme together with a strong visual identity.
+  </p>
+
+  <p>
+    A technical challenge was to create dynamic filters for products which work with any number of categories and combinations. 
+  </p>
+{% endcapture %}
+{% include structures/portfolio-section.html title="Description" images="" description=description %}
+
+{% include structures/portfolio-section.html title="Screenshots 2" images="4" %}
+
+{% include structures/portfolio-section.html title="Screenshots 2" images="5,6" %}
+{% include structures/portfolio-section.html title="Services" images="" %}

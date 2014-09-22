@@ -2,6 +2,8 @@
   ul {
     li {
       text-align: center;
+      // Make some room between items. It's a must on mobiles
+      line-height: 1.5; 
       
       // Align "@metamn" to "Visit Portfolio" button
       &:last-of-type {

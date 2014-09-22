@@ -23,7 +23,7 @@ html body { font-size: 100%; line-height: 1.25; color: #1a1a1a; background-color
 @media only screen and (min-width: 64em) { html body { font-size: 125%; line-height: 1.56; } }
 @media only screen and (min-width: 90em) { html body { font-size: 150%; line-height: 1.56; } }
 html body a { color: #1a1a1a; background-color: #f9f9f9; text-decoration: none; }
-@media only screen and (min-width: 64em) { html body { background-image: url('http://metamn.github.io/its-csongor/assets/images/subtle-dots.png?1411370947'); } }
+@media only screen and (min-width: 64em) { html body { background-image: url('http://metamn.github.io/its-csongor/assets/images/subtle-dots.png?1411374112'); } }
 html body header > h3, html body footer > h3, html body section > h3, html body article > h3, html body aside > h3, html body nav > h3, html body figure > h3 { display: none; }
 html body header { padding: 1.56em; }
 html body header .logo { width: 1.17em; height: 1.17em; background: red; }
@@ -51,11 +51,11 @@ html body #navigation article figure { overflow: hidden; max-width: 480px; max-h
 html body #navigation article figure img { max-width: 100%; height: auto; }
 html body #navigation article figure img { max-width: none; }
 html body #navigation article figure figcaption { display: none; }
-html body #navigation article#contact ul li { text-align: center; }
+html body #navigation article#contact ul li { text-align: center; line-height: 1.5; }
 html body #navigation article#contact ul li:last-of-type { margin-bottom: 0.78em; }
 html body #navigation article#contact aside { padding-top: 0.39em; }
-html body #navigation article#contact aside p { cursor: pointer; border: 1px solid #666666; padding: 0.39em 0.78em; -moz-border-radius: 1.56em; -webkit-border-radius: 1.56em; border-radius: 1.56em; text-align: center; border: none; }
-html body #navigation article#portfolio-and-styleguide ul li { cursor: pointer; border: 1px solid #666666; padding: 0.39em 0.78em; -moz-border-radius: 1.56em; -webkit-border-radius: 1.56em; border-radius: 1.56em; text-align: center; margin-top: 0.78em; }
+html body #navigation article#contact aside p { cursor: pointer; border: 1px solid #666666; padding: 0.39em 0.78em 0.52em; -moz-border-radius: 1.56em; -webkit-border-radius: 1.56em; border-radius: 1.56em; text-align: center; border: none; }
+html body #navigation article#portfolio-and-styleguide ul li { cursor: pointer; border: 1px solid #666666; padding: 0.39em 0.78em 0.52em; -moz-border-radius: 1.56em; -webkit-border-radius: 1.56em; border-radius: 1.56em; text-align: center; margin-top: 0.78em; }
 
 html.frontpage body #featured-image { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; }
 html.frontpage body #featured-image article { overflow: hidden; }
@@ -67,7 +67,7 @@ html.frontpage body #featured-image article aside p + p { margin-top: 1.56em; }
   html.frontpage body #featured-image article figure img { max-width: 100%; height: auto; }
   html.frontpage body #featured-image article figure img { max-width: none; }
   html.frontpage body #featured-image article figure figcaption { display: none; } }
-html.frontpage body #about { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; color: #f9f9f9; background-color: #1a1a1a; background-image: url('http://metamn.github.io/its-csongor/assets/images/binding-dark.png?1411370947'); padding: 6.24em 1.56em; }
+html.frontpage body #about { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; color: #f9f9f9; background-color: #1a1a1a; background-image: url('http://metamn.github.io/its-csongor/assets/images/binding-dark.png?1411374112'); padding: 6.24em 1.56em; }
 html.frontpage body #about article { max-width: 39em; }
 html.frontpage body #about article p + p { margin-top: 1.56em; }
 html.frontpage body #about article p { font-family: "Europa", sans-serif; font-weight: 300; font-size: 1.6154em; }

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="mockup styleguide ">
+<html lang="en" class="contact styleguide ">
   <head>
     <meta charset="utf-8" />
   	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="author" href="humans.txt" />
     
-    <title>Mockup &mdash; It's Csongor</title> 
+    <title>Contact &mdash; It's Csongor</title> 
     
     <!-- Compass with SASS -->
   	<link href="/assets/styles/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -35,37 +35,10 @@
     
 
 
-@mixin mockup($type) {
-  figure {
-    @include figure;
-  }
-  
-  aside {
-    @include text;
-    border-top: 1px solid;
-    padding-top: $lem / 2;
-  }
-  
-  
-  @if ($type == "tablet angle overflow") {
-    overflow: hidden;
-    
-    @include mobile {
-      figure {
-        @include figure($overflow: true);
-      }
-    }  
-  }
-  
-  
-  @if ($type == "tablet side overflow archive") {
-    overflow: hidden;
-    
-    figure {
-      @include figure($overflow: true);
-      max-width: 480px;
-      max-height: 320px;
-    }
+@mixin contact {
+  aside p, ul li {
+    @include button;
+    border: none;
   }
 }
 

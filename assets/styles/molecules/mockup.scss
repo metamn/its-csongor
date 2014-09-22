@@ -5,7 +5,8 @@
   
   aside {
     @include text;
-    margin-top: $lem / 2;
+    border-top: 1px solid;
+    padding-top: $lem / 2;
   }
   
   
@@ -25,7 +26,6 @@
     
     figure {
       @include figure($overflow: true);
-      border-bottom: 1px solid;
       max-width: 480px;
       max-height: 320px;
     }

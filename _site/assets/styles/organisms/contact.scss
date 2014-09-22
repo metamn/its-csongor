@@ -1,0 +1,6 @@
+@mixin contact {
+  aside p, ul li {
+    @include button;
+    border: none;
+  }
+}

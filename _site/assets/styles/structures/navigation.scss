@@ -1,18 +1,25 @@
 @mixin navigation {
-  @include flexbox($justify-content: center);
+  @include flexbox($wrap: wrap, $justify-content: center);
   
   article {
-    @include show-title;
-    margin: $lem;
+    // Align to flex end and stretch 
+    @include flexbox($direction: column, $justify-content: flex-end, $align-items: baseline);
     
-    h3 {
-      @include button;
+    ul, aside {
+      @include flex-item($align-self: stretch);
     }
     
+    
+    @include thumb;
+    width: 480px;
+    height: 320px;
+    
     &#contact {
-      aside {
-        display: none;
-      }
+      @include contact;
+    }
+    
+    &#portfolio-and-styleguide {
+      @include portfolio-and-styleguide;
     }
   }
 }

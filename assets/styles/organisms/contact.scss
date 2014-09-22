@@ -1,9 +1,22 @@
 @mixin contact {
-  
-  // Align items to the Portfolio and Styleguide buttons by simulation a button
-  aside p, ul li {
-    @include button;
-    border: none;
+  ul {
+    li {
+      text-align: center;
+      
+      // Align "@metamn" to "Visit Portfolio" button
+      &:last-of-type {
+        margin-bottom: $lem / 2;
+      }
+    }
   }
   
+  aside {
+    padding-top: $lem / 4;
+    
+    // Align "Your next project ..." to "Visit styleguide" button
+    p {
+      @include button;
+      border: none;
+    }
+  }
 }

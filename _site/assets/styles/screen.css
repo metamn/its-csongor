@@ -51,7 +51,10 @@ html body #navigation article figure { overflow: hidden; max-width: 480px; max-h
 html body #navigation article figure img { max-width: 100%; height: auto; }
 html body #navigation article figure img { max-width: none; }
 html body #navigation article figure figcaption { display: none; }
-html body #navigation article#contact aside p, html body #navigation article#contact ul li { cursor: pointer; border: 1px solid #666666; padding: 0.39em 0.78em; -moz-border-radius: 1.56em; -webkit-border-radius: 1.56em; border-radius: 1.56em; text-align: center; border: none; }
+html body #navigation article#contact ul li { text-align: center; }
+html body #navigation article#contact ul li:last-of-type { margin-bottom: 0.78em; }
+html body #navigation article#contact aside { padding-top: 0.39em; }
+html body #navigation article#contact aside p { cursor: pointer; border: 1px solid #666666; padding: 0.39em 0.78em; -moz-border-radius: 1.56em; -webkit-border-radius: 1.56em; border-radius: 1.56em; text-align: center; border: none; }
 html body #navigation article#portfolio-and-styleguide ul li { cursor: pointer; border: 1px solid #666666; padding: 0.39em 0.78em; -moz-border-radius: 1.56em; -webkit-border-radius: 1.56em; border-radius: 1.56em; text-align: center; margin-top: 0.78em; }
 
 html.frontpage body #featured-image { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; }

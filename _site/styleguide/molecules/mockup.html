@@ -37,6 +37,45 @@
 
 @mixin mockup($type) {
   
+  @if ($type == "desktop right small") {
+    img {
+      max-width: 400px;
+      
+      @include mobile {
+        max-width: 100%;
+      }
+      
+      @include desktop-and-up {
+        max-width: 750px;
+      }
+    }
+  }
+  
+  @if ($type == "desktop front large") {
+    img {
+      max-width: 600px;
+      
+      @include desktop-and-up {
+        max-width: 800px;
+      }
+    }
+  }
+  
+  
+  @if ($type == "laptop small") {
+    img {
+      max-width: 400px;
+      
+      @include desktop-and-up {
+        max-width: 750px;
+      }
+    }
+  }
+  
+  
+  
+  
+  
   
   @if ($type == "mobile portrait double") {
     figure {

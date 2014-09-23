@@ -41,6 +41,32 @@ html.iorad {
           }
         }
       }
+      
+      
+      &.screenshots {
+        article {
+          &.mockup {
+            &:first-of-type {
+              @include mockup("desktop right small");
+            }
+            
+            &:last-of-type {
+              @include flex-align-self(flex-end);
+              @include mockup("laptop small");
+            }
+          }
+        }
+      }
+      
+      
+      &.services {
+        article {
+          &.mockup {
+            @include flex-order(2);
+            @include mockup("tablet angle overflow");
+          }
+        }
+      }
     }
   }
 }

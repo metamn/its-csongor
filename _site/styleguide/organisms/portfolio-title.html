@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="thumb styleguide ">
+<html lang="en" class="portfolio-title styleguide ">
   <head>
     <meta charset="utf-8" />
   	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="author" href="humans.txt" />
     
-    <title>Thumb &mdash; It's Csongor</title> 
+    <title>Portfolio title &mdash; It's Csongor</title> 
     
     <!-- Compass with SASS -->
   	<link href="/assets/styles/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -35,22 +35,15 @@
     
 
 
-@mixin thumb {
-  margin: $lem;
-  @include desktop-and-up {
-    margin: $lem * 2;
+@mixin portfolio-title {
+  text-align: center;
+  
+  h1 {
+    @include font(title);
   }
   
-  @include mockup("tablet side overflow");
-  
-  aside {
-    @include text;
-    border-top: 1px solid;
-    padding-top: $lem / 2;
-    
-    p {
-      padding-left: $lem;
-    }
+  p {
+    @include font(subtitle);
   }
 }
 

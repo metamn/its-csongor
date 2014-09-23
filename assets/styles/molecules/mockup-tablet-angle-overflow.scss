@@ -1,0 +1,9 @@
+@mixin mockup-tablet-angle-overflow {
+  overflow: hidden;
+    
+  @include mobile {
+    figure {
+      @include figure($overflow: true);
+    }
+  }  
+}

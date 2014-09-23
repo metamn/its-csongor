@@ -1,16 +1,12 @@
 {% assign images = include.images | split: ',' %}
 {% capture class %}{% include atoms/classname.html title=include.title %}{% endcapture %}
 
-<section class="{{ class }}">
+<section class="{{ class }} portfolio-section">
   <h3>{{ include.title }}</h3>
   
   {% for i in images %}
     {% include molecules/mockup.html id=i class=class %}
   {% endfor %}
-  
-  {% if include.caption %}
-    {% include organisms/portfolio-caption.html caption=include.caption %} 
-  {% endif %}
   
   {% if include.title == 'Intro' %}
     {% include organisms/portfolio-title.html %} 

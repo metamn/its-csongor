@@ -10,9 +10,17 @@
     &.title {
       @include portfolio-title;
     }
+    
+    &.description {
+      @include portfolio-description;
+    }
+    
+    &.services {
+      @include portfolio-services;
+    }
 
     &.mockup {
-      @include mockup(null);
+      @include mockup(common);
     }
   }
 }

@@ -1,0 +1,32 @@
+@mixin mockup-common {
+  figure {
+    &.mobile, &.tablet-side {
+      max-width: 320px;
+    }
+    
+    &.desktop {
+      width: 90%;
+      margin: auto;
+    }
+    
+    @include below-laptop {
+      &.tablet {
+        max-width: 480px;
+      }
+    }
+    
+    @include laptop-and-up {
+      padding: $lem;
+      
+      &.desktop, &.laptop, &.tablet-angle {
+        width: 60%;
+        margin: auto;
+      }
+      
+      &.tablet {
+        max-width: 480px;
+      }
+    }
+  }
+  
+}

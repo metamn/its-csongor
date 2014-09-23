@@ -1,3 +1,7 @@
 @mixin portfolio-services {
-  
+  p {
+    span {
+      @include font(services);
+    }
+  } 
 }

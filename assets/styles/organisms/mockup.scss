@@ -1,0 +1,14 @@
+@mixin mockup($type: common) {
+  
+  @if ($type == "common") {
+    @include mockup-common;
+  }
+  
+  @if ($type == "tablet side overflow") {
+    @include mockup-tablet-side-overflow;
+  }
+  
+  @if ($type == "tablet angle overflow") {
+    @include mockup-tablet-angle-overflow;
+  }
+}

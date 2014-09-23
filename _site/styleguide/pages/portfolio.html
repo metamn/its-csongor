@@ -38,7 +38,9 @@
 html.portfolio {
   body {
     section {
-      @include portfolio-section;
+      &.portfolio-section {
+        @include portfolio-section;
+      }
     }
   }
 }

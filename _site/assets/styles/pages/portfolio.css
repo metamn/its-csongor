@@ -1,20 +1,18 @@
 /*
-Syntax error: Undefined mixin 'flexbox'.
-        on line 4 of /home/cs/work/its-csongor/assets/styles/pages/portfolio.scss, in `flexbox'
+Syntax error: Undefined mixin 'portfolio-section'.
+        on line 4 of /home/cs/work/its-csongor/assets/styles/pages/portfolio.scss, in `portfolio-section'
         from line 4 of /home/cs/work/its-csongor/assets/styles/pages/portfolio.scss
 
 1: html.portfolio {
 2:   body {
 3:     section {
-4:       @include flexbox($justify-content: center, $align-items: center, $wrap: wrap);
-5:       
-6:       article {
-7:         &.mockup {
-8:           @include mockup(null);
-9:         }
+4:       @include portfolio-section;
+5:     }
+6:   }
+7: }
 
 Backtrace:
-/home/cs/work/its-csongor/assets/styles/pages/portfolio.scss:4:in `flexbox'
+/home/cs/work/its-csongor/assets/styles/pages/portfolio.scss:4:in `portfolio-section'
 /home/cs/work/its-csongor/assets/styles/pages/portfolio.scss:4
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:320:in `block in visit_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:98:in `block in with_mixin'
@@ -90,4 +88,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'flexbox'.\A         on line 4 of /home/cs/work/its-csongor/assets/styles/pages/portfolio.scss, in `flexbox'\A         from line 4 of /home/cs/work/its-csongor/assets/styles/pages/portfolio.scss\A \A 1: html.portfolio {\A 2:   body {\A 3:     section {\A 4:       @include flexbox($justify-content: center, $align-items: center, $wrap: wrap);\A 5:       \A 6:       article {\A 7:         &.mockup {\A 8:           @include mockup(null);\A 9:         }"; }
+  content: "Syntax error: Undefined mixin 'portfolio-section'.\A         on line 4 of /home/cs/work/its-csongor/assets/styles/pages/portfolio.scss, in `portfolio-section'\A         from line 4 of /home/cs/work/its-csongor/assets/styles/pages/portfolio.scss\A \A 1: html.portfolio {\A 2:   body {\A 3:     section {\A 4:       @include portfolio-section;\A 5:     }\A 6:   }\A 7: }"; }

@@ -1,7 +1,11 @@
 html.iorad {
   body {
     section {
-      
+      figure {
+        &:nth-of-type(1) {
+          @include mockup("tablet portrait large");
+        }
+      }
     }
   }
 }

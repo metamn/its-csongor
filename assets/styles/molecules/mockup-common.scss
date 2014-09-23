@@ -1,3 +1,6 @@
+// Common settings for all mockups
+// - later mockups can be styled individually
+// - if all mockups are styled individually this can be removed
 @mixin mockup-common {
   figure {
     &.mobile, &.tablet-side {

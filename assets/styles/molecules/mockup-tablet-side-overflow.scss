@@ -3,7 +3,5 @@
     
   figure {
     @include figure($overflow: true);
-    max-width: 480px;
-    max-height: 320px;
   }
 }

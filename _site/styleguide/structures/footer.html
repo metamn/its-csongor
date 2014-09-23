@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="default styleguide ">
+<html lang="en" class="footer styleguide ">
   <head>
     <meta charset="utf-8" />
   	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="author" href="humans.txt" />
     
-    <title>Default &mdash; It's Csongor</title> 
+    <title>Footer &mdash; It's Csongor</title> 
     
     <!-- Compass with SASS -->
   	<link href="/assets/styles/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -35,36 +35,28 @@
     
 
 
-html {
-  body {
-    @include responsive-typography;
-    @include colors;
-    @include font;
-    @include link;
-    
-    @include laptop-and-up {
-      @include texture;
-    }
+@mixin footer {
+  @include flexbox($wrap: wrap, $justify-content: center);
   
-    header, footer, section, article, aside, nav, figure {
-      @include hide-title;
+  article {
+    // Align to flex end and stretch 
+    @include flexbox($direction: column, $justify-content: flex-end, $align-items: baseline);
+    
+    ul, aside {
+      @include flex-item($align-self: stretch);
     }
     
-    figure {
-      @include figure;
+    
+    @include thumb;
+    width: 480px;
+    height: 320px;
+    
+    &#contact {
+      @include contact;
     }
     
-    
-    header {
-      @include header;
-    }
-    
-    #works {
-      @include works;
-    }
-    
-    footer {
-      @include footer;
+    &#navigation {
+      @include navigation;
     }
   }
 }

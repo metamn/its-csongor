@@ -18,7 +18,6 @@ html {
     }
     
     
-    
     header {
       @include header;
     }
@@ -27,8 +26,8 @@ html {
       @include works;
     }
     
-    #navigation {
-      @include navigation;
+    footer {
+      @include footer;
     }
   }
 }

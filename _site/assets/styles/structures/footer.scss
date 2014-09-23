@@ -1,4 +1,4 @@
-@mixin navigation {
+@mixin footer {
   @include flexbox($wrap: wrap, $justify-content: center);
   
   article {
@@ -18,8 +18,8 @@
       @include contact;
     }
     
-    &#portfolio-and-styleguide {
-      @include portfolio-and-styleguide;
+    &#navigation {
+      @include navigation;
     }
   }
 }

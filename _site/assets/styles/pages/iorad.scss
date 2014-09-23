@@ -12,6 +12,7 @@ html.iorad {
             
             @include desktop-and-up {
               width: auto;
+              margin-left: $lem;
             }
           }
         }
@@ -20,6 +21,14 @@ html.iorad {
       &.description {
         @include desktop-and-up {
           @include flexbox($wrap: nowrap);
+          
+          article {
+            &.mockup {
+              &:first-of-type {
+                margin-left: $lem * 4;
+              }
+            }
+          }
         }
         
         article {

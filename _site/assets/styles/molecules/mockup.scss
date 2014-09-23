@@ -1,10 +1,25 @@
 @mixin mockup($type) {
   
+  
+  @if ($type == "mobile portrait double") {
+    figure {
+      max-width: 400px;
+      
+      @include mobile {
+        max-width: 320px;
+      }
+    }
+  }
+  
   @if ($type == "tablet portrait overflow") {
     overflow: hidden;
     
-    @include mobile {
-      figure {
+    figure {
+      img {
+        border-bottom: 1px solid;
+      }
+      
+      @include mobile {
         @include figure($overflow: true);
         
         img {

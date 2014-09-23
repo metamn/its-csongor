@@ -1,18 +1,17 @@
 @mixin portfolio-section {
-  @include flexbox($justify-content: flex-start, $align-items: center, $wrap: wrap);
+  @include flexbox($justify-content: center, $align-items: center, $wrap: wrap);
       
   article {
     &.title {
       @include portfolio-title;
     }
 
-    &.description {
-      @include text;
-      max-width: 30em;  
+    &.description, &.services {
+      @include text; 
     }
-
-    &.services {
-      @include text;
+    
+    &.title, &.description, &.services {
+      padding: $lem * 2 $lem;
     }
   }
 }

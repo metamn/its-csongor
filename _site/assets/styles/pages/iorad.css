@@ -10,10 +10,10 @@ Syntax error: Undefined mixin 'mockup'.
 6:           &.mockup {
 7:             @include mockup("tablet portrait overflow");
 8:           }
-9:         }
-10:       }
-11:     }
-12:   }
+9:           
+10:           &.title {
+11:             width: 100%;
+12:             
 
 Backtrace:
 /home/cs/work/its-csongor/assets/styles/pages/iorad.scss:7:in `mockup'
@@ -125,4 +125,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'mockup'.\A         on line 7 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss, in `mockup'\A         from line 7 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss\A \A 2:   body {\A 3:     section {\A 4:       &.intro {\A 5:         article {\A 6:           &.mockup {\A 7:             @include mockup(\"tablet portrait overflow\");\A 8:           }\A 9:         }\A 10:       }\A 11:     }\A 12:   }"; }
+  content: "Syntax error: Undefined mixin 'mockup'.\A         on line 7 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss, in `mockup'\A         from line 7 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss\A \A 2:   body {\A 3:     section {\A 4:       &.intro {\A 5:         article {\A 6:           &.mockup {\A 7:             @include mockup(\"tablet portrait overflow\");\A 8:           }\A 9:           \A 10:           &.title {\A 11:             width: 100%;\A 12:             "; }

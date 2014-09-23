@@ -6,6 +6,30 @@ html.iorad {
           &.mockup {
             @include mockup("tablet portrait overflow");
           }
+          
+          &.title {
+            width: 100%;
+            
+            @include desktop-and-up {
+              width: auto;
+            }
+          }
+        }
+      }
+      
+      &.description {
+        @include desktop-and-up {
+          @include flexbox($wrap: nowrap);
+        }
+        
+        article {
+          @include laptop-and-up {
+            padding: $lem;
+          }
+          
+          &.mockup {
+            @include mockup("mobile portrait double");
+          }
         }
       }
     }

@@ -34,6 +34,7 @@ html body #works { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ displa
 html body #works article { margin: 1.56em; overflow: hidden; }
 @media only screen and (min-width: 90em) { html body #works article { margin: 3.12em; } }
 html body #works article figure.mobile, html body #works article figure.tablet-side { max-width: 320px; }
+html body #works article figure.desktop { width: 90%; margin: auto; }
 @media only screen and (max-width: 63.999em) { html body #works article figure.tablet { max-width: 480px; } }
 @media only screen and (min-width: 64em) { html body #works article figure { padding: 1.56em; }
   html body #works article figure.desktop, html body #works article figure.laptop, html body #works article figure.tablet-angle { width: 60%; margin: auto; }
@@ -50,6 +51,7 @@ html body #navigation article { display: -webkit-box; /* OLD - iOS 6-, Safari 3.
 html body #navigation article ul, html body #navigation article aside { -webkit-box-ordinal-group: 1; -moz-box-ordinal-group: 1; -webkit-order: 0; -ms-flex-order: 0; order: 0; -webkit-box-flex: 0; -webkit-flex-grow: 0; -moz-flex-grow: 0; -ms-flex-positive: 0; flex-grow: 0; -webkit-flex-shrink: 1; -moz-flex-shrink: 1; -ms-flex-negative: 1; flex-shrink: 1; -webkit-flex-basis: auto; -moz-flex-basis: auto; -ms-flex-preferred-size: auto; flex-basis: auto; -webkit-align-self: stretch; -moz-align-self: stretch; -ms-flex-item-align: stretch; align-self: stretch; }
 @media only screen and (min-width: 90em) { html body #navigation article { margin: 3.12em; } }
 html body #navigation article figure.mobile, html body #navigation article figure.tablet-side { max-width: 320px; }
+html body #navigation article figure.desktop { width: 90%; margin: auto; }
 @media only screen and (max-width: 63.999em) { html body #navigation article figure.tablet { max-width: 480px; } }
 @media only screen and (min-width: 64em) { html body #navigation article figure { padding: 1.56em; }
   html body #navigation article figure.desktop, html body #navigation article figure.laptop, html body #navigation article figure.tablet-angle { width: 60%; margin: auto; }
@@ -70,6 +72,7 @@ html body #navigation article#portfolio-and-styleguide ul li { cursor: pointer; 
 html.frontpage body #featured-image { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; }
 html.frontpage body #featured-image article { overflow: hidden; }
 html.frontpage body #featured-image article figure.mobile, html.frontpage body #featured-image article figure.tablet-side { max-width: 320px; }
+html.frontpage body #featured-image article figure.desktop { width: 90%; margin: auto; }
 @media only screen and (max-width: 63.999em) { html.frontpage body #featured-image article figure.tablet { max-width: 480px; } }
 @media only screen and (min-width: 64em) { html.frontpage body #featured-image article figure { padding: 1.56em; }
   html.frontpage body #featured-image article figure.desktop, html.frontpage body #featured-image article figure.laptop, html.frontpage body #featured-image article figure.tablet-angle { width: 60%; margin: auto; }
@@ -86,6 +89,7 @@ html.frontpage body #about article p { font-family: "Europa", sans-serif; font-w
 
 html.iorad2 body section.intro article.mockup { overflow: hidden; }
 html.iorad2 body section.intro article.mockup figure.mobile, html.iorad2 body section.intro article.mockup figure.tablet-side { max-width: 320px; }
+html.iorad2 body section.intro article.mockup figure.desktop { width: 90%; margin: auto; }
 @media only screen and (max-width: 63.999em) { html.iorad2 body section.intro article.mockup figure.tablet { max-width: 480px; } }
 @media only screen and (min-width: 64em) { html.iorad2 body section.intro article.mockup figure { padding: 1.56em; }
   html.iorad2 body section.intro article.mockup figure.desktop, html.iorad2 body section.intro article.mockup figure.laptop, html.iorad2 body section.intro article.mockup figure.tablet-angle { width: 60%; margin: auto; }
@@ -102,6 +106,7 @@ html.iorad2 body section.intro article.title { width: 100%; }
   html.iorad2 body section.description article.mockup:first-of-type { margin-left: 6.24em; } }
 @media only screen and (min-width: 64em) { html.iorad2 body section.description article { padding: 1.56em; } }
 html.iorad2 body section.description article.mockup figure.mobile, html.iorad2 body section.description article.mockup figure.tablet-side { max-width: 320px; }
+html.iorad2 body section.description article.mockup figure.desktop { width: 90%; margin: auto; }
 @media only screen and (max-width: 63.999em) { html.iorad2 body section.description article.mockup figure.tablet { max-width: 480px; } }
 @media only screen and (min-width: 64em) { html.iorad2 body section.description article.mockup figure { padding: 1.56em; }
   html.iorad2 body section.description article.mockup figure.desktop, html.iorad2 body section.description article.mockup figure.laptop, html.iorad2 body section.description article.mockup figure.tablet-angle { width: 60%; margin: auto; }
@@ -109,6 +114,7 @@ html.iorad2 body section.description article.mockup figure.mobile, html.iorad2 b
 html.iorad2 body section.description article.mockup figure { max-width: 400px; }
 @media only screen and (max-width: 37.499em) { html.iorad2 body section.description article.mockup figure { max-width: 320px; } }
 html.iorad2 body section.screenshots article.mockup:first-of-type figure.mobile, html.iorad2 body section.screenshots article.mockup:first-of-type figure.tablet-side { max-width: 320px; }
+html.iorad2 body section.screenshots article.mockup:first-of-type figure.desktop { width: 90%; margin: auto; }
 @media only screen and (max-width: 63.999em) { html.iorad2 body section.screenshots article.mockup:first-of-type figure.tablet { max-width: 480px; } }
 @media only screen and (min-width: 64em) { html.iorad2 body section.screenshots article.mockup:first-of-type figure { padding: 1.56em; }
   html.iorad2 body section.screenshots article.mockup:first-of-type figure.desktop, html.iorad2 body section.screenshots article.mockup:first-of-type figure.laptop, html.iorad2 body section.screenshots article.mockup:first-of-type figure.tablet-angle { width: 60%; margin: auto; }
@@ -118,6 +124,7 @@ html.iorad2 body section.screenshots article.mockup:first-of-type img { max-widt
 @media only screen and (min-width: 90em) { html.iorad2 body section.screenshots article.mockup:first-of-type img { max-width: 750px; } }
 html.iorad2 body section.screenshots article.mockup:last-of-type { -webkit-align-self: flex-end; -moz-align-self: flex-end; -ms-flex-item-align: end; align-self: flex-end; }
 html.iorad2 body section.screenshots article.mockup:last-of-type figure.mobile, html.iorad2 body section.screenshots article.mockup:last-of-type figure.tablet-side { max-width: 320px; }
+html.iorad2 body section.screenshots article.mockup:last-of-type figure.desktop { width: 90%; margin: auto; }
 @media only screen and (max-width: 63.999em) { html.iorad2 body section.screenshots article.mockup:last-of-type figure.tablet { max-width: 480px; } }
 @media only screen and (min-width: 64em) { html.iorad2 body section.screenshots article.mockup:last-of-type figure { padding: 1.56em; }
   html.iorad2 body section.screenshots article.mockup:last-of-type figure.desktop, html.iorad2 body section.screenshots article.mockup:last-of-type figure.laptop, html.iorad2 body section.screenshots article.mockup:last-of-type figure.tablet-angle { width: 60%; margin: auto; }
@@ -126,6 +133,7 @@ html.iorad2 body section.screenshots article.mockup:last-of-type img { max-width
 @media only screen and (min-width: 90em) { html.iorad2 body section.screenshots article.mockup:last-of-type img { max-width: 750px; } }
 html.iorad2 body section.services article.mockup { -webkit-box-ordinal-group: 3; -moz-box-ordinal-group: 3; -webkit-order: 2; -ms-flex-order: 2; order: 2; overflow: hidden; }
 html.iorad2 body section.services article.mockup figure.mobile, html.iorad2 body section.services article.mockup figure.tablet-side { max-width: 320px; }
+html.iorad2 body section.services article.mockup figure.desktop { width: 90%; margin: auto; }
 @media only screen and (max-width: 63.999em) { html.iorad2 body section.services article.mockup figure.tablet { max-width: 480px; } }
 @media only screen and (min-width: 64em) { html.iorad2 body section.services article.mockup figure { padding: 1.56em; }
   html.iorad2 body section.services article.mockup figure.desktop, html.iorad2 body section.services article.mockup figure.laptop, html.iorad2 body section.services article.mockup figure.tablet-angle { width: 60%; margin: auto; }
@@ -142,6 +150,7 @@ html.portfolio body section article.title { text-align: center; }
 html.portfolio body section article.title h1 { font-family: "Europa", sans-serif; font-weight: 400; font-size: 1.3077em; }
 html.portfolio body section article.title p { font-family: "Europa", sans-serif; font-weight: 300; font-style: italic; }
 html.portfolio body section article.mockup figure.mobile, html.portfolio body section article.mockup figure.tablet-side { max-width: 320px; }
+html.portfolio body section article.mockup figure.desktop { width: 90%; margin: auto; }
 @media only screen and (max-width: 63.999em) { html.portfolio body section article.mockup figure.tablet { max-width: 480px; } }
 @media only screen and (min-width: 64em) { html.portfolio body section article.mockup figure { padding: 1.56em; }
   html.portfolio body section article.mockup figure.desktop, html.portfolio body section article.mockup figure.laptop, html.portfolio body section article.mockup figure.tablet-angle { width: 60%; margin: auto; }

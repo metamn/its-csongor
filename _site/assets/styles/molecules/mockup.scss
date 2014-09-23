@@ -1,5 +1,34 @@
 @mixin mockup($type) {
   
+  
+  figure {
+    &.mobile, &.tablet-side {
+      max-width: 320px;
+    }
+    
+    @include below-laptop {
+      &.tablet {
+        max-width: 480px;
+      }
+    }
+    
+    @include laptop-and-up {
+      padding: $lem;
+      
+      &.desktop, &.laptop, &.tablet-angle {
+        width: 60%;
+        margin: auto;
+      }
+      
+      &.tablet {
+        max-width: 480px;
+      }
+    }
+  }
+  
+  
+  
+  
   @if ($type == "desktop right small") {
     img {
       max-width: 400px;

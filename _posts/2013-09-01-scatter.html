@@ -15,17 +15,24 @@ images:
   - mobile: scatter-business-tablet-side-1x.png
 
   - mobile: scatter-business-mobile-portrait.png
+    class: mobile
   
   - mobile: scatter-business-tablet-angle1.png
+    class: tablet-angle
   - mobile: scatter-business-2-tablet-angle1.png
-
+    class: tablet-angle
   
   - mobile: scatter-frontpage-1-mobile-portrait.png
-  - mobile: scatter-frontpage-tablet-portrait.png  
+    class: mobile
+  - mobile: scatter-frontpage-tablet-portrait.png
+    class: tablet
   - mobile: scatter-frontpage-laptop-front.png
+    class: laptop
   - mobile: scatter-frontpage-1-desktop-front.png
+    class: desktop
   
   - mobile: scatter-frontpage-2-desktop-front.png
+    class: desktop
 ---
 {% include structures/portfolio-section.html title="Intro" images="1" %}
 {% include structures/portfolio-section.html title="Screenshots 1" images="2,3" %}
@@ -46,7 +53,7 @@ images:
 {% endcapture %}
 {% include structures/portfolio-section.html title="Description" images="" description=description %}
 
-{% include structures/portfolio-section.html title="Screenshots 2" images="4,6" %}
+{% include structures/portfolio-section.html title="Screenshots 2" images="4,5" %}
 {% include structures/portfolio-section.html title="Screenshots 3" images="6,7" %}
 {% include structures/portfolio-section.html title="Screenshots 4" images="8" %}
 {% include structures/portfolio-section.html title="Services" images="" %}

@@ -11,5 +11,8 @@
       @include portfolio-title;
     }
 
+    &.mockup {
+      @include mockup(null);
+    }
   }
 }

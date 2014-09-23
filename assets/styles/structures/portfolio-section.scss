@@ -1,5 +1,5 @@
 @mixin portfolio-section {
-  @include flexbox($justify-content: center, $align-items: center, $wrap: wrap);
+  @include flexbox($justify-content: flex-start, $align-items: center, $wrap: wrap);
       
   article {
     &.title {
@@ -7,11 +7,12 @@
     }
 
     &.description {
-      @include about;
+      @include text;
+      max-width: 30em;  
     }
 
     &.services {
-      @include about;
+      @include text;
     }
   }
 }

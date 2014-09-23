@@ -5,4 +5,14 @@
   }
   
   @include mockup("tablet side overflow archive");
+  
+  aside {
+    @include text;
+    border-top: 1px solid;
+    padding-top: $lem / 2;
+    
+    p {
+      padding-left: $lem;
+    }
+  }
 }

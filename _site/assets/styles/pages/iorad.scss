@@ -1,27 +1,6 @@
 html.portfolio.iorad {
   body {
     section.portfolio-section {
-      &.intro {
-        article {
-          &.mockup {
-            
-            @include mobile {
-              figure {
-                padding-left: 0;
-                padding-right: 0;
-              }
-            }
-          }
-          
-          &.title {
-            &:before {
-              content: ' ';
-              @include square($lem * 2 + $lem/4, $iorad-green);
-              display: block;
-            }
-          }
-        }
-      }
       
       &.description {
         @include colors(white-on-blue);

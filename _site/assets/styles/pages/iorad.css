@@ -1,50 +1,28 @@
 /*
-Syntax error: Undefined mixin 'mobile'.
-        on line 8 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss, in `mobile'
-        from line 8 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss
+Syntax error: Undefined mixin 'colors'.
+        on line 6 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss, in `colors'
+        from line 6 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss
 
+1: html.portfolio.iorad {
+2:   body {
 3:     section.portfolio-section {
-4:       &.intro {
-5:         article {
-6:           &.mockup {
-7:             
-8:             @include mobile {
-9:               figure {
-10:                 padding-left: 0;
-11:                 padding-right: 0;
-12:               }
-13:             }
+4:       
+5:       &.description {
+6:         @include colors(white-on-blue);
+7:         
+8:         // Font size must be above 18px for AAA contrast ratio
+9:         @include below-laptop {
+10:           font-size: larger;
+11:         }
 
 Backtrace:
-/home/cs/work/its-csongor/assets/styles/pages/iorad.scss:8:in `mobile'
-/home/cs/work/its-csongor/assets/styles/pages/iorad.scss:8
+/home/cs/work/its-csongor/assets/styles/pages/iorad.scss:6:in `colors'
+/home/cs/work/its-csongor/assets/styles/pages/iorad.scss:6
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:320:in `block in visit_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:98:in `block in with_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:121:in `with_frame'
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:98:in `with_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:318:in `visit_mixin'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:36:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `block in with_base'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:121:in `with_frame'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `with_base'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:389:in `block (2 levels) in visit_rule'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:389:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:389:in `block in visit_rule'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:387:in `visit_rule'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:36:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `block in with_base'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:121:in `with_frame'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `with_base'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:389:in `block (2 levels) in visit_rule'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:389:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:389:in `block in visit_rule'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:387:in `visit_rule'
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:36:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `block in with_base'
@@ -125,4 +103,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'mobile'.\A         on line 8 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss, in `mobile'\A         from line 8 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss\A \A 3:     section.portfolio-section {\A 4:       &.intro {\A 5:         article {\A 6:           &.mockup {\A 7:             \A 8:             @include mobile {\A 9:               figure {\A 10:                 padding-left: 0;\A 11:                 padding-right: 0;\A 12:               }\A 13:             }"; }
+  content: "Syntax error: Undefined mixin 'colors'.\A         on line 6 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss, in `colors'\A         from line 6 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss\A \A 1: html.portfolio.iorad {\A 2:   body {\A 3:     section.portfolio-section {\A 4:       \A 5:       &.description {\A 6:         @include colors(white-on-blue);\A 7:         \A 8:         // Font size must be above 18px for AAA contrast ratio\A 9:         @include below-laptop {\A 10:           font-size: larger;\A 11:         }"; }

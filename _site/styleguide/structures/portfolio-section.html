@@ -37,16 +37,23 @@
 
 @mixin portfolio-section {
   @include flexbox($justify-content: center, $align-items: center, $wrap: wrap);
+  
+  &.services {
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+  }
       
   article {
     &.description, &.services {
-      @include text; 
-      padding: $lem * 2 $lem;
+      @include text;
+    }
+    
+    &.title, &.description, &.services {
+      padding: $lem * 3;
     }
     
     &.title {
       @include portfolio-title;
-      padding: $lem * 3 $lem;
     }
     
     &.description {
@@ -59,6 +66,7 @@
 
     &.mockup {
       @include mockup(common);
+      padding: $lem;
     }
   }
 }

@@ -1,4 +1,12 @@
 @mixin portfolio-title {
+  text-align: center;
+  width: 100%;
+  
+  &:before {
+    content: ' ';
+    @include square($lem * 2 + $lem/4, $iorad-green);
+    display: inline-block;
+  }
   
   h1 {
     @include font(title);

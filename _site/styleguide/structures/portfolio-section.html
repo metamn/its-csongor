@@ -56,12 +56,21 @@
       padding: $lem * 3;
       
       @include mobile {
-        padding: $lem * 2;
+        padding: $lem * 2 $lem;
       }
     }
     
     &.title {
       @include portfolio-title;
+      
+      @include below-laptop {
+        text-align: center;
+        width: 100%;
+        
+        p {
+          padding-top: $lem / 2;
+        }
+      }
     }
     
     &.description {
@@ -74,7 +83,7 @@
 
     &.mockup {
       @include mockup(common);
-      padding: $lem;
+      padding: $lem / 2;
     }
   }
 }

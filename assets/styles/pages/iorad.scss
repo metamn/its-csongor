@@ -14,6 +14,10 @@ html.portfolio.iorad {
       &.screenshots {
         @include laptop-and-up {
           @include flexbox($wrap: nowrap, $align-items: flex-end);
+          
+          + .screenshots {
+            padding-top: 0;
+          }
         }
       }
     }

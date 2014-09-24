@@ -1,10 +1,4 @@
 @mixin portfolio-title {
-  
-  @include below-laptop {
-    text-align: center;
-    width: 100%;
-  }
-  
   &:before {
     content: ' ';
     @include square($lem * 2 + $lem/4, $iorad-green);

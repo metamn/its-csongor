@@ -2,22 +2,19 @@ html.portfolio.iorad {
   body {
     section.portfolio-section {
       
-      &.description {
-        @include colors(white-on-blue);
-        
-        // Font size must be above 18px for AAA contrast ratio
-        @include below-laptop {
-          font-size: larger;
-        }
+      &.description, &.services {
+        border-bottom: 1px solid;
+        border-top: 1px solid;
       }
       
       &.screenshots {
         @include laptop-and-up {
           @include flexbox($wrap: nowrap, $align-items: flex-end);
-          
-          + .screenshots {
-            padding-top: 0;
-          }
+        }
+        
+        // There is an extra space above the tablet angle
+        + .screenshots {
+          padding-top: 0;
         }
       }
     }

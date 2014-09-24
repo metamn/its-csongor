@@ -1,15 +1,7 @@
 @mixin portfolio-section {
   @include flexbox($justify-content: center, $align-items: center, $wrap: wrap);
-  
-  &.services {
-    border-bottom: 1px solid;
-    border-top: 1px solid;
-  }
-  
-  @include laptop-and-up {
-    padding: $lem;
-  }
-      
+  padding: $lem;
+        
   article {
     &.description, &.services {
       @include text;
@@ -25,15 +17,6 @@
     
     &.title {
       @include portfolio-title;
-      
-      @include below-laptop {
-        text-align: center;
-        width: 100%;
-        
-        p {
-          padding-top: $lem / 2;
-        }
-      }
     }
     
     &.description {

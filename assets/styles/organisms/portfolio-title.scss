@@ -1,6 +1,9 @@
 @mixin portfolio-title {
-  text-align: center;
-  width: 100%;
+  
+  @include below-laptop {
+    text-align: center;
+    width: 100%;
+  }
   
   &:before {
     content: ' ';

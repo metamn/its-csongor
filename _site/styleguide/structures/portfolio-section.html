@@ -54,6 +54,10 @@
     
     &.title, &.description, &.services {
       padding: $lem * 3;
+      
+      @include mobile {
+        padding: $lem * 2;
+      }
     }
     
     &.title {

@@ -82,6 +82,7 @@ html.portfolio body section.portfolio-section.services { border-bottom: 1px soli
 html.portfolio body section.portfolio-section article.description, html.portfolio body section.portfolio-section article.services { max-width: 23.4em; }
 html.portfolio body section.portfolio-section article.description p + p, html.portfolio body section.portfolio-section article.services p + p { margin-top: 1.56em; }
 html.portfolio body section.portfolio-section article.title, html.portfolio body section.portfolio-section article.description, html.portfolio body section.portfolio-section article.services { padding: 4.68em; }
+@media only screen and (max-width: 37.499em) { html.portfolio body section.portfolio-section article.title, html.portfolio body section.portfolio-section article.description, html.portfolio body section.portfolio-section article.services { padding: 3.12em; } }
 @media only screen and (max-width: 63.999em) { html.portfolio body section.portfolio-section article.title { text-align: center; width: 100%; } }
 html.portfolio body section.portfolio-section article.title:before { content: ' '; width: 3.51em; height: 3.51em; background: #20bc78; display: inline-block; }
 html.portfolio body section.portfolio-section article.title h1 { font-family: "Europa", sans-serif; font-weight: 400; font-size: 1.6154em; line-height: 1.1; }

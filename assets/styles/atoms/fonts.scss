@@ -21,17 +21,19 @@
     font-family: "Europa", sans-serif;
     font-weight: 300;
     font-size: $heading-level-2;
+    
   }
   @if ($type == title) {
     font-family: "Europa", sans-serif;
     font-weight: 400;
-    font-size: $heading-level-1;
+    font-size: $heading-level-2;
+    line-height: 1.1;
     
   }
   @if ($type == subtitle) {
     font-family: "Europa", sans-serif;
     font-weight: 300;
-    font-style: italic;
+    font-size: $heading-level-1;
     
   }
   @if ($type == services) {
@@ -47,4 +49,4 @@ $font-families: Montserrat, Europa;
 
 
 // A list of all font mixins
-$font-mixins: logo, body, about, title, subtitle, services;
+$font-mixins: logo, body, about, title, subtitle, services; 

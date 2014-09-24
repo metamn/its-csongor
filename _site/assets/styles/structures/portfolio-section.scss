@@ -2,13 +2,14 @@
   @include flexbox($justify-content: center, $align-items: center, $wrap: wrap);
       
   article {
-    &.title, &.description, &.services {
+    &.description, &.services {
       @include text; 
       padding: $lem * 2 $lem;
     }
     
     &.title {
       @include portfolio-title;
+      padding: $lem * 3 $lem;
     }
     
     &.description {

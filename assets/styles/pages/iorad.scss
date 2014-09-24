@@ -1,6 +1,15 @@
 html.portfolio.iorad {
   body {
     section.portfolio-section {
+      &.description {
+        @include colors(white-on-blue);
+        
+        // Font size must be above 18px for AAA contrast ratio
+        @include below-laptop {
+          font-size: larger;
+        }
+      }
+      
       &.screenshots {
         @include laptop-and-up {
           @include flexbox($wrap: nowrap, $align-items: flex-end);

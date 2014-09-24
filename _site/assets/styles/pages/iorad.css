@@ -1,21 +1,21 @@
 /*
-Syntax error: Undefined mixin 'laptop-and-up'.
-        on line 5 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss, in `laptop-and-up'
+Syntax error: Undefined mixin 'colors'.
+        on line 5 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss, in `colors'
         from line 5 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss
 
 1: html.portfolio.iorad {
 2:   body {
 3:     section.portfolio-section {
-4:       &.screenshots {
-5:         @include laptop-and-up {
-6:           @include flexbox($wrap: nowrap, $align-items: flex-end);
-7:         }
-8:       }
-9:     }
-10:   }
+4:       &.description {
+5:         @include colors(white-on-blue);
+6:         
+7:         // Font size must be above 18px for AAA contrast ratio
+8:         @include below-laptop {
+9:           font-size: larger;
+10:         }
 
 Backtrace:
-/home/cs/work/its-csongor/assets/styles/pages/iorad.scss:5:in `laptop-and-up'
+/home/cs/work/its-csongor/assets/styles/pages/iorad.scss:5:in `colors'
 /home/cs/work/its-csongor/assets/styles/pages/iorad.scss:5
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:320:in `block in visit_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:98:in `block in with_mixin'
@@ -102,4 +102,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'laptop-and-up'.\A         on line 5 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss, in `laptop-and-up'\A         from line 5 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss\A \A 1: html.portfolio.iorad {\A 2:   body {\A 3:     section.portfolio-section {\A 4:       &.screenshots {\A 5:         @include laptop-and-up {\A 6:           @include flexbox($wrap: nowrap, $align-items: flex-end);\A 7:         }\A 8:       }\A 9:     }\A 10:   }"; }
+  content: "Syntax error: Undefined mixin 'colors'.\A         on line 5 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss, in `colors'\A         from line 5 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss\A \A 1: html.portfolio.iorad {\A 2:   body {\A 3:     section.portfolio-section {\A 4:       &.description {\A 5:         @include colors(white-on-blue);\A 6:         \A 7:         // Font size must be above 18px for AAA contrast ratio\A 8:         @include below-laptop {\A 9:           font-size: larger;\A 10:         }"; }

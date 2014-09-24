@@ -1,23 +1,23 @@
 /*
 Syntax error: Undefined mixin 'laptop-and-up'.
-        on line 11 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss, in `laptop-and-up'
-        from line 11 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss
+        on line 10 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss, in `laptop-and-up'
+        from line 10 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss
 
-6:         border-bottom: 1px solid;
-7:         border-top: 1px solid;
-8:       }
-9:       
-10:       &.screenshots {
-11:         @include laptop-and-up {
-12:           @include flexbox($wrap: nowrap, $align-items: flex-end);
-13:         }
-14:         
-15:         // There is an extra space above the tablet angle
-16:         + .screenshots {
+5:       &.description, &.services {
+6:         background: repeating-linear-gradient(-55deg, lighten(#20bc78, 40%), lighten(#20bc78, 40%) 1px, transparent 1px, transparent 20px);
+7:       }
+8:       
+9:       &.screenshots {
+10:         @include laptop-and-up {
+11:           @include flexbox($wrap: nowrap, $align-items: flex-end);
+12:         } 
+13:         
+14:         // There is an extra space above the tablet angle
+15:         + .screenshots {
 
 Backtrace:
-/home/cs/work/its-csongor/assets/styles/pages/iorad.scss:11:in `laptop-and-up'
-/home/cs/work/its-csongor/assets/styles/pages/iorad.scss:11
+/home/cs/work/its-csongor/assets/styles/pages/iorad.scss:10:in `laptop-and-up'
+/home/cs/work/its-csongor/assets/styles/pages/iorad.scss:10
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:320:in `block in visit_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:98:in `block in with_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:121:in `with_frame'
@@ -103,4 +103,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'laptop-and-up'.\A         on line 11 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss, in `laptop-and-up'\A         from line 11 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss\A \A 6:         border-bottom: 1px solid;\A 7:         border-top: 1px solid;\A 8:       }\A 9:       \A 10:       &.screenshots {\A 11:         @include laptop-and-up {\A 12:           @include flexbox($wrap: nowrap, $align-items: flex-end);\A 13:         }\A 14:         \A 15:         // There is an extra space above the tablet angle\A 16:         + .screenshots {"; }
+  content: "Syntax error: Undefined mixin 'laptop-and-up'.\A         on line 10 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss, in `laptop-and-up'\A         from line 10 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss\A \A 5:       &.description, &.services {\A 6:         background: repeating-linear-gradient(-55deg, lighten(#20bc78, 40%), lighten(#20bc78, 40%) 1px, transparent 1px, transparent 20px);\A 7:       }\A 8:       \A 9:       &.screenshots {\A 10:         @include laptop-and-up {\A 11:           @include flexbox($wrap: nowrap, $align-items: flex-end);\A 12:         } \A 13:         \A 14:         // There is an extra space above the tablet angle\A 15:         + .screenshots {"; }

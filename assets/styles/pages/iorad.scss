@@ -3,14 +3,13 @@ html.portfolio.iorad {
     section.portfolio-section {
       
       &.description, &.services {
-        border-bottom: 1px solid;
-        border-top: 1px solid;
+        background: repeating-linear-gradient(-55deg, lighten(#20bc78, 40%), lighten(#20bc78, 40%) 1px, transparent 1px, transparent 20px);
       }
       
       &.screenshots {
         @include laptop-and-up {
           @include flexbox($wrap: nowrap, $align-items: flex-end);
-        }
+        } 
         
         // There is an extra space above the tablet angle
         + .screenshots {

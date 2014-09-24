@@ -72,7 +72,7 @@ html.frontpage body #about article p + p { margin-top: 1.56em; }
 html.frontpage body #about article p { font-family: "Europa", sans-serif; font-weight: 300; font-size: 1.6154em; }
 @media only screen and (max-width: 37.499em) { html.frontpage body #about article p { font-size: 1.3077em; } }
 
-html.portfolio.iorad body section.portfolio-section.description, html.portfolio.iorad body section.portfolio-section.services { border-bottom: 1px solid; border-top: 1px solid; }
+html.portfolio.iorad body section.portfolio-section.description, html.portfolio.iorad body section.portfolio-section.services { background: repeating-linear-gradient(-55deg, #b6f2d8, #b6f2d8 1px, transparent 1px, transparent 20px); }
 @media only screen and (min-width: 64em) { html.portfolio.iorad body section.portfolio-section.screenshots { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-flex-wrap: nowrap; -ms-flex-wrap: nowrap; flex-wrap: nowrap; -webkit-box-align: end; -ms-flex-align: end; -webkit-align-items: flex-end; -moz-align-items: flex-end; align-items: flex-end; } }
 html.portfolio.iorad body section.portfolio-section.screenshots + .screenshots { padding-top: 0; }
 

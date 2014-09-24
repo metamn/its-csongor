@@ -11,8 +11,8 @@ Syntax error: Undefined mixin 'laptop-and-up'.
 6:           @include flexbox($wrap: nowrap, $align-items: flex-end);
 7:         }
 8:       }
-9:       
-10:       
+9:     }
+10:   }
 
 Backtrace:
 /home/cs/work/its-csongor/assets/styles/pages/iorad.scss:5:in `laptop-and-up'
@@ -102,4 +102,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'laptop-and-up'.\A         on line 5 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss, in `laptop-and-up'\A         from line 5 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss\A \A 1: html.portfolio.iorad {\A 2:   body {\A 3:     section.portfolio-section {\A 4:       &.screenshots {\A 5:         @include laptop-and-up {\A 6:           @include flexbox($wrap: nowrap, $align-items: flex-end);\A 7:         }\A 8:       }\A 9:       \A 10:       "; }
+  content: "Syntax error: Undefined mixin 'laptop-and-up'.\A         on line 5 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss, in `laptop-and-up'\A         from line 5 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss\A \A 1: html.portfolio.iorad {\A 2:   body {\A 3:     section.portfolio-section {\A 4:       &.screenshots {\A 5:         @include laptop-and-up {\A 6:           @include flexbox($wrap: nowrap, $align-items: flex-end);\A 7:         }\A 8:       }\A 9:     }\A 10:   }"; }

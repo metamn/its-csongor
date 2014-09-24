@@ -79,9 +79,9 @@ html.portfolio body section.portfolio-section article.title { text-align: center
 html.portfolio body section.portfolio-section article.title h1 { font-family: "Europa", sans-serif; font-weight: 400; font-size: 1.3077em; }
 html.portfolio body section.portfolio-section article.title p { font-family: "Europa", sans-serif; font-weight: 300; font-style: italic; }
 html.portfolio body section.portfolio-section article.services p span { font-family: "Europa", sans-serif; font-weight: 400; }
+html.portfolio body section.portfolio-section article.mockup figure { padding: 1.56em; }
 html.portfolio body section.portfolio-section article.mockup figure.mobile, html.portfolio body section.portfolio-section article.mockup figure.tablet-side { max-width: 320px; }
 html.portfolio body section.portfolio-section article.mockup figure.desktop { width: 90%; margin: auto; }
 @media only screen and (max-width: 63.999em) { html.portfolio body section.portfolio-section article.mockup figure.tablet { max-width: 480px; } }
-@media only screen and (min-width: 64em) { html.portfolio body section.portfolio-section article.mockup figure { padding: 1.56em; }
-  html.portfolio body section.portfolio-section article.mockup figure.desktop, html.portfolio body section.portfolio-section article.mockup figure.laptop, html.portfolio body section.portfolio-section article.mockup figure.tablet-angle { width: 60%; margin: auto; }
+@media only screen and (min-width: 64em) { html.portfolio body section.portfolio-section article.mockup figure.desktop, html.portfolio body section.portfolio-section article.mockup figure.laptop, html.portfolio body section.portfolio-section article.mockup figure.tablet-angle { width: 60%; margin: auto; }
   html.portfolio body section.portfolio-section article.mockup figure.tablet { max-width: 480px; } }

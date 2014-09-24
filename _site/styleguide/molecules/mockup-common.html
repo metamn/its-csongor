@@ -40,6 +40,8 @@
 // - if all mockups are styled individually this can be removed
 @mixin mockup-common {
   figure {
+    padding: $lem;
+    
     &.mobile, &.tablet-side {
       max-width: 320px;
     }
@@ -56,8 +58,6 @@
     }
     
     @include laptop-and-up {
-      padding: $lem;
-      
       &.desktop, &.laptop, &.tablet-angle {
         width: 60%;
         margin: auto;

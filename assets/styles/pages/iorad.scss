@@ -1,71 +1,15 @@
-html.iorad2 {
+html.portfolio.iorad {
   body {
-    section {
-      &.intro {
-        article {
-          &.mockup {
-            @include mockup("tablet portrait overflow");
-          }
-          
-          &.title {
-            width: 100%;
-            
-            @include desktop-and-up {
-              width: auto;
-              margin-left: $lem;
-            }
-          }
-        }
-      }
-      
-      &.description {
-        @include desktop-and-up {
-          @include flexbox($wrap: nowrap);
-          
-          article {
-            &.mockup {
-              &:first-of-type {
-                margin-left: $lem * 4;
-              }
-            }
-          }
-        }
-        
-        article {
-          @include laptop-and-up {
-            padding: $lem;
-          }
-          
-          &.mockup {
-            @include mockup("mobile portrait double");
-          }
-        }
-      }
-      
-      
+    section.portfolio-section {
       &.screenshots {
-        article {
-          &.mockup {
-            &:first-of-type {
-              @include mockup("desktop right small");
-            }
-            
-            &:last-of-type {
-              @include flex-align-self(flex-end);
-              @include mockup("laptop small");
-            }
-          }
+        @include laptop-and-up {
+          @include flexbox($wrap: nowrap, $align-items: flex-end);
         }
       }
       
       
       &.services {
-        article {
-          &.mockup {
-            @include flex-order(2);
-            @include mockup("tablet angle overflow");
-          }
-        }
+        
       }
     }
   }

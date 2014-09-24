@@ -3,5 +3,8 @@
     
   figure {
     @include figure($overflow: true);
+    // Just to make sure on retina displays these sizes will be used
+    width: 480px;
+    height: 320px;
   }
 }

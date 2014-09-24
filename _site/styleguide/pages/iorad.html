@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="mockup-tablet-side-overflow styleguide ">
+<html lang="en" class="iorad styleguide ">
   <head>
     <meta charset="utf-8" />
   	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="author" href="humans.txt" />
     
-    <title>Mockup tablet side overflow &mdash; It's Csongor</title> 
+    <title>Iorad &mdash; It's Csongor</title> 
     
     <!-- Compass with SASS -->
   	<link href="/assets/styles/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -35,14 +35,20 @@
     
 
 
-@mixin mockup-tablet-side-overflow {
-  overflow: hidden;
-    
-  figure {
-    @include figure($overflow: true);
-    // Just to make sure on retina displays these sizes will be used
-    width: 480px;
-    height: 320px;
+html.portfolio.iorad {
+  body {
+    section.portfolio-section {
+      &.screenshots {
+        @include laptop-and-up {
+          @include flexbox($wrap: nowrap, $align-items: flex-end);
+        }
+      }
+      
+      
+      &.services {
+        
+      }
+    }
   }
 }
 

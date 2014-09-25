@@ -19,6 +19,12 @@ a img { border: none; }
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
 
 /* No files to import found in settings/* */
+html.portfolio.anvelocom body section.portfolio-section.intro .title:before { content: ' '; width: 3.51em; height: 3.51em; background: #f3aabe; display: inline-block; }
+@media only screen and (max-width: 63.999em) { html.portfolio.anvelocom body section.portfolio-section.intro .title { text-align: center; width: 100%; } }
+html.portfolio.anvelocom body section.portfolio-section.intro .title h1 { font-family: "Europa", sans-serif; font-weight: 400; font-size: 1.6154em; line-height: 1.1; }
+html.portfolio.anvelocom body section.portfolio-section.intro .title p { font-family: "Europa", sans-serif; font-weight: 300; font-size: 1.3077em; font-style: italic; }
+html.portfolio.anvelocom body section.portfolio-section.description, html.portfolio.anvelocom body section.portfolio-section.services { background: repeating-linear-gradient(-55deg, #f3aabe, #f3aabe 1px, transparent 1px, transparent 20px); }
+
 html body { font-size: 100%; line-height: 1.25; color: #1a1a1a; background-color: #f9f9f9; font-family: "Europa", sans-serif; font-weight: 300; }
 @media only screen and (min-width: 64em) { html body { font-size: 125%; line-height: 1.56; } }
 @media only screen and (min-width: 90em) { html body { font-size: 150%; line-height: 1.56; } }

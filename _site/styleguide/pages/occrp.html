@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="portfolio-title styleguide ">
+<html lang="en" class="occrp styleguide ">
   <head>
     <meta charset="utf-8" />
   	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="author" href="humans.txt" />
     
-    <title>Portfolio title &mdash; It's Csongor</title> 
+    <title>OCCRP &mdash; It's Csongor</title> 
     
     <!-- Compass with SASS -->
   	<link href="/assets/styles/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -35,25 +35,29 @@
     
 
 
-@mixin portfolio-title($size: null, $color: null) {
-  &:before {
-    content: ' ';
-    @include square($size, $color);
-    display: inline-block;
-  }
-  
-  @include below-laptop {
-    text-align: center;
-    width: 100%;
-  }
-  
-  
-  h1 {
-    @include font(title);
-  }
-  
-  p {
-    @include font(subtitle);
+html.portfolio.organized-crime-and-corruption-reporting-project {
+  body {
+    section.portfolio-section {
+      
+      &.intro .title {
+        @include portfolio-title($lem * 2 + $lem/4, $occrp-red);
+      }
+      
+      &.description, &.services {
+        @include stripe(lighten($occrp-red, 50%));
+      }
+      
+      &.screenshots {
+        @include laptop-and-up {
+          @include flexbox($wrap: nowrap, $align-items: flex-end);
+        } 
+        
+        // There is an extra space above the tablet angle
+        + .screenshots {
+          padding-top: 0;
+        }
+      }
+    }
   }
 }
 

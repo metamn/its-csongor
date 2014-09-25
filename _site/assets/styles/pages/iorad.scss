@@ -2,8 +2,12 @@ html.portfolio.iorad {
   body {
     section.portfolio-section {
       
+      &.intro .title {
+        @include portfolio-title($lem * 2 + $lem/4, $iorad-green);
+      }
+      
       &.description, &.services {
-        background: repeating-linear-gradient(-55deg, lighten(#20bc78, 40%), lighten(#20bc78, 40%) 1px, transparent 1px, transparent 20px);
+        @include stripe(lighten(#20bc78, 40%));
       }
       
       &.screenshots {

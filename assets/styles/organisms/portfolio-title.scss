@@ -1,7 +1,7 @@
-@mixin portfolio-title {
+@mixin portfolio-title($size: null, $color: null) {
   &:before {
     content: ' ';
-    @include square($lem * 2 + $lem/4, $iorad-green);
+    @include square($size, $color);
     display: inline-block;
   }
   

@@ -1,13 +1,13 @@
-html.portfolio.iorad {
+html.portfolio.organized-crime-and-corruption-reporting-project {
   body {
     section.portfolio-section {
       
       &.intro .title {
-        @include portfolio-title($lem * 2 + $lem/4, $iorad-green);
+        @include portfolio-title($lem * 2 + $lem/4, $occrp-red);
       }
       
       &.description, &.services {
-        @include stripe(lighten(#20bc78, 40%));
+        @include stripe(lighten($occrp-red, 50%));
       }
       
       &.screenshots {

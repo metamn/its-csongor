@@ -1,23 +1,23 @@
 /*
-Syntax error: Undefined mixin 'laptop-and-up'.
-        on line 10 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss, in `laptop-and-up'
-        from line 10 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss
+Syntax error: Undefined mixin 'portfolio-title'.
+        on line 6 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss, in `portfolio-title'
+        from line 6 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss
 
-5:       &.description, &.services {
-6:         background: repeating-linear-gradient(-55deg, lighten(#20bc78, 40%), lighten(#20bc78, 40%) 1px, transparent 1px, transparent 20px);
+1: html.portfolio.iorad {
+2:   body {
+3:     section.portfolio-section {
+4:       
+5:       &.intro .title {
+6:         @include portfolio-title($lem * 2 + $lem/4, $iorad-green);
 7:       }
 8:       
-9:       &.screenshots {
-10:         @include laptop-and-up {
-11:           @include flexbox($wrap: nowrap, $align-items: flex-end);
-12:         } 
-13:         
-14:         // There is an extra space above the tablet angle
-15:         + .screenshots {
+9:       &.description, &.services {
+10:         @include stripe(lighten(#20bc78, 40%));
+11:       }
 
 Backtrace:
-/home/cs/work/its-csongor/assets/styles/pages/iorad.scss:10:in `laptop-and-up'
-/home/cs/work/its-csongor/assets/styles/pages/iorad.scss:10
+/home/cs/work/its-csongor/assets/styles/pages/iorad.scss:6:in `portfolio-title'
+/home/cs/work/its-csongor/assets/styles/pages/iorad.scss:6
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:320:in `block in visit_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:98:in `block in with_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:121:in `with_frame'
@@ -103,4 +103,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'laptop-and-up'.\A         on line 10 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss, in `laptop-and-up'\A         from line 10 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss\A \A 5:       &.description, &.services {\A 6:         background: repeating-linear-gradient(-55deg, lighten(#20bc78, 40%), lighten(#20bc78, 40%) 1px, transparent 1px, transparent 20px);\A 7:       }\A 8:       \A 9:       &.screenshots {\A 10:         @include laptop-and-up {\A 11:           @include flexbox($wrap: nowrap, $align-items: flex-end);\A 12:         } \A 13:         \A 14:         // There is an extra space above the tablet angle\A 15:         + .screenshots {"; }
+  content: "Syntax error: Undefined mixin 'portfolio-title'.\A         on line 6 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss, in `portfolio-title'\A         from line 6 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss\A \A 1: html.portfolio.iorad {\A 2:   body {\A 3:     section.portfolio-section {\A 4:       \A 5:       &.intro .title {\A 6:         @include portfolio-title($lem * 2 + $lem/4, $iorad-green);\A 7:       }\A 8:       \A 9:       &.description, &.services {\A 10:         @include stripe(lighten(#20bc78, 40%));\A 11:       }"; }

@@ -1,6 +1,15 @@
 @mixin portfolio-section {
   @include flexbox($justify-content: center, $align-items: center, $wrap: wrap);
   padding: $lem;
+  
+  &.screenshots {
+    // Remove the extra space between consecutive set of images
+    + .screenshots {
+      padding-top: 0;
+    }
+  }
+  
+  
         
   article {
     &.description, &.services {

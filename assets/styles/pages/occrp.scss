@@ -10,16 +10,7 @@ html.portfolio.organized-crime-and-corruption-reporting-project {
         @include stripe(lighten($occrp-red, 50%));
       }
       
-      &.screenshots {
-        @include laptop-and-up {
-          @include flexbox($wrap: nowrap, $align-items: flex-end);
-        } 
-        
-        // There is an extra space above the tablet angle
-        + .screenshots {
-          padding-top: 0;
-        }
-      }
+      
     }
   }
 }

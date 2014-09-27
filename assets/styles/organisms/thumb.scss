@@ -3,10 +3,9 @@
   @include mockup("mobile portrait overflow");
   
   @include desktop-and-up {
-    margin: $lem * 2;
+    margin: $lem * 2 $lem * 4;
     @include mockup("tablet side overflow");
   }
-  
   
   
   aside {

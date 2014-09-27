@@ -1,5 +1,7 @@
 html.portfolio {
   body {
+    @include stripe(lightgray);
+    
     section {
       &.portfolio-section {
         @include portfolio-section;

@@ -7,7 +7,7 @@ html.portfolio.organized-crime-and-corruption-reporting-project {
       }
       
       &.description, &.services {
-        @include stripe(lighten($occrp-red, 50%));
+        //@include stripe(lighten($black, 50%));
       }
       
       

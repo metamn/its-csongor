@@ -1,6 +1,7 @@
 @mixin portfolio-services {
   p {
-    @include colors;
+    @include colors(white-on-black);
+    padding: $lem;
     
     span {
       @include font(services);

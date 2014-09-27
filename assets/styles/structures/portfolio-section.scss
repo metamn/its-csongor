@@ -9,6 +9,9 @@
     }
   }
   
+  &.description, &.services {
+    @include colors(white-on-black);
+  }
   
         
   article {

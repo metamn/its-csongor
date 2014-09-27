@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="mockup styleguide ">
+<html lang="en" class="mockup-mobile-portrait-overflow styleguide ">
   <head>
     <meta charset="utf-8" />
   	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="author" href="humans.txt" />
     
-    <title>Mockup &mdash; It's Csongor</title> 
+    <title>Mockup mobile portrait overflow &mdash; It's Csongor</title> 
     
     <!-- Compass with SASS -->
   	<link href="/assets/styles/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -35,22 +35,21 @@
     
 
 
-@mixin mockup($type: common) {
-  
-  @if ($type == "common") {
-    @include mockup-common;
-  }
-  
-  @if ($type == "mobile portrait overflow") {
-    @include mockup-mobile-portrait-overflow;
-  }
-  
-  @if ($type == "tablet side overflow") {
-    @include mockup-tablet-side-overflow;
-  }
-  
-  @if ($type == "tablet angle overflow") {
-    @include mockup-tablet-angle-overflow;
+@mixin mockup-mobile-portrait-overflow {
+  overflow: hidden;
+    
+  figure {
+    @include figure($overflow: true);
+    
+    overflow: hidden;
+    height: 270px;
+    
+    img {
+      width: 320px;
+      @include mobile {
+        width: calc(320px - #{$lem * 2});
+      }
+    }
   }
 }
 

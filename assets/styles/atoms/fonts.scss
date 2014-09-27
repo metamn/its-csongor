@@ -38,6 +38,7 @@
     font-weight: 300;
     font-size: $heading-level-1;
     font-style: italic;
+    line-height: 1.1;
      
   }
   @if ($type == services) {
@@ -53,4 +54,4 @@ $font-families: Montserrat, Europa;
 
 
 // A list of all font mixins
-$font-mixins: logo, body, about, title, subtitle, services;  
+$font-mixins: logo, body, about, title, subtitle, services; 

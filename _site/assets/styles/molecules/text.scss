@@ -1,5 +1,47 @@
 @mixin text($type) {
   
+  // Portfolio title 
+  @if ($type == portfolio-title) {
+    h1 {
+      @include font(title);
+      max-width: $text-width / 2;
+      border-bottom: 1px solid;
+      margin-bottom: $lem / 2;
+    }
+
+    p {
+      @include font(subtitle);
+      max-width: $text-width / 2;
+    }
+  }
+  
+  // Portfolio services 
+  @if ($type == portfolio-services) {
+    p {
+      max-width: $text-width;
+      
+      span {
+        @include font(services);
+      }
+      
+      + p {
+        margin-top: $lem;
+      }
+    }
+  }
+
+  
+  // Portfolio description 
+  @if ($type == portfolio-description) {
+    p {
+      max-width: $text-width;
+      
+      + p {
+        margin-top: $lem;
+      }
+    }
+  }
+  
   // About 
   @if ($type == about) {
     padding: $lem * 2 $lem;

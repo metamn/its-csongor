@@ -1,21 +1,3 @@
-@mixin portfolio-title($size: null, $color: null) {
-  &:before {
-    content: ' ';
-    @include square($size, $color);
-    display: inline-block;
-  }
-  
-  @include below-laptop {
-    text-align: center;
-    width: 100%;
-  }
-  
-  
-  h1 {
-    @include font(title);
-  }
-  
-  p {
-    @include font(subtitle);
-  }
+@mixin portfolio-title {
+  @include text(portfolio-title);
 }

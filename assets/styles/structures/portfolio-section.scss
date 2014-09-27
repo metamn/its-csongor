@@ -8,12 +8,7 @@
       padding-top: 0;
     }
   }
-  
-  &.description, &.services {
-    @include colors(white-on-black);
-  }
-  
-        
+    
   article {
     &.title, &.description, &.services {
       padding: $lem * 3;

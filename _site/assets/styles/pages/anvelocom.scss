@@ -2,15 +2,6 @@ html.portfolio.anvelocom {
   body {
     section.portfolio-section {
       
-      &.intro .title {
-        @include portfolio-title($lem * 2 + $lem/4, $anvelocom-pink);
-      }
-      
-      &.description, &.services {
-        @include stripe($anvelocom-pink);
-      }
-      
-      
     }
   }
 }

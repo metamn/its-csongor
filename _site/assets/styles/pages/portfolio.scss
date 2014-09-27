@@ -1,11 +1,19 @@
 html.portfolio {
   body {
-    @include stripe(lightgray);
+    @include texture(white, stripe);
     
     section {
       &.portfolio-section {
         @include portfolio-section;
       }
+    }
+    
+    #works, footer {
+      @include texture;
+    }
+    
+    #works {
+      border-top: $lem/4 solid;
     }
   }
 }

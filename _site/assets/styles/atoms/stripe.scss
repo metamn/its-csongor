@@ -2,5 +2,5 @@
 // - by not using a Compass mixin it is perfect only in Firefox. On Chrome, Safari it will be rendered with nice visual errors
 
 @mixin stripe($color) {
-  background: repeating-linear-gradient(-55deg, $color, $color 1px, $white 1px, $white 20px);
+  background: repeating-linear-gradient(-55deg, $color, $color $lem/4, $white 1px, $white $lem*15);
 }

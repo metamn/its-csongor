@@ -9,7 +9,10 @@
   @if ($type == {% include atoms/classname.html title=mixin.name %}) {
     font-family: "{{ font.name }}", {{ mixin.font-family }};
     {% for property in mixin.properties %}{{ property.name }}: {{ property.value }};
-    {% endfor %}
+    {% endfor %}{% for breakpoint in mixin.breakpoints %}
+    @include {{ breakpoint.name }} {
+      {% for property in breakpoint.values %}{{ property.name }}: {{ property.value }};
+    }{% endfor %}{% endfor %} 
   }{% endfor %}{% endfor %}
 }
 

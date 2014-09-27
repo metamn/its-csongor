@@ -10,37 +10,40 @@
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1.1px;
-    
+     
   }
   @if ($type == body) {
     font-family: "Europa", sans-serif;
     font-weight: 300;
-    
+     
   }
   @if ($type == about) {
     font-family: "Europa", sans-serif;
     font-weight: 300;
     font-size: $heading-level-2;
     
+    @include mobile {
+      font-size: $heading-level-1;
+    } 
   }
   @if ($type == title) {
     font-family: "Europa", sans-serif;
     font-weight: 400;
     font-size: $heading-level-2;
     line-height: 1.1;
-    
+     
   }
   @if ($type == subtitle) {
     font-family: "Europa", sans-serif;
     font-weight: 300;
     font-size: $heading-level-1;
     font-style: italic;
-    
+     
   }
   @if ($type == services) {
     font-family: "Europa", sans-serif;
     font-weight: 400;
-    
+     
   }
 }
 

@@ -40,18 +40,8 @@
   @include colors(white-on-black);
   @include texture(black);
   
-  padding: $lem * 4 $lem;
-  
   article {
-    @include text;
-    
-    p {
-      @include font(about);
-      
-      @include mobile {
-        font-size: $heading-level-1;
-      }
-    }
+    @include text(about);
   }
 }
 

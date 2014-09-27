@@ -39,13 +39,15 @@
   
   // About 
   @if ($type == about) {
-    @include font(about); 
-
-    max-width: $text-width;
-    padding: $lem;
+    padding: $lem * 2 $lem;
     
-    p + p {
-      margin-top: $lem;
+    p {
+      @include font(about); 
+      max-width: $text-width;
+
+      + p {
+        margin-top: $lem;
+      }
     }
   }
   

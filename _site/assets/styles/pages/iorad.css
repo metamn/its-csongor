@@ -1,23 +1,22 @@
 /*
-Syntax error: Undefined mixin 'laptop-and-up'.
-        on line 10 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss, in `laptop-and-up'
-        from line 10 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss
+Syntax error: Undefined mixin 'mobile'.
+        on line 5 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss, in `mobile'
+        from line 5 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss
 
-5:       &.description, &.services {
-6:         //@include stripe(lighten($black, 40%));
-7:       }
-8:       
-9:       &.screenshots {
-10:         @include laptop-and-up {
-11:           @include flexbox($wrap: nowrap, $align-items: flex-end);
-12:         } 
-13:       }
-14:     }
-15:   }
+1: html.portfolio.iorad {
+2:   body {
+3:     section.portfolio-section {
+4:       &.intro {
+5:         @include mobile {
+6:           //@include flexbox-justify-content(flex-start);
+7:         }
+8:       }
+9:       
+10:       &.screenshots {
 
 Backtrace:
-/home/cs/work/its-csongor/assets/styles/pages/iorad.scss:10:in `laptop-and-up'
-/home/cs/work/its-csongor/assets/styles/pages/iorad.scss:10
+/home/cs/work/its-csongor/assets/styles/pages/iorad.scss:5:in `mobile'
+/home/cs/work/its-csongor/assets/styles/pages/iorad.scss:5
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:320:in `block in visit_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:98:in `block in with_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:121:in `with_frame'
@@ -103,4 +102,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'laptop-and-up'.\A         on line 10 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss, in `laptop-and-up'\A         from line 10 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss\A \A 5:       &.description, &.services {\A 6:         //@include stripe(lighten($black, 40%));\A 7:       }\A 8:       \A 9:       &.screenshots {\A 10:         @include laptop-and-up {\A 11:           @include flexbox($wrap: nowrap, $align-items: flex-end);\A 12:         } \A 13:       }\A 14:     }\A 15:   }"; }
+  content: "Syntax error: Undefined mixin 'mobile'.\A         on line 5 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss, in `mobile'\A         from line 5 of /home/cs/work/its-csongor/assets/styles/pages/iorad.scss\A \A 1: html.portfolio.iorad {\A 2:   body {\A 3:     section.portfolio-section {\A 4:       &.intro {\A 5:         @include mobile {\A 6:           //@include flexbox-justify-content(flex-start);\A 7:         }\A 8:       }\A 9:       \A 10:       &.screenshots {"; }

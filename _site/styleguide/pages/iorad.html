@@ -38,9 +38,10 @@
 html.portfolio.iorad {
   body {
     section.portfolio-section {
-      
-      &.description, &.services {
-        //@include stripe(lighten($black, 40%));
+      &.intro {
+        @include mobile {
+          //@include flexbox-justify-content(flex-start);
+        }
       }
       
       &.screenshots {

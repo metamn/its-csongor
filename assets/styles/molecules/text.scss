@@ -28,28 +28,19 @@
   
   // Portfolio description 
   @if ($type == portfolio-description) {
-    p {
-      max-width: $text-width;
-      
-      + p {
-        margin-top: $lem;
-      }
-    }
+    @include striped-background-for-text;
   }
   
   
   
   // Portfolio services 
   @if ($type == portfolio-services) {
+    @include striped-background-for-text;
+    
     p {
-      max-width: $text-width;
-      
       span {
         @include font(services);
-      }
-      
-      + p {
-        margin-top: $lem;
+        font-weight: 600;
       }
     }
   }

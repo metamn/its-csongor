@@ -53,6 +53,29 @@
     }
   }
   
+  // Portfolio title for short texts 
+  // - it is used togeher with the portfolio-type mixin
+  @if ($type == portfolio-title-short) {
+    h1 {
+      margin-bottom: $lem / 4;
+      padding-bottom: $lem / 4;
+    }
+  }
+  
+  
+  // Portfolio description 
+  @if ($type == portfolio-description) {
+    p {
+      max-width: $text-width;
+      
+      + p {
+        margin-top: $lem;
+      }
+    }
+  }
+  
+  
+  
   // Portfolio services 
   @if ($type == portfolio-services) {
     p {
@@ -68,17 +91,7 @@
     }
   }
 
-  
-  // Portfolio description 
-  @if ($type == portfolio-description) {
-    p {
-      max-width: $text-width;
-      
-      + p {
-        margin-top: $lem;
-      }
-    }
-  }
+
   
   // About 
   @if ($type == about) {

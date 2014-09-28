@@ -37,9 +37,14 @@
 
 html.portfolio.anvelocom {
   body {
-    
     section.portfolio-section {
-      
+      &.intro {
+        article {
+          &.title {
+            @include text(portfolio-title-short);
+          }
+        }
+      } 
     }
   }
 }

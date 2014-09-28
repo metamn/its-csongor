@@ -35,13 +35,9 @@
     
 
 
-@mixin texture($type: white, $stripe: false) {
+@mixin texture($type: white) {
   @if ($type == white) {
-    @if ($stripe == false) {
-      @include background(image-url("subtle-dots.png"), $white);
-    } @else {
-      @include background(image-url("subtle-dots.png"), repeating-linear-gradient(-55deg, $black, $black $lem/4, transparent 1px, transparent $lem*15));
-    }
+    @include background(image-url("subtle-dots.png"), $white);
   }
   
   @if ($type == black) {

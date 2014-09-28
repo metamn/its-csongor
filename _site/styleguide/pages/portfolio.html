@@ -37,7 +37,6 @@
 
 html.portfolio {
   body {
-    @include texture(white, stripe);
     
     section {
       &.portfolio-section {
@@ -45,12 +44,8 @@ html.portfolio {
       }
     }
     
-    #works, footer {
-      @include texture;
-    }
-    
     #works {
-      border-top: $lem/4 solid;
+      border-top: 1px solid;
     }
   }
 }

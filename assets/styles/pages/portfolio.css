@@ -1,25 +1,50 @@
 /*
-Syntax error: Undefined mixin 'texture'.
-        on line 3 of /home/cs/work/its-csongor/assets/styles/pages/portfolio.scss, in `texture'
-        from line 3 of /home/cs/work/its-csongor/assets/styles/pages/portfolio.scss
+Syntax error: Undefined mixin 'portfolio-section'.
+        on line 6 of /home/cs/work/its-csongor/assets/styles/pages/portfolio.scss, in `portfolio-section'
+        from line 6 of /home/cs/work/its-csongor/assets/styles/pages/portfolio.scss
 
 1: html.portfolio {
 2:   body {
-3:     @include texture(white, stripe);
-4:     
-5:     section {
-6:       &.portfolio-section {
-7:         @include portfolio-section;
-8:       }
+3:     
+4:     section {
+5:       &.portfolio-section {
+6:         @include portfolio-section;
+7:       }
+8:     }
+9:     
+10:     #works {
+11:       border-top: 1px solid;
 
 Backtrace:
-/home/cs/work/its-csongor/assets/styles/pages/portfolio.scss:3:in `texture'
-/home/cs/work/its-csongor/assets/styles/pages/portfolio.scss:3
+/home/cs/work/its-csongor/assets/styles/pages/portfolio.scss:6:in `portfolio-section'
+/home/cs/work/its-csongor/assets/styles/pages/portfolio.scss:6
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:320:in `block in visit_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:98:in `block in with_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:121:in `with_frame'
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:98:in `with_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:318:in `visit_mixin'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:121:in `with_frame'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:389:in `block (2 levels) in visit_rule'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:389:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:389:in `block in visit_rule'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:387:in `visit_rule'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:121:in `with_frame'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:389:in `block (2 levels) in visit_rule'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:389:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:389:in `block in visit_rule'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:387:in `visit_rule'
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:36:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `block in with_base'
@@ -78,4 +103,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'texture'.\A         on line 3 of /home/cs/work/its-csongor/assets/styles/pages/portfolio.scss, in `texture'\A         from line 3 of /home/cs/work/its-csongor/assets/styles/pages/portfolio.scss\A \A 1: html.portfolio {\A 2:   body {\A 3:     @include texture(white, stripe);\A 4:     \A 5:     section {\A 6:       &.portfolio-section {\A 7:         @include portfolio-section;\A 8:       }"; }
+  content: "Syntax error: Undefined mixin 'portfolio-section'.\A         on line 6 of /home/cs/work/its-csongor/assets/styles/pages/portfolio.scss, in `portfolio-section'\A         from line 6 of /home/cs/work/its-csongor/assets/styles/pages/portfolio.scss\A \A 1: html.portfolio {\A 2:   body {\A 3:     \A 4:     section {\A 5:       &.portfolio-section {\A 6:         @include portfolio-section;\A 7:       }\A 8:     }\A 9:     \A 10:     #works {\A 11:       border-top: 1px solid;"; }

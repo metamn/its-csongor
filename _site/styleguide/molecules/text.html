@@ -73,15 +73,9 @@
   @if ($type == portfolio-description) {
     p {
       max-width: $text-width;
-      @include colors(white-on-black);
-      padding: $lem;
       
       + p {
-        margin-top: 1px;
-      }
-      
-      &:nth-of-type(even) {
-        margin-left: $lem;
+        margin-top: $lem;
       }
     }
   }

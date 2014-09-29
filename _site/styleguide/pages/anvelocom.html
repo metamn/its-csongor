@@ -39,6 +39,8 @@ html.portfolio.anvelocom {
   body {
     section.portfolio-section {
       &.intro {
+        @include flexbox-direction(column);
+        
         article {
           &.title {
             @include text(portfolio-title-short);

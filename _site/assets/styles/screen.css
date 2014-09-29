@@ -19,6 +19,7 @@ a img { border: none; }
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
 
 /* No files to import found in settings/* */
+html.portfolio.anvelocom body section.portfolio-section.intro { -webkit-box-direction: normal; -moz-box-direction: normal; -webkit-box-orient: vertical; -moz-box-orient: vertical; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
 html.portfolio.anvelocom body section.portfolio-section.intro article.title h1 { margin-bottom: 0.39em; padding-bottom: 0.39em; }
 
 html body { font-size: 125%; line-height: 1.56; color: #1a1a1a; background-color: #f9f9f9; font-family: "Europa", sans-serif; font-weight: 300; }

@@ -1,50 +1,27 @@
 /*
-Syntax error: Undefined mixin 'text'.
-        on line 7 of /home/cs/work/its-csongor/assets/styles/pages/anvelocom.scss, in `text'
-        from line 7 of /home/cs/work/its-csongor/assets/styles/pages/anvelocom.scss
+Syntax error: Undefined mixin 'flexbox-direction'.
+        on line 5 of /home/cs/work/its-csongor/assets/styles/pages/anvelocom.scss, in `flexbox-direction'
+        from line 5 of /home/cs/work/its-csongor/assets/styles/pages/anvelocom.scss
 
+1: html.portfolio.anvelocom {
 2:   body {
 3:     section.portfolio-section {
 4:       &.intro {
-5:         article {
-6:           &.title {
-7:             @include text(portfolio-title-short);
-8:           }
-9:         }
-10:       } 
-11:     }
-12:   }
+5:         @include flexbox-direction(column);
+6:         
+7:         article {
+8:           &.title {
+9:             @include text(portfolio-title-short);
+10:           }
 
 Backtrace:
-/home/cs/work/its-csongor/assets/styles/pages/anvelocom.scss:7:in `text'
-/home/cs/work/its-csongor/assets/styles/pages/anvelocom.scss:7
+/home/cs/work/its-csongor/assets/styles/pages/anvelocom.scss:5:in `flexbox-direction'
+/home/cs/work/its-csongor/assets/styles/pages/anvelocom.scss:5
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:320:in `block in visit_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:98:in `block in with_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:121:in `with_frame'
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:98:in `with_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:318:in `visit_mixin'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:36:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `block in with_base'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:121:in `with_frame'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `with_base'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:389:in `block (2 levels) in visit_rule'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:389:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:389:in `block in visit_rule'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:387:in `visit_rule'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:36:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `block in with_base'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:121:in `with_frame'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `with_base'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:389:in `block (2 levels) in visit_rule'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:389:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:389:in `block in visit_rule'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:387:in `visit_rule'
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:36:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `block in with_base'
@@ -113,20 +90,16 @@ Backtrace:
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/plugin/compiler.rb:214:in `block in update_stylesheets'
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/plugin/compiler.rb:208:in `each'
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/plugin/compiler.rb:208:in `update_stylesheets'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/plugin/compiler.rb:291:in `watch'
-/var/lib/gems/1.9.1/gems/compass-1.0.1/lib/compass/sass_compiler.rb:46:in `watch!'
-/var/lib/gems/1.9.1/gems/compass-1.0.1/lib/compass/commands/watch_project.rb:41:in `perform'
-/var/lib/gems/1.9.1/gems/compass-1.0.1/lib/compass/commands/base.rb:18:in `execute'
-/var/lib/gems/1.9.1/gems/compass-1.0.1/lib/compass/commands/project_base.rb:19:in `execute'
-/var/lib/gems/1.9.1/gems/compass-1.0.1/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/var/lib/gems/1.9.1/gems/compass-1.0.1/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/var/lib/gems/1.9.1/gems/compass-1.0.1/bin/compass:30:in `block in <top (required)>'
-/var/lib/gems/1.9.1/gems/compass-1.0.1/bin/compass:44:in `call'
-/var/lib/gems/1.9.1/gems/compass-1.0.1/bin/compass:44:in `<top (required)>'
-/usr/local/bin/compass:23:in `load'
-/usr/local/bin/compass:23:in `<main>'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/plugin/compiler.rb:462:in `on_file_changed'
+/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/plugin/compiler.rb:324:in `block in watch'
+/var/lib/gems/1.9.1/gems/listen-2.7.9/lib/listen/listener.rb:276:in `call'
+/var/lib/gems/1.9.1/gems/listen-2.7.9/lib/listen/listener.rb:276:in `_process_changes'
+/var/lib/gems/1.9.1/gems/listen-2.7.9/lib/listen/listener.rb:233:in `block in _wait_for_changes'
+/var/lib/gems/1.9.1/gems/listen-2.7.9/lib/listen/listener.rb:216:in `loop'
+/var/lib/gems/1.9.1/gems/listen-2.7.9/lib/listen/listener.rb:216:in `_wait_for_changes'
+/var/lib/gems/1.9.1/gems/listen-2.7.9/lib/listen/listener.rb:312:in `block in _start_wait_thread'
 */
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'text'.\A         on line 7 of /home/cs/work/its-csongor/assets/styles/pages/anvelocom.scss, in `text'\A         from line 7 of /home/cs/work/its-csongor/assets/styles/pages/anvelocom.scss\A \A 2:   body {\A 3:     section.portfolio-section {\A 4:       &.intro {\A 5:         article {\A 6:           &.title {\A 7:             @include text(portfolio-title-short);\A 8:           }\A 9:         }\A 10:       } \A 11:     }\A 12:   }"; }
+  content: "Syntax error: Undefined mixin 'flexbox-direction'.\A         on line 5 of /home/cs/work/its-csongor/assets/styles/pages/anvelocom.scss, in `flexbox-direction'\A         from line 5 of /home/cs/work/its-csongor/assets/styles/pages/anvelocom.scss\A \A 1: html.portfolio.anvelocom {\A 2:   body {\A 3:     section.portfolio-section {\A 4:       &.intro {\A 5:         @include flexbox-direction(column);\A 6:         \A 7:         article {\A 8:           &.title {\A 9:             @include text(portfolio-title-short);\A 10:           }"; }

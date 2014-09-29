@@ -76,7 +76,7 @@ html body footer article#navigation ul li { cursor: pointer; border: 1px solid #
 
 html.frontpage body #featured-image { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; }
 html.frontpage body #featured-image article { overflow: hidden; }
-@media only screen and (max-width: 37.499em) { html.frontpage body #featured-image article figure { overflow: hidden; }
+@media only screen and (max-width: 63.999em) { html.frontpage body #featured-image article figure { overflow: hidden; }
   html.frontpage body #featured-image article figure img { max-width: 100%; height: auto; }
   html.frontpage body #featured-image article figure img { max-width: none; }
   html.frontpage body #featured-image article figure figcaption { display: none; } }

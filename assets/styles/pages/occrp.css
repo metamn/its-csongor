@@ -1,50 +1,27 @@
 /*
-Syntax error: Undefined mixin 'desktop-and-up'.
-        on line 7 of /home/cs/work/its-csongor/assets/styles/pages/occrp.scss, in `desktop-and-up'
-        from line 7 of /home/cs/work/its-csongor/assets/styles/pages/occrp.scss
+Syntax error: Undefined mixin 'flexbox-wrap'.
+        on line 5 of /home/cs/work/its-csongor/assets/styles/pages/occrp.scss, in `flexbox-wrap'
+        from line 5 of /home/cs/work/its-csongor/assets/styles/pages/occrp.scss
 
+1: html.portfolio.organized-crime-and-corruption-reporting-project {
 2:   body {
 3:     section.portfolio-section {
-4:       &.services {
-5:         article {
-6:           &.mockup {
-7:             @include desktop-and-up {
-8:               @include flex-order(2);
-9:             }
-10:           }
-11:         }
-12:       }
+4:       &.screenshots-1, &.screenshots-2  {
+5:         @include flexbox-wrap(nowrap);
+6:         
+7:         @include mobile {
+8:           @include flexbox-wrap(wrap);
+9:         }
+10:         
 
 Backtrace:
-/home/cs/work/its-csongor/assets/styles/pages/occrp.scss:7:in `desktop-and-up'
-/home/cs/work/its-csongor/assets/styles/pages/occrp.scss:7
+/home/cs/work/its-csongor/assets/styles/pages/occrp.scss:5:in `flexbox-wrap'
+/home/cs/work/its-csongor/assets/styles/pages/occrp.scss:5
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:320:in `block in visit_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:98:in `block in with_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:121:in `with_frame'
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:98:in `with_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:318:in `visit_mixin'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:36:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `block in with_base'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:121:in `with_frame'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `with_base'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:389:in `block (2 levels) in visit_rule'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:389:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:389:in `block in visit_rule'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:387:in `visit_rule'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:36:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `block in with_base'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:121:in `with_frame'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `with_base'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `visit'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:389:in `block (2 levels) in visit_rule'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:389:in `map'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:389:in `block in visit_rule'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
-/var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:387:in `visit_rule'
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/base.rb:36:in `visit'
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:79:in `block in with_base'
@@ -125,4 +102,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'desktop-and-up'.\A         on line 7 of /home/cs/work/its-csongor/assets/styles/pages/occrp.scss, in `desktop-and-up'\A         from line 7 of /home/cs/work/its-csongor/assets/styles/pages/occrp.scss\A \A 2:   body {\A 3:     section.portfolio-section {\A 4:       &.services {\A 5:         article {\A 6:           &.mockup {\A 7:             @include desktop-and-up {\A 8:               @include flex-order(2);\A 9:             }\A 10:           }\A 11:         }\A 12:       }"; }
+  content: "Syntax error: Undefined mixin 'flexbox-wrap'.\A         on line 5 of /home/cs/work/its-csongor/assets/styles/pages/occrp.scss, in `flexbox-wrap'\A         from line 5 of /home/cs/work/its-csongor/assets/styles/pages/occrp.scss\A \A 1: html.portfolio.organized-crime-and-corruption-reporting-project {\A 2:   body {\A 3:     section.portfolio-section {\A 4:       &.screenshots-1, &.screenshots-2  {\A 5:         @include flexbox-wrap(nowrap);\A 6:         \A 7:         @include mobile {\A 8:           @include flexbox-wrap(wrap);\A 9:         }\A 10:         "; }

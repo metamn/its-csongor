@@ -86,11 +86,13 @@ Dir.glob("*.*").each do |f|
     puts system("pngquant #{o}")
     puts ""
   end
-
-  images.each do |image|
-    puts image
-  end
-
-  puts "To move files and remove -fs8.png:"
-  puts 'for i in *-fs8.png ; do mv "$i" "../${i/-fs8.png/.png}" ; done'
 end
+
+
+images.each do |image|
+  puts image
+end
+
+puts "To move files and remove -fs8.png:"
+puts 'for i in *-fs8.png ; do mv "$i" "../${i/-fs8.png/.png}" ; done'
+

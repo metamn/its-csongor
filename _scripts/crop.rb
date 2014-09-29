@@ -1,4 +1,4 @@
-# usage crop input-folder output-folder
+# usage crop input-folder
 
 input = ARGV[0].to_s if ARGV[0]
 

@@ -1,5 +1,5 @@
-@mixin striped-background-for-text {
-  @include stripe($black, $lem*5);
+@mixin striped-background-for-text($size) {
+  @include stripe($black, $size);
   
   padding: 0;
   

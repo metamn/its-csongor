@@ -2,8 +2,14 @@ html.portfolio.iorad {
   body {
     section.portfolio-section {
       &.intro {
-        @include mobile {
-          //@include flexbox-justify-content(flex-start);
+        
+        article {
+          &.title {
+            @include mobile {
+              padding-top: $lem * 3;
+              padding-bottom: $lem * 3;
+            }
+          }
         }
       }
       

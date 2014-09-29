@@ -65,14 +65,14 @@
   
   // Portfolio description 
   @if ($type == portfolio-description) {
-    @include striped-background-for-text;
+    @include striped-background-for-text($lem * 5);
   }
   
   
   
   // Portfolio services 
   @if ($type == portfolio-services) {
-    @include striped-background-for-text;
+    @include striped-background-for-text($lem * 5);
     
     p {
       span {

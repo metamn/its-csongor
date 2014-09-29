@@ -1,15 +1,11 @@
 @mixin mockup($type: common) {
   
-  @if ($type == "common") {
-    @include mockup-common;
-  }
-  
-  @if ($type == "mobile portrait overflow") {
-    @include mockup-mobile-portrait-overflow;
-  }
-  
-  @if ($type == "tablet side overflow") {
-    @include mockup-tablet-side-overflow;
+  @if ($type == "two mobiles in a row") {
+    @include tablet {
+      img {
+        max-width: 260px;
+      }
+    }
   }
   
   @if ($type == "tablet angle overflow") {

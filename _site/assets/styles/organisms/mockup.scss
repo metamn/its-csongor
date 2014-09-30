@@ -26,11 +26,6 @@
   }
   
   @if ($type == "two desktops in a row") {
-    @include laptop-and-up {
-      img {
-        max-width: 400px;
-      }
-    }
     
     @include desktop-and-up {
       img {

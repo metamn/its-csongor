@@ -135,7 +135,8 @@ html.portfolio body #works { border-top: 1px solid; }
 @media only screen and (max-width: 63.999em) { html.portfolio.scatter body section.portfolio-section.screenshots-1 article.mockup figure { position: relative; overflow: visible; left: -100px; } }
 @media only screen and (max-width: 63.999em) and (max-width: 37.499em) { html.portfolio.scatter body section.portfolio-section.screenshots-1 article.mockup figure { left: -200px; } }
 
-html.portfolio.smuff body section.portfolio-section.intro article.title { margin: auto 300px; }
+html.portfolio.smuff body section.portfolio-section.intro article.title { margin: auto 20%; }
 html.portfolio.smuff body section.portfolio-section.intro article.title h1 { margin-bottom: 0.39em; padding-bottom: 0.39em; }
-@media only screen and (min-width: 64em) { html.portfolio.smuff body section.portfolio-section.intro article.mockup img { max-width: 400px; } }
 @media only screen and (min-width: 90em) { html.portfolio.smuff body section.portfolio-section.intro article.mockup img { max-width: 500px; } }
+@media only screen and (min-width: 37.5em) and (max-width: 63.999em) { html.portfolio.smuff body section.portfolio-section.screenshots-1, html.portfolio.smuff body section.portfolio-section.screenshots-2 { -webkit-flex-wrap: nowrap; -ms-flex-wrap: nowrap; flex-wrap: nowrap; } }
+@media only screen and (min-width: 64em) { html.portfolio.smuff body section.portfolio-section.screenshots-2 { -webkit-flex-wrap: nowrap; -ms-flex-wrap: nowrap; flex-wrap: nowrap; } }

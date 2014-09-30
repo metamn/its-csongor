@@ -7,7 +7,7 @@ Syntax error: Undefined mixin 'text'.
 4:       &.intro {
 5:         article {
 6:           &.title {
-7:             margin: auto 300px;
+7:             margin: auto 20%;
 8:             @include text(portfolio-title-short);
 9:           }
 10:           
@@ -125,4 +125,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'text'.\A         on line 8 of /home/cs/work/its-csongor/assets/styles/pages/smuff.scss, in `text'\A         from line 8 of /home/cs/work/its-csongor/assets/styles/pages/smuff.scss\A \A 3:     section.portfolio-section {\A 4:       &.intro {\A 5:         article {\A 6:           &.title {\A 7:             margin: auto 300px;\A 8:             @include text(portfolio-title-short);\A 9:           }\A 10:           \A 11:           &.mockup {\A 12:             @include mockup(\"two desktops in a row\");\A 13:           }"; }
+  content: "Syntax error: Undefined mixin 'text'.\A         on line 8 of /home/cs/work/its-csongor/assets/styles/pages/smuff.scss, in `text'\A         from line 8 of /home/cs/work/its-csongor/assets/styles/pages/smuff.scss\A \A 3:     section.portfolio-section {\A 4:       &.intro {\A 5:         article {\A 6:           &.title {\A 7:             margin: auto 20%;\A 8:             @include text(portfolio-title-short);\A 9:           }\A 10:           \A 11:           &.mockup {\A 12:             @include mockup(\"two desktops in a row\");\A 13:           }"; }

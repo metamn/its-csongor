@@ -4,7 +4,7 @@ html.portfolio.smuff {
       &.intro {
         article {
           &.title {
-            margin: auto 300px;
+            margin: auto 20%;
             @include text(portfolio-title-short);
           }
           
@@ -12,7 +12,19 @@ html.portfolio.smuff {
             @include mockup("two desktops in a row");
           }
         }
-      } 
+      }
+      
+      &.screenshots-1, &.screenshots-2  {
+        @include tablet {
+          @include flexbox-wrap(nowrap);
+        }
+      }
+      
+      &.screenshots-2  {
+        @include laptop-and-up {
+          @include flexbox-wrap(nowrap);
+        }
+      }
     }
   }
 }

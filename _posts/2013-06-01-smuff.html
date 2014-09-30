@@ -27,31 +27,25 @@ images:
     desktop2x: smuff-product-thumb-tablet-side-2x.png
 
   - mobile: smuff-product-desktop-right-1x.png
-    tablet: smuff-product-desktop-right-2x.png
-    desktop: smuff-product-desktop-right-3x.png
-
+    desktop: smuff-product-desktop-right-2x.png
   - mobile: smuff-archive-desktop-left-1x.png
-    tablet: smuff-archive-desktop-left-2x.png
-    desktop: smuff-archive-desktop-left-3x.png
+    desktop: smuff-archive-desktop-left-2x.png
 
 
   - mobile: smuff-archive-tablet-portrait-1x.png
     tablet: smuff-archive-tablet-portrait-2x.png
-
   - mobile: smuff-product-tablet-portrait-1x.png
     tablet: smuff-product-tablet-portrait-2x.png
 
   
-  - mobile: smuff-product-mobile-portrait-1x.png
-    mobile2x: smuff-product-mobile-portrait-2x.png
-    tablet: smuff-product-mobile-side1-1x.png
-    tablet2x: smuff-product-mobile-side1-2x.png
-
   - mobile: smuff-archive-mobile-portrait-1x.png
     mobile2x: smuff-archive-mobile-portrait-2x.png
     tablet: smuff-archive-mobile-side1-1x.png
     tablet2x: smuff-archive-mobile-side1-2x.png
-
+  - mobile: smuff-product-mobile-portrait-1x.png
+    mobile2x: smuff-product-mobile-portrait-2x.png
+    tablet: smuff-product-mobile-side1-1x.png
+    tablet2x: smuff-product-mobile-side1-2x.png
   - mobile: smuff-filters-mobile-portrait-1x.png
     mobile2x: smuff-filters-mobile-portrait-2x.png
     tablet: smuff-filters-mobile-side1-1x.png
@@ -88,9 +82,16 @@ images:
     Today Smuff is local market leader with 44% of returning customers.
   </p>
 {% endcapture %}
-{% include structures/portfolio-section.html title="Description" images="" description=description %}
+{% include structures/portfolio-section.html title="Description 1" images="" description=description %}
 
 
 {% include structures/portfolio-section.html title="Screenshots 2" images="5,6,7" %}
 {% include structures/portfolio-section.html title="Services" images="" %}
 {% include structures/portfolio-section.html title="Screenshots 3" images="8,9,10" %}
+
+{% capture description %}
+  <p>
+    The one-screen, one-click checkout page
+  </p>
+{% endcapture %}
+{% include structures/portfolio-section.html title="Description 2" images="" description=description %}

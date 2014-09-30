@@ -79,7 +79,7 @@ html body footer article#contact aside p { cursor: pointer; border: 1px solid #6
 html body footer article#navigation ul li { cursor: pointer; border: 1px solid #666666; padding: 0.39em 0.78em 0.52em; -moz-border-radius: 1.56em; -webkit-border-radius: 1.56em; border-radius: 1.56em; text-align: center; margin-top: 0.78em; }
 
 html.frontpage body #featured-image { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; -moz-justify-content: center; justify-content: center; }
-html.frontpage body #featured-image article { overflow: hidden; }
+html.frontpage body #featured-image article { overflow: hidden; padding: 0; }
 @media only screen and (max-width: 63.999em) { html.frontpage body #featured-image article figure { overflow: hidden; }
   html.frontpage body #featured-image article figure img { max-width: 100%; height: auto; }
   html.frontpage body #featured-image article figure img { max-width: none; }
@@ -91,14 +91,11 @@ html.frontpage body #about article p { font-family: "Europa", sans-serif; font-w
 html.frontpage body #about article p + p { margin-top: 1.56em; }
 
 html.portfolio.inu-chivu body section.portfolio-section.intro article.title h1 { margin-bottom: 0.39em; padding-bottom: 0.39em; }
-@media only screen and (max-width: 63.999em) { html.portfolio.inu-chivu body section.portfolio-section.intro article.mockup { position: relative; overflow: hidden; } }
-@media only screen and (max-width: 63.999em) and (max-width: 63.999em) { html.portfolio.inu-chivu body section.portfolio-section.intro article.mockup figure { overflow: hidden; }
+html.portfolio.inu-chivu body section.portfolio-section.intro article.mockup { overflow: hidden; padding: 0; }
+@media only screen and (max-width: 63.999em) { html.portfolio.inu-chivu body section.portfolio-section.intro article.mockup figure { overflow: hidden; }
   html.portfolio.inu-chivu body section.portfolio-section.intro article.mockup figure img { max-width: 100%; height: auto; }
   html.portfolio.inu-chivu body section.portfolio-section.intro article.mockup figure img { max-width: none; }
   html.portfolio.inu-chivu body section.portfolio-section.intro article.mockup figure figcaption { display: none; } }
-@media only screen and (max-width: 63.999em) { html.portfolio.inu-chivu body section.portfolio-section.intro article.mockup figure { position: relative; overflow: visible; left: -100px; } }
-@media only screen and (max-width: 63.999em) and (max-width: 37.499em) { html.portfolio.inu-chivu body section.portfolio-section.intro article.mockup figure { left: -200px; } }
-
 @media only screen and (min-width: 64em) { html.portfolio.inu-chivu body section.portfolio-section.screenshots-2 { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ -webkit-flex-wrap: nowrap; -ms-flex-wrap: nowrap; flex-wrap: nowrap; -webkit-box-align: end; -ms-flex-align: end; -webkit-align-items: flex-end; -moz-align-items: flex-end; align-items: flex-end; } }
 
 @media only screen and (max-width: 37.499em) { html.portfolio.iorad body section.portfolio-section.intro article.title { padding-top: 4.68em; padding-bottom: 4.68em; } }
@@ -127,7 +124,7 @@ html.portfolio body section.portfolio-section article.services p span { font-fam
 html.portfolio body section.portfolio-section article.mockup { padding: 0.78em; }
 html.portfolio body #works { border-top: 1px solid; }
 
-@media only screen and (max-width: 63.999em) { html.portfolio.scatter body section.portfolio-section.screenshots-1 article.mockup { position: relative; overflow: hidden; } }
+@media only screen and (max-width: 63.999em) { html.portfolio.scatter body section.portfolio-section.screenshots-1 article.mockup { position: relative; overflow: hidden; padding: 0; } }
 @media only screen and (max-width: 63.999em) and (max-width: 63.999em) { html.portfolio.scatter body section.portfolio-section.screenshots-1 article.mockup figure { overflow: hidden; }
   html.portfolio.scatter body section.portfolio-section.screenshots-1 article.mockup figure img { max-width: 100%; height: auto; }
   html.portfolio.scatter body section.portfolio-section.screenshots-1 article.mockup figure img { max-width: none; }

@@ -12,7 +12,7 @@ Syntax error: Undefined mixin 'text'.
 8:           }
 9:           
 10:           &.mockup {
-11:             @include mockup("tablet angle center");
+11:             @include mockup("tablet angle overflow");
 12:           }
 
 Backtrace:
@@ -125,4 +125,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'text'.\A         on line 7 of /home/cs/work/its-csongor/assets/styles/pages/inu.scss, in `text'\A         from line 7 of /home/cs/work/its-csongor/assets/styles/pages/inu.scss\A \A 2:   body {\A 3:     section.portfolio-section {\A 4:       &.intro {\A 5:         article {\A 6:           &.title {\A 7:             @include text(portfolio-title-short);\A 8:           }\A 9:           \A 10:           &.mockup {\A 11:             @include mockup(\"tablet angle center\");\A 12:           }"; }
+  content: "Syntax error: Undefined mixin 'text'.\A         on line 7 of /home/cs/work/its-csongor/assets/styles/pages/inu.scss, in `text'\A         from line 7 of /home/cs/work/its-csongor/assets/styles/pages/inu.scss\A \A 2:   body {\A 3:     section.portfolio-section {\A 4:       &.intro {\A 5:         article {\A 6:           &.title {\A 7:             @include text(portfolio-title-short);\A 8:           }\A 9:           \A 10:           &.mockup {\A 11:             @include mockup(\"tablet angle overflow\");\A 12:           }"; }

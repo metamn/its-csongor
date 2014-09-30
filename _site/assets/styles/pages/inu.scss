@@ -8,7 +8,7 @@ html.portfolio.inu-chivu {
           }
           
           &.mockup {
-            @include mockup("tablet angle center");
+            @include mockup("tablet angle overflow");
           }
         }
       }

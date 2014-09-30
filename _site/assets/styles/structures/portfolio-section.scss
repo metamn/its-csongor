@@ -21,6 +21,10 @@
     &.services {
       @include portfolio-services;
     }
+    
+    &.caption {
+      @include portfolio-caption;
+    }
 
     &.mockup {
       padding: $lem / 2;

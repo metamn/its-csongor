@@ -2,17 +2,10 @@ html.portfolio.anvelocom {
   body {
     section.portfolio-section {
       &.intro {
-        @include flexbox-direction(column);
-        
         article {
           &.title {
+            margin: auto 20%;
             @include text(portfolio-title-short);
-          }
-          
-          &.mockup {
-            img {
-              width: 100%;
-            }
           }
         }
       }

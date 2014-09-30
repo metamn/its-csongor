@@ -1,21 +1,21 @@
 /*
-Syntax error: Undefined mixin 'flexbox-wrap'.
-        on line 5 of /home/cs/work/its-csongor/assets/styles/pages/occrp.scss, in `flexbox-wrap'
+Syntax error: Undefined mixin 'laptop-and-up'.
+        on line 5 of /home/cs/work/its-csongor/assets/styles/pages/occrp.scss, in `laptop-and-up'
         from line 5 of /home/cs/work/its-csongor/assets/styles/pages/occrp.scss
 
 1: html.portfolio.organized-crime-and-corruption-reporting-project {
 2:   body {
 3:     section.portfolio-section {
-4:       &.screenshots-1, &.screenshots-2  {
-5:         @include flexbox-wrap(nowrap);
-6:         
-7:         @include mobile {
-8:           @include flexbox-wrap(wrap);
-9:         }
-10:         
+4:       &.screenshots-1  {
+5:         @include laptop-and-up {
+6:           @include flexbox-wrap(nowrap);
+7:         }
+8:       }
+9:       
+10:       
 
 Backtrace:
-/home/cs/work/its-csongor/assets/styles/pages/occrp.scss:5:in `flexbox-wrap'
+/home/cs/work/its-csongor/assets/styles/pages/occrp.scss:5:in `laptop-and-up'
 /home/cs/work/its-csongor/assets/styles/pages/occrp.scss:5
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/tree/visitors/perform.rb:320:in `block in visit_mixin'
 /var/lib/gems/1.9.1/gems/sass-3.3.14/lib/sass/stack.rb:98:in `block in with_mixin'
@@ -102,4 +102,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'flexbox-wrap'.\A         on line 5 of /home/cs/work/its-csongor/assets/styles/pages/occrp.scss, in `flexbox-wrap'\A         from line 5 of /home/cs/work/its-csongor/assets/styles/pages/occrp.scss\A \A 1: html.portfolio.organized-crime-and-corruption-reporting-project {\A 2:   body {\A 3:     section.portfolio-section {\A 4:       &.screenshots-1, &.screenshots-2  {\A 5:         @include flexbox-wrap(nowrap);\A 6:         \A 7:         @include mobile {\A 8:           @include flexbox-wrap(wrap);\A 9:         }\A 10:         "; }
+  content: "Syntax error: Undefined mixin 'laptop-and-up'.\A         on line 5 of /home/cs/work/its-csongor/assets/styles/pages/occrp.scss, in `laptop-and-up'\A         from line 5 of /home/cs/work/its-csongor/assets/styles/pages/occrp.scss\A \A 1: html.portfolio.organized-crime-and-corruption-reporting-project {\A 2:   body {\A 3:     section.portfolio-section {\A 4:       &.screenshots-1  {\A 5:         @include laptop-and-up {\A 6:           @include flexbox-wrap(nowrap);\A 7:         }\A 8:       }\A 9:       \A 10:       "; }

@@ -4,7 +4,12 @@ html.portfolio.smuff {
       &.intro {
         article {
           &.title {
+            margin: auto 300px;
             @include text(portfolio-title-short);
+          }
+          
+          &.mockup {
+            @include mockup("two desktops in a row");
           }
         }
       } 

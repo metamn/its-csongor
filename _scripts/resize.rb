@@ -43,7 +43,7 @@ Dir.glob("*.*").each do |f|
           image_names << "tablet"
         when "angle1", "angle"
           size << "320x0"
-          size << "768x0"
+          size << "732x0"
           size << "1024x0"
           size << "1440x0"
           image_names << "mobile"

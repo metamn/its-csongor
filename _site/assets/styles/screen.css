@@ -118,4 +118,12 @@ html.portfolio body section.portfolio-section article.services p span { font-fam
 html.portfolio body section.portfolio-section article.mockup { padding: 0.78em; }
 html.portfolio body #works { border-top: 1px solid; }
 
+@media only screen and (max-width: 63.999em) { html.portfolio.scatter body section.portfolio-section.screenshots-1 article.mockup { position: relative; overflow: hidden; } }
+@media only screen and (max-width: 63.999em) and (max-width: 63.999em) { html.portfolio.scatter body section.portfolio-section.screenshots-1 article.mockup figure { overflow: hidden; }
+  html.portfolio.scatter body section.portfolio-section.screenshots-1 article.mockup figure img { max-width: 100%; height: auto; }
+  html.portfolio.scatter body section.portfolio-section.screenshots-1 article.mockup figure img { max-width: none; }
+  html.portfolio.scatter body section.portfolio-section.screenshots-1 article.mockup figure figcaption { display: none; } }
+@media only screen and (max-width: 63.999em) { html.portfolio.scatter body section.portfolio-section.screenshots-1 article.mockup figure { position: relative; overflow: visible; left: -100px; } }
+@media only screen and (max-width: 63.999em) and (max-width: 37.499em) { html.portfolio.scatter body section.portfolio-section.screenshots-1 article.mockup figure { left: -200px; } }
+
 html.portfolio.smuff body section.portfolio-section.intro article.title h1 { margin-bottom: 0.39em; padding-bottom: 0.39em; }

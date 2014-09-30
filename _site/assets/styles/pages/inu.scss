@@ -39,8 +39,17 @@ html.portfolio.inu-chivu {
           }
         }
         
+        @include laptop-and-up {
+          margin-bottom: $lem * 3;
+        }
+        
         article {
           &.caption {
+            margin: auto 20%;
+            @include desktop-and-up {
+              margin: auto 40%;
+            }
+            
             @include directional-background-for-text(horizontal);
             
             @include below-laptop {
@@ -48,6 +57,12 @@ html.portfolio.inu-chivu {
             }
           }
         }
+      }
+      
+      &.screenshots-1 {
+        @include laptop-and-up {
+          @include flexbox-wrap(nowrap);
+        } 
       }
       
       &.screenshots-2 {

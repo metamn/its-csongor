@@ -18,13 +18,12 @@ html.portfolio.smuff {
         @include tablet {
           @include flexbox-wrap(nowrap);
         }
-      }
-      
-      &.screenshots-2  {
+        
         @include laptop-and-up {
           @include flexbox-wrap(nowrap);
         }
       }
+      
       
       &.caption {
         article {

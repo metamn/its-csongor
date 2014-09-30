@@ -1,12 +1,11 @@
 html.portfolio.organized-crime-and-corruption-reporting-project {
   body {
     section.portfolio-section {
-      &.screenshots-1  {
+      &.screenshots-1, &.screenshots-2  {
         @include laptop-and-up {
           @include flexbox-wrap(nowrap);
         }
       }
-      
       
       &.services {
         article {

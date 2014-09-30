@@ -28,8 +28,8 @@ Dir.glob("*.*").each do |f|
           image_names << "mobile"
           image_names << "retina"
         when "side1", "side"
-          size << "320x0"
-          size << "640x0"
+          size << "280x0"
+          size << "560x0"
           image_names << "mobile"
           image_names << "retina"
       end

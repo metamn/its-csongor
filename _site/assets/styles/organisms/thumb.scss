@@ -1,5 +1,5 @@
 @mixin thumb {
-  margin: $lem;
+  margin: $lem $lem/2;
   @include mockup("mobile portrait overflow");
   
   @include desktop-and-up {

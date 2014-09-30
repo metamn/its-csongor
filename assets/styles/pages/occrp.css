@@ -6,13 +6,13 @@ Syntax error: Undefined mixin 'laptop-and-up'.
 1: html.portfolio.organized-crime-and-corruption-reporting-project {
 2:   body {
 3:     section.portfolio-section {
-4:       &.screenshots-1  {
+4:       &.screenshots-1, &.screenshots-2  {
 5:         @include laptop-and-up {
 6:           @include flexbox-wrap(nowrap);
 7:         }
 8:       }
 9:       
-10:       
+10:       &.services {
 
 Backtrace:
 /home/cs/work/its-csongor/assets/styles/pages/occrp.scss:5:in `laptop-and-up'
@@ -102,4 +102,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'laptop-and-up'.\A         on line 5 of /home/cs/work/its-csongor/assets/styles/pages/occrp.scss, in `laptop-and-up'\A         from line 5 of /home/cs/work/its-csongor/assets/styles/pages/occrp.scss\A \A 1: html.portfolio.organized-crime-and-corruption-reporting-project {\A 2:   body {\A 3:     section.portfolio-section {\A 4:       &.screenshots-1  {\A 5:         @include laptop-and-up {\A 6:           @include flexbox-wrap(nowrap);\A 7:         }\A 8:       }\A 9:       \A 10:       "; }
+  content: "Syntax error: Undefined mixin 'laptop-and-up'.\A         on line 5 of /home/cs/work/its-csongor/assets/styles/pages/occrp.scss, in `laptop-and-up'\A         from line 5 of /home/cs/work/its-csongor/assets/styles/pages/occrp.scss\A \A 1: html.portfolio.organized-crime-and-corruption-reporting-project {\A 2:   body {\A 3:     section.portfolio-section {\A 4:       &.screenshots-1, &.screenshots-2  {\A 5:         @include laptop-and-up {\A 6:           @include flexbox-wrap(nowrap);\A 7:         }\A 8:       }\A 9:       \A 10:       &.services {"; }

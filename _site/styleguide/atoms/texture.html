@@ -37,7 +37,12 @@
 
 @mixin texture($type: white) {
   @if ($type == white) {
-    @include background(image-url("subtle-dots.png"), $white);
+    @include laptop-and-up {
+      @include background(image-url("notebook.png"), $white);
+    }
+    @include desktop-and-up {
+      @include background(image-url("subtle-dots.png"), $white);
+    }
   }
   
   @if ($type == black) {

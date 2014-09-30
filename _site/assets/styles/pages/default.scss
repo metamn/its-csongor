@@ -5,10 +5,7 @@ html {
     @include font;
     @include link;
     @include hacks;
-    
-    @include laptop-and-up {
-      @include texture;
-    }
+    @include texture;
   
     header, footer, section, article, aside, nav, figure {
       @include hide-title;

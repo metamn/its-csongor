@@ -32,7 +32,8 @@ html body { font-size: 125%; line-height: 1.56; color: #1a1a1a; background-color
 @media only screen and (min-width: 90em) { html body { font-size: 150%; line-height: 1.56; } }
 html body a { color: #1a1a1a; background-color: #f9f9f9; text-decoration: none; background-color: transparent; }
 html body a img { display: block; }
-@media only screen and (min-width: 64em) { html body { background: url('http://metamn.github.io/its-csongor/assets/images/subtle-dots.png?1412073058'), #f9f9f9; } }
+@media only screen and (min-width: 64em) { html body { background: url('http://metamn.github.io/its-csongor/assets/images/notebook.png'), #f9f9f9; } }
+@media only screen and (min-width: 90em) { html body { background: url('http://metamn.github.io/its-csongor/assets/images/subtle-dots.png?1412073058'), #f9f9f9; } }
 html body header > h3, html body footer > h3, html body section > h3, html body article > h3, html body aside > h3, html body nav > h3, html body figure > h3 { display: none; }
 html body figure img { max-width: 100%; height: auto; }
 html body figure figcaption { display: none; }

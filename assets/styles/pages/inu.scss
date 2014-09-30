@@ -6,8 +6,18 @@ html.portfolio.inu-chivu {
           &.title {
             @include text(portfolio-title-short);
           }
+          
+          &.mockup {
+            @include mockup("tablet angle center");
+          }
         }
-      } 
+      }
+      
+      &.screenshots-2 {
+        @include laptop-and-up {
+          @include flexbox($wrap: nowrap, $align-items: flex-end);
+        } 
+      }
     }
   }
 }

@@ -45,8 +45,26 @@ html.portfolio.anvelocom {
           &.title {
             @include text(portfolio-title-short);
           }
+          
+          &.mockup {
+            img {
+              width: 100%;
+            }
+          }
         }
-      } 
+      }
+      
+      &.screenshots-1 {
+        @include laptop-and-up {
+          @include flexbox-wrap(nowrap);
+        }
+      }
+      
+      &.description-2 {
+        @include below-laptop {
+          display: none;
+        }
+      }
     }
   }
 }

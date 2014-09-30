@@ -57,9 +57,17 @@ images:
     A programming challenge was to create dynamic filters for products which work with any number of categories and combinations. 
   </p>
 {% endcapture %}
-{% include structures/portfolio-section.html title="Description" images="" description=description %}
+{% include structures/portfolio-section.html title="Description 1" images="" description=description %}
 
 {% include structures/portfolio-section.html title="Screenshots 2" images="5" %}
 
-{% include structures/portfolio-section.html title="Screenshots 2" images="6,7" %}
+{% include structures/portfolio-section.html title="Screenshots 3" images="6,7" %}
+
+{% capture description %}
+  <p>
+    The dynamic filters for products. 
+  </p>
+{% endcapture %}
+{% include structures/portfolio-section.html title="Description 2" images="" description=description %}
+
 {% include structures/portfolio-section.html title="Services" images="" %}

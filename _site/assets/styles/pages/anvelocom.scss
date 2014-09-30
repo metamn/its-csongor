@@ -18,8 +18,23 @@ html.portfolio.anvelocom {
       
       &.caption {
         article {
+          &.mockup {
+            &:first-of-type {
+              @include flex-order(1);
+            }
+            
+            &:last-of-type {
+              @include flex-order(2);
+            }
+          }
+          
           &.caption {
-            @include directional-background-for-text(left);
+            margin: auto 20%;
+            
+            @include flex-order(3);
+            @include below-laptop {
+              @include flex-order(2);
+            }
           }
         }
       }

@@ -25,6 +25,14 @@ html.portfolio.smuff {
           @include flexbox-wrap(nowrap);
         }
       }
+      
+      &.caption {
+        article {
+          &.caption {
+            @include directional-background-for-text(vertical);
+          }
+        }
+      }
     }
   }
 }

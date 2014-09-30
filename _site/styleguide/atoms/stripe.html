@@ -35,11 +35,9 @@
     
 
 
-// Glitchy stripes
-// - by not using a Compass mixin it is perfect only in Firefox. On Chrome, Safari it will be rendered with nice visual errors
 
-@mixin stripe($color, $distance) {
-  background: repeating-linear-gradient(-55deg, $color, $color $lem/12, $white 1px, $white $distance);
+@mixin stripe($angle, $color, $distance) {
+  background: repeating-linear-gradient($angle, $color, $color $lem/12, $white 1px, $white $distance);
 }
 
 

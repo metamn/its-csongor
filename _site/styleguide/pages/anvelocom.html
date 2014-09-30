@@ -53,9 +53,11 @@ html.portfolio.anvelocom {
         }
       }
       
-      &.description-2 {
-        @include below-laptop {
-          display: none;
+      &.caption {
+        article {
+          &.caption {
+            @include directional-background-for-text(left);
+          }
         }
       }
     }

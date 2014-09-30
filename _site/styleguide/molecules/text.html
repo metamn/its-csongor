@@ -85,9 +85,10 @@
   
   // Portfolio caption 
   @if ($type == portfolio-caption) {
-    p {
-      max-width: $text-width / 2;
-      line-height: 1.3;
+    @include directional-background-for-text;
+    
+    @include below-laptop {
+      @include directional-background-for-text(vertical);
     }
   }
 

@@ -13,6 +13,18 @@ html.portfolio.inu-chivu {
         }
       }
       
+      &.caption-1 {
+        article {
+          &.caption {
+            @include directional-background-for-text(horizontal);
+            
+            @include below-laptop {
+              @include directional-background-for-text(vertical);
+            }
+          }
+        }
+      }
+      
       &.screenshots-2 {
         @include laptop-and-up {
           @include flexbox($wrap: nowrap, $align-items: flex-end);

@@ -20,10 +20,10 @@
   @if ($type == about) {
     font-family: "Europa", sans-serif;
     font-weight: 300;
-    font-size: $heading-level-2;
+    font-size: $heading-level-1;
     
-    @include mobile {
-      font-size: $heading-level-1;
+    @include desktop-and-up {
+      font-size: $heading-level-2;
     } 
   }
   @if ($type == title) {

@@ -100,13 +100,15 @@
   
   // The portfolio thumb caption
   @if ($type == thumb) {
-    max-width: 320px;
     
     border-top: 1px solid;
     padding-top: $lem / 2;
     
     p {
+      max-width: 320px;
+      
       @include font(subtitle);
+      
       @include desktop-and-up {
         padding-left: $lem;
       }

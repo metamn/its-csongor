@@ -4,6 +4,7 @@ html.portfolio.inu-chivu {
       &.intro {
         article {
           &.title {
+            margin: auto 20%;
             @include text(portfolio-title-short);
           }
           
@@ -14,6 +15,30 @@ html.portfolio.inu-chivu {
       }
       
       &.caption-1 {
+        @include mobile {
+          position: relative;
+          overflow: hidden;
+          height: 800px;
+          margin-bottom: $lem;
+          
+          article {
+            &.mockup {
+              position: absolute;
+              top: 0;
+              left: -$lem;
+            } 
+            
+            &:nth-of-type(2) {
+              left: $lem * 3;
+            }
+            
+            &:nth-of-type(3) {
+              position: relative;
+              top: 340px;
+            }
+          }
+        }
+        
         article {
           &.caption {
             @include directional-background-for-text(horizontal);

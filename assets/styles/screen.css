@@ -92,12 +92,17 @@ html.frontpage body #about article p { font-family: "Europa", sans-serif; font-w
 @media only screen and (max-width: 37.499em) { html.frontpage body #about article p { font-size: 1.3077em; } }
 html.frontpage body #about article p + p { margin-top: 1.56em; }
 
+html.portfolio.inu-chivu body section.portfolio-section.intro article.title { margin: auto 20%; }
 html.portfolio.inu-chivu body section.portfolio-section.intro article.title h1 { margin-bottom: 0.39em; padding-bottom: 0.39em; }
 html.portfolio.inu-chivu body section.portfolio-section.intro article.mockup { overflow: hidden; padding: 0; }
 @media only screen and (max-width: 63.999em) { html.portfolio.inu-chivu body section.portfolio-section.intro article.mockup figure { overflow: hidden; }
   html.portfolio.inu-chivu body section.portfolio-section.intro article.mockup figure img { max-width: 100%; height: auto; }
   html.portfolio.inu-chivu body section.portfolio-section.intro article.mockup figure img { max-width: none; }
   html.portfolio.inu-chivu body section.portfolio-section.intro article.mockup figure figcaption { display: none; } }
+@media only screen and (max-width: 37.499em) { html.portfolio.inu-chivu body section.portfolio-section.caption-1 { position: relative; overflow: hidden; height: 800px; margin-bottom: 1.56em; }
+  html.portfolio.inu-chivu body section.portfolio-section.caption-1 article.mockup { position: absolute; top: 0; left: -1.56em; }
+  html.portfolio.inu-chivu body section.portfolio-section.caption-1 article:nth-of-type(2) { left: 4.68em; }
+  html.portfolio.inu-chivu body section.portfolio-section.caption-1 article:nth-of-type(3) { position: relative; top: 340px; } }
 html.portfolio.inu-chivu body section.portfolio-section.caption-1 article.caption { background: repeating-linear-gradient(0deg, #1a1a1a, #1a1a1a 0.13em, transparent 1px, transparent 1.56em); padding: 1.56em; }
 @media only screen and (max-width: 37.499em) { html.portfolio.inu-chivu body section.portfolio-section.caption-1 article.caption { padding: 1.56em; } }
 html.portfolio.inu-chivu body section.portfolio-section.caption-1 article.caption p { color: #1a1a1a; background-color: #f9f9f9; border: 0.13em solid; padding: 0.78em; font-weight: 400; font-size: smaller; max-width: 11.7em; line-height: 1.3; }

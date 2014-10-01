@@ -1,9 +1,92 @@
----
-layout: styleguide
-title: Anvelocom
-subtitle: The Anvelocom portfolio item page
-category: pages
-scss: anvelocom.scss
----
+<!DOCTYPE html>
+<html lang="en" class="anvelocom styleguide ">
+  <head>
+    <meta charset="utf-8" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="author" href="humans.txt" />
+    
+    <title>Anvelocom &mdash; It's Csongor</title> 
+    
+    <!-- Compass with SASS -->
+  	<link href="/assets/styles/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    
+    <!-- IE 9 -->
+    <!--[if lt IE 9]>
+    <link href="/assets/styles/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<![endif]-->
 
-{% code scss %}
+<!--[if lt IE 9]>
+  <script src="/assets/scripts/html5shiv.min.js"></script>
+<![endif]-->
+<!--[if (lt IE 9) & (!IEMobile)]>
+    <script src="/assets/scripts/css3-mediaqueries.js"></script>
+<![endif]-->
+    
+    <!-- Typekit -->
+    <script src="//use.typekit.net/qiy3lwz.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    
+    <!-- Picturefill Responsive Images -->
+    <script async src="/assets/scripts/picturefill.min.js"></script>
+  </head>
+  
+  <body>
+    
+    
+
+
+html.portfolio.anvelocom {
+  body {
+    section.portfolio-section {
+      &.intro {
+        article {
+          &.title {
+            margin: auto 20%;
+            @include text(portfolio-title-short);
+          }
+        }
+      }
+      
+      &.screenshots-1 {
+        @include laptop-and-up {
+          @include flexbox-wrap(nowrap);
+        }
+      }
+      
+      &.caption {
+        article {
+          &.mockup {
+            &:first-of-type {
+              @include flex-order(1);
+            }
+            
+            &:last-of-type {
+              @include flex-order(2);
+            }
+          }
+          
+          &.caption {
+            margin: auto 20%;
+            
+            @include flex-order(3);
+            @include below-laptop {
+              @include flex-order(2);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+<!-- jQuery from CDN -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<!-- Site specific scripts  -->
+<script src="/assets/scripts/jquery.init.js"></script>
+
+
+</body>
+</html>

@@ -1,55 +1,49 @@
----
-layout: styleguide
-title: Responsive Typography
-subtitle: Font sizes and line heights for different devices
-category: atoms
-scss: "responsive-typography.scss"
-items:
-  - name: Mobile
-    description: Font size for mobile
-    breakpoint: "mobile"
-    values:
-      - name: "font-size"
-        value: "100%"
-      - name: "line-height"
-        value: "1.56"
-  - name: Tablet and Laptop
-    description: Font size for tablets and laptops
-    values:
-      - name: "font-size"
-        value: "125%"
-      - name: "line-height"
-        value: "1.56"
-  - name: Desktop
-    description: Font size for desktops
-    breakpoint: "desktop-and-up"
-    values:
-      - name: "font-size"
-        value: "150%"
-      - name: "line-height"
-        value: "1.56"
-grid:
-  - name: Mobile
-    description: Line height and text width for mobile
-    values:
-      - name: "$lem"
-        value: "1.25em !global"
-      - name: "$text-width"
-        value: "$lem * 15 !global"
-  - name: Laptop
-    description: Line height and text width for laptop
-    breakpoint: "laptop-and-up"
-    values:
-      - name: "$lem"
-        value: "1.56em !global"
-      - name: "$text-width"
-        value: "$lem * 15 !global"
-  - name: Desktop
-    description: Line height and text width for desktop
-    breakpoint: "desktop-and-up"
-    values:
-      - name: "$lem"
-        value: "1.56em !global"
-      - name: "$text-width"
-        value: "$lem * 15 !global"
----
+<!DOCTYPE html>
+<html lang="en" class="responsive-typography styleguide ">
+  <head>
+    <meta charset="utf-8" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="author" href="humans.txt" />
+    
+    <title>Responsive Typography &mdash; It's Csongor</title> 
+    
+    <!-- Compass with SASS -->
+  	<link href="/assets/styles/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    
+    <!-- IE 9 -->
+    <!--[if lt IE 9]>
+    <link href="/assets/styles/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="/assets/scripts/html5shiv.min.js"></script>
+<![endif]-->
+<!--[if (lt IE 9) & (!IEMobile)]>
+    <script src="/assets/scripts/css3-mediaqueries.js"></script>
+<![endif]-->
+    
+    <!-- Typekit -->
+    <script src="//use.typekit.net/qiy3lwz.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    
+    <!-- Picturefill Responsive Images -->
+    <script async src="/assets/scripts/picturefill.min.js"></script>
+  </head>
+  
+  <body>
+    
+    
+
+
+
+
+
+<!-- jQuery from CDN -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<!-- Site specific scripts  -->
+<script src="/assets/scripts/jquery.init.js"></script>
+
+
+</body>
+</html>

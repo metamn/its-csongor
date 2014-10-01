@@ -28,6 +28,7 @@
 
     &.mockup {
       padding: $lem / 2;
+      @include mockup;
     }
   }
 }

@@ -1,5 +1,6 @@
 @mixin mockup($type: common) {
   
+  
   @if ($type == "two mobiles in a row") {
     @include tablet {
       img {

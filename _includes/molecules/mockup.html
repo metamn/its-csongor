@@ -6,8 +6,13 @@
 {% assign id = include.id | times: 1 %}
 {% assign image = source.images[id] %}
 
+{% assign klass = '' %}
+{% if page.url == include.link %}
+  {% assign klass = 'current' %}
+{% endif %}
+
 {% capture imagetitle %}{% include atoms/imagetitle.html url=image.mobile %}{% endcapture %}
-<article class="mockup">
+<article class="mockup {{ klass }}">
   <h3>{{ imagetitle }}</h3>
   
   {% include atoms/figure.html id=include.id title=imagetitle source=source link=include.link %}

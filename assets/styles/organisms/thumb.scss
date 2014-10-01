@@ -8,6 +8,22 @@
   }
   
   
+  figure {
+    padding-top: $lem / 2;
+    
+    a {
+      &:hover, &:active {
+        img {
+          position: relative;
+          top: -$lem / 2;
+        }
+      }
+    }
+  }
+  
+  
+  
+  
   aside {
     @include text(thumb);
   }

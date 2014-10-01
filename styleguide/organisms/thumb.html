@@ -49,10 +49,21 @@
     padding-top: $lem / 2;
     
     a {
+<<<<<<< HEAD
       &:hover, &:active {
         img {
           position: relative;
           top: -$lem / 2;
+=======
+      transition: -webkit-transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+      transition: transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+      will-change: transform;
+      
+      &:hover, &:active {
+        img {
+          -webkit-transform: translateY(-$lem/2);
+          transform: translateY(-$lem/2);
+>>>>>>> gh-pages
         }
       }
     }
@@ -73,5 +84,9 @@
 <!-- Site specific scripts  -->
 <script src="/assets/scripts/jquery.init.js"></script>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> gh-pages
 </body>
 </html>

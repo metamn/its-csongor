@@ -1,6 +1,7 @@
 @mixin mockup($type: common) {
   
   
+  
   @if ($type == "two mobiles in a row") {
     @include tablet {
       img {
@@ -36,6 +37,9 @@
   }
   
   
+  @if ($type == common) {
+    @include mockup-common;
+  }
   
   @if ($type == "tablet side overflow") {
     @include mockup-tablet-side-overflow;

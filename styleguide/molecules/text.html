@@ -1,9 +1,137 @@
----
-layout: styleguide
-title: Text
-subtitle: A text block
-category: molecules
-scss: text.scss
----
+<!DOCTYPE html>
+<html lang="en" class="text styleguide ">
+  <head>
+    <meta charset="utf-8" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="author" href="humans.txt" />
+    
+    <title>Text &mdash; It's Csongor</title> 
+    
+    <!-- Compass with SASS -->
+  	<link href="/assets/styles/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    
+    <!-- IE 9 -->
+    <!--[if lt IE 9]>
+    <link href="/assets/styles/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<![endif]-->
 
-{% code scss %}
+<!--[if lt IE 9]>
+  <script src="/assets/scripts/html5shiv.min.js"></script>
+<![endif]-->
+<!--[if (lt IE 9) & (!IEMobile)]>
+    <script src="/assets/scripts/css3-mediaqueries.js"></script>
+<![endif]-->
+    
+    <!-- Typekit -->
+    <script src="//use.typekit.net/qiy3lwz.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    
+    <!-- Picturefill Responsive Images -->
+    <script async src="/assets/scripts/picturefill.min.js"></script>
+  </head>
+  
+  <body>
+    
+    
+
+
+@mixin text($type) {
+  
+  // Portfolio title 
+  @if ($type == portfolio-title) {
+    h1 {
+      @include font(title);
+      max-width: $text-width / 2;
+      border-bottom: 1px solid;
+      margin-bottom: $lem / 2;
+      padding-bottom: $lem / 2;
+    }
+
+    p {
+      @include font(subtitle);
+      max-width: $text-width / 2;
+    }
+  }
+  
+  // Portfolio title for short texts 
+  // - it is used togeher with the portfolio-type mixin
+  @if ($type == portfolio-title-short) {
+    h1 {
+      margin-bottom: $lem / 4;
+      padding-bottom: $lem / 4;
+    }
+  }
+  
+  
+  // Portfolio description 
+  @if ($type == portfolio-description) {
+    @include striped-background-for-text($lem * 5);
+  }
+  
+  
+  
+  // Portfolio services 
+  @if ($type == portfolio-services) {
+    @include striped-background-for-text($lem * 5);
+    
+    p {
+      span {
+        @include font(services);
+        font-weight: 600;
+      }
+    }
+  }
+  
+  
+  // Portfolio caption 
+  @if ($type == portfolio-caption) {
+    @include directional-background-for-text;
+    
+    @include below-laptop {
+      @include directional-background-for-text(vertical);
+    }
+  }
+
+
+  
+  // About 
+  @if ($type == about) {
+    padding: $lem * 2 $lem;
+    
+    p {
+      @include font(about); 
+      max-width: $text-width;
+
+      + p {
+        margin-top: $lem;
+      }
+    }
+  }
+  
+  // The portfolio thumb caption
+  @if ($type == thumb) {
+    
+    border-top: 1px solid;
+    padding-top: $lem / 2;
+    
+    p {
+      max-width: 280px;
+      
+      @include font(subtitle);
+      
+      @include desktop-and-up {
+        padding-left: $lem;
+      }
+    }
+  }
+}
+
+
+<!-- jQuery from CDN -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<!-- Site specific scripts  -->
+<script src="/assets/scripts/jquery.init.js"></script>
+
+</body>
+</html>

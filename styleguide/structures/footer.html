@@ -1,9 +1,72 @@
----
-layout: styleguide
-title: Footer
-subtitle: Contact and links to other pages
-category: structures
-scss: footer.scss
----
+<!DOCTYPE html>
+<html lang="en" class="footer styleguide ">
+  <head>
+    <meta charset="utf-8" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="author" href="humans.txt" />
+    
+    <title>Footer &mdash; It's Csongor</title> 
+    
+    <!-- Compass with SASS -->
+  	<link href="/assets/styles/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    
+    <!-- IE 9 -->
+    <!--[if lt IE 9]>
+    <link href="/assets/styles/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<![endif]-->
 
-{% code scss %}
+<!--[if lt IE 9]>
+  <script src="/assets/scripts/html5shiv.min.js"></script>
+<![endif]-->
+<!--[if (lt IE 9) & (!IEMobile)]>
+    <script src="/assets/scripts/css3-mediaqueries.js"></script>
+<![endif]-->
+    
+    <!-- Typekit -->
+    <script src="//use.typekit.net/qiy3lwz.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    
+    <!-- Picturefill Responsive Images -->
+    <script async src="/assets/scripts/picturefill.min.js"></script>
+  </head>
+  
+  <body>
+    
+    
+
+
+@mixin footer {
+  @include flexbox($wrap: wrap, $justify-content: center);
+  
+  article {
+    // Align to flex end and stretch 
+    @include flexbox($direction: column, $justify-content: flex-end, $align-items: baseline);
+    
+    ul, aside {
+      @include flex-item($align-self: stretch);
+    }
+    
+    
+    @include thumb;
+    width: 480px;
+    height: 320px;
+    
+    &#contact {
+      @include contact;
+    }
+    
+    &#navigation {
+      @include navigation;
+    }
+  }
+}
+
+
+<!-- jQuery from CDN -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<!-- Site specific scripts  -->
+<script src="/assets/scripts/jquery.init.js"></script>
+
+</body>
+</html>

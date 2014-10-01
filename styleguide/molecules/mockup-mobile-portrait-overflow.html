@@ -1,9 +1,64 @@
----
-layout: styleguide
-title: Mockup mobile portrait overflow
-subtitle: Mockup for a mobile portrait which overflows the screen
-category: molecules
-scss: mockup-mobile-portrait-overflow.scss
----
+<!DOCTYPE html>
+<html lang="en" class="mockup-mobile-portrait-overflow styleguide ">
+  <head>
+    <meta charset="utf-8" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="author" href="humans.txt" />
+    
+    <title>Mockup mobile portrait overflow &mdash; It's Csongor</title> 
+    
+    <!-- Compass with SASS -->
+  	<link href="/assets/styles/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    
+    <!-- IE 9 -->
+    <!--[if lt IE 9]>
+    <link href="/assets/styles/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<![endif]-->
 
-{% code scss %}
+<!--[if lt IE 9]>
+  <script src="/assets/scripts/html5shiv.min.js"></script>
+<![endif]-->
+<!--[if (lt IE 9) & (!IEMobile)]>
+    <script src="/assets/scripts/css3-mediaqueries.js"></script>
+<![endif]-->
+    
+    <!-- Typekit -->
+    <script src="//use.typekit.net/qiy3lwz.js"></script>
+    <script>try{Typekit.load();}catch(e){}</script>
+    
+    <!-- Picturefill Responsive Images -->
+    <script async src="/assets/scripts/picturefill.min.js"></script>
+  </head>
+  
+  <body>
+    
+    
+
+
+@mixin mockup-mobile-portrait-overflow {
+  overflow: hidden;
+    
+  figure {
+    @include figure($overflow: true);
+    
+    overflow: hidden;
+    height: 270px;
+    
+    img {
+      width: 320px;
+      @include mobile {
+        width: calc(320px - #{$lem * 2});
+      }
+    }
+  }
+}
+
+
+<!-- jQuery from CDN -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<!-- Site specific scripts  -->
+<script src="/assets/scripts/jquery.init.js"></script>
+
+</body>
+</html>

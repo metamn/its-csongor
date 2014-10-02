@@ -1,0 +1,18 @@
+html.styleguide {
+  body {
+    @include flexbox;
+    
+    header {
+      @include sg-header;
+    }
+    
+    nav {
+      @include sg-navigation;
+    }
+    
+    main {
+      @include flex-basis(80%);
+      @include sg-main;
+    }
+  }
+}

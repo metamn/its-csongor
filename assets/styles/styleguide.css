@@ -175,5 +175,7 @@ html.portfolio.smuff body section.portfolio-section.caption article.caption p { 
 /* No files to import found in styleguide/atoms/* */
 /* No files to import found in styleguide/molecules/* */
 /* No files to import found in styleguide/organisms/* */
-/* No files to import found in styleguide/structures/* */
-/* No files to import found in styleguide/pages/* */
+html.styleguide body { display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */ display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */ display: -ms-flexbox; /* TWEENER - IE 10 */ display: -webkit-flex; /* NEW - Chrome */ display: flex; /* NEW, Spec - Opera 12.1, Firefox 20+ */ }
+html.styleguide body nav article { margin: 1.56em; }
+html.styleguide body nav article > h3 { display: block; }
+html.styleguide body main { -webkit-flex-basis: 80%; -moz-flex-basis: 80%; -ms-flex-preferred-size: 80%; flex-basis: 80%; margin: 1.56em; }

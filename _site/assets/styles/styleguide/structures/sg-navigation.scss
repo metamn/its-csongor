@@ -1,0 +1,6 @@
+@mixin sg-navigation {
+  article {
+    @include show-title;
+    margin: $lem;
+  }
+}

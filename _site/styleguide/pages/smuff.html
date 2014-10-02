@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="works styleguide ">
+<html lang="en" class="smuff styleguide ">
   <head>
     <meta charset="utf-8" />
   	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="author" href="humans.txt" />
     
-    <title>Works &mdash; It's Csongor</title> 
+    <title>Smuff &mdash; It's Csongor</title> 
     
     <!-- Compass with SASS -->
     
@@ -766,13 +766,13 @@
 
 
 
-<section id="works" class="styleguide-entry">
-  <h1>Works</h1>
+<section id="smuff" class="styleguide-entry">
+  <h1>Smuff</h1>
   
   <article class="subtitle">
     <h3>Short description</h3>
     
-    The featured portfolio items
+    The Smuff portfolio item page
   </article>
   
   <article class="description">
@@ -808,14 +808,40 @@
     <h3>Code snippets</h3>
 
     <ul>
-      <li><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="k">@mixin</span><span class="nf"> works</span> <span class="p">{</span>
-  <span class="k">@include</span><span class="nd"> flexbox</span><span class="p">(</span><span class="nv">$wrap</span><span class="o">:</span> <span class="n">wrap</span><span class="o">,</span> <span class="nv">$justify-content</span><span class="o">:</span> <span class="no">center</span><span class="p">);</span>
-  
-  <span class="nt">article</span> <span class="p">{</span>
-    <span class="k">@include</span><span class="nd"> thumb</span><span class="p">;</span>
-    
-    <span class="k">&amp;</span><span class="nc">.current</span> <span class="p">{</span>
-      <span class="na">opacity</span><span class="o">:</span> <span class="mf">.6</span><span class="p">;</span>
+      <li><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nt">html</span><span class="nc">.portfolio.smuff</span> <span class="p">{</span>
+  <span class="nt">body</span> <span class="p">{</span>
+    <span class="nt">section</span><span class="nc">.portfolio-section</span> <span class="p">{</span>
+      <span class="k">&amp;</span><span class="nc">.intro</span> <span class="p">{</span>
+        <span class="nt">article</span> <span class="p">{</span>
+          <span class="k">&amp;</span><span class="nc">.title</span> <span class="p">{</span>
+            <span class="na">margin</span><span class="o">:</span> <span class="no">auto</span> <span class="mi">20</span><span class="kt">%</span><span class="p">;</span>
+            <span class="k">@include</span><span class="nd"> text</span><span class="p">(</span><span class="n">portfolio-title-short</span><span class="p">);</span>
+          <span class="p">}</span>
+          
+          <span class="k">&amp;</span><span class="nc">.mockup</span> <span class="p">{</span>
+            <span class="k">@include</span><span class="nd"> mockup</span><span class="p">(</span><span class="s2">&quot;two desktops in a row&quot;</span><span class="p">);</span>
+          <span class="p">}</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+      
+      <span class="k">&amp;</span><span class="nc">.screenshots-1</span><span class="o">,</span> <span class="k">&amp;</span><span class="nc">.screenshots-2</span>  <span class="p">{</span>
+        <span class="k">@include</span><span class="nd"> tablet</span> <span class="p">{</span>
+          <span class="k">@include</span><span class="nd"> flexbox-wrap</span><span class="p">(</span><span class="no">nowrap</span><span class="p">);</span>
+        <span class="p">}</span>
+        
+        <span class="k">@include</span><span class="nd"> laptop-and-up</span> <span class="p">{</span>
+          <span class="k">@include</span><span class="nd"> flexbox-wrap</span><span class="p">(</span><span class="no">nowrap</span><span class="p">);</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+      
+      
+      <span class="k">&amp;</span><span class="nc">.caption</span> <span class="p">{</span>
+        <span class="nt">article</span> <span class="p">{</span>
+          <span class="k">&amp;</span><span class="nc">.caption</span> <span class="p">{</span>
+            <span class="k">@include</span><span class="nd"> directional-background-for-text</span><span class="p">(</span><span class="n">vertical</span><span class="p">);</span>
+          <span class="p">}</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
     <span class="p">}</span>
   <span class="p">}</span>
 <span class="p">}</span></code></pre></div></li>

@@ -1,5 +1,5 @@
-@mixin logo {
-  @include square($lem - $lem / 4, $red);
+@mixin logo($size: $lem - $lem / 4) {
+  @include square($size, $red);
   
   // Aliging perfectly to the site title
   position: relative;

@@ -2,16 +2,15 @@ html.styleguide {
   body {
     @include flexbox;
     
+    @include below-laptop {
+      @include flexbox-wrap(wrap);
+    }
+    
     header {
       @include sg-header;
     }
     
-    nav {
-      @include sg-navigation;
-    }
-    
     main {
-      @include flex-basis(80%);
       @include sg-main;
     }
   }

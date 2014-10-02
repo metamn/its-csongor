@@ -7,8 +7,8 @@ Syntax error: Undefined mixin 'flexbox'.
 2:   body {
 3:     @include flexbox;
 4:     
-5:     header {
-6:       @include sg-header;
+5:     @include below-laptop {
+6:       @include flexbox-wrap(wrap);
 7:     }
 8:     
 
@@ -78,4 +78,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined mixin 'flexbox'.\A         on line 3 of /home/cs/work/its-csongor/assets/styles/styleguide/pages/sg-default.scss, in `flexbox'\A         from line 3 of /home/cs/work/its-csongor/assets/styles/styleguide/pages/sg-default.scss\A \A 1: html.styleguide {\A 2:   body {\A 3:     @include flexbox;\A 4:     \A 5:     header {\A 6:       @include sg-header;\A 7:     }\A 8:     "; }
+  content: "Syntax error: Undefined mixin 'flexbox'.\A         on line 3 of /home/cs/work/its-csongor/assets/styles/styleguide/pages/sg-default.scss, in `flexbox'\A         from line 3 of /home/cs/work/its-csongor/assets/styles/styleguide/pages/sg-default.scss\A \A 1: html.styleguide {\A 2:   body {\A 3:     @include flexbox;\A 4:     \A 5:     @include below-laptop {\A 6:       @include flexbox-wrap(wrap);\A 7:     }\A 8:     "; }

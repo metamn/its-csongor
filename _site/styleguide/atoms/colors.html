@@ -72,9 +72,7 @@
   
   <article>
   <h3>
-    
-  <a href="/styleguide/atoms" title="Atoms">Atoms</a>
-
+    Atoms
   </h3>
   
   <ul>
@@ -226,9 +224,7 @@
 </article>
   <article>
   <h3>
-    
-  <a href="/styleguide/molecules" title="Molecules">Molecules</a>
-
+    Molecules
   </h3>
   
   <ul>
@@ -352,9 +348,7 @@
 </article>
   <article>
   <h3>
-    
-  <a href="/styleguide/organisms" title="Organisms">Organisms</a>
-
+    Organisms
   </h3>
   
   <ul>
@@ -482,9 +476,7 @@
 </article>
   <article>
   <h3>
-    
-  <a href="/styleguide/structures" title="Structures">Structures</a>
-
+    Structures
   </h3>
   
   <ul>
@@ -608,9 +600,7 @@
 </article>
   <article>
   <h3>
-    
-  <a href="/styleguide/pages" title="Pages">Pages</a>
-
+    Pages
   </h3>
   
   <ul>
@@ -736,6 +726,98 @@
 
 <main>
   
+
+
+
+
+
+
+
+
+
+
+
+<section id="colors" class="styleguide-entry">
+  <h1>Colors</h1>
+  
+  <article class="subtitle">
+    <h3>Short description</h3>
+    
+    The colors of the site
+  </article>
+  
+  <article class="description">
+    <h3>Description</h3>
+    
+    
+  
+
+  </article>
+  
+  
+  <article class="example">
+    <h3>Example</h3>
+    
+    
+  
+
+  </article>
+  
+  
+  <article class="technical">
+    <h3>Technical description</h3>
+    
+    
+  
+
+  </article>
+  
+  <article class="code">
+  <h3>Source code</h3>
+
+  <nav>
+    <h3>Code snippets</h3>
+
+    <ul>
+      <li><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// All color codes</span>
+<span class="nv">$white</span><span class="o">:</span> <span class="nf">hsla</span><span class="p">(</span><span class="mi">0</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">97</span><span class="mf">.5</span><span class="kt">%</span><span class="o">,</span> <span class="mi">1</span><span class="p">);</span>
+<span class="nv">$black</span><span class="o">:</span> <span class="nf">hsla</span><span class="p">(</span><span class="mi">0</span><span class="o">,</span> <span class="mi">0</span><span class="kt">%</span><span class="o">,</span> <span class="mi">10</span><span class="kt">%</span><span class="o">,</span> <span class="mi">1</span><span class="p">);</span>
+<span class="nv">$red</span><span class="o">:</span> <span class="nf">hsla</span><span class="p">(</span><span class="mi">0</span><span class="o">,</span> <span class="mi">100</span><span class="kt">%</span><span class="o">,</span> <span class="mi">50</span><span class="kt">%</span><span class="o">,</span> <span class="mi">1</span><span class="p">);</span>
+<span class="nv">$gray</span><span class="o">:</span> <span class="nf">hsla</span><span class="p">(</span><span class="mi">0</span><span class="o">,</span> <span class="mi">0</span><span class="kt">%</span><span class="o">,</span> <span class="mi">40</span><span class="kt">%</span><span class="o">,</span> <span class="mi">1</span><span class="p">);</span>
+<span class="nv">$iorad-green</span><span class="o">:</span> <span class="nf">hsla</span><span class="p">(</span><span class="mi">154</span><span class="o">,</span> <span class="mi">71</span><span class="kt">%</span><span class="o">,</span> <span class="mi">43</span><span class="kt">%</span><span class="o">,</span> <span class="mi">1</span><span class="p">);</span>
+<span class="nv">$occrp-red</span><span class="o">:</span> <span class="nf">hsla</span><span class="p">(</span><span class="mi">359</span><span class="o">,</span> <span class="mi">65</span><span class="kt">%</span><span class="o">,</span> <span class="mi">36</span><span class="kt">%</span><span class="o">,</span> <span class="mi">1</span><span class="p">);</span>
+<span class="nv">$anvelocom-pink</span><span class="o">:</span> <span class="nf">hsla</span><span class="p">(</span><span class="mi">344</span><span class="o">,</span> <span class="mi">75</span><span class="kt">%</span><span class="o">,</span> <span class="mi">81</span><span class="kt">%</span><span class="o">,</span> <span class="mi">1</span><span class="p">);</span>
+
+
+<span class="c1">// All color pairs</span>
+<span class="k">@mixin</span><span class="nf"> colors</span><span class="p">(</span><span class="nv">$scheme</span><span class="o">:</span> <span class="nb">black</span><span class="o">-</span><span class="n">on-white</span><span class="p">)</span> <span class="p">{</span>
+   <span class="k">@if</span> <span class="p">(</span><span class="nv">$scheme</span> <span class="o">==</span> <span class="nb">black</span><span class="o">-</span><span class="n">on-white</span><span class="p">)</span> <span class="p">{</span>
+      <span class="na">color</span><span class="o">:</span> <span class="nv">$black</span><span class="p">;</span>
+      <span class="na">background-color</span><span class="o">:</span> <span class="nv">$white</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">@if</span> <span class="p">(</span><span class="nv">$scheme</span> <span class="o">==</span> <span class="nb">white</span><span class="o">-</span><span class="n">on-black</span><span class="p">)</span> <span class="p">{</span>
+      <span class="na">color</span><span class="o">:</span> <span class="nv">$white</span><span class="p">;</span>
+      <span class="na">background-color</span><span class="o">:</span> <span class="nv">$black</span><span class="p">;</span>
+  <span class="p">}</span> <span class="k">@if</span> <span class="p">(</span><span class="nv">$scheme</span> <span class="o">==</span> <span class="nb">white</span><span class="o">-</span><span class="n">on-blue</span><span class="p">)</span> <span class="p">{</span>
+      <span class="na">color</span><span class="o">:</span> <span class="nv">$white</span><span class="p">;</span>
+      <span class="na">background-color</span><span class="o">:</span> <span class="nv">$iorad-blue</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+
+<span class="c1">// All color codes collected in a list</span>
+<span class="nv">$colors</span><span class="o">:</span> <span class="nf">hsla</span><span class="p">(</span><span class="mi">0</span><span class="o">,</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">97</span><span class="mf">.5</span><span class="kt">%</span><span class="o">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">,</span> <span class="nf">hsla</span><span class="p">(</span><span class="mi">0</span><span class="o">,</span> <span class="mi">0</span><span class="kt">%</span><span class="o">,</span> <span class="mi">10</span><span class="kt">%</span><span class="o">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">,</span> <span class="nf">hsla</span><span class="p">(</span><span class="mi">0</span><span class="o">,</span> <span class="mi">100</span><span class="kt">%</span><span class="o">,</span> <span class="mi">50</span><span class="kt">%</span><span class="o">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">,</span> <span class="nf">hsla</span><span class="p">(</span><span class="mi">0</span><span class="o">,</span> <span class="mi">0</span><span class="kt">%</span><span class="o">,</span> <span class="mi">40</span><span class="kt">%</span><span class="o">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">,</span> <span class="nf">hsla</span><span class="p">(</span><span class="mi">154</span><span class="o">,</span> <span class="mi">71</span><span class="kt">%</span><span class="o">,</span> <span class="mi">43</span><span class="kt">%</span><span class="o">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">,</span> <span class="nf">hsla</span><span class="p">(</span><span class="mi">359</span><span class="o">,</span> <span class="mi">65</span><span class="kt">%</span><span class="o">,</span> <span class="mi">36</span><span class="kt">%</span><span class="o">,</span> <span class="mi">1</span><span class="p">)</span><span class="o">,</span> <span class="nf">hsla</span><span class="p">(</span><span class="mi">344</span><span class="o">,</span> <span class="mi">75</span><span class="kt">%</span><span class="o">,</span> <span class="mi">81</span><span class="kt">%</span><span class="o">,</span> <span class="mi">1</span><span class="p">);</span>
+
+
+<span class="c1">// All color pairs collected in a list</span>
+<span class="nv">$color-pairs</span><span class="o">:</span> <span class="nb">black</span><span class="o">-</span><span class="n">on-white</span><span class="o">,</span> <span class="nb">white</span><span class="o">-</span><span class="n">on-black</span><span class="o">,</span> <span class="nb">white</span><span class="o">-</span><span class="n">on-blue</span><span class="p">;</span></code></pre></div></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </nav>
+</article>
+</section>
+
+
 </main>
 
 

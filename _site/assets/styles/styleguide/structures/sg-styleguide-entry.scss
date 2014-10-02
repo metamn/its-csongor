@@ -1,0 +1,5 @@
+@mixin sg-styleguide-entry {
+  .code {
+    @include sg-code;
+  }
+}

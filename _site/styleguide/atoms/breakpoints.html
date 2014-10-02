@@ -72,9 +72,7 @@
   
   <article>
   <h3>
-    
-  <a href="/styleguide/atoms" title="Atoms">Atoms</a>
-
+    Atoms
   </h3>
   
   <ul>
@@ -226,9 +224,7 @@
 </article>
   <article>
   <h3>
-    
-  <a href="/styleguide/molecules" title="Molecules">Molecules</a>
-
+    Molecules
   </h3>
   
   <ul>
@@ -352,9 +348,7 @@
 </article>
   <article>
   <h3>
-    
-  <a href="/styleguide/organisms" title="Organisms">Organisms</a>
-
+    Organisms
   </h3>
   
   <ul>
@@ -482,9 +476,7 @@
 </article>
   <article>
   <h3>
-    
-  <a href="/styleguide/structures" title="Structures">Structures</a>
-
+    Structures
   </h3>
   
   <ul>
@@ -608,9 +600,7 @@
 </article>
   <article>
   <h3>
-    
-  <a href="/styleguide/pages" title="Pages">Pages</a>
-
+    Pages
   </h3>
   
   <ul>
@@ -736,6 +726,105 @@
 
 <main>
   
+
+
+
+
+
+
+
+
+
+
+
+<section id="breakpoints" class="styleguide-entry">
+  <h1>Breakpoints</h1>
+  
+  <article class="subtitle">
+    <h3>Short description</h3>
+    
+    The breakpoints used for responsive layouts
+  </article>
+  
+  <article class="description">
+    <h3>Description</h3>
+    
+    
+
+  </article>
+  
+  
+  <article class="example">
+    <h3>Example</h3>
+    
+    
+  
+
+  </article>
+  
+  
+  <article class="technical">
+    <h3>Technical description</h3>
+    
+    
+  
+
+  </article>
+  
+  <article class="code">
+  <h3>Source code</h3>
+
+  <nav>
+    <h3>Code snippets</h3>
+
+    <ul>
+      <li><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nv">$breakpoint-mobile</span><span class="o">:</span> <span class="mi">37</span><span class="mf">.5</span><span class="kt">em</span><span class="p">;</span> <span class="c1">// Screens width less than 600px width</span>
+<span class="nv">$breakpoint-laptop</span><span class="o">:</span> <span class="mi">64</span><span class="kt">em</span><span class="p">;</span> <span class="c1">// Screens starting with 1024px width</span>
+<span class="nv">$breakpoint-desktop</span><span class="o">:</span> <span class="mi">90</span><span class="kt">em</span><span class="p">;</span> <span class="c1">// Screens width more than 1440px width</span>
+
+
+
+<span class="k">@mixin</span><span class="nf"> mobile</span> <span class="p">{</span>
+  <span class="c1">// Mobile devices in both portrait and landscape mode </span>
+  <span class="k">@media</span> <span class="nt">only</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="nd">:</span> <span class="err">$</span><span class="nt">breakpoint-mobile</span> <span class="nt">-</span> <span class="nt">0</span><span class="nc">.001</span><span class="o">)</span> <span class="p">{</span>
+    <span class="k">@content</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">@mixin</span><span class="nf"> tablet</span> <span class="p">{</span>
+  <span class="c1">// Tablets in both portrait and landscape mode </span>
+  <span class="k">@media</span> <span class="nt">only</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-width</span><span class="nd">:</span> <span class="err">$</span><span class="nt">breakpoint-mobile</span><span class="o">)</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="nd">:</span> <span class="err">$</span><span class="nt">breakpoint-laptop</span> <span class="nt">-</span> <span class="nt">0</span><span class="nc">.001</span><span class="o">)</span> <span class="p">{</span>
+    <span class="k">@content</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">@mixin</span><span class="nf"> below-laptop</span> <span class="p">{</span>
+  <span class="c1">// Mobile and tablet devices in both portrait and landscape mode </span>
+  <span class="k">@media</span> <span class="nt">only</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">max-width</span><span class="nd">:</span> <span class="err">$</span><span class="nt">breakpoint-laptop</span> <span class="nt">-</span> <span class="nt">0</span><span class="nc">.001</span><span class="o">)</span> <span class="p">{</span>
+    <span class="k">@content</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">@mixin</span><span class="nf"> laptop-and-up</span> <span class="p">{</span>
+  <span class="c1">// Everything above 1024px </span>
+  <span class="k">@media</span> <span class="nt">only</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-width</span><span class="nd">:</span> <span class="err">$</span><span class="nt">breakpoint-laptop</span><span class="o">)</span> <span class="p">{</span>
+    <span class="k">@content</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">@mixin</span><span class="nf"> desktop-and-up</span> <span class="p">{</span>
+  <span class="c1">// For large screens above 1440px </span>
+  <span class="k">@media</span> <span class="nt">only</span> <span class="nt">screen</span> <span class="nt">and</span> <span class="o">(</span><span class="nt">min-width</span><span class="nd">:</span> <span class="err">$</span><span class="nt">breakpoint-desktop</span><span class="o">)</span> <span class="p">{</span>
+    <span class="k">@content</span>
+  <span class="p">}</span>
+<span class="p">}</span></code></pre></div></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </nav>
+</article>
+</section>
+
 </main>
 
 

@@ -1,3 +1,7 @@
 @mixin sg-main {
   margin: $lem;
+  
+  .styleguide-entry {
+    @include sg-styleguide-entry;
+  }
 }

@@ -1,4 +1,8 @@
 <header>
   <div class="logo"></div>
   <h1><a href="{{ site.url }}/" title="{{ site.title }}">{{ site.title }}</a></h1>
+  
+  {% if include.styleguide %}
+    <h2><a href="{{ site.url }}/styleguide" title="Styleguide for {{ site.title }}">Styleguide</a></h2>
+  {% endif %}
 </header>

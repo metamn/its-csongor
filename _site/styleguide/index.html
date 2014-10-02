@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" class="thumb styleguide ">
+<html lang="en" class="visual-style-and-component-guide styleguide ">
   <head>
     <meta charset="utf-8" />
   	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="author" href="humans.txt" />
     
-    <title>Thumb &mdash; It's Csongor</title> 
+    <title>Visual style and component guide &mdash; It's Csongor</title> 
     
     <!-- Compass with SASS -->
     
@@ -735,40 +735,7 @@
 </nav>
 
 <main>
-  @mixin thumb {
-  margin: $lem $lem/2;
-  @include mockup("mobile portrait overflow");
-  
-  @include desktop-and-up {
-    margin: $lem * 2 $lem * 3;
-    @include mockup("tablet side overflow");
-  }
-  
-  
-  figure {
-    padding-top: $lem / 2;
-    
-    a {
-      transition: -webkit-transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-      transition: transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
-      will-change: transform;
-      
-      &:hover, &:active {
-        img {
-          -webkit-transform: translateY(-$lem/2);
-          transform: translateY(-$lem/2);
-        }
-      }
-    }
-  }
-  
-  
-  
-  
-  aside {
-    @include text(thumb);
-  }
-}
+  <h1>Visual style and component guide</h1>
 </main>
 
 

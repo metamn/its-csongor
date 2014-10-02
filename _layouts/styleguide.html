@@ -1,5 +1,10 @@
-{% include head.html %}
+{% include head.html styleguide="true" %}
 
-{{ content }}
+{% include structures/header.html styleguide="true" %}
+{% include styleguide/structures/navigation.html %}
+
+<main>
+  {{ content }}
+</main>
 
 {% include scripts.html %}

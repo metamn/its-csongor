@@ -15,7 +15,7 @@ task :publish do
     system "mv _site/* #{tmp}"
     system "git checkout -B gh-pages"
     system "rm -rf *"
-    system "mv #{tmp}/* ."
+    system "cp #{tmp}/* ."
     message = "Site updated at #{Time.now.utc}"
     system "git add ."
     system "git commit -am #{message.shellescape}"

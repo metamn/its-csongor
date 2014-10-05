@@ -9,7 +9,13 @@
     
     <!-- Compass with SASS -->
 <<<<<<< HEAD
+<<<<<<< HEAD
   	<link href="/assets/styles/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+=======
+    
+      <link href="/assets/styles/styleguide.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    
+>>>>>>> gh-pages
 =======
     
       <link href="/assets/styles/styleguide.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -29,7 +35,10 @@
 <![endif]-->
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> gh-pages
 =======
 >>>>>>> gh-pages
     <!-- via Favicomatic -->
@@ -55,6 +64,9 @@
 <meta name="msapplication-square310x310logo" content="http://its-csongor.com/assets/images/mstile-310x310.png" />
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> gh-pages
+=======
 >>>>>>> gh-pages
 =======
 >>>>>>> gh-pages
@@ -72,6 +84,7 @@
     
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 @mixin text($type) {
   
@@ -184,6 +197,8 @@
 
 >>>>>>> gh-pages
 =======
+=======
+>>>>>>> gh-pages
 <header>
   <div class="logo"></div>
   <h1><a href="/" title="It's Csongor">It's Csongor</a></h1>
@@ -879,6 +894,9 @@
   
 </header>
 <main>
+<<<<<<< HEAD
+  
+=======
   
 
 
@@ -915,6 +933,118 @@
     
   
 
+  </article>
+  
+  
+  <article class="technical">
+    <h3>Technical description</h3>
+    
+    
+  
+
+  </article>
+  
+  <article class="code">
+  <h3>Source code</h3>
+
+  <nav>
+    <h3>Code snippets</h3>
+>>>>>>> gh-pages
+
+    <ul>
+      <li><div class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="k">@mixin</span><span class="nf"> text</span><span class="p">(</span><span class="nv">$type</span><span class="p">)</span> <span class="p">{</span>
+  
+  <span class="c1">// Portfolio title </span>
+  <span class="k">@if</span> <span class="p">(</span><span class="nv">$type</span> <span class="o">==</span> <span class="n">portfolio-title</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nt">h1</span> <span class="p">{</span>
+      <span class="k">@include</span><span class="nd"> font</span><span class="p">(</span><span class="n">title</span><span class="p">);</span>
+      <span class="na">max-width</span><span class="o">:</span> <span class="nv">$text-width</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>
+      <span class="na">border-bottom</span><span class="o">:</span> <span class="mi">1</span><span class="kt">px</span> <span class="no">solid</span><span class="p">;</span>
+      <span class="na">margin-bottom</span><span class="o">:</span> <span class="nv">$lem</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>
+      <span class="na">padding-bottom</span><span class="o">:</span> <span class="nv">$lem</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>
+    <span class="p">}</span>
+
+<<<<<<< HEAD
+
+
+
+
+
+
+
+
+
+<section id="text" class="styleguide-entry">
+  <h1>Text</h1>
+  
+  <article class="subtitle">
+    <h3>Short description</h3>
+    
+    All kind of text blocks used across the site
+  </article>
+  
+  <article class="description">
+    <h3>Description</h3>
+    
+    
+  
+=======
+    <span class="nt">p</span> <span class="p">{</span>
+      <span class="k">@include</span><span class="nd"> font</span><span class="p">(</span><span class="n">subtitle</span><span class="p">);</span>
+      <span class="na">max-width</span><span class="o">:</span> <span class="nv">$text-width</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  
+  <span class="c1">// Portfolio title for short texts </span>
+  <span class="c1">// - it is used togeher with the portfolio-type mixin</span>
+  <span class="k">@if</span> <span class="p">(</span><span class="nv">$type</span> <span class="o">==</span> <span class="n">portfolio-title-short</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nt">h1</span> <span class="p">{</span>
+      <span class="na">margin-bottom</span><span class="o">:</span> <span class="nv">$lem</span> <span class="o">/</span> <span class="mi">4</span><span class="p">;</span>
+      <span class="na">padding-bottom</span><span class="o">:</span> <span class="nv">$lem</span> <span class="o">/</span> <span class="mi">4</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  
+  
+  <span class="c1">// Portfolio description </span>
+  <span class="k">@if</span> <span class="p">(</span><span class="nv">$type</span> <span class="o">==</span> <span class="n">portfolio-description</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">@include</span><span class="nd"> striped-background-for-text</span><span class="p">(</span><span class="nv">$lem</span> <span class="o">*</span> <span class="mi">5</span><span class="p">);</span>
+  <span class="p">}</span>
+  
+  
+  
+  <span class="c1">// Portfolio services </span>
+  <span class="k">@if</span> <span class="p">(</span><span class="nv">$type</span> <span class="o">==</span> <span class="n">portfolio-services</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">@include</span><span class="nd"> striped-background-for-text</span><span class="p">(</span><span class="nv">$lem</span> <span class="o">*</span> <span class="mi">5</span><span class="p">);</span>
+    
+    <span class="nt">p</span> <span class="p">{</span>
+      <span class="nt">span</span> <span class="p">{</span>
+        <span class="k">@include</span><span class="nd"> font</span><span class="p">(</span><span class="n">services</span><span class="p">);</span>
+        <span class="na">font-weight</span><span class="o">:</span> <span class="mi">600</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  
+  
+  <span class="c1">// Portfolio caption </span>
+  <span class="k">@if</span> <span class="p">(</span><span class="nv">$type</span> <span class="o">==</span> <span class="n">portfolio-caption</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">@include</span><span class="nd"> directional-background-for-text</span><span class="p">;</span>
+    
+    <span class="k">@include</span><span class="nd"> below-laptop</span> <span class="p">{</span>
+      <span class="k">@include</span><span class="nd"> directional-background-for-text</span><span class="p">(</span><span class="n">vertical</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+>>>>>>> gh-pages
+
+  </article>
+  
+  
+  <article class="example">
+    <h3>Example</h3>
+    
+    
+  
+
+<<<<<<< HEAD
   </article>
   
   
@@ -1006,6 +1136,23 @@
     <span class="p">}</span>
   <span class="p">}</span>
   
+=======
+  
+  <span class="c1">// About </span>
+  <span class="k">@if</span> <span class="p">(</span><span class="nv">$type</span> <span class="o">==</span> <span class="n">about</span><span class="p">)</span> <span class="p">{</span>
+    <span class="na">padding</span><span class="o">:</span> <span class="nv">$lem</span> <span class="o">*</span> <span class="mi">2</span> <span class="nv">$lem</span><span class="p">;</span>
+    
+    <span class="nt">p</span> <span class="p">{</span>
+      <span class="k">@include</span><span class="nd"> font</span><span class="p">(</span><span class="n">about</span><span class="p">);</span> 
+      <span class="na">max-width</span><span class="o">:</span> <span class="nv">$text-width</span><span class="p">;</span>
+
+      <span class="o">+</span> <span class="nt">p</span> <span class="p">{</span>
+        <span class="na">margin-top</span><span class="o">:</span> <span class="nv">$lem</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  
+>>>>>>> gh-pages
   <span class="c1">// The portfolio thumb caption</span>
   <span class="k">@if</span> <span class="p">(</span><span class="nv">$type</span> <span class="o">==</span> <span class="n">thumb</span><span class="p">)</span> <span class="p">{</span>
     
@@ -1039,6 +1186,9 @@
 <script src="/assets/scripts/jquery.init.js"></script>
 
 
+<<<<<<< HEAD
+>>>>>>> gh-pages
+=======
 >>>>>>> gh-pages
 </body>
 </html>
